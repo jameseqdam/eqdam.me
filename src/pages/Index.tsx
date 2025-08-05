@@ -1,4 +1,4 @@
-import Portfolio from '../components/Portfolio';
+import Portfolio from '../components/portfolio.tsx';
 const Index = () => {
     return <Portfolio />;
 };
