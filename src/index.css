@@ -8,41 +8,48 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-/* Professional Portfolio Color Palette */
     --background: 0 0% 100%;
-    --foreground: 210 11% 29%;
-    
+    --foreground: 213 16% 29%;
+
     --card: 0 0% 100%;
-    --card-foreground: 210 11% 29%;
-    
+    --card-foreground: 213 16% 29%;
+
     --popover: 0 0% 100%;
-    --popover-foreground: 210 11% 29%;
-    
-    --primary: 210 100% 50%;
+    --popover-foreground: 213 16% 29%;
+
+    --primary: 211 100% 50%;
     --primary-foreground: 0 0% 100%;
-    --primary-glow: 210 100% 65%;
-    
+
     --secondary: 210 17% 95%;
-    --secondary-foreground: 210 11% 29%;
-    
+    --secondary-foreground: 213 16% 29%;
+
     --muted: 210 17% 95%;
-    --muted-foreground: 215 16% 47%;
-    
-    --accent: 210 100% 50%;
+    --muted-foreground: 213 10% 56%;
+
+    --accent: 211 100% 50%;
     --accent-foreground: 0 0% 100%;
-    
-    --destructive: 0 84% 60%;
+
+    --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
-    
-    --border: 220 13% 91%;
-    --input: 220 13% 91%;
-    --ring: 210 100% 50%;
-    
-    /* Custom portfolio tokens */
-    --gradient-hero: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
-    --shadow-card: 0 4px 24px -8px hsl(var(--primary) / 0.1);
-    --shadow-hover: 0 8px 32px -8px hsl(var(--primary) / 0.15);
-    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --border: 210 17% 90%;
+    --input: 210 17% 90%;
+    --ring: 211 100% 50%;
+
+    /* Portfolio specific colors */
+    --portfolio-bg: 0 0% 100%;
+    --portfolio-text: 213 16% 29%;
+    --portfolio-accent: 211 100% 50%;
+    --portfolio-muted: 213 10% 56%;
+    --portfolio-border: 210 17% 90%;
+
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(211 100% 50%), hsl(211 100% 40%));
+    --gradient-section: linear-gradient(180deg, hsl(0 0% 100%), hsl(210 17% 98%));
+
+    /* Shadows */
+    --shadow-card: 0 4px 20px -2px hsl(211 100% 50% / 0.1);
+    --shadow-hover: 0 8px 30px -4px hsl(211 100% 50% / 0.15);
 
     --radius: 0.5rem;
 
@@ -109,5 +116,50 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .portfolio-section {
+    @apply py-20 px-6;
+  }
+
+  .portfolio-container {
+    @apply max-w-6xl mx-auto;
+  }
+
+  .portfolio-card {
+    @apply bg-card border border-border rounded-lg p-6 hover:shadow-[var(--shadow-hover)] transition-all duration-300;
+  }
+
+  .portfolio-button {
+    @apply inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50;
+  }
+
+  .portfolio-button-primary {
+    @apply bg-primary text-primary-foreground hover:bg-primary/90 px-6 py-3;
+  }
+
+  .portfolio-button-outline {
+    @apply border border-input bg-background hover:bg-accent hover:text-accent-foreground px-6 py-3;
+  }
+
+  .portfolio-gradient-text {
+    background: var(--gradient-hero);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .portfolio-hero-bg {
+    background: var(--gradient-hero);
+  }
+
+  .section-gradient {
+    background: var(--gradient-section);
   }
 }

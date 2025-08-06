@@ -26,8 +26,7 @@ export default {
 				foreground: 'hsl(var(--foreground))',
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
-					foreground: 'hsl(var(--primary-foreground))',
-					glow: 'hsl(var(--primary-glow))'
+					foreground: 'hsl(var(--primary-foreground))'
 				},
 				secondary: {
 					DEFAULT: 'hsl(var(--secondary))',
@@ -62,6 +61,13 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				portfolio: {
+					bg: 'hsl(var(--portfolio-bg))',
+					text: 'hsl(var(--portfolio-text))',
+					accent: 'hsl(var(--portfolio-accent))',
+					muted: 'hsl(var(--portfolio-muted))',
+					border: 'hsl(var(--portfolio-border))'
 				}
 			},
 			borderRadius: {
