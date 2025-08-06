@@ -8,15 +8,15 @@ const ContactSection = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "james@example.com",
-      href: "mailto:james@example.com"
+      value: "james@eqdam.me",
+      href: "mailto:james@eqdam.me"
     },
-    /* {
+    {
       icon: Phone,
       label: "Phone",
-      value: "+1 (555) 123-4567",
-      href: "tel:+15551234567"
-    }, */
+      value: "+46 (762) 34-3539",
+      href: "tel:+4672343539"
+    }, 
     {
       icon: MapPin,
       label: "Location",
