@@ -4,10 +4,10 @@ import headshotImage from '@/assets/james-headshot.jpg';
 
 const HeroSection = () => {
   const socialLinks = [
-    { icon: Linkedin, href: '#', label: 'LinkedIn' },
-    { icon: Globe, href: '#', label: 'Website' },
-    { icon: Twitter, href: '#', label: 'Twitter' },
-    { icon: GraduationCap, href: '#', label: 'Google Scholar' },
+    { icon: Linkedin, href: "https://linkedin.com/in/eqdam", label: 'LinkedIn' },
+    { icon: Globe, href: "https://www.eqdam.me/", label: 'Website' },
+    { icon: Twitter, href: "https://twitter.com/jameseqdam", label: 'Twitter' },
+    { icon: GraduationCap, href: "https://scholar.google.com/citations?user=AijTeogAAAAJ&hl=en", label: 'Google Scholar' },
   ];
 
   const scrollToSection = (sectionId: string) => {
@@ -59,15 +59,15 @@ const HeroSection = () => {
             <div className="flex flex-col sm:flex-row flex-wrap gap-4 sm:gap-6 text-sm text-muted-foreground justify-center lg:justify-start">
               <div className="flex items-center gap-2 justify-center lg:justify-start">
                 <Mail className="h-4 w-4" />
-                <span>james@example.com</span>
+                <span>james@eqdam.me</span>
               </div>
               <div className="flex items-center gap-2 justify-center lg:justify-start">
                 <Phone className="h-4 w-4" />
-                <span>+1 (555) 123-4567</span>
+                <span>+46 (762) 34-3539</span>
               </div>
               <div className="flex items-center gap-2 justify-center lg:justify-start">
                 <MapPin className="h-4 w-4" />
-                <span>San Francisco, CA</span>
+                <span>Stockholm, Sweden</span>
               </div>
             </div>
 
