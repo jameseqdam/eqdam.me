@@ -1,14 +1,24 @@
+import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Mail, Phone, MapPin, Linkedin, Globe, Twitter, GraduationCap } from 'lucide-react';
 import headshotImage from '@/assets/james-headshot.jpg';
 
 const HeroSection = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
   const socialLinks = [
     { icon: Linkedin, href: "https://linkedin.com/in/eqdam", label: 'LinkedIn' },
     { icon: Globe, href: "https://www.eqdam.me/", label: 'Website' },
     { icon: Twitter, href: "https://twitter.com/jameseqdam", label: 'Twitter' },
     { icon: GraduationCap, href: "https://scholar.google.com/citations?user=AijTeogAAAAJ&hl=en", label: 'Google Scholar' },
   ];
+useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 100);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -18,9 +28,49 @@ const HeroSection = () => {
   };
 
   return (
-    <section id="home" className="min-h-screen flex items-center bg-background px-4 sm:px-6">
+/*     <section id="home" className="min-h-screen flex items-center bg-background px-4 sm:px-6">
       <div className="portfolio-container text-foreground">
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center"> */
+         <>
+      {/* Minimized Header */}
+      <div className={`fixed top-16 left-0 right-0 z-40 bg-background/95 backdrop-blur-sm border-b border-border shadow-sm transition-all duration-300 ${
+        isScrolled ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0'
+      }`}>
+        <div className="portfolio-container">
+          <div className="flex items-center justify-between py-3">
+            <div className="flex items-center gap-4">
+              <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-border">
+                <img
+                  src={headshotImage}
+                  alt="James Abbott Eqdam"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div>
+                <h2 className="text-lg font-bold text-foreground">James Abbott Eqdam</h2>
+                <p className="text-sm text-muted-foreground">Experience Research & Design</p>
+              </div>
+            </div>
+            <div className="hidden sm:flex gap-2">
+              {socialLinks.slice(0, 2).map((social, index) => (
+                <a
+                  key={index}
+                  href={social.href}
+                  className="flex items-center justify-center w-8 h-8 rounded-full bg-muted hover:bg-accent hover:text-accent-foreground transition-colors"
+                  aria-label={social.label}
+                >
+                  <social.icon className="h-4 w-4" />
+                </a>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Main Hero Section */}
+      <section id="home" className="min-h-screen flex items-center bg-background px-4 sm:px-6">
+        <div className="portfolio-container text-foreground">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Content */}
           <div className="space-y-6 lg:space-y-8 text-center lg:text-left">
             <div className="space-y-3 lg:space-y-4">
@@ -102,6 +152,7 @@ const HeroSection = () => {
         </div>
       </div>
     </section>
+    </>
   );
 };
 
