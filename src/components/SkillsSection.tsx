@@ -83,41 +83,47 @@ const SkillsSection = () => {
           ))}
         </div>
 
-        {/* Proficiency Levels */}
+        {/* Core Competencies */}
         <div className="mt-12 lg:mt-16">
           <h3 className="text-xl sm:text-2xl font-semibold text-center mb-6 lg:mb-8">Core Competencies</h3>
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-6 max-w-4xl mx-auto">
             {[
-              { skill: "UX Research", level: 95 },
-              { skill: "Design Leadership", level: 90 },
-              { skill: "Strategic Planning", level: 90 },
-              { skill: "Team Building", level: 95 }
+              { skill: "UX Research", level: "Expert", icon: "🔍", description: "Deep user insights & methodology" },
+              { skill: "Design Leadership", level: "Expert", icon: "👥", description: "Team guidance & strategic vision" },
+              { skill: "Strategic Planning", level: "Expert", icon: "🎯", description: "Long-term product roadmaps" },
+              { skill: "Team Building", level: "Expert", icon: "🚀", description: "Culture & talent development" }
             ].map((item, index) => (
-              <div key={index} className="text-center">
-                <div className="relative w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 mx-auto mb-3 lg:mb-4">
-                  <svg className="w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 transform -rotate-90" viewBox="0 0 36 36">
-                    <path
-                      className="text-secondary"
-                      stroke="currentColor"
-                      strokeWidth="3"
-                      fill="none"
-                      d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
-                    />
-                    <path
-                      className="text-primary"
-                      stroke="currentColor"
-                      strokeWidth="3"
-                      strokeDasharray={`${item.level}, 100`}
-                      strokeLinecap="round"
-                      fill="none"
-                      d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
-                    />
-                  </svg>
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <span className="text-sm sm:text-lg lg:text-xl font-bold text-primary">{item.level}%</span>
+              <div key={index} className="portfolio-card bg-background p-4 lg:p-6 rounded-lg border border-border hover:border-primary/50 transition-colors">
+                <div className="flex items-start gap-4">
+                  <div className="text-2xl lg:text-3xl flex-shrink-0 mt-1">
+                    {item.icon}
+                  </div>
+                  <div className="flex-1">
+                    <div className="flex items-center justify-between mb-2">
+                      <h4 className="font-semibold text-sm lg:text-base">{item.skill}</h4>
+                      <span className={`px-2 py-1 rounded-full text-xs font-medium ${
+                        item.level === "Expert" 
+                          ? "bg-primary/20 text-primary border border-primary/30" 
+                          : "bg-secondary text-secondary-foreground"
+                      }`}>
+                        {item.level}
+                      </span>
+                    </div>
+                    <p className="text-xs lg:text-sm text-muted-foreground">{item.description}</p>
+                    <div className="flex gap-1 mt-3">
+                      {[...Array(5)].map((_, i) => (
+                        <div
+                          key={i}
+                          className={`h-1.5 w-6 rounded-full ${
+                            i < (item.level === "Expert" ? 5 : 4)
+                              ? "bg-primary"
+                              : "bg-secondary"
+                          }`}
+                        />
+                      ))}
+                    </div>
                   </div>
                 </div>
-                <h4 className="font-semibold text-xs sm:text-sm lg:text-base">{item.skill}</h4>
               </div>
             ))}
           </div>

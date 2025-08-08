@@ -22,6 +22,31 @@ useEffect(() => {
  // Calculate transition progress (0 to 1)
   const progress = Math.min(scrollY / 500, 1);
   const isMinimized = scrollY > 100;
+    
+  // Calculate position transforms for smooth transition
+  const getImageTransform = () => {
+    if (progress === 0) return 'translate(0, 0) scale(1)';
+    
+    // Get the actual positions of source and target elements
+    const containerPadding = window.innerWidth >= 1024 ? 64 : 24; // lg:px-16 vs px-6
+    const imageSize = 320;
+    const minimizedImageSize = 48;
+    
+    // Calculate starting position (left side on desktop, center on mobile)
+    const isDesktop = window.innerWidth >= 1024;
+    const startX = isDesktop ? containerPadding : (window.innerWidth - imageSize) / 2;
+    
+    // Calculate target position (minimized header position)
+    const targetX = containerPadding;
+    const targetY = 80; // Fixed header position (top-16 + py-3)
+    
+    // Calculate the movement needed
+    const moveX = (targetX - startX) * progress;
+    const moveY = -targetY * progress;
+    const scale = 1 - progress * 0.85; // Scale down to match minimized size
+    
+    return `translate(${moveX}px, ${moveY}px) scale(${scale})`;
+  };
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -42,11 +67,13 @@ useEffect(() => {
           <div className="flex items-center justify-between py-3">
             <div className="flex items-center gap-4">
           <div 
-                className="rounded-full overflow-hidden border-2 border-border transition-all duration-500 ease-out"
-                style={{
-                  width: `${48}px`,
-                  height: `${48}px`,
-                }}
+                className={`rounded-full overflow-hidden border-2 border-border transition-all duration-500 ease-out ${
+                  progress > 0.8 ? 'opacity-100' : 'opacity-0'
+                }`}
+                 style={{
+                  width: `48px`,
+                  height: `48px`,
+                 }}
               >                
               <img
                   src={headshotImage}
@@ -82,16 +109,22 @@ useEffect(() => {
           {/* Content */}
             {/* Profile Image */}
             <div 
-              className="flex justify-center lg:justify-start order-first"
-              style={{ opacity: 1 - progress * 0.4 }}
+              className="flex justify-center lg:justify-start order-first relative"
+              style={{ opacity: 1 }}
             >
               <div className="relative">
                 <div 
                   className="rounded-full overflow-hidden border-4 border-border shadow-2xl transition-all duration-500 ease-out"
                   style={{
-                    width: `${320 - progress * 64}px`,
-                    height: `${320 - progress * 64}px`,
-                    transform: `scale(${1 - progress * 0.2})`
+                    width: `320px`,
+                    height: `320px`,
+                    transform: getImageTransform(),
+                    transformOrigin: 'top left',
+                    position: progress > 0.1 ? 'fixed' : 'relative',
+                    top: progress > 0.1 ? 0 : 'auto',
+                    left: progress > 0.1 ? 0 : 'auto',
+                    zIndex: progress > 0.1 ? 45 : 1,
+                    opacity: progress > 0.8 ? 0 : 1
                   }}
                 >
                   <img
@@ -100,8 +133,12 @@ useEffect(() => {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <div className="absolute inset-0 rounded-full bg-gradient-to-t from-black/20 to-transparent"></div>
-              </div>
+                <div 
+                  className="absolute inset-0 rounded-full bg-gradient-to-t from-black/20 to-transparent transition-all duration-500 ease-out"
+                  style={{
+                    opacity: progress > 0.1 ? 0 : 1 }}
+                ></div>
+                  </div>
             </div>
 
             {/* Content */}
