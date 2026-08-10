@@ -13,7 +13,10 @@ interface BentoMetricsProps {
 
 interface MetricCardProps {
   metric: Metric;
+  /** Carries the anchor styling: gradient value, tinted border. */
   featured: boolean;
+  /** Occupies two of the three desktop columns. */
+  wide: boolean;
   index: number;
   visible: boolean;
 }
@@ -29,13 +32,13 @@ const handleSpotlight = (event: MouseEvent<HTMLDivElement>) => {
   card.style.setProperty('--spotlight-y', `${event.clientY - bounds.top}px`);
 };
 
-const MetricCard = ({ metric, featured, index, visible }: MetricCardProps) => {
+const MetricCard = ({ metric, featured, wide, index, visible }: MetricCardProps) => {
   return (
     // Outer wrapper owns the staggered entrance so it never competes with the
     // hover lift transform on the card itself.
     <div
       className={`transition-all duration-700 ease-out motion-reduce:transition-none motion-reduce:opacity-100 motion-reduce:translate-y-0 ${
-        featured ? 'md:col-span-2' : ''
+        wide ? 'col-span-1 md:col-span-2' : 'col-span-1'
       } ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`}
       style={{ transitionDelay: `${index * 80}ms` }}
     >
@@ -81,8 +84,11 @@ const MetricCard = ({ metric, featured, index, visible }: MetricCardProps) => {
 };
 
 /**
- * Impact metrics laid out as a bento grid: one wide feature tile plus
- * single-span secondary tiles, revealed with a staggered scroll-in.
+ * Impact metrics laid out as a bento grid, revealed with a staggered scroll-in.
+ *
+ * The anchor tile only widens on an odd number of metrics: across three desktop
+ * columns a 2-cell anchor turns 5 cards into two complete rows, while an even
+ * count already divides cleanly and stays uniformly single-span.
  */
 const BentoMetrics = ({ metrics, featureIndex = 0 }: BentoMetricsProps) => {
   const gridRef = useRef<HTMLDivElement>(null);
@@ -111,6 +117,8 @@ const BentoMetrics = ({ metrics, featureIndex = 0 }: BentoMetricsProps) => {
 
   if (!metrics?.length) return null;
 
+  const expandAnchor = metrics.length % 2 === 1;
+
   return (
     <div ref={gridRef} className="grid gap-4 lg:gap-6 grid-cols-1 md:grid-cols-3">
       {metrics.map((metric, index) => (
@@ -118,6 +126,7 @@ const BentoMetrics = ({ metrics, featureIndex = 0 }: BentoMetricsProps) => {
           key={`${metric.value}-${metric.label}`}
           metric={metric}
           featured={index === featureIndex}
+          wide={expandAnchor && index === featureIndex}
           index={index}
           visible={visible}
         />
