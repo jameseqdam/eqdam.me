@@ -1,0 +1,10 @@
+{
+  "title": "Rethinking AI Chat UX Design",
+  "slug": "rethinking-ai-chat-ux-design",
+  "publishDate": "December 2025",
+  "readTime": "2 min read",
+  "excerpt": "Four structural flaws keep conversational AI interfaces from delivering on their promise: rigid threading, agent lock-in, unsearchable history and eroded trust after a single hallucination. The answer is a continuous UI with persistent workspaces rather than incrementally smarter chatbots.",
+  "tags": ["Conversational AI", "AI UX", "Interaction Design", "Product Strategy", "Design Critique"],
+  "bodyMarkdown": "**5 Fundamental Design Flaws in Current Conversational UIs**\n\n## 1. The Thread Trap\n\nCurrent AI chats force a new thread for every single topic change. It's rigid, disrupts your flow, and isolates your ideas.\n\n## 2. Tool Lock-In\n\nStart with an image? You're stuck there. Switching to code or writing often requires a fresh start, killing your momentum instantly.\n\n## 3. Context Amnesia\n\nYour history becomes a graveyard of scattered chats. There is no persistent workspace, only fragmented memories you can't easily search.\n\n## 4. The Trust Gap\n\nOne \"hallucination\" breaks the spell. Users are forced to double-check everything, completely negating the efficiency gains of AI.\n\n## Solution: Continuous UI\n\nWe need persistent workspaces, not just smarter chatbots.\n\n---\n\nRead the full article about the UX of AI chat in the link.",
+  "originalUrl": ""
+}

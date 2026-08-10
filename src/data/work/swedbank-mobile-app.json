@@ -1,0 +1,28 @@
+{
+  "title": "Swedbank Mobile App Start Page: A Service Design Concept",
+  "slug": "swedbank-mobile-app",
+  "category": "Product Design",
+  "role": "UX Director, Conceptual Design",
+  "timeline": "2023 - 2024",
+  "overview": "A conceptual design for the Swedbank mobile application start page, deliberately scoped beyond a native screen redesign into a UX and service design proposal. The concept anchors on financial overview and budget management as the organising principle, uses the Swedish monthly income cycle as its temporal structure, and treats relevant advice as a service moment rather than an advertising slot, aligned to Swedbank's stated values of Open, Sharing and Caring.",
+  "problemStatement": "A bank start page is asked to serve two agendas that usually undermine each other. Customers open the app to answer a small set of recurring personal finance questions: what is my position, will I have money left, what should I do next. The bank needs the same surface to introduce products at the right moment. Handled badly, the second agenda degrades the first and the start page becomes a promotional space users learn to scroll past. Persona work framed the target customer as someone who wants to make thoughtful decisions, always have money left, is open to advice, and is a loyal customer holding few banking relationships, which means the start page is not competing for a click, it is maintaining a long relationship across an eight-stage lifecycle from information search, evaluation, ordering services and getting started, through to ongoing use, support, administration and renegotiation.",
+  "solution": "Scoped the brief up front as a new UX and service design rather than a native page concept, then designed against five pillars: financial overview and budget management as the primary content, engaging private customers as the behavioural goal, generating relevant sales pitches as the commercial requirement handled honestly, a timeline as the structural device, and monthly-based income in Sweden as the real-world rhythm the interface should follow. The timeline framing matters because Swedish salaries arrive monthly, which makes the month, not the day or the week, the meaningful unit for budget comprehension. Worked from personas and lifecycle stages into sketches, then into conceptual designs and an interactive prototype. Defined three conditions before further development: engaging and playful daily interaction, which requires desk research and consultation to get everyday charge categorization right; relevant sales pitches developed in consultation with the sales department so the offer reads as the bank helping the customer rather than selling to them; and consistency, achieved by working within Swedbank's existing front-end style guide rather than around it. Set out the validation path explicitly as brainstorming, user flow, focus groups and quantitative survey, high-fidelity prototyping, usability inspection and guerrilla testing, then a beta version with A/B tests.",
+  "methodology": [
+    "Persona development",
+    "Customer lifecycle mapping (eight stages, acquisition through renegotiation)",
+    "Service design and service moment definition",
+    "Brand values alignment (Open, Sharing, Caring)",
+    "Sketching and conceptual design",
+    "Interactive prototyping (InVision)",
+    "Front-end style guide alignment",
+    "Planned validation: focus groups, quantitative survey, guerrilla testing, A/B testing"
+  ],
+  "challenge": "Making commercial content welcome. A start page that carries sales pitches is normally experienced as a tax on the customer's own task, and the persona here is explicitly open to advice but also loyal and financially cautious, which means a misjudged offer costs more than it earns. The design response was to earn the pitch by delivering genuine financial overview first and by timing offers to the monthly income cycle, so the recommendation arrives when it is contextually useful. The second constraint was self-imposed and consequential: choosing to treat the brief as a service design problem meant the concept could not be validated by screen testing alone, which is why the proposal ships with a staged research plan rather than a claim of validation.",
+  "roiMetrics": [
+    { "value": "8", "label": "Customer lifecycle stages mapped, from information search to renegotiation" },
+    { "value": "5", "label": "Service design pillars defining the concept" },
+    { "value": "Monthly", "label": "Income cycle adopted as the structural unit for budget comprehension" },
+    { "value": "6", "label": "Staged validation steps defined before build, from user flow through to A/B testing" },
+    { "value": "82%", "label": "Of users reported constantly searching for a solution, supporting the overview-first premise" }
+  ]
+}

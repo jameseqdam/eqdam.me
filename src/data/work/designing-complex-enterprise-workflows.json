@@ -1,0 +1,31 @@
+{
+  "title": "Designing Complex Enterprise Workflows: The Procurement Intake Platform",
+  "slug": "designing-complex-enterprise-workflows",
+  "category": "Enterprise UX",
+  "role": "Lead Product Designer, End-to-End",
+  "timeline": "2023 - 2025",
+  "overview": "Led end-to-end design of a procurement intake platform covering six workflow stages and 98+ screens, replacing a fragmented set of disconnected tools used by procurement specialists managing millions in annual spend. Chose a non-linear, section-based information architecture over a wizard flow, applied progressive disclosure to dense bid data, and integrated the Navi AI assistant into scenario comparison so users received recommendations and raw evidence side by side. Twelve design iterations resolved the single highest-reported user friction point: scenario navigation.",
+  "problemStatement": "Enterprise procurement teams manage millions in annual spend, but their workflows were scattered across disconnected tools with no single source of truth. Journey mapping across six stages and 20+ decision points showed users losing context between workflow stages, scenario comparison that was inefficient and error-prone, and supplier qualification acting as a critical bottleneck. The measurable symptom was high abandonment at the scenario comparison stage, where users had to weigh 3 to 8 suppliers against 10+ evaluation criteria with no unified view of bids, suppliers and criteria. The goal was explicit: reduce cognitive load and time-to-award for procurement specialists.",
+  "solution": "Ran interviews with procurement specialists and mapped the full end-to-end journey, then used the journey map to prioritise high-impact design areas rather than designing every stage equally. Made a deliberate architectural bet on a section-based structure with persistent stepper navigation instead of a wizard-style linear flow, because procurement specialists constantly jump between bids, scenarios and supplier data and need flexible access rather than a forced sequence. The trade-off, a higher initial learning curve in exchange for significantly reduced back-and-forth, was validated through card sorting and task-flow testing. For information density, applied progressive disclosure: category summary cards for fast scanning, with expandable rows revealing full supplier detail, rank and outlier flags. For decision-making, designed scenario templates for rapid setup and integrated the Navi AI assistant to surface cost savings insights alongside the underlying data. Built the whole system on a Material UI foundation extended with procurement-specific custom components (timeline configurator, section markers, table actions, qualification panels) and design tokens aligned with engineering for consistent handoff. Twelve iterations ran in three phases with bi-weekly stakeholder feedback loops: v1 to v4 on information architecture and navigation model, v5 to v8 on interaction patterns including modals versus inline editing, v9 to v12 on data density, edge cases and AI integration.",
+  "methodology": [
+    "Stakeholder and procurement SME interviews",
+    "End-to-end journey mapping",
+    "Card sorting",
+    "Task-flow testing",
+    "Low-fidelity and high-fidelity prototyping",
+    "Usability testing",
+    "Progressive disclosure design",
+    "Design token and component system architecture",
+    "Bi-weekly iterative stakeholder feedback loops",
+    "Variant-driven design documentation"
+  ],
+  "challenge": "The central challenge was resisting the wizard. Linear flows are easier to design, easier to build and easier to test, but they encode an assumption that procurement is sequential, which the research showed it is not. Committing to non-linear architecture meant accepting a worse first-run experience in exchange for a materially better working experience, then having to defend that trade-off with evidence to three engineering teams and a stakeholder group across product, engineering and procurement. A second pivot came late: usability testing showed users consistently missed modal-based contracts, forcing a move to inline drill-down after the interaction model was already partly built.",
+  "roiMetrics": [
+    { "value": "98+", "label": "Screens covered by a reusable enterprise component system" },
+    { "value": "6", "label": "Workflow stages designed as one complete system" },
+    { "value": "12", "label": "Design iterations validated through usability testing and stakeholder feedback" },
+    { "value": "#1", "label": "User-reported pain point eliminated: scenario navigation" },
+    { "value": "20+", "label": "Decision points mapped across the procurement journey" },
+    { "value": "3", "label": "Engineering teams aligned, with reduced rework at handoff" }
+  ]
+}

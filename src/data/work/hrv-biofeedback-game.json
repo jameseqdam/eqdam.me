@@ -1,0 +1,32 @@
+{
+  "title": "Gamifying Clinical Breathing Training: A Heart Rate Variability Biofeedback Game",
+  "slug": "hrv-biofeedback-game",
+  "category": "Health Tech",
+  "role": "UX Researcher and Co-Designer",
+  "timeline": "2014 - 2016",
+  "overview": "Designed and evaluated an Android flight game that turns resonant frequency breathing training into a playable experience, then measured what gamification actually costs in clinical performance terms. Three game modes with different multitasking demands were tested with 11 participants aged 40 to 67 in a controlled setting. The study produced a reusable framework for gamified HRV biofeedback research and a counter-intuitive finding: the mode that motivated players most was not the mode in which they breathed best. Published in IEEE Access.",
+  "problemStatement": "Reduced heart rate variability is an indicator of a malfunctioning autonomic nervous system, and can be either the cause or the consequence of disease. Resonant frequency breathing is a viable non-invasive intervention for rebalancing the autonomic nervous system and raising HRV, but the exercises are widely regarded as boring and monotonous, which undermines adherence. Gamification is a recognised route to higher motivation and engagement, yet there was limited documented knowledge about how to design a game for breathing exercises specifically, and in particular no evidence about how additional interactive elements affect the main course of training. Adding fun could plausibly improve adherence while degrading the clinical activity it exists to support.",
+  "solution": "Ran a full user-centred design process rather than jumping to implementation. Started with context analysis of existing applications on the Google Play Store, generated five candidate game concepts, and selected between them using A/B testing and a concept survey of 20 participants with equal gender distribution. Elaborated the chosen concept into mockups, then ran formative evaluation against the GameFlow model, using unstructured interviews with 10 different participants and A/B icon tests measuring forward and backward association against a target recognition rate above 66 percent. Developed the game mechanics, GUI and biofeedback framework, then built three game modes differing in the degree of multitasking they demand. Summative evaluation combined a pilot test with a structured usability protocol: pre-test interview, background questionnaire, introduction, in-game task performance, SUS and GEQ questionnaires, and a post-test interview. The results confirmed the potential of video games for motivating HRV biofeedback training, but separated motivation from performance: the highest training performance on first attempt came from pure visualisation rather than any multitasking mode, while players were more motivated by the more challenging game and more interested in long-term engagement with it. The conclusion was that multitasking has considerable influence on HRV biofeedback and should be deployed with an adaptive challenge level.",
+  "methodology": [
+    "Context analysis of the existing application market",
+    "Game principle mockups and concept selection survey",
+    "A/B testing (game concepts and icons)",
+    "GameFlow model formative evaluation",
+    "Unstructured interviews",
+    "Icon recognition testing (forward and backward association)",
+    "Pilot testing",
+    "Summative usability testing",
+    "System Usability Scale (SUS)",
+    "Game Experience Questionnaire (GEQ)",
+    "Pre-test and post-test interviews"
+  ],
+  "challenge": "The design goal and the clinical goal were in direct tension. Every interactive element added to raise engagement competes for the attention that paced breathing requires, so gamification can improve adherence while simultaneously degrading training quality. Isolating that effect required building three modes that varied only in multitasking demand and measuring performance and satisfaction separately, so that motivation gains and clinical losses could be attributed rather than confounded. The finding that these two curves diverge is what drove the recommendation for adaptive difficulty instead of a single fixed challenge level.",
+  "roiMetrics": [
+    { "value": "11", "label": "Participants aged 40 to 67 in the controlled summative evaluation" },
+    { "value": "3", "label": "Game modes tested, isolating the effect of multitasking on breathing performance" },
+    { "value": "20", "label": "Participants in the concept selection survey, with equal gender distribution" },
+    { "value": ">66%", "label": "Icon recognition rate target validated through A/B association testing" },
+    { "value": "5", "label": "Candidate game concepts generated and narrowed through context analysis" },
+    { "value": "1", "label": "Reusable framework published for gamified HRV biofeedback research (IEEE Access)" }
+  ]
+}

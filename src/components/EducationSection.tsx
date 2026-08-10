@@ -1,5 +1,6 @@
 import { GraduationCap, BookOpen, Award, Calendar } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import SectionCta from './SectionCta';
 
 const EducationSection = () => {
   const education = [
@@ -175,6 +176,8 @@ const EducationSection = () => {
             ))}
           </div>
         </div>
+
+        <SectionCta to="/research">Browse Academic Publications</SectionCta>
       </div>
     </section>
   );

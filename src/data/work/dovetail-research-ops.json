@@ -1,0 +1,32 @@
+{
+  "title": "Building a Research Operations Function: From Zero to a Governed Qualitative Data Repository",
+  "slug": "dovetail-research-ops",
+  "category": "Research Ops",
+  "role": "Director of User Experience Research and Design",
+  "timeline": "2020 - 2026",
+  "overview": "Founded and scaled the UX Research function at Coupa from a single practitioner to a standing discipline serving 20+ product lines, then solved its structural bottleneck by securing budget for and deploying Dovetail as the centralized research repository. Designed the workspace taxonomy, migrated legacy projects out of Google Drive, and paired the repository with a UEQ and UX KPI framework so that qualitative insight became searchable, comparable across products, and quantitatively benchmarked rather than trapped in individual researchers' documents.",
+  "problemStatement": "When Coupa's UX organisation consisted of product managers and designers with no research function, decisions were made on assumption rather than evidence: customers were treated as interchangeable with end users, and UX validation happened after build rather than before it. As research capacity grew, a second problem replaced the first. Studies were run, but findings lived in Google Drive as unstructured documents owned by whoever ran the study. There was no shared taxonomy, no way to query across projects, no mechanism to transfer a project between researchers, and no quantitative baseline against which to claim that any product had actually improved. Insight was being produced faster than the organisation could reuse it.",
+  "solution": "Built the function in stages. First, established the research practice itself: initiated the executive conversation for a systematic research approach, ran the first UX survey at Coupa on the homepage redesign, stood up a dedicated Clarity research site with a formal Research Intake Form for the PM department, and secured UserTesting licences as the standard evaluative platform. Next, scaled the team through recruitment, onboarding and mentorship while shifting research ownership from product managers onto trained researchers and designers. Finally, addressed the data architecture problem directly: secured budget for Dovetail, designed the initial workspace set-up and a standardized Tags and Fields taxonomy document to guarantee consistent cross-project analysis, planned and ran internal training and demo sessions, and migrated existing projects off Google Drive. Layered on top of the repository, defined UX KPIs and a UEQ programme to establish annual or bi-annual benchmarks for feature performance, plus standardized share-out templates, a research project tracker, and formalized socialization sessions with Engineering, Customer Value Managers and Sales. Recruitment was industrialized in parallel using Salesforce, Metabase and Pendo filters to target specific user profiles, supplemented by large-scale email campaigns and UserTesting demographic screening.",
+  "methodology": [
+    "Dovetail repository architecture and taxonomy design",
+    "Standardized Tags and Fields governance document",
+    "Research intake process and project tracker",
+    "UEQ (User Experience Questionnaire) benchmarking programme",
+    "UX KPI definition and tracking",
+    "Mixed-methods research (qualitative interviews plus pulled quantitative data)",
+    "Jobs to be Done (JTBD) workshops",
+    "Card sorting and task-based usability testing",
+    "Participant recruitment operations (Salesforce, Metabase, Pendo, UserTesting)",
+    "Customer Advisory Board (CAB) research sessions",
+    "Standardized share-out templates and stakeholder socialization"
+  ],
+  "challenge": "Scaling qualitative research is an information architecture problem disguised as a headcount problem. The hard constraint was that the team's physical size could not grow at the rate demand did, so throughput had to come from infrastructure instead. Securing budget for a research CMS required making an ROI case for a category of tooling the organisation had never funded, and the repository only produced value if the taxonomy was designed up front. Without a standardized tags and fields structure, a shared repository is just a shared folder: it reduces bias and enables cross-product analysis only when every researcher codes data the same way.",
+  "roiMetrics": [
+    { "value": "6 to 40+", "label": "Designers and researchers as the UX organisation scaled" },
+    { "value": "53", "label": "Research initiatives delivered in a single year across AI, supplier, cross-product and platform areas" },
+    { "value": "61", "label": "Studies completed on UserTesting.com in one review period" },
+    { "value": "275", "label": "Research participants engaged across those studies" },
+    { "value": "25%", "label": "Target improvement in research operational efficiency" },
+    { "value": "20+", "label": "Concurrent product lines supported by the research function" }
+  ]
+}

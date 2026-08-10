@@ -1,0 +1,31 @@
+{
+  "title": "Improving Coupa Homepage and Platform Navigation",
+  "slug": "coupa-homepage-navigation",
+  "category": "Enterprise UX",
+  "role": "Principal UX Designer and Research Lead",
+  "timeline": "2020 - 2022",
+  "overview": "Designed and ran the first formal UX research programme at Coupa, a two-part mixed-methods study covering the platform homepage and cross-application navigation. The homepage survey reached 263 participants from a 1,004-person invitation; the navigation study combined a follow-up survey of 76 participants with guerrilla usability testing of 14 non-admin users. The work produced a ranked feature hierarchy for the homepage, killed the proposed App Switcher pattern, and validated the Auto Switcher as the navigation direction.",
+  "problemStatement": "The homepage is the start point for every Coupa user, yet there was no evidence about what users actually needed from it. Open questions included what the minimum viable sections were, whether non-procurement users differed from others, whether a mobile to-do pattern would translate to desktop, and whether configuration per user or per customer was required. A second, related problem concerned navigation across a multi-application suite: how users perceived where they were, how multi-app users understood switching between applications when application names were not visible, and how many applications a user genuinely worked in concurrently, independent of what their licence permitted.",
+  "solution": "Ran the homepage study first. Recruited through the Coupa community with opt-in for UX testing, built a survey in Google Forms covering demographics, general platform usage, homepage-specific questions, between-subject comparisons (non-procurement versus others, admin versus others) and within-subject questions with randomised order to counterbalance sequence effects, then analysed with CSO, Excel and qualitative coding of open-ended responses. Results produced a ranked hierarchy showing Navigation as the top-priority feature for both admins and non-admins, followed by approvals and progress visibility, and five clear qualitative themes: demand for customizable content and better screen real estate, a need to guide users through common workflows, a request to stop redirecting users to the homepage for approvals, rejection of the new Announcements banner, and a set of specific feature defects around the approval button, To Do detail and activity status. The navigation study followed as a four-stage mixed-method programme: planning and method selection, a one-minute survey capturing frequency of use, defining and prototyping options through desk research with two other designers and sketch-based iteration with PM and development, then guerrilla usability testing under recording consent and NDA using between-subject questions (multi-app users versus others) and within-subject questions. Recommendations were unambiguous: adopt the Auto Switcher, reject the App Switcher, design for wide screens, allow tab pinning, and do not remove the Home icon.",
+  "methodology": [
+    "Mixed-methods research design",
+    "Large-scale quantitative survey (Google Forms)",
+    "Between-subject and within-subject experimental design",
+    "Randomised question ordering to counterbalance sequence effects",
+    "Qualitative coding of open-ended responses",
+    "Guerrilla usability testing under consent and NDA",
+    "Desk research and collaborative sketching",
+    "Prototyping and iteration with PM and engineering",
+    "Community-based recruitment and snowball sampling",
+    "Pendo behavioural data"
+  ],
+  "challenge": "This was the first UX survey ever run at Coupa, so the challenge was as much organisational as methodological: there was no established process, no research tooling, no recruitment channel and no precedent for how findings would be received. Everything had to be built alongside the study itself, from understanding the process and selecting methods to establishing means of communication with customers. Recruitment friction was real (roughly 100 invalid email addresses and around 20 participants who could not use Google Forms), and the finding that customers are not end users had to be demonstrated with data before it could change how features were prioritised.",
+  "roiMetrics": [
+    { "value": "263", "label": "Survey participants on the homepage study, from 1,004 invited community members" },
+    { "value": "76", "label": "Participants in the follow-up navigation survey" },
+    { "value": "14", "label": "Non-admin users in guerrilla usability testing of navigation options" },
+    { "value": "70%", "label": "Of participants switch between applications at least three times a day" },
+    { "value": "184", "label": "Users who opted in to future user research, seeding the participant panel" },
+    { "value": "1st", "label": "Formal UX research study conducted at Coupa" }
+  ]
+}

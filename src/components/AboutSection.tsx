@@ -1,3 +1,5 @@
+import SectionCta from './SectionCta';
+
 const AboutSection = () => {
   return (
     <section id="about" className="py-12 sm:py-16 lg:py-20 bg-muted/30 px-4 sm:px-6">
@@ -82,6 +84,8 @@ const AboutSection = () => {
             </div>
           </div>
         </div>
+
+        <SectionCta to="/about">Read Full Philosophy</SectionCta>
       </div>
     </section>
   );

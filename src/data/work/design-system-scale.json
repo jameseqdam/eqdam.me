@@ -1,0 +1,31 @@
+{
+  "title": "Design Systems at Scale: First Steps Towards a Unified Platform",
+  "slug": "design-system-scale",
+  "category": "Enterprise UX",
+  "role": "Principal UX Designer and Design Systems Lead",
+  "timeline": "2018 - 2024",
+  "overview": "Built the case for, and then the foundations of, design systems across two enterprise product portfolios. Started with a full interface inventory exposing the true cost of inconsistency (62 shades of grey, 16 button types, 5 icon libraries), converted that evidence into organisational buy-in, and rebuilt the underlying tooling and process. At Coupa this produced a shared icon and component pipeline that cut a multi-day process to under an hour, Sketch and later Figma libraries that made mockup production 50 to 70 percent faster, and a migration path that pulled products outside the core codebase onto the shared library.",
+  "problemStatement": "Products that were sold as a single platform were not built as one. Each had its own colours, type styles, icon families and component patterns, and there was no modular frontend architecture to categorise them against. The inconsistency was not merely aesthetic: two similar icons were assigned to different actions, two different icons to the same action, and adding a single new icon required a multi-day manual round trip from artistic design through to codebase. Products outside the core codebase received no updates at all when shared elements changed. For the organisation this meant slower delivery and duplicated engineering hours; for users it meant a platform that behaved like several unrelated applications.",
+  "solution": "Ran the inventory first and the system second. Conducted desk research, ethnographic observation of the diversity of users and their needs, surveys, focus groups and 8 interviews across product managers, team leads and developers, then built UI, pattern, colour, typography, icon and spacing inventories by walking the interface and traversing the CSS and code files. Consolidated the findings into an impact map and used the raw numbers, translated into hours multiplied by average salary, to secure a clear yes from both the team and stakeholders. From there established rules and principles (build from scratch versus adopt an existing product as foundation, distribution method, system KPIs), assembled a multidisciplinary design systems team with defined roles, decision-making process and sprint cadence, and built elements in sequence: colour palette validated against WCAG contrast guidelines, typographic scale, icon library, then the first patterns with full documentation and usage guidelines. Every part of the system was delivered into the tools designers actually used. At Coupa this fed directly into Clarity, the Coupa Design System: took over the entire icon library update process end to end, automated it so any team member could add an icon to the platform in under an hour, migrated other products' legacy CSS and SVG files into the core codebase so they received updates instantly, built the complete CSO component library in Figma, and onboarded additional designers to own the icon pipeline. In parallel, evaluated navigation architecture for a multi-product platform (product switcher, tabbed menus, rail navigation, hover/slide-out tabs) and landed on a combination of product switcher and tabbed menus for global navigation.",
+  "methodology": [
+    "Interface inventory (UI, patterns, colour, typography, icons, spacing)",
+    "Ethnographic and desk research",
+    "Stakeholder interviews (8, across PMs, team leads and developers)",
+    "Surveys and focus groups",
+    "Impact mapping",
+    "WCAG contrast validation",
+    "Design token and component library architecture (Sketch, Figma)",
+    "Version control for design files (Kactus)",
+    "Sprint-based system governance and retrospectives",
+    "Navigation architecture evaluation"
+  ],
+  "challenge": "Design systems fail at the buy-in stage, not the craft stage. The challenge was converting a designer-legible problem (inconsistency) into a finance-legible one, by quantifying inventory findings as development hours and cost rather than as visual debt, and then sustaining the system after approval. That meant establishing governance that survived contribution from every designer and developer, and solving distribution: a system only counts once other product teams outside the core codebase receive updates automatically rather than reimplementing them.",
+  "roiMetrics": [
+    { "value": "50-70%", "label": "Faster mockup creation through shared component libraries" },
+    { "value": "Days to <1 hour", "label": "End-to-end icon addition process, from artistic design to codebase" },
+    { "value": "62", "label": "Shades of grey found in the interface inventory, evidencing the cost of inconsistency" },
+    { "value": "16", "label": "Distinct button types consolidated into a single system" },
+    { "value": "5", "label": "Separate icon libraries unified into one shared library" },
+    { "value": "8", "label": "Cross-functional interviews used to build organisational buy-in" }
+  ]
+}

@@ -1,4 +1,5 @@
 import { Calendar, MapPin, Building } from 'lucide-react';
+import SectionCta from './SectionCta';
 
 const ExperienceSection = () => {
   const experiences = [
@@ -135,6 +136,8 @@ const ExperienceSection = () => {
             </div>
           ))}
         </div>
+
+        <SectionCta to="/experience">View Full Leadership Timeline</SectionCta>
       </div>
     </section>
   );

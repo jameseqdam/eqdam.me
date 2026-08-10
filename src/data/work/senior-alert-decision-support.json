@@ -1,0 +1,29 @@
+{
+  "title": "Senior Alert: Risk Assessment and Care Planning at the Point of Care",
+  "slug": "senior-alert-decision-support",
+  "category": "Health Tech",
+  "role": "UX Lead",
+  "timeline": "2017 - 2018",
+  "overview": "Designed a decision support web application built to integrate into multiple electronic medical record systems, supporting professional caregivers performing adult patient risk assessment and preventive care planning at the point of care. Senior Alert is one of Sweden's approximately 100 national quality registers, covering five preventive risk areas for elderly individuals. The design was developed through sustained co-design with clinicians: workshops, interviews with nurses, specialist physicians, process managers and patients, and weekly iterative online feedback.",
+  "problemStatement": "Senior Alert exists to identify elderly individuals at risk of falling, developing pressure sores, losing weight, developing oral health issues or experiencing bladder dysfunction, and its preventive working method increases the possibility of the best possible care regardless of who provides it. But the register only functions if clinicians actually complete assessments during care, and the assessment sat outside the systems clinicians worked in. Asking caregivers to leave the electronic medical record to enter a separate tool at the point of care puts documentation in direct competition with patient contact, which is a reliable way to lose data. The objective was therefore not only to design a usable assessment interface but to deliver one that could be embedded inside different EMR systems rather than standing alongside them.",
+  "solution": "Ran the project as a four-stage process (Planning, Defining, Create concepts, Development) with clinicians embedded throughout rather than consulted at review points. Planning and defining combined desk research, developing an understanding of the concept and the current clinical workflow, assessment of platform capabilities, and a defined point of view. Collaboration with users was deliberately broad and role-differentiated: one focus group at a healthcare centre, three on-site workshops with a group of clinicians, four interviews with primary care nurses, two interviews with specialist physicians, two interviews with the process manager at the hospital, and one interview with two patients, supported by weekly iterative online feedback so designs never drifted far from clinical reality. The focus group output was captured as a service blueprint mapping actions, frontstage of interaction, backstage of interaction and support layers, which exposed where the assessment actually sat in the care process and what had to happen invisibly behind it. Conceptualization ran as wireframe iterations with continuous feedback on sketches, moving into development as a mockup of the web application built in direct collaboration with the EHR company alongside the graphic design work.",
+  "methodology": [
+    "Desk research and clinical workflow analysis",
+    "Focus groups with healthcare centre staff",
+    "On-site co-design workshops with clinicians",
+    "Semi-structured interviews (nurses, specialist physicians, process managers, patients)",
+    "Service blueprinting (actions, frontstage, backstage, support)",
+    "Point of view definition",
+    "Iterative wireframing with continuous feedback",
+    "Weekly online design iteration with users",
+    "EHR integration design and vendor collaboration"
+  ],
+  "challenge": "Designing something that has to live inside someone else's system. The application had to be integrated into different EMR systems, which meant the design could not assume control of its own container: navigation, context and available data were all partly determined by the host record system. That constraint had to be reconciled with a clinical audience spanning primary care nurses, specialist physicians and hospital process managers, each with a different relationship to the same assessment, and with patients whose experience of the preventive process is downstream of it. The service blueprint was the reconciliation mechanism, because it made the backstage and support layers visible alongside the clinician-facing flow.",
+  "roiMetrics": [
+    { "value": "5", "label": "Preventive risk areas covered: falls, pressure sores, weight loss, oral health, bladder dysfunction" },
+    { "value": "~100", "label": "Swedish national quality registers, of which Senior Alert is one" },
+    { "value": "13", "label": "Co-design engagements: 1 focus group, 3 workshops, and 9 stakeholder and patient interviews" },
+    { "value": "Weekly", "label": "Iterative online feedback cycle with clinicians throughout design" },
+    { "value": "Multi-EMR", "label": "Designed for integration across different electronic medical record systems" }
+  ]
+}

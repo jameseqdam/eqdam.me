@@ -1,0 +1,27 @@
+{
+  "title": "One-Time Setup for Suite Synergy Integration and CSO API",
+  "slug": "suite-synergy-integration",
+  "category": "Enterprise UX",
+  "role": "Principal UX Designer, Sourcing and CSO",
+  "timeline": "2019 - 2021",
+  "overview": "Redesigned the integration setup connecting Coupa Core and Coupa Sourcing Optimization (CSO) from a manual, multi-step process into a one-time setup. Introduced service blueprinting to the product organisation to map the full system across end user, professional services, support, and both frontend and backend layers of each product, collapsing more than 40 separate configuration tasks into a single action and removing the requirement for a developer to manually enable each customer's API access.",
+  "problemStatement": "Features connecting Coupa Core and CSO required a large number of manual steps to configure, including hand-created endpoints on the CSO side. Separately, enabling a customer to use the CSO API required a member of the development team to perform several manual steps for every single customer who expressed interest. The cost fell in three places at once: Services and Support time consumed by manually enabling customer integrations, development time consumed per instance for API enablement, and a suppressed number of joint Core plus CSO customers actually running integrated instances because the setup burden was high enough to deter adoption.",
+  "solution": "Began by identifying every stakeholder in the system, not just the end user: customers, users, Professional Services, developers and Operations. Ran desk research to understand the actual mechanics (settings in CSO, endpoint authentication, endpoints, labels, commands and process documentation) and interviewed Professional Services while walking through the live process with them. Introduced the service blueprint as the core artefact, mapping the process diagram against six parallel lanes: end user, PS/Ops/Support actions, CSO frontend, CSO team and backend, Core frontend, and Core backend. This made visible where manual effort was actually being absorbed and by whom, and let product management and UX see the effect of proposed changes against current designs before anything was built. From there ran sketch iterations, then wireframe iterations with continuous feedback, through to development. Service blueprinting became the standard functional design artefact for integration work across CSO and the core platform, and the same technique was later applied to suite synergy between supply chain and CSO.",
+  "methodology": [
+    "Stakeholder mapping",
+    "Desk research on platform capabilities and endpoint architecture",
+    "Process interviews and walkthroughs with Professional Services",
+    "Process diagramming",
+    "Service blueprinting (frontstage, backstage and support layers)",
+    "Sketch and wireframe iteration",
+    "Continuous cross-functional feedback loops",
+    "Competitor analysis"
+  ],
+  "challenge": "Integration setup is invisible work: the cost is absorbed by Professional Services and developers rather than surfacing as an end-user complaint, so it does not appear in normal feedback channels. The challenge was making that hidden operational cost legible to product management, which required introducing a design artefact the organisation had not used before. Service blueprinting was the mechanism, because it shows backstage and support actions alongside the customer-facing flow and therefore exposes exactly where the manual burden sits and what a design change would actually eliminate.",
+  "roiMetrics": [
+    { "value": "40+", "label": "Separate configuration tasks collapsed into a single action" },
+    { "value": "6", "label": "System layers mapped in the service blueprint, from end user to Core backend" },
+    { "value": "0", "label": "Developer steps required per customer for API enablement after redesign" },
+    { "value": "1", "label": "One-time setup replacing per-customer manual endpoint creation" }
+  ]
+}

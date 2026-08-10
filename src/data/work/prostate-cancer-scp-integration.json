@@ -1,0 +1,30 @@
+{
+  "title": "Standardized Prostate Cancer Care: Integrating Decision Support with the Electronic Health Record",
+  "slug": "prostate-cancer-scp-integration",
+  "category": "Health Tech",
+  "role": "UX Lead",
+  "timeline": "2017 - 2018",
+  "overview": "Designed a decision support system integrated with the electronic health record to help primary care physicians refer patients into Sweden's standardized care process (SCP) for prostate cancer. The objective was concrete and clinical: ensure SCP referrals contain adequate information, so that more people receive prostate cancer care on time. Developed through five clinician workshops and a broad interview programme spanning primary care physicians, specialists, process managers and patients, plus field studies in a health centre and an emergency room.",
+  "problemStatement": "Timely prostate cancer care depends on primary care physicians referring patients into the standardized care process correctly and completely. When a referral lacks adequate information it is returned, queried or delayed, and the delay lands on the patient at exactly the point where time matters most. The referral decision happens inside a general consultation, under time pressure, in a system built for general practice rather than for one cancer pathway. The design problem was therefore to support a specialist decision inside a generalist workflow, without adding steps to a consultation that has none to spare, and to do so within an existing electronic health record rather than as a separate tool.",
+  "solution": "Structured the work across Planning, Defining, Create concepts and Development, with a workshop series carrying the design forward in visible increments. Collaboration with users spanned five workshops with the clinician group, five interviews with primary care physicians, three interviews with specialist physicians, two interviews with the hospital process manager, one interview with four patients, two field studies (in a health centre and an emergency room), and one focus group at a health centre. The first workshop produced the foundational artefacts: a service blueprint, a flowchart of the referral process, and design guidelines to constrain subsequent work. The second workshop worked in paper sketches, the third produced the first wireframes, and the fourth and fifth ran wireframe iterations with continuous feedback on sketches, moving into a mockup of the web application developed alongside the EHR company with the graphic design. Development surfaced its own design lessons, principally the compromise between structure and flexibility: a referral form rigid enough to guarantee adequate information but flexible enough to survive real consultations. Working through that trade-off with the EHR vendor required building mutual understanding of each other's perspective, which became an explicit output of the project rather than a byproduct.",
+  "methodology": [
+    "Co-design workshops (five-part progressive series)",
+    "Semi-structured interviews (primary care physicians, specialists, process managers, patients)",
+    "Field studies in health centre and emergency room settings",
+    "Focus groups",
+    "Service blueprinting",
+    "Process flowcharting",
+    "Design guideline definition",
+    "Paper sketching and wireframe iteration",
+    "Functional prototyping",
+    "EHR integration design and vendor collaboration"
+  ],
+  "challenge": "The core tension was structure versus flexibility. Guaranteeing that referrals contain adequate information pushes toward a rigid, mandatory-field form; fitting into a live primary care consultation pushes toward the opposite. Resolving it meant negotiating not just with clinicians but with the EHR company, whose platform constraints shaped what was buildable, and accepting that the design had to work equally in a scheduled health centre appointment and an emergency room encounter, both of which were observed directly through field study rather than inferred.",
+  "roiMetrics": [
+    { "value": "5", "label": "Progressive co-design workshops with clinicians, blueprint through to functional prototype" },
+    { "value": "11", "label": "Interviews across primary care physicians, specialists, process managers and patients" },
+    { "value": "2", "label": "Field studies conducted in situ: health centre and emergency room" },
+    { "value": "1", "label": "Functional prototype delivered, integrated with the electronic health record" },
+    { "value": "SCP", "label": "Referrals designed to carry adequate information into the standardized care process" }
+  ]
+}

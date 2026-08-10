@@ -6,6 +6,8 @@ import ProjectsSection from './ProjectsSection';
 import SkillsSection from './SkillsSection.tsx';
 import EducationSection from './EducationSection.tsx';
 import ContactSection from './ContactSection.tsx';
+import ThoughtLeadershipCta from './ThoughtLeadershipCta.tsx';
+import SiteFooter from './SiteFooter.tsx';
 
 const Portfolio = () => {
   return (
@@ -18,20 +20,12 @@ const Portfolio = () => {
         <ProjectsSection />
         <SkillsSection />
         <EducationSection />
+        <ThoughtLeadershipCta />
         <ContactSection />
       </main>
       
       {/* Footer */}
-      <footer className="py-6 lg:py-8 bg-background border-t border-border px-4 sm:px-6">
-        <div className="portfolio-container text-center">
-          <p className="text-sm sm:text-base text-muted-foreground">
-            © 2024 James Abbott Eqdam. All rights reserved.
-          </p>
-          <p className="text-xs sm:text-sm text-muted-foreground mt-2">
-            Designed with passion for user experience and attention to detail.
-          </p>
-        </div>
-      </footer>
+      <SiteFooter />
     </div>
   );
 };

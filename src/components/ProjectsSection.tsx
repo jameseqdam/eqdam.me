@@ -1,5 +1,6 @@
 import { Button } from '@/components/ui/button';
 import { ExternalLink, Users, Target, TrendingUp } from 'lucide-react';
+import SectionCta from './SectionCta';
 
 const ProjectsSection = () => {
   const projects = [
@@ -173,6 +174,8 @@ const ProjectsSection = () => {
             ))}
           </div>
         </div>
+
+        <SectionCta to="/work">Explore All 12 Case Studies</SectionCta>
       </div>
     </section>
   );

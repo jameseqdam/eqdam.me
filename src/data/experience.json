@@ -1,0 +1,176 @@
+{
+  "summary": "Leadership built on a simple premise: research and design are only valuable when they change what gets built. Across seven years at Coupa Software, the UX organisation grew from six industrial designers with no shared process or tooling into a discipline of 40+ designers and researchers serving 20+ concurrent product lines inside a 5,000-person business. That growth was engineered rather than inherited. It came from founding the UX Research function single-handedly and then scaling it, from establishing the infrastructure that makes qualitative insight reusable (a governed Dovetail repository, standardized taxonomy, research intake, UEQ and UX KPI benchmarks), and from a long-term vision that deliberately staged research maturity from Micro (quick and dirty for important projects) through Meso (a process anyone can use to request research) and Macro (feature research shaping product roadmaps) to Mega (strategic UX research across all Coupa products, with demonstrated ROI). The underlying philosophy is drawn from a decade of academic research practice at Karolinska Institutet: outcome over output, flexibility over structure, moving teams from doubt to certainty with evidence, and making technology invisible. A software engineering background allows the same person to sit credibly with data scientists, engineers and product managers during early discovery, before anyone knows what to build.",
+  "keyMilestones": [
+    {
+      "milestone": "Scaled UX from 6 to 40+ designers and researchers",
+      "detail": "Grew the Coupa UX organisation from six industrial designers with no UX process and no single toolset into a 40+ person design and research discipline with design systems, design reviews, component libraries, guides, internal sites, data utilisation, established channels into Professional Services and Documentation, and formal Design and Research Ops.",
+      "year": "2019 - 2025"
+    },
+    {
+      "milestone": "Founded the Coupa UX Research function",
+      "detail": "Initiated the executive conversation for a systematic research approach in 2020, ran the first UX survey at Coupa on the homepage redesign, then built the function from nothing: methodology, tooling, education, recruitment and hands-on studies, first single-handedly and then by hiring and mentoring researchers.",
+      "year": "2020 - 2022"
+    },
+    {
+      "milestone": "Promoted to Director of User Experience Research and Design",
+      "detail": "Promoted from Principal, User Experience Design after four years spanning CSO, Sourcing, Platform, Community Insights and Treasury, and after founding the research team that now supports the whole UX and PM organisation.",
+      "year": "2022"
+    },
+    {
+      "milestone": "Established Dovetail as the centralized qualitative research repository",
+      "detail": "Secured budget, designed the workspace set-up and a standardized Tags and Fields taxonomy for consistent cross-project analysis, ran internal training and demo sessions, and migrated projects out of Google Drive. Recognised by leadership as a scalable research infrastructure now available company-wide.",
+      "year": "2025"
+    },
+    {
+      "milestone": "Launched the UEQ and UX KPI measurement framework",
+      "detail": "Defined and launched the User Experience Questionnaire programme and UX KPI framework, introducing quantifiable benchmarks for feature performance and workflow quality that are used to measure product quality and inform future product decisions.",
+      "year": "2025"
+    },
+    {
+      "milestone": "Directed research for the Navi AI Agent and Coupa's AI portfolio",
+      "detail": "Segmented Navi research into two time-boxed workstreams (Opportunities and Components) to protect product scope, identified core AI pain points including credit confusion and product disconnect, and extended the model to Pay AI where 11 customer interviews defined low-risk batch selection criteria and enabled an Early Adopter Program for autonomous invoice selection.",
+      "year": "2024 - 2026"
+    },
+    {
+      "milestone": "Introduced service blueprinting and user journey mapping as standard practice",
+      "detail": "Brought service blueprinting into functional design to show the effect of proposed features against current designs, most visibly on the suite synergy integration that collapsed 40+ manual configuration tasks into a single action, then established User Journey as the standard functional design artefact across CSO, Sourcing and Platform.",
+      "year": "2019 - 2021"
+    },
+    {
+      "milestone": "Rebuilt the design system and component pipeline",
+      "detail": "Took over the end-to-end icon library process and reduced it from a multi-day manual round trip to under an hour, built Sketch and later Figma component libraries that made mockup creation 50 to 70 percent faster, migrated non-core products onto the shared library so they receive updates instantly, and contributed directly to Clarity, the Coupa Design System.",
+      "year": "2019 - 2022"
+    },
+    {
+      "milestone": "Transitioned to dedicated research leadership",
+      "detail": "With the support of a new UX VP, handed over design responsibilities for Sourcing and CSO to focus fully on research leadership, which released capacity to hire an additional researcher and to build sustainable research plans reaching beyond individual features into future product roadmaps.",
+      "year": "2024"
+    },
+    {
+      "milestone": "Completed PhD in Health Informatics at Karolinska Institutet",
+      "detail": "Four-study doctoral programme on how persons with mild acquired cognitive impairment use and experience ICT, the first research of its kind for this population, producing publications in JMIR, PLOS ONE and IEEE Access and establishing the mixed-methods rigour later applied to enterprise software.",
+      "year": "2016"
+    }
+  ],
+  "timeline": [
+    {
+      "year": 2019,
+      "role": "Senior User Experience Designer",
+      "company": "Coupa Software",
+      "rating": "4.0 / 5 (Exceeds Expectations)",
+      "summary": "Joined Coupa to support UX for Coupa Sourcing Optimization (CSO), then immediately took on UX responsibility for the Sourcing product as well. Focused on foundational tooling and on making design decisions technically executable.",
+      "achievements": [
+        "Took over the entire icon library update process end to end, reducing a multi-day process to under an hour from identified need to codebase availability",
+        "Built Sketch component libraries that made mockup creation 50 to 70 percent faster than the previous year",
+        "Introduced version control (Kactus) to the UX team so a globally distributed team could work in parallel across time zones, with written guidelines",
+        "Introduced service blueprinting into functional design, applied to the suite synergy integration project between CSO and Core that collapsed 40+ separate tasks into a single button",
+        "Established a systematic process for involving the Documentation team in design, and recurring sessions with Solution Architects and Professional Services in Uppsala",
+        "Ran competitor analysis across sourcing software and A/B tested design variants with customers before development"
+      ],
+      "productImpact": ["Coupa Sourcing Optimization (CSO)", "Sourcing", "Clarity design system components"]
+    },
+    {
+      "year": 2020,
+      "role": "Senior User Experience Designer, promoted to Principal User Experience Designer",
+      "company": "Coupa Software",
+      "rating": "5.0 / 5 (Distinguished Performance)",
+      "summary": "Took on triple responsibility: leading UX for the Platform teams, supporting existing product work, and pioneering the research function. Initiated the executive conversation that made systematic user research possible at Coupa.",
+      "achievements": [
+        "Initiated the conversation with executives to establish a systematic UX research approach, and pioneered the new research function starting with the R30 homepage feature",
+        "Contributed actively to Clarity, the Coupa Design System, across CSO, UI elements and onboarding sections",
+        "Migrated all static and interactive mockups from InVision to Sketch and moved the team from standalone to team licensing",
+        "Founded and led the EMEA UX group, creating a regular forum for designers working outside HQ time zones",
+        "Introduced functional workflow visualization alongside wireframes so QE could run workflow tests rather than UI tests alone",
+        "Ran thorough competitor analysis of Keelvar and Scanmarket to inform the Sourcing and CSO roadmaps"
+      ],
+      "productImpact": ["Platform", "CSO", "Sourcing", "Homepage (R30)", "Clarity design system"]
+    },
+    {
+      "year": 2021,
+      "role": "Principal, User Experience Design and Manager",
+      "company": "Coupa Software",
+      "rating": "5.0 / 5 (Distinguished Performance)",
+      "summary": "Lifted UX research off the ground single-handedly while continuing to deliver multiple features per release across Sourcing, CSO and Platform. Began building the team through interviewing, hiring and onboarding.",
+      "achievements": [
+        "Built research infrastructure and ran user research with customers across different markets to validate new concepts",
+        "Established a dedicated Clarity research website as a reference source for everyone involved in product development, updated continuously with new reports",
+        "Ran the homepage redesign research programme: a 263-participant survey from 1,004 invited community members, followed by a navigation study with 76 survey participants and 14 guerrilla usability test participants",
+        "Introduced the User Journey as the standard functional design artefact across CSO, Sourcing and Platform",
+        "Migrated all products outside the core codebase onto the shared icon library so they receive updates instantly, and built the complete CSO component library in Figma",
+        "Obtained and rolled out Miro for cross-stakeholder collaboration, and became certified in Pendo Essentials to bring behavioural data into research and design",
+        "Began mentoring a designer into research delivery and got actively involved in recruitment for designers and researchers"
+      ],
+      "productImpact": ["Coupa Homepage", "CSO", "Sourcing", "Platform", "Figma component library"]
+    },
+    {
+      "year": 2022,
+      "role": "Principal, User Experience Design, promoted to Director of User Experience Research and Design",
+      "company": "Coupa Software",
+      "rating": "4.0 / 5 (Exceeds Expectations)",
+      "summary": "Promoted to Director. Shifted from individual contribution into building, leading and growing a collaborative team spanning designers in Sourcing, CSO, Platform, Community Insights and Treasury, plus researchers, and the PM, Dev, QE, Solution Architect and Documentation functions around them.",
+      "achievements": [
+        "Promoted to Director of User Experience Research and Design",
+        "Expanded UX research team capacity, ran screening and evaluation of candidates, and onboarded researchers to full delivery capability",
+        "Proposed and led the acquisition of UserTesting licences for Coupa, which became the standard evaluative research platform and was first applied to the Coupa homepage",
+        "Launched a new version of the Clarity Research website with a Research Intake Form for the PM department",
+        "Introduced Open Hours for the UX team, which measurably increased the number of projects brought forward for feedback",
+        "Drove Pendo implementation for CSO, taking ownership of tagging and reporting in the absence of a PM and training the incoming PM to use Pendo data in design decisions",
+        "Covered the product manager role for the CSO team during a vacancy, spanning customer conversations, Dev, QE and Documentation, and participated in PM recruitment"
+      ],
+      "productImpact": ["CSO", "Sourcing", "Platform", "Community Insights", "Treasury", "Research Ops"]
+    },
+    {
+      "year": 2023,
+      "role": "Director, User Experience Research and Design",
+      "company": "Coupa Software",
+      "rating": "4 / 5 (Exceed Expectations)",
+      "summary": "Grew the research function despite a reduction in team headcount, and led the UX organisation through a period of company-wide change. Focused on delegation, mentorship and holding a user-centric line during organisational transformation.",
+      "achievements": [
+        "Grew the research function's output while operating with fewer people, through delegation and prioritisation",
+        "Mentored team members into expanded scope, including a researcher growing into her role and a designer taking on an entirely new product",
+        "Completed the Manager Essentials and Management Excellence programmes, plus change management study, to lead the team through Coupa's transformation",
+        "Participated in Inspire 2023, building direct customer connections and collaboration channels that fed the research participant pipeline",
+        "Took ownership of Figma and UserTesting service management, licensing and team enablement",
+        "Worked with new S2C product leadership to shape forward product strategy"
+      ],
+      "productImpact": ["CSO", "Sourcing", "Platform", "S2C product strategy", "Iconography and UX elements"]
+    },
+    {
+      "year": 2024,
+      "role": "Director, User Experience Research and Design",
+      "company": "Coupa Software",
+      "rating": "4 / 5 (Exceed Expectations)",
+      "summary": "Transitioned from a combined design and research leadership role into dedicated research leadership. Handed over Sourcing and CSO design responsibilities, which released capacity to hire another researcher and to move the team from feature-level studies to sustainable research plans feeding future roadmaps.",
+      "achievements": [
+        "Shifted fully to research leadership and handed over design responsibility for Sourcing and CSO",
+        "Created sustainable research plans that extend beyond individual features into future product roadmaps, and replaced broad undefined questions with specific actionable research goals",
+        "Ran a customer-facing UX survey alongside internal team surveys to align strategic vision",
+        "Led research for NAVI including the Early Adopter Program, plus procurement, intake and Direct Spend",
+        "Planned the UEQ survey programme, drove persona standardization, and set up the Pendo Center of Excellence",
+        "Hired and mentored an additional researcher, including guiding her transition from a B2C to a B2B research mindset",
+        "Pivoted the support tickets analysis project transparently when the underlying data proved too unclean to analyse, sharing findings with the support team to prepare for future research",
+        "Authored designer goals for increased visibility, engagement and cross-team communication, subsequently adopted by the UX leaders who took over the design organisation"
+      ],
+      "productImpact": ["NAVI AI Agent", "Procurement and Intake", "Direct Spend", "Power Apps", "Core Enterprise & Procurement", "Supplier Portal", "SCDP"]
+    },
+    {
+      "year": 2025,
+      "role": "Director, User Experience Research and Design",
+      "company": "Coupa Software",
+      "rating": "High Performer / Strong Achiever, Champions Core Values",
+      "summary": "Delivered the foundational infrastructure year: a funded and deployed research repository, a quantitative measurement framework, and 53 research initiatives spanning AI, supplier and procurement, cross-product integration, and platform foundations. Assessed by leadership as having established research infrastructure that now supports consistent cross-project insight company-wide.",
+      "achievements": [
+        "Secured budget for and deployed Dovetail as the centralized research repository, designing the workspace, taxonomy and standardized Tags and Fields document, running training and demo sessions, and migrating projects from Google Drive",
+        "Defined and launched the UEQ programme and UX KPI framework, establishing annual or bi-annual benchmarks for feature performance and workflow quality",
+        "Completed 61 studies with 275 participants on UserTesting.com, across 53 research initiatives",
+        "Directed Navi AI Agent research, segmenting it into two time-boxed workstreams (Opportunities and Components) to protect scope, and identifying credit confusion, query issues and product disconnect as core pain points",
+        "Ran 11 Pay AI customer interviews defining low-risk batch selection criteria, leading to an Early Adopter Program for autonomous invoice selection",
+        "Coordinated the multi-day Design to Order design thinking workshop integrating four products (SCDP, CSO, SCC, CCS) and initiated Network Control Tower discovery research",
+        "Ran 10 live Customer Advisory Board sessions with approximately 20 participants, and built a scalable recruitment operation using Salesforce, Metabase, Pendo and UserTesting filters",
+        "Established research-driven UI/UX principles, including UEQ-informed constraints such as no more than five choices on multiple-choice screens",
+        "Formalized research share-out sessions with Engineering, Customer Value Managers and Sales, plus a standardized UXR share-out template and project tracker"
+      ],
+      "productImpact": ["Navi AI Agent", "Pay AI", "Coupa Compass", "Network Control Tower", "Supplier Enablement and SIM", "Coupa Card Recurring Spend", "Requests Reimagined", "Service Orders", "Coupa Mobile", "Data Tables and platform components", "Dovetail research repository"]
+    }
+  ]
+}

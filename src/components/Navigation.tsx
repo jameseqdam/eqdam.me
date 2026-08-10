@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Menu, X } from 'lucide-react';
 
@@ -6,6 +7,9 @@ const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
+  const { pathname } = useLocation();
+  const navigate = useNavigate();
+  const isHome = pathname === '/';
 
   const navItems = [
     { id: 'home', label: 'Home' },
@@ -20,11 +24,17 @@ const Navigation = () => {
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
-      
+
+      // Section highlighting only applies to the single-page homepage.
+      if (!isHome) {
+        setActiveSection('');
+        return;
+      }
+
       // Update active section based on scroll position
       const sections = navItems.map(item => document.getElementById(item.id));
       const scrollPosition = window.scrollY + 100;
-      
+
       for (let i = sections.length - 1; i >= 0; i--) {
         const section = sections[i];
         if (section && section.offsetTop <= scrollPosition) {
@@ -34,11 +44,20 @@ const Navigation = () => {
       }
     };
 
+    handleScroll();
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  }, [isHome]);
 
   const scrollToSection = (sectionId: string) => {
+    // On sub-pages the homepage anchors do not exist, so route back to "/"
+    // and let ScrollToTop handle the hash once the homepage has mounted.
+    if (!isHome) {
+      navigate(sectionId === 'home' ? '/' : `/#${sectionId}`);
+      setIsMobileMenuOpen(false);
+      return;
+    }
+
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });

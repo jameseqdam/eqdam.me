@@ -1,0 +1,32 @@
+{
+  "title": "Mild Brain Injury and ICT: A Four-Study Programme in Consumer Health Informatics",
+  "slug": "mbi-ict-research",
+  "category": "Health Tech",
+  "role": "Principal Researcher, Doctoral Candidate",
+  "timeline": "2011 - 2018",
+  "overview": "A four-phase doctoral research programme at Karolinska Institutet exploring how persons with mild acquired cognitive impairment (MACI) use and experience everyday information and communication technology. The programme moved from systematic review, through a Swedish national survey of 282 participants, into social network and content analysis of a 1,310-member Facebook community, and finally to a diary-keeping field study testing whether user experience research methods work at all with this population. To the best of the authors' knowledge these were the first studies to explore ICT and user experience for health information consumers with MACI.",
+  "problemStatement": "Mild acquired cognitive impairment describes people who acquire a minor, non-progressive decrease in cognitive function through physical trauma or medical conditions such as benign tumour, stroke or treatment side effects. This group is generally young, expected to reach a stable cognitive level over time, and largely absent from health informatics research. Two gaps compounded each other. First, there was almost no evidence about what ICT tools had been built or evaluated for supporting self-management in this group, and no clear direction on how to proceed. Second, and more fundamentally, capturing the user experience of people with cognitive impairment is itself methodologically unsolved: the standard UX field study toolkit assumes recall, sustained attention and self-report accuracy that cannot be taken for granted here. Studying the population and studying how to study the population had to happen simultaneously.",
+  "solution": "Structured the programme as four phases, each answering the question the previous one raised. Phase I ran a systematic review across 8 databases using 55 search phrases, returning 5,969 articles of which only 7 met the inclusion criteria, and analysed tool functionality against an analytical framework derived from a subset of the International Classification of Functioning, Disability and Health (ICF) cross-validated with Swedish MACI experts. It confirmed a near-empty evidence base and identified specific unmet needs, notably support for interpersonal interactions and relationships. Phase II built a purpose-designed survey instrument rather than adapting an existing one, combining an ICF-based e-services questionnaire with the Cognitive Failure Questionnaire, validated by an expert advisory committee and pilot tested, with sample size calculated for a 1,300-person population. 282 persons with acquired brain injury participated, showing a mean cognitive failure rate of 45 (±18), with 89 percent using e-services but only 26 percent using Facebook against 71 percent of the Swedish population. Content analysis of open-ended responses produced categories including communication, social media, entertainment, memory aid, information source, shopping, and education and training, with participants describing devices as an external brain. Phase III addressed the communication finding directly through non-obtrusive social network analysis of a full year of a public Facebook group for Swedish speakers with brain fatigue: 1,092 unique active members (83 percent of 1,310), combining graph-theoretic quantitative analysis with directed qualitative content analysis. It found a dense network even without active nodes, contribution patterns of likes (93 percent), comments (49 percent) and posts (16 percent), and that posts predominantly provided support (40 percent) rather than sought it (17 percent), with informational support the dominant content type. Phase IV tested the Day Reconstruction Method as a UX field study technique with 11 participants recruited from 88 invited, capturing daily activities, affect ratings on a 0 to 6 Likert scale, time spent and computer/Internet use across 17 activity categories.",
+  "methodology": [
+    "Systematic literature review (55 search phrases, 8 databases)",
+    "ICF-based analytical framework development",
+    "Survey instrument design and validation (expert advisory committee, pilot testing)",
+    "Cognitive Failure Questionnaire (CFQ)",
+    "Confirmatory and exploratory factor analysis",
+    "Descriptive and percentile statistical analysis",
+    "Qualitative content analysis (open-ended and directed)",
+    "Social network analysis (graph theory)",
+    "Day Reconstruction Method (DRM) diary study",
+    "Non-obtrusive observational study design",
+    "Sample size calculation for finite populations"
+  ],
+  "challenge": "The methodological problem was the research problem. Field study methods for capturing user experience assume cognitive capacities that this population may not reliably have, so every instrument had to be assessed for feasibility before its findings could be trusted. That drove specific choices: building a new survey instrument rather than reusing one, pairing it with a validated cognitive measure so results could be interpreted against impairment level, selecting the Day Reconstruction Method precisely because it does not interrupt daily activity and takes less time than other experience sampling methods, and choosing non-obtrusive social network analysis to observe communication behaviour without asking participants to report on it. A further constraint was interpretive: with no data on non-participants, findings were framed as rough population-level indications rather than distribution claims.",
+  "roiMetrics": [
+    { "value": "282", "label": "Participants in the Swedish national survey of ICT and e-service use" },
+    { "value": "5,969", "label": "Articles screened in the systematic review, of which only 7 met inclusion criteria" },
+    { "value": "1,092", "label": "Unique active Facebook members analysed, 83% of a 1,310-member community" },
+    { "value": "89%", "label": "Of participants using e-services, comparable to the healthy population" },
+    { "value": "4", "label": "Peer-reviewed studies forming the doctoral programme (JMIR, PLOS ONE x2, thesis)" },
+    { "value": "1st", "label": "Research to explore ICT and user experience for health information consumers with MACI" }
+  ]
+}

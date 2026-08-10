@@ -1,0 +1,29 @@
+{
+  "title": "SAVA Health App: Designing One CGM Platform for Two Opposing Users",
+  "slug": "sava-health-app",
+  "category": "Health Tech",
+  "role": "Lead UX Designer, Conceptual Case Study",
+  "timeline": "2024 - 2025",
+  "overview": "A conceptual design case study reimagining the continuous glucose monitoring (CGM) experience for two audiences with fundamentally different needs: Type 1 diabetes patients, who require critical real-time data under stress, and health-conscious wellness consumers, who need motivation and interpretation rather than clinical precision. The work produced two distinct personas, journey maps and user flows, then two separate interface solutions built on a shared data foundation, including a gamified Metabolic Score and AI-powered coaching for the wellness segment.",
+  "problemStatement": "CGM applications such as Dexcom G6 optimise for medical accuracy but fall short on visual clarity and intuitive insight. Critique of the existing interface identified four specific failures: visual clutter from competing information on the home screen, weak hierarchy in which the most critical element (the trend graph) was small and hard to read, limited insight because raw data was presented without actionable guidance, and cumbersome logging where the history screen was a flat list that made pattern-finding difficult. Journey mapping showed the two audiences failing differently. The T1D patient experiences anxiety over a single number, uncertainty about what a trend means, forgotten logging events, and data scattered across screens. The wellness consumer lacks a single motivating metric, sees disconnected data points, receives no real-time feedback on actions, and has no clear guidance on what to do next.",
+  "solution": "Designed for each persona against its own journey rather than compromising into one average interface. For the T1D patient, applied three principles: Clarity First (prioritise critical data with a bold, minimal design), Action-Oriented (design for high-stress situations by making alerts simple and actionable), and Enhanced Visualization (a colour-coded timeline making trends legible at a glance). This produced a consolidated Home and History screen where the current reading and trend arrow are the focal point, a full-width colour-coded 24-hour graph including a future glucose prediction so users can plan ahead, and a scrollable historical timeline. The Alerts screen was restructured with a clear hierarchy separating Glucose from System alerts, tappable rows and simple toggles for fast customisation under stress. For the wellness consumer, applied Gamified Experience, Holistic View and Proactive Coaching: a prominent circular gauge presenting a single Metabolic Score as the motivating metric, a correlation graph that links glucose trends to logged diet and exercise events so users can see cause and effect directly, and AI-powered features delivering a daily Insight of the Day and Smart Food Suggestions. Both experiences share a simplified floating quick-add logging control to remove the friction identified in journey mapping.",
+  "methodology": [
+    "Competitive interface critique and heuristic analysis",
+    "Persona development",
+    "Journey mapping across phases, actions, goals, feelings, pain points and opportunities",
+    "User flow design",
+    "Segment-differentiated design principles",
+    "Information hierarchy and data visualization design",
+    "Gamification (Metabolic Score)",
+    "AI-driven insight and coaching design",
+    "Conceptual prototyping"
+  ],
+  "challenge": "Two user groups sharing one data stream but inverting each other's priorities. The T1D patient needs raw, immediate, unambiguous numbers because the stakes are medical; the wellness consumer needs those same numbers abstracted into a single interpretable score because raw data demotivates them. Designing a single product for both without diluting either required accepting divergent interfaces on a common foundation rather than a unified compromise. The case study is also explicit about its own limits: these are conceptual prototypes grounded in UX best practice and analysis of provided materials, not validated designs. Without access to real users or usage data they serve as a starting point for discussion, and a real process would be driven by user interviews, usability testing and behavioural data analysis.",
+  "roiMetrics": [
+    { "value": "2", "label": "Distinct user segments designed for on a shared data foundation" },
+    { "value": "4", "label": "Core interface failures identified in the incumbent CGM experience" },
+    { "value": "3", "label": "Journey phases mapped per persona: check-in, throughout the day, weekly review" },
+    { "value": "24h", "label": "Colour-coded trend graph with forward glucose prediction for proactive planning" },
+    { "value": "1", "label": "Unified Metabolic Score replacing disconnected wellness data points" }
+  ]
+}

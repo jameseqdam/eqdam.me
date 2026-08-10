@@ -1,0 +1,29 @@
+{
+  "title": "Navi AI Agent: Research Strategy for Generative AI in Business Spend Management",
+  "slug": "navi-ai-agent",
+  "category": "AI Strategy",
+  "role": "Director of User Experience Research and Design",
+  "timeline": "2024 - 2026",
+  "overview": "Directed the end-to-end research strategy for Navi, Coupa's generative AI agent embedded across the Business Spend Management platform. The work combined foundational problem discovery with component-level interaction validation, and established the first quantitative UX benchmark for an AI feature at Coupa using the User Experience Questionnaire (UEQ). Findings shaped the Navi product roadmap and the Early Adopter Program, and were extended to adjacent AI initiatives including Pay AI and the AI Center of Excellence.",
+  "problemStatement": "Coupa was investing heavily in generative AI without validated evidence of where AI actually resolved user problems inside enterprise procurement and finance workflows. Discovery interviews surfaced three recurring failure modes: credit confusion (users could not predict or understand what an AI interaction would cost them), query issues (users did not know how to phrase requests the agent could act on), and product disconnect (the agent felt bolted on rather than continuous with the workflows users were already in). Compounding this, an open-ended ML discovery effort of this size threatened to consume the entire research team's capacity and expand without a defined end state.",
+  "solution": "Segmented the Navi programme into two time-boxed workstreams, Opportunities and Components, so that strategic discovery and design validation could run in parallel without either absorbing the other. The Opportunities stream ran in-depth customer interviews and thematic analysis to define the problem space, then moved into planned observational studies with customers across diverse businesses to see real-world AI usage rather than reported usage, including user anxiety around burning credits. The Components stream ran usability and interaction testing on the AI surfaces themselves: visual treatment, interaction patterns, and the AI assistant surfaced inside the procurement scenario comparison workflow, where Navi presents cost savings insights alongside raw supplier data so users see recommendation and evidence side by side. Quantitative measurement was layered on top through a Navi UEQ instrument, producing the first repeatable benchmark for AI feature quality. Adjacent AI research followed the same model: 11 customer interviews for Pay AI defined low-risk batch selection criteria and led directly to an Early Adopter Program for autonomous invoice selection.",
+  "methodology": [
+    "In-depth customer interviews",
+    "Thematic analysis and pain point synthesis",
+    "Observational / contextual studies of real-world AI usage",
+    "Component and interaction usability testing",
+    "User Experience Questionnaire (UEQ) benchmarking",
+    "Concept and prototype testing",
+    "Early Adopter Program (EAP) research support",
+    "Quantitative data analysis (Pendo, Metabase)",
+    "Time-boxed workstream segmentation"
+  ],
+  "challenge": "Generative AI discovery has no natural stopping point, and an enterprise research team of limited size can be consumed entirely by one strategic initiative. The primary challenge was structural rather than methodological: protecting product scope and team capacity by splitting an open-ended AI research mandate into two bounded, independently deliverable workstreams, while still producing evidence rigorous enough to redirect an executive-level product roadmap away from assumed AI value toward validated user pain points.",
+  "roiMetrics": [
+    { "value": "2", "label": "Time-boxed AI workstreams (Opportunities and Components) protecting product scope" },
+    { "value": "3", "label": "Core AI pain points identified and fed to roadmap: credit confusion, query issues, product disconnect" },
+    { "value": "11", "label": "Customer interviews completed for Pay AI, defining low-risk batch selection criteria" },
+    { "value": "1st", "label": "Quantitative UEQ benchmark established for an AI feature at Coupa" },
+    { "value": "20+", "label": "Concurrent research initiatives managed alongside the AI programme" }
+  ]
+}

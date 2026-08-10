@@ -1,0 +1,142 @@
+[
+  {
+    "title": "Understanding how persons with mild acquired cognitive impairment use and experience information and communication technology: an exploratory study",
+    "year": 2016,
+    "venue": "Karolinska Institutet, Department of Learning, Informatics, Management and Ethics (Doctoral Thesis, ISBN 978-91-7676-524-1)",
+    "authors": "Aboozar Eghdam (Principal Supervisor: Prof. Sabine Koch; Co-supervisors: Prof. Aniko Bartfai, Christian Oldenburg)",
+    "doi": "https://openarchive.ki.se/xmlui/handle/10616/45387",
+    "abstract": "Mild acquired cognitive impairment (MACI) characterises persons who acquire a minor, non-progressive decrease in cognitive function through physical trauma or medical conditions such as benign tumour, stroke, or side effects of treatment. This thesis, situated in consumer health informatics, aimed to understand how regular ICT tools are used by persons with MACI in daily life, and to explore how to capture their experience while using those tools. Four studies were conducted: a systematic review of ICT tools analysed against clinical needs; surveys exploring actual use and experience of ICT and e-services; social network analysis addressing communication and social interaction; and a diary-keeping method testing the feasibility of a UX field study method. Findings showed a lack of ICT tools developed and evaluated for supporting self-management in this group, validated a subset of the ICF as an analytical framework, demonstrated that participants were as capable of using existing ICT tools as a healthy population, and showed that social media may be a valuable means of social support beyond its informational benefits. To the best of our knowledge these were the first studies to explore ICT and user experience for health information consumers with MACI.",
+    "tags": ["Consumer Health Informatics", "Cognitive Human Factors", "User Experience Research", "Mixed Methods", "Assistive Technology", "ICF Framework"],
+    "type": "PhD Thesis"
+  },
+  {
+    "title": "Usability Evaluation of Infobiotika: An exploratory usability investigation of a visualization support to provide a patient overview at antibiotic use in intensive care unit",
+    "year": 2010,
+    "venue": "Uppsala University, Department of Informatics and Media, in collaboration with Health Informatics Centre, Karolinska Institutet (Master's Thesis, Human Computer Interaction)",
+    "authors": "Aboozar Eghdam (Supervisors: Prof. Mats Lind, Uppsala University; Prof. Sabine Koch, Karolinska Institutet)",
+    "doi": "https://pubmed.ncbi.nlm.nih.gov/21893885/",
+    "abstract": "Antibiotic use in intensive care requires time-critical decision making based on complex information usually spread across different sources. This explorative study evaluated the usability and initial performance of Infobiotika, a visualization support providing a patient overview for antibiotic use in intensive care. The study assessed whether Infobiotika supports navigation efficiently and effectively, whether users locate the information needed to support antibiotic decisions, how learnable the system is, and how users navigate, using eye-tracking to study visual scan patterns and distribution of visual attention. Eight intensive care physicians, separated into specialist and resident groups by experience, completed navigational, clinical and learnability tasks across three phases. Results indicated Infobiotika is effective, efficient and learnable for ICU physicians, fulfilling most requirements for an accurate and quick patient overview, while revealing unexpected design issues in how clinical examination results are presented in graphs versus tables.",
+    "tags": ["Usability Evaluation", "Eye-tracking", "Information Visualization", "Clinical Decision Support", "Intensive Care", "Human-Computer Interaction"],
+    "type": "Master Thesis"
+  },
+  {
+    "title": "Evaluation of an electronic care and rehabilitation planning tool with stroke survivors with aphasia: usability study",
+    "year": 2023,
+    "venue": "JMIR Human Factors, vol. 10, e43861",
+    "authors": "Nadia Davoody; Aboozar Eghdam; Sabine Koch; Maria Hägglund",
+    "doi": "https://doi.org/10.2196/43861",
+    "abstract": "Patients with chronic illnesses with physical and cognitive disabilities, particularly stroke survivors with aphasia, are often excluded from design and evaluation processes, contributing to a digital divide in eHealth. This study examined the effectiveness and user satisfaction of an electronic care and rehabilitation planning tool from the perspective of stroke survivors with aphasia. Usability tests were conducted with nine post-discharge participants, split into an unsupported group and a group receiving minor moderator support, measuring effectiveness through task-based tests and satisfaction through qualitative interviews analysed with qualitative content analysis. The tool was not effective for this group, as many unsupported participants did not complete tasks successfully, yet participants remained positive toward the tool and found it useful for their care and rehabilitation journey. The authors conclude that eHealth services for this population must be more adaptable and flexible, and that design and evaluation processes themselves must be adapted to the challenges of the patient group.",
+    "tags": ["Usability Evaluation", "eHealth", "Accessibility", "Co-design", "Stroke Rehabilitation", "User-Centred Design"],
+    "type": "Journal Article"
+  },
+  {
+    "title": "Effects of electronic health record implementation and barriers to adoption and use: a scoping review and qualitative analysis of the content",
+    "year": 2020,
+    "venue": "Life (MDPI), vol. 10, no. 12, article 327",
+    "authors": "Chen Hsi Tsai; Aboozar Eghdam; Nadia Davoody; Graham Wright; Stephen Flowerday; Sabine Koch",
+    "doi": "https://doi.org/10.3390/life10120327",
+    "abstract": "Despite 25 years of advances in electronic health records (EHRs), implementation and adoption challenges persist and realised benefits remain below expectations. This scoping review presents current knowledge about the effects of EHR implementation and the barriers to adoption and use. A literature search across PubMed, Web of Science, IEEE Xplore Digital Library and ACM Digital Library covering January 2005 to May 2020 identified 7,641 studies, of which 142 met the inclusion criteria by consensus of all researchers. Both positive and negative effects were identified, relating to clinical work, data and information, patient care and economic impact. The most frequently occurring barriers to adoption and use were resource constraints, poor or insufficient training and technical and educational support for users, and poor literacy and skills in technology. The review also observed a lack of uniformity in the use of EHR definitions and in the reporting of contextual detail about study settings.",
+    "tags": ["Health Informatics", "Electronic Health Records", "Scoping Review", "Technology Adoption", "Qualitative Analysis"],
+    "type": "Journal Article"
+  },
+  {
+    "title": "Usability evaluation of visual representation formats for emergency department records",
+    "year": 2019,
+    "venue": "Applied Clinical Informatics, vol. 10, no. 3, pp. 454-470",
+    "authors": "Nathaniel Brown; Aboozar Eghdam; Sabine Koch",
+    "doi": "https://doi.org/10.1055/s-0039-1692400",
+    "abstract": "Integration of electronic information is a challenge for multitasking emergency providers, with implications for patient safety. This study evaluated visually focused alternatives to list and tabular formats to understand possible usability in Emergency Department Information Systems (EDIS). A counterbalanced, repeated-measures experiment with satisfaction surveys and narrative content analysis was conducted remotely with 37 American emergency physicians, who completed 16 clinical cases comparing four visual designs against control formats from a commercially available EDIS. Visual designs provided benefit in several areas: task correctness improved from 76% to 90% and completion time fell from a median of 74 to 49 seconds for a medication history timeline with class and schedule highlighting, and completion time improved from 60 to 45 seconds for a past medical history design using pertinent diagnosis codes in highlighting rules. Less mental effort was reported for visual allergy, past medical history and medication timeline designs. Physician performance with visual representations can exceed standard formats even without training, though perceived complexity of timeline representations limits desirability for a subset of users.",
+    "tags": ["Usability Evaluation", "Information Visualization", "Cognitive Human Factors", "Emergency Medicine", "Patient Safety", "Experimental Design"],
+    "type": "Journal Article"
+  },
+  {
+    "title": "Facebook as communication support for persons with potential mild acquired cognitive impairment: A content and social network analysis study",
+    "year": 2018,
+    "venue": "PLOS ONE, vol. 13, no. 1, e0191878",
+    "authors": "Aboozar Eghdam; Ulrika Hamidi; Aniko Bartfai; Sabine Koch",
+    "doi": "https://doi.org/10.1371/journal.pone.0191878",
+    "abstract": "Social media has the potential to increase social participation and support the well-being of individuals with chronic medical conditions, yet little was known about its use by persons with potential mild acquired cognitive impairment (MACI), a non-progressive mild cognitive impairment following acquired brain injury. This study explored how persons with perceived brain fatigue after brain injury communicate through Facebook, classifying the content of that communication and visualising the frequency and types of interaction. A social network analysis of member interactions was combined with qualitative content analysis of a full year of communication in a public Facebook group for Swedish speakers with perceived brain fatigue (1,310 members). Members used Facebook as a means of communication and support for their condition, with individual patterns varying widely but the group as a whole most frequently exchanging informational support, banter and socializing. Contribution patterns showed likes (93%), comments (49%) and posts (16%), with posts more often providing support (40%) than seeking it (17%).",
+    "tags": ["Consumer Health Informatics", "Social Network Analysis", "Qualitative Content Analysis", "Social Media", "Cognitive Human Factors"],
+    "type": "Journal Article"
+  },
+  {
+    "title": "Social Media as a Communication Support for Persons with Mild Acquired Cognitive Impairment: A Social Network Analysis Study",
+    "year": 2017,
+    "venue": "MEDINFO 2017: Precision Healthcare through Informatics, IOS Press, pp. 1219",
+    "authors": "Aboozar Eghdam; Ulrika Hamidi; Aniko Bartfai; Sabine Koch",
+    "doi": "https://pubmed.ncbi.nlm.nih.gov/29295306/",
+    "abstract": "Conference presentation of a social network analysis study examining how persons with mild acquired cognitive impairment use social media as a communication support. The work applied graph-theoretic quantitative analysis alongside directed qualitative content analysis to map relations and flows between social entities within an online patient community, classifying member involvement and identifying the distinct actor roles present in such a virtual society. Presented at MEDINFO 2017, the World Congress on Medical and Health Informatics.",
+    "tags": ["Social Network Analysis", "Consumer Health Informatics", "Social Media", "Qualitative Content Analysis"],
+    "type": "Conference Paper"
+  },
+  {
+    "title": "How do persons with mild acquired cognitive impairment use information and communication technology and e-services? Results from a Swedish National Survey",
+    "year": 2016,
+    "venue": "PLOS ONE, vol. 11, no. 7, e0159362",
+    "authors": "Aboozar Eghdam; Aniko Bartfai; Christian Oldenburg; Sabine Koch",
+    "doi": "https://doi.org/10.1371/journal.pone.0159362",
+    "abstract": "Mild acquired cognitive impairment describes a sub-group of persons with mild cognitive impairment expected to reach a stable cognitive level over time, for whom information and communication technology and e-services offer a possible route to further treatment development. This study investigated the current use of regular e-services and social media by this group alongside their user experiences. Data were collected through a self-administered survey and analysed quantitatively, with e-service categorisation based on and cross-validated with the International Classification of Functioning, Disability and Health (ICF), and the Cognitive Failure Questionnaire added to estimate degree and type of impairment. In total, 282 persons with acquired brain injury participated. Cognitive Failure Questionnaire scores indicated mild to moderate cognitive impairment, most often acquired through traumatic brain injury (40%), and the majority (89%) used e-services. Personal computers and mobile devices were used primarily as communication and banking aids, with availability, mobility, flexibility and rapidity reported as positive aspects and distraction, difficulty concentrating, information overload, privacy and security reported as negative.",
+    "tags": ["Consumer Health Informatics", "Survey Research", "Cognitive Human Factors", "ICF Framework", "User Experience Research"],
+    "type": "Journal Article"
+  },
+  {
+    "title": "User-centred design and usability evaluation of a heart rate variability biofeedback game",
+    "year": 2016,
+    "venue": "IEEE Access, vol. 4, pp. 5531-5539",
+    "authors": "Thomas Wollmann; Farhad Abtahi; Aboozar Eghdam; Fernando Seoane; Kaj Lindecrantz; Martin Haag; Sabine Koch",
+    "doi": "https://doi.org/10.1109/ACCESS.2016.2601882",
+    "abstract": "Reduced heart rate variability (HRV) indicates a malfunctioning autonomic nervous system, and resonant frequency breathing is a potential non-invasive intervention for improving autonomic balance and increasing HRV, yet such breathing exercises are widely regarded as boring and monotonous. Gamification is a recognised route to higher motivation and engagement, but documented knowledge on designing a game for breathing exercises is limited, and the influence of additional interactive elements on the main course of training had not been explored. An Android flight game was developed with three modes differing in the degree of multitasking required, using a user-centred approach spanning context analysis, game principle mock-ups, concept selection by survey, game mechanics and GUI design, icon testing, and a summative study with questionnaires and interviews. Summative evaluation with 11 healthy participants aged 40 to 67 in a controlled setting confirmed the potential of video games to motivate HRV biofeedback training. The highest first-attempt training performance was achieved through pure visualisation rather than multitasking, while players were more motivated by the more challenging game and more interested in long-term engagement. A framework for gamified HRV biofeedback research is presented, showing that multitasking considerably influences HRV biofeedback and should be used with an adaptive challenge level.",
+    "tags": ["Consumer Health Informatics", "Gamification", "Usability Evaluation", "User-Centred Design", "Biofeedback", "Patient Motivation"],
+    "type": "Journal Article"
+  },
+  {
+    "title": "E-services and Social Media for Persons with Mild Acquired Cognitive Impairment",
+    "year": 2016,
+    "venue": "Proceedings from the 14th Scandinavian Health Informatics Conference 2016, p. 73",
+    "authors": "Aboozar Eghdam; Aniko Bartfai; Christian Oldenburg; Sabine Koch",
+    "doi": "",
+    "abstract": "Conference presentation reporting on the use of e-services and social media by persons with mild acquired cognitive impairment, drawing on Swedish national survey data covering frequency and type of e-service use, cognitive failure levels measured through the Cognitive Failure Questionnaire, and participants' positive and negative experiences of everyday ICT tools. Note: no distinct indexed online record has been located for this entry; it appears to be an early conference presentation preceding the 2016 PLOS ONE national survey paper and should be verified before being cited separately.",
+    "tags": ["Consumer Health Informatics", "Survey Research", "Social Media", "Conference Presentation"],
+    "type": "Conference Paper"
+  },
+  {
+    "title": "How Do Persons with Mild Acquired Cognitive Impairment Use E-Services and Social Media? Results from a Swedish National Survey",
+    "year": 2015,
+    "venue": "2015 International Conference on Healthcare Informatics (IEEE ICHI), p. 467",
+    "authors": "Aboozar Eghdam; Sabine Koch; Aniko Bartfai; Christian Oldenburg",
+    "doi": "https://ieeexplore.ieee.org/document/7349737/",
+    "abstract": "Conference presentation of results from a Swedish national survey investigating how persons with mild acquired cognitive impairment use e-services and social media. The survey instrument combined an e-services questionnaire structured on a subset of the International Classification of Functioning, Disability and Health with the Cognitive Failure Questionnaire, allowing patterns of technology use to be interpreted against measured cognitive difficulty in everyday tasks. Presented at the IEEE International Conference on Healthcare Informatics, 2015.",
+    "tags": ["Consumer Health Informatics", "Survey Research", "Cognitive Human Factors", "Conference Presentation"],
+    "type": "Conference Paper"
+  },
+  {
+    "title": "Integrated information visualization to support decision making for use of antibiotics in intensive care: design and usability evaluation",
+    "year": 2013,
+    "venue": "Informatics for Health and Social Care, vol. 38, no. 4, pp. 330-353",
+    "authors": "Johanna Forsman; Nadim Anani; Aboozar Eghdam; Magnus Falkenhav; Sabine Koch",
+    "doi": "https://doi.org/10.3109/17538157.2013.812649",
+    "abstract": "Overuse of antibiotics is a critical problem in intensive care, further complicated by an extremely data-intensive environment in which clinical data is presented across distributed, often stand-alone information systems, making access and interpretation a complex and time-consuming technical and cognitive challenge. This work proposes a holistic integrated visualization in the form of a patient overview to support physicians in decision making for antibiotic use in intensive care units. Emphasis is placed on analysis of work processes to identify information needs, development of a visualization tool based on an integrated data model, and usability testing of the tool combined with eye-tracking technology. The tool was highly rated in terms of user performance and preferences, and analysis of users' visual patterns showed that different types of data visualization may benefit specialist and resident intensive care physicians depending on the task performed. A highly interactive tool for integrated information visualization could increase understanding of a patient's infection status and ultimately enhance decision making for antibiotic use.",
+    "tags": ["Information Visualization", "Clinical Decision Support", "Usability Evaluation", "Eye-tracking", "Intensive Care", "Health Informatics"],
+    "type": "Journal Article"
+  },
+  {
+    "title": "Information and communication technology to support self-management of patients with mild acquired cognitive impairments: systematic review",
+    "year": 2012,
+    "venue": "Journal of Medical Internet Research, vol. 14, no. 6, e159",
+    "authors": "Aboozar Eghdam; Jeremiah Scholl; Aniko Bartfai; Sabine Koch",
+    "doi": "https://doi.org/10.2196/jmir.2275",
+    "abstract": "Mild acquired cognitive impairment (MACI) describes a subgroup of patients with mild cognitive impairment expected to reach a stable cognitive level over time, generally young and having acquired the impairment from head injury or mild stroke. Despite a decade of research into using ICT to support self-management of chronic disease, MACI has received little attention, leaving a lack of information about which tools have been created and evaluated and no clear direction for further development. This systematic review searched eight medical, scientific, engineering and physiotherapy databases, analysing tool functionality against an analytical framework based on the International Classification of Functioning, Disability and Health and a subset of common and important problems for MACI patients defined by Swedish experts. In total, 55 search phrases across 8 databases returned 5,969 articles, of which only 7 met the inclusion criteria; most reported case studies or exploratory research, 4 had fewer than 10 participants, 5 technologies were memory aids and 6 were mobile technologies. The review demonstrates a clear lack of ICT tools developed and evaluated for this group, and identifies important uncovered areas including support for interpersonal interactions and relationships.",
+    "tags": ["Systematic Review", "Consumer Health Informatics", "Self-Management", "Assistive Technology", "ICF Framework", "Cognitive Human Factors"],
+    "type": "Journal Article"
+  },
+  {
+    "title": "Combining usability testing with eye-tracking technology: evaluation of a visualization support for antibiotic use in intensive care",
+    "year": 2011,
+    "venue": "User Centred Networked Health Care (MIE 2011), Studies in Health Technology and Informatics vol. 169, IOS Press, pp. 945-949",
+    "authors": "Aboozar Eghdam; Johanna Forsman; Magnus Falkenhav; Mats Lind; Sabine Koch",
+    "doi": "https://doi.org/10.3233/978-1-60750-806-9-945",
+    "abstract": "This explorative study measured the efficiency, effectiveness and user satisfaction of Infobiotika, a prototype supporting antibiotic use in intensive care, by combining traditional usability testing with eye-tracking technology. The test was conducted with eight intensive care physicians, four specialists and four residents, who performed navigational tasks, clinical tasks and tasks measuring the learning effect after three to five minutes of free exploration across three test phases, with a post-test questionnaire exploring user satisfaction. Results indicated that Infobiotika is effective and efficient in supporting navigation and is a learnable product for intensive care physicians, fulfilling their need to obtain an accurate overview of patient status quickly. Applying eye-tracking during usability testing proved a valuable complement to traditional methods, revealing unexpected navigation issues and contributing supplementary understanding of design problems and user performance.",
+    "tags": ["Usability Evaluation", "Eye-tracking", "Information Visualization", "Clinical Decision Support", "Intensive Care", "Cognitive Human Factors"],
+    "type": "Conference Paper"
+  }
+]
