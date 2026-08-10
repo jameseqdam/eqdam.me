@@ -102,12 +102,41 @@ export default {
 					'100%': {
 						boxShadow: '0 0 0 0 hsl(var(--primary) / 0)'
 					}
+				},
+				'wheel-spin': {
+					from: {
+						transform: 'rotate(0deg)'
+					},
+					to: {
+						transform: 'rotate(360deg)'
+					}
+				},
+				'segment-sweep': {
+					'0%': {
+						opacity: '0'
+					},
+					'100%': {
+						opacity: '1'
+					}
+				},
+				'preloader-out': {
+					'0%': {
+						opacity: '1',
+						transform: 'scale(1)'
+					},
+					'100%': {
+						opacity: '0',
+						transform: 'scale(1.05)'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
-				'reveal-pulse': 'reveal-pulse 0.6s ease-out'
+				'reveal-pulse': 'reveal-pulse 0.6s ease-out',
+				'wheel-spin': 'wheel-spin 6s linear infinite',
+				'segment-sweep': 'segment-sweep 0.45s ease-out backwards',
+				'preloader-out': 'preloader-out 0.45s ease-in forwards'
 			}
 		}
 	},

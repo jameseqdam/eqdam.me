@@ -163,3 +163,57 @@ All colors MUST be HSL.
     background: var(--gradient-section);
   }
 }
+/*
+ * Preloader puzzle assembly.
+ *
+ * The head SVG is fetched and injected at runtime (390 KB of path data that must
+ * stay out of the JS bundle), so its 72 pieces cannot carry Tailwind classes.
+ * Each piece ships with a --piece-index recording its source order; the preloader
+ * groups those into batches and sets --piece-batch, --piece-stagger and the
+ * centring offsets once the markup lands.
+ */
+@keyframes puzzle-piece-in {
+  from {
+    opacity: 0;
+    /* Oversized and stacked on the canvas centre… */
+    transform: translate(var(--piece-dx, 0px), var(--piece-dy, 0px))
+      scale(var(--piece-start-scale, 1.8));
+  }
+  to {
+    opacity: 1;
+    /* …then shrinking back onto its own slot. */
+    transform: translate(0px, 0px) scale(1);
+  }
+}
+
+.preloader-head svg {
+  width: 100%;
+  height: 100%;
+}
+
+.preloader-head .puzzle-piece {
+  /* fill-box keeps the scale centred on each piece, so the paired --piece-dx/dy
+     offsets (set from getBBox) are what carry it to the canvas centre and back. */
+  transform-box: fill-box;
+  transform-origin: 50% 50%;
+  animation: puzzle-piece-in var(--piece-duration, 400ms) cubic-bezier(0.22, 1, 0.36, 1) backwards;
+  /* Batched, not per-piece: 72 individual delays read as a blur rather than as
+     pieces landing one at a time. */
+  animation-delay: calc(var(--piece-batch, 0) * var(--piece-stagger, 68ms));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .preloader-head .puzzle-piece {
+    animation: none;
+  }
+}
+
+/*
+ * Logo handoff. While the splash is up the navigation mark stays hidden, so the
+ * preloader can fly its own logo into that exact spot and swap the two in a
+ * single commit. No transition: the images are identical and co-located, so the
+ * swap is invisible only if neither one fades.
+ */
+html.preloader-active .site-logo {
+  opacity: 0;
+}

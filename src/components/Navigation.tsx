@@ -86,10 +86,23 @@ const Navigation = () => {
           <Link
             to="/"
             onClick={handleWordmarkClick}
-            aria-label="James Abbott Eqdam — back to homepage"
-            className="text-xl font-bold text-primary hover:opacity-80 transition-opacity cursor-pointer"
+            aria-label="UXDR — Experience Research &amp; Design, back to homepage"
+            className="inline-flex items-center gap-2.5 hover:opacity-80 transition-opacity cursor-pointer"
           >
-            James Abbott Eqdam
+            {/* id is the handoff target the preloader flies its logo into. */}
+            <img
+              id="site-logo"
+              src="/logo-mark.svg"
+              alt=""
+              aria-hidden="true"
+              className="site-logo h-8 w-8 flex-shrink-0 lg:h-9 lg:w-9"
+            />
+            <span className="flex flex-col leading-tight">
+              <span className="text-xl font-bold text-primary">UXDR</span>
+              <span className="text-[11px] font-medium text-muted-foreground sm:text-xs">
+                Experience Research &amp; Design
+              </span>
+            </span>
           </Link>
           
           {/* Desktop Navigation */}

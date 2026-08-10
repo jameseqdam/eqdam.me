@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import ReactGA from "react-ga4";
 import ScrollToTop from "./components/ScrollToTop";
+import Preloader from "./components/Preloader";
 import Index from "./pages/Index";
 import Work from "./pages/Work";
 import WorkDetail from "./pages/WorkDetail";
@@ -54,6 +55,7 @@ const Analytics = () => {
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
+      <Preloader />
       <Toaster />
       <Sonner />
       <BrowserRouter>
