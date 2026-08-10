@@ -38,6 +38,14 @@ const Analytics = () => {
     }
 
     ReactGA.send({ hitType: "pageview", page: location.pathname + location.search });
+
+    // gtag.js is also loaded directly by the snippet in index.html; re-config
+    // it on each route change so client-side navigations are recorded.
+    if (typeof window.gtag === 'function') {
+      window.gtag('config', 'G-44V0V8P7BR', {
+        page_path: location.pathname + location.search,
+      });
+    }
   }, [location.pathname, location.search]);
 
   return null;
