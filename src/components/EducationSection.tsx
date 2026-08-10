@@ -1,6 +1,6 @@
-import { GraduationCap, BookOpen, Award, Calendar } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import SectionCta from './SectionCta';
+import { GraduationCap, BookOpen, Award, Calendar, ExternalLink } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { sectionCtaClasses } from './SectionCta';
 
 const EducationSection = () => {
   const education = [
@@ -151,13 +151,28 @@ const EducationSection = () => {
               </div>
             ))}
           </div>
-          <div className="text-center mt-8">
-            <Button variant="outline" asChild>
-              <a href="https://scholar.google.com/citations?user=AijTeogAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">
-                <BookOpen className="h-4 w-4 mr-2" />
-                View Full Publication List on Google Scholar
-              </a>
-            </Button>
+          <div className="mt-8 flex flex-col items-stretch justify-center gap-3 sm:flex-row sm:items-center sm:gap-4">
+            <Link to="/research" className={sectionCtaClasses()}>
+              Browse Academic Publications
+              <span
+                aria-hidden="true"
+                className="transition-transform duration-300 group-hover:translate-x-1"
+              >
+                →
+              </span>
+            </Link>
+            <a
+              href="https://scholar.google.com/citations?user=AijTeogAAAAJ&hl=en"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={sectionCtaClasses()}
+            >
+              Publications on Google Scholar
+              <ExternalLink
+                aria-hidden="true"
+                className="h-4 w-4 transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
+              />
+            </a>
           </div>
         </div>
 
@@ -176,8 +191,6 @@ const EducationSection = () => {
             ))}
           </div>
         </div>
-
-        <SectionCta to="/research">Browse Academic Publications</SectionCta>
       </div>
     </section>
   );
