@@ -47,3 +47,4 @@ dist/
 dist-ssr/
 *.local
 project-knowledge/
+.env.local
