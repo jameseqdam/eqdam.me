@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
-import { Mail, Phone, MapPin, Linkedin, Globe, Twitter, GraduationCap } from 'lucide-react';
+import { MapPin, Linkedin, Globe, Twitter, GraduationCap } from 'lucide-react';
 import headshotImage from '@/assets/james-headshot.jpg';
+import ContactReveal from '@/components/ContactReveal';
 
 const HeroSection = () => {
 const [scrollY, setScrollY] = useState(0);
@@ -200,14 +201,8 @@ useEffect(() => {
               className="flex flex-col sm:flex-row flex-wrap gap-4 sm:gap-6 text-sm text-muted-foreground justify-center lg:justify-start transition-all duration-500 ease-out"
               style={{ opacity: 1 - progress * 0.8 }}
             >
-              <div className="flex items-center gap-2 justify-center lg:justify-start">
-                <Mail className="h-4 w-4" />
-                <span>james@eqdam.me</span>
-              </div>
-              <div className="flex items-center gap-2 justify-center lg:justify-start">
-                <Phone className="h-4 w-4" />
-                <span>+46 (762) 34-3539</span>
-              </div>
+              <ContactReveal channel="email" variant="inline" />
+              <ContactReveal channel="phone" variant="inline" />
               <div className="flex items-center gap-2 justify-center lg:justify-start">
                 <MapPin className="h-4 w-4" />
                 <span>Stockholm, Sweden</span>

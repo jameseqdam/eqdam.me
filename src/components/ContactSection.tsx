@@ -1,22 +1,13 @@
-import { Mail, Phone, MapPin, Linkedin, Globe, Twitter, GraduationCap, Send } from 'lucide-react';
+import { MapPin, Linkedin, Globe, Twitter, GraduationCap, Send } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
+import ContactReveal from '@/components/ContactReveal';
 
 const ContactSection = () => {
+  // Email and phone are rendered by <ContactReveal /> so they stay masked in the
+  // markup; only non-sensitive details live in plain text here.
   const contactInfo = [
-    {
-      icon: Mail,
-      label: "Email",
-      value: "james@eqdam.me",
-      href: "mailto:james@eqdam.me"
-    },
-    {
-      icon: Phone,
-      label: "Phone",
-      value: "+46 (762) 34-3539",
-      href: "tel:+4672343539"
-    }, 
     {
       icon: MapPin,
       label: "Location",
@@ -138,6 +129,11 @@ const ContactSection = () => {
             <div>
               <h3 className="text-xl sm:text-2xl font-semibold mb-4 lg:mb-6">Get In Touch</h3>
               <div className="space-y-3 lg:space-y-4">
+                <ContactReveal channel="email" />
+                <ContactReveal channel="phone" />
+                <p className="text-xs text-muted-foreground">
+                  Contact details are hidden from bots — press and hold to reveal.
+                </p>
                 {contactInfo.map((contact, index) => (
                   <a
                     key={index}
