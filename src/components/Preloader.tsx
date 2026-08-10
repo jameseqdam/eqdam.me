@@ -118,7 +118,7 @@ const Preloader = () => {
     <div
       role="status"
       aria-live="polite"
-      aria-label="Loading eqdam.me"
+      aria-label="Loading UXDR.net"
       // Above the z-50 navigation so nothing bleeds through the splash.
       className={`fixed inset-0 z-[60] ${fallbackExit ? 'animate-preloader-out' : ''}`}
     >
