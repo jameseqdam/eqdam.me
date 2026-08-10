@@ -38,13 +38,17 @@ export interface ResearchItem {
 }
 
 export interface ExperienceEntry {
+  /** Start year. Doubles as the sort key, so it stays unique per entry. */
   year: number;
+  /** Shown instead of `year` for roles spanning a range, e.g. "2011 – 2018". */
+  period?: string;
   role: string;
   company: string;
-  rating: string;
+  /** Coupa performance-review rating; absent on roles that predate it. */
+  rating?: string;
   summary: string;
-  achievements: string[];
-  productImpact: string[];
+  achievements?: string[];
+  productImpact?: string[];
 }
 
 export interface ExperienceMilestone {

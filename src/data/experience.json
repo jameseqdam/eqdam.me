@@ -67,7 +67,11 @@
         "Established a systematic process for involving the Documentation team in design, and recurring sessions with Solution Architects and Professional Services in Uppsala",
         "Ran competitor analysis across sourcing software and A/B tested design variants with customers before development"
       ],
-      "productImpact": ["Coupa Sourcing Optimization (CSO)", "Sourcing", "Clarity design system components"]
+      "productImpact": [
+        "Coupa Sourcing Optimization (CSO)",
+        "Sourcing",
+        "Clarity design system components"
+      ]
     },
     {
       "year": 2020,
@@ -83,7 +87,13 @@
         "Introduced functional workflow visualization alongside wireframes so QE could run workflow tests rather than UI tests alone",
         "Ran thorough competitor analysis of Keelvar and Scanmarket to inform the Sourcing and CSO roadmaps"
       ],
-      "productImpact": ["Platform", "CSO", "Sourcing", "Homepage (R30)", "Clarity design system"]
+      "productImpact": [
+        "Platform",
+        "CSO",
+        "Sourcing",
+        "Homepage (R30)",
+        "Clarity design system"
+      ]
     },
     {
       "year": 2021,
@@ -100,7 +110,13 @@
         "Obtained and rolled out Miro for cross-stakeholder collaboration, and became certified in Pendo Essentials to bring behavioural data into research and design",
         "Began mentoring a designer into research delivery and got actively involved in recruitment for designers and researchers"
       ],
-      "productImpact": ["Coupa Homepage", "CSO", "Sourcing", "Platform", "Figma component library"]
+      "productImpact": [
+        "Coupa Homepage",
+        "CSO",
+        "Sourcing",
+        "Platform",
+        "Figma component library"
+      ]
     },
     {
       "year": 2022,
@@ -117,7 +133,14 @@
         "Drove Pendo implementation for CSO, taking ownership of tagging and reporting in the absence of a PM and training the incoming PM to use Pendo data in design decisions",
         "Covered the product manager role for the CSO team during a vacancy, spanning customer conversations, Dev, QE and Documentation, and participated in PM recruitment"
       ],
-      "productImpact": ["CSO", "Sourcing", "Platform", "Community Insights", "Treasury", "Research Ops"]
+      "productImpact": [
+        "CSO",
+        "Sourcing",
+        "Platform",
+        "Community Insights",
+        "Treasury",
+        "Research Ops"
+      ]
     },
     {
       "year": 2023,
@@ -133,7 +156,13 @@
         "Took ownership of Figma and UserTesting service management, licensing and team enablement",
         "Worked with new S2C product leadership to shape forward product strategy"
       ],
-      "productImpact": ["CSO", "Sourcing", "Platform", "S2C product strategy", "Iconography and UX elements"]
+      "productImpact": [
+        "CSO",
+        "Sourcing",
+        "Platform",
+        "S2C product strategy",
+        "Iconography and UX elements"
+      ]
     },
     {
       "year": 2024,
@@ -151,7 +180,15 @@
         "Pivoted the support tickets analysis project transparently when the underlying data proved too unclean to analyse, sharing findings with the support team to prepare for future research",
         "Authored designer goals for increased visibility, engagement and cross-team communication, subsequently adopted by the UX leaders who took over the design organisation"
       ],
-      "productImpact": ["NAVI AI Agent", "Procurement and Intake", "Direct Spend", "Power Apps", "Core Enterprise & Procurement", "Supplier Portal", "SCDP"]
+      "productImpact": [
+        "NAVI AI Agent",
+        "Procurement and Intake",
+        "Direct Spend",
+        "Power Apps",
+        "Core Enterprise & Procurement",
+        "Supplier Portal",
+        "SCDP"
+      ]
     },
     {
       "year": 2025,
@@ -170,7 +207,130 @@
         "Established research-driven UI/UX principles, including UEQ-informed constraints such as no more than five choices on multiple-choice screens",
         "Formalized research share-out sessions with Engineering, Customer Value Managers and Sales, plus a standardized UXR share-out template and project tracker"
       ],
-      "productImpact": ["Navi AI Agent", "Pay AI", "Coupa Compass", "Network Control Tower", "Supplier Enablement and SIM", "Coupa Card Recurring Spend", "Requests Reimagined", "Service Orders", "Coupa Mobile", "Data Tables and platform components", "Dovetail research repository"]
+      "productImpact": [
+        "Navi AI Agent",
+        "Pay AI",
+        "Coupa Compass",
+        "Network Control Tower",
+        "Supplier Enablement and SIM",
+        "Coupa Card Recurring Spend",
+        "Requests Reimagined",
+        "Service Orders",
+        "Coupa Mobile",
+        "Data Tables and platform components",
+        "Dovetail research repository"
+      ]
+    },
+    {
+      "year": 2018,
+      "period": "2018",
+      "role": "User Experience Specialist",
+      "company": "Episerver (now Optimizely)",
+      "summary": "Joined the digital experience platform to work on design systems and cross-product user experience. The focus was consistency: making a suite of separately built products feel like one platform, and giving the design team shared components to work from.",
+      "achievements": [
+        "Developed design system components for the digital experience platform",
+        "Defined navigation principles across the product suite, weighing local navigation inside a product against discovery of the wider platform",
+        "Conducted user research with enterprise customers",
+        "Improved design consistency across the product suite",
+        "Collaborated with globally distributed design and engineering teams"
+      ],
+      "productImpact": [
+        "Episerver Digital Experience Platform",
+        "Cross-product navigation",
+        "Design system components"
+      ]
+    },
+    {
+      "year": 2017,
+      "period": "2017 – 2018",
+      "role": "User Experience Lead",
+      "company": "Cambio Healthcare Systems",
+      "summary": "Led user experience for clinical decision support built to integrate into electronic medical record systems. Both major projects were designed with clinicians rather than for them, using co-design workshops, service blueprinting and in-situ field study to ground the work in real clinical workflow.",
+      "achievements": [
+        "Led design of Senior Alert, a decision support application for adult patient risk assessment and preventive care planning across five risk areas, built for integration into multiple electronic medical record systems",
+        "Ran 13 co-design engagements for Senior Alert: one focus group, three on-site workshops, and nine stakeholder and patient interviews",
+        "Designed a decision support system for Sweden's standardized care process for prostate cancer, integrated with the electronic health record, so that referrals carry adequate information and more patients receive care on time",
+        "Developed the prostate cancer system through five progressive co-design workshops, from service blueprint to functional prototype",
+        "Conducted 11 interviews spanning primary care physicians, specialists, process managers and patients, plus two field studies in a health centre and an emergency room",
+        "Introduced service blueprinting and process flowcharting into clinical design work, and maintained weekly online design iteration with clinicians"
+      ],
+      "productImpact": [
+        "Senior Alert",
+        "Prostate cancer standardized care process (SCP)",
+        "Electronic health record integration"
+      ]
+    },
+    {
+      "year": 2011,
+      "period": "2011 – 2018",
+      "role": "User Experience Researcher",
+      "company": "Karolinska Institutet",
+      "summary": "Ran a four-phase doctoral research programme on how persons with mild acquired cognitive impairment use and experience everyday information and communication technology. The programme moved from systematic review, through a national survey, into social network and content analysis of an online patient community, and finally to observational study.",
+      "achievements": [
+        "Screened 5,969 articles across eight databases and 55 search phrases in a systematic review, of which seven met inclusion criteria",
+        "Designed and ran a Swedish national survey of 282 participants, validated through an expert advisory committee and pilot testing",
+        "Analysed a 1,310-member Facebook community, covering 1,092 unique active members, using social network analysis and qualitative content analysis",
+        "Found 89 percent of participants using e-services, comparable to the healthy population, challenging assumptions about digital exclusion after brain injury",
+        "Co-designed and evaluated an Android heart rate variability biofeedback game with 11 participants aged 40 to 67, producing a reusable framework for gamified biofeedback research",
+        "Published in JMIR, PLOS ONE (twice), IEEE Access and Applied Clinical Informatics, and presented at MEDINFO and Scandinavian health informatics conferences",
+        "Defended the doctoral thesis at Karolinska Institutet in 2016"
+      ],
+      "productImpact": [
+        "Mild Brain Injury (MBI) research programme",
+        "HRV biofeedback game",
+        "Doctoral thesis, Karolinska Institutet"
+      ]
+    },
+    {
+      "year": 2010,
+      "period": "2010 – 2011",
+      "role": "User Experience Designer",
+      "company": "Karolinska Institutet",
+      "summary": "Designed interfaces for healthcare and research applications, and evaluated them empirically. The work centred on making complex clinical information legible at the point of decision, and on establishing eye-tracking as part of the usability toolkit.",
+      "achievements": [
+        "Completed a usability evaluation of Infobiotika, a visualization support providing patient overview for antibiotic use in intensive care, later published in Informatics for Health and Social Care",
+        "Combined usability testing with eye-tracking technology, presented at Medical Informatics Europe 2011",
+        "Created wireframes and interactive prototypes for clinical and research applications",
+        "Applied human-computer interaction principles to time-critical healthcare contexts"
+      ],
+      "productImpact": [
+        "Infobiotika visualization support",
+        "Eye-tracking usability evaluation"
+      ]
+    },
+    {
+      "year": 2009,
+      "period": "2009 – 2010",
+      "role": "Freelance Human-Computer Interaction Expert",
+      "company": "Uppsala University",
+      "summary": "Provided human-computer interaction expertise to university research projects while completing the M.Sc. in Human-Computer Interaction, with the master's thesis conducted jointly between the Department of Informatics and Media at Uppsala University and the Health Informatics Centre at Karolinska Institutet.",
+      "achievements": [
+        "Consulted on human-computer interaction research methodology",
+        "Designed user studies and evaluations for academic research projects",
+        "Contributed to academic research publications",
+        "Mentored students in user experience research methods"
+      ]
+    },
+    {
+      "year": 2006,
+      "period": "2006 – 2008",
+      "role": "Lead Developer",
+      "company": "Ramz Machin",
+      "summary": "Led software development work in the period preceding graduate study in human-computer interaction. The engineering grounding from this period continues to shape collaboration with data scientists and engineers during early product discovery."
+    },
+    {
+      "year": 2004,
+      "period": "2004 – 2006",
+      "role": "Instructor",
+      "company": "Cavendish College",
+      "summary": "Taught in a college setting before moving into human-computer interaction research and design."
+    },
+    {
+      "year": 2002,
+      "period": "2002 – 2004",
+      "role": "Developer",
+      "company": "Lad Macaron",
+      "summary": "First professional software engineering role, at the start of a career that later moved from building systems into researching and designing how people use them."
     }
   ]
 }

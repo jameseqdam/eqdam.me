@@ -53,48 +53,61 @@ const Experience = () => {
                   <p className="text-sm text-muted-foreground font-medium">{entry.company}</p>
                 </div>
                 <div className="flex flex-col lg:items-end gap-1">
-                  <span className="text-primary font-semibold">{entry.year}</span>
-                  <span className="text-xs sm:text-sm text-muted-foreground">{entry.rating}</span>
+                  <span className="text-primary font-semibold whitespace-nowrap">
+                    {entry.period ?? entry.year}
+                  </span>
+                  {entry.rating && (
+                    <span className="text-xs sm:text-sm text-muted-foreground">{entry.rating}</span>
+                  )}
                 </div>
               </div>
 
-              <p className="text-sm sm:text-base text-muted-foreground leading-relaxed text-justify hyphens-auto mb-6">
+              <p
+                className={`text-sm sm:text-base text-muted-foreground leading-relaxed text-justify hyphens-auto ${
+                  entry.achievements?.length || entry.productImpact?.length ? 'mb-6' : ''
+                }`}
+              >
                 {entry.summary}
               </p>
 
-              <div className="grid gap-6 lg:grid-cols-2">
-                <div>
-                  <h4 className="font-semibold text-primary mb-3 text-sm sm:text-base">
-                    Achievements
-                  </h4>
-                  <ul className="space-y-2 list-disc pl-5">
-                    {entry.achievements.map((achievement, index) => (
-                      <li
-                        key={index}
-                        className="text-sm text-muted-foreground leading-relaxed text-justify hyphens-auto pl-1"
-                      >
-                        {achievement}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-
-                <div>
-                  <h4 className="font-semibold text-primary mb-3 text-sm sm:text-base flex items-center gap-2">
-                    <TrendingUp className="h-4 w-4" />
-                    Product Impact
-                  </h4>
-                  <div className="flex flex-wrap gap-2">
-                    {entry.productImpact.map((product) => (
-                      <span
-                        key={product}
-                        className="px-2 lg:px-3 py-1 bg-secondary text-secondary-foreground rounded-full text-xs sm:text-sm"
-                      >
-                        {product}
-                      </span>
-                    ))}
+              {/* Early roles carry a summary only, so each block stands on its own. */}
+              <div className="grid gap-6 lg:grid-cols-2 empty:hidden">
+                {entry.achievements?.length ? (
+                  <div>
+                    <h4 className="font-semibold text-primary mb-3 text-sm sm:text-base">
+                      Achievements
+                    </h4>
+                    <ul className="space-y-2 list-disc pl-5">
+                      {entry.achievements.map((achievement, index) => (
+                        <li
+                          key={index}
+                          className="text-sm text-muted-foreground leading-relaxed text-justify hyphens-auto pl-1"
+                        >
+                          {achievement}
+                        </li>
+                      ))}
+                    </ul>
                   </div>
-                </div>
+                ) : null}
+
+                {entry.productImpact?.length ? (
+                  <div>
+                    <h4 className="font-semibold text-primary mb-3 text-sm sm:text-base flex items-center gap-2">
+                      <TrendingUp className="h-4 w-4" />
+                      Product Impact
+                    </h4>
+                    <div className="flex flex-wrap gap-2">
+                      {entry.productImpact.map((product) => (
+                        <span
+                          key={product}
+                          className="px-2 lg:px-3 py-1 bg-secondary text-secondary-foreground rounded-full text-xs sm:text-sm"
+                        >
+                          {product}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                ) : null}
               </div>
             </article>
           ))}
