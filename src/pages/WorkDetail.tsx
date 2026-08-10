@@ -1,6 +1,7 @@
 import { Link, useParams } from 'react-router-dom';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
 import SubPageLayout from '@/components/SubPageLayout';
+import BentoMetrics from '@/components/BentoMetrics';
 import { getWorkItem, workItems } from '@/lib/content';
 
 const WorkDetail = () => {
@@ -58,16 +59,7 @@ const WorkDetail = () => {
         {/* Impact metrics */}
         <section>
           <h2 className="text-xl sm:text-2xl font-semibold mb-6 lg:mb-8">Impact</h2>
-          <div className="grid gap-4 lg:gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {item.roiMetrics.map((metric) => (
-              <div key={metric.label} className="portfolio-card bg-background">
-                <div className="text-3xl lg:text-4xl font-bold text-primary mb-2">
-                  {metric.value}
-                </div>
-                <p className="text-sm text-muted-foreground leading-relaxed">{metric.label}</p>
-              </div>
-            ))}
-          </div>
+          <BentoMetrics metrics={item.roiMetrics} />
         </section>
 
         {/* Narrative */}
