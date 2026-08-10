@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { useLocation, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Menu, X } from 'lucide-react';
 
@@ -65,13 +65,32 @@ const Navigation = () => {
     setIsMobileMenuOpen(false);
   };
 
+  // On the homepage the "/" link would be a no-op route change, so intercept it
+  // and scroll back to the hero section instead.
+  const handleWordmarkClick = (event: React.MouseEvent<HTMLAnchorElement>) => {
+    if (!isHome) {
+      setIsMobileMenuOpen(false);
+      return;
+    }
+
+    event.preventDefault();
+    scrollToSection('home');
+  };
+
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
       isScrolled ? 'bg-background/95 backdrop-blur-sm border-b border-border shadow-sm' : 'bg-transparent'
     }`}>
       <div className="portfolio-container">
         <div className="flex items-center justify-between py-4">
-          <div className="text-xl font-bold text-primary">James Abbott Eqdam</div>
+          <Link
+            to="/"
+            onClick={handleWordmarkClick}
+            aria-label="James Abbott Eqdam — back to homepage"
+            className="text-xl font-bold text-primary hover:opacity-80 transition-opacity cursor-pointer"
+          >
+            James Abbott Eqdam
+          </Link>
           
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
