@@ -57,6 +57,7 @@
       "year": 2019,
       "role": "Senior User Experience Designer",
       "company": "Coupa Software",
+      "logo": "/images/companies/coupa.svg",
       "rating": "4.0 / 5 (Exceeds Expectations)",
       "summary": "Joined Coupa to support UX for Coupa Sourcing Optimization (CSO), then immediately took on UX responsibility for the Sourcing product as well. Focused on foundational tooling and on making design decisions technically executable.",
       "achievements": [
@@ -77,6 +78,7 @@
       "year": 2020,
       "role": "Senior User Experience Designer, promoted to Principal User Experience Designer",
       "company": "Coupa Software",
+      "logo": "/images/companies/coupa.svg",
       "rating": "5.0 / 5 (Distinguished Performance)",
       "summary": "Took on triple responsibility: leading UX for the Platform teams, supporting existing product work, and pioneering the research function. Initiated the executive conversation that made systematic user research possible at Coupa.",
       "achievements": [
@@ -99,6 +101,7 @@
       "year": 2021,
       "role": "Principal, User Experience Design and Manager",
       "company": "Coupa Software",
+      "logo": "/images/companies/coupa.svg",
       "rating": "5.0 / 5 (Distinguished Performance)",
       "summary": "Lifted UX research off the ground single-handedly while continuing to deliver multiple features per release across Sourcing, CSO and Platform. Began building the team through interviewing, hiring and onboarding.",
       "achievements": [
@@ -122,6 +125,7 @@
       "year": 2022,
       "role": "Principal, User Experience Design, promoted to Director of User Experience Research and Design",
       "company": "Coupa Software",
+      "logo": "/images/companies/coupa.svg",
       "rating": "4.0 / 5 (Exceeds Expectations)",
       "summary": "Promoted to Director. Shifted from individual contribution into building, leading and growing a collaborative team spanning designers in Sourcing, CSO, Platform, Community Insights and Treasury, plus researchers, and the PM, Dev, QE, Solution Architect and Documentation functions around them.",
       "achievements": [
@@ -146,6 +150,7 @@
       "year": 2023,
       "role": "Director, User Experience Research and Design",
       "company": "Coupa Software",
+      "logo": "/images/companies/coupa.svg",
       "rating": "4 / 5 (Exceed Expectations)",
       "summary": "Grew the research function despite a reduction in team headcount, and led the UX organisation through a period of company-wide change. Focused on delegation, mentorship and holding a user-centric line during organisational transformation.",
       "achievements": [
@@ -168,6 +173,7 @@
       "year": 2024,
       "role": "Director, User Experience Research and Design",
       "company": "Coupa Software",
+      "logo": "/images/companies/coupa.svg",
       "rating": "4 / 5 (Exceed Expectations)",
       "summary": "Transitioned from a combined design and research leadership role into dedicated research leadership. Handed over Sourcing and CSO design responsibilities, which released capacity to hire another researcher and to move the team from feature-level studies to sustainable research plans feeding future roadmaps.",
       "achievements": [
@@ -194,6 +200,7 @@
       "year": 2025,
       "role": "Director, User Experience Research and Design",
       "company": "Coupa Software",
+      "logo": "/images/companies/coupa.svg",
       "rating": "High Performer / Strong Achiever, Champions Core Values",
       "summary": "Delivered the foundational infrastructure year: a funded and deployed research repository, a quantitative measurement framework, and 53 research initiatives spanning AI, supplier and procurement, cross-product integration, and platform foundations. Assessed by leadership as having established research infrastructure that now supports consistent cross-project insight company-wide.",
       "achievements": [
@@ -226,6 +233,7 @@
       "period": "2018",
       "role": "User Experience Specialist",
       "company": "Episerver (now Optimizely)",
+      "logo": "/images/companies/optimizely.svg",
       "summary": "Joined the digital experience platform to work on design systems and cross-product user experience. The focus was consistency: making a suite of separately built products feel like one platform, and giving the design team shared components to work from.",
       "achievements": [
         "Developed design system components for the digital experience platform",
@@ -245,6 +253,7 @@
       "period": "2017 – 2018",
       "role": "User Experience Lead",
       "company": "Cambio Healthcare Systems",
+      "logo": "/images/companies/cambio.svg",
       "summary": "Led user experience for clinical decision support built to integrate into electronic medical record systems. Both major projects were designed with clinicians rather than for them, using co-design workshops, service blueprinting and in-situ field study to ground the work in real clinical workflow.",
       "achievements": [
         "Led design of Senior Alert, a decision support application for adult patient risk assessment and preventive care planning across five risk areas, built for integration into multiple electronic medical record systems",
@@ -265,6 +274,7 @@
       "period": "2011 – 2018",
       "role": "User Experience Researcher",
       "company": "Karolinska Institutet",
+      "logo": "/images/companies/karolinska-institutet.svg",
       "summary": "Ran a four-phase doctoral research programme on how persons with mild acquired cognitive impairment use and experience everyday information and communication technology. The programme moved from systematic review, through a national survey, into social network and content analysis of an online patient community, and finally to observational study.",
       "achievements": [
         "Screened 5,969 articles across eight databases and 55 search phrases in a systematic review, of which seven met inclusion criteria",
@@ -286,6 +296,7 @@
       "period": "2010 – 2011",
       "role": "User Experience Designer",
       "company": "Karolinska Institutet",
+      "logo": "/images/companies/karolinska-institutet.svg",
       "summary": "Designed interfaces for healthcare and research applications, and evaluated them empirically. The work centred on making complex clinical information legible at the point of decision, and on establishing eye-tracking as part of the usability toolkit.",
       "achievements": [
         "Completed a usability evaluation of Infobiotika, a visualization support providing patient overview for antibiotic use in intensive care, later published in Informatics for Health and Social Care",
@@ -303,6 +314,7 @@
       "period": "2009 – 2010",
       "role": "Freelance Human-Computer Interaction Expert",
       "company": "Uppsala University",
+      "logo": "/images/companies/uppsala-university.svg",
       "summary": "Provided human-computer interaction expertise to university research projects while completing the M.Sc. in Human-Computer Interaction, with the master's thesis conducted jointly between the Department of Informatics and Media at Uppsala University and the Health Informatics Centre at Karolinska Institutet.",
       "achievements": [
         "Consulted on human-computer interaction research methodology",
@@ -316,6 +328,7 @@
       "period": "2006 – 2008",
       "role": "Lead Developer",
       "company": "Ramz Machin",
+      "logo": "/images/companies/ramz-machin.svg",
       "summary": "Led software development work in the period preceding graduate study in human-computer interaction. The engineering grounding from this period continues to shape collaboration with data scientists and engineers during early product discovery."
     },
     {
@@ -323,6 +336,7 @@
       "period": "2004 – 2006",
       "role": "Instructor",
       "company": "Cavendish College",
+      "logo": "/images/companies/cavendish-college.png",
       "summary": "Taught in a college setting before moving into human-computer interaction research and design."
     },
     {
@@ -330,6 +344,7 @@
       "period": "2002 – 2004",
       "role": "Developer",
       "company": "Lad Macaron",
+      "logo": "/images/companies/lad-macaron.svg",
       "summary": "First professional software engineering role, at the start of a career that later moved from building systems into researching and designing how people use them."
     }
   ]

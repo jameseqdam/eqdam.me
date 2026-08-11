@@ -1,4 +1,5 @@
 import { Award, Calendar, TrendingUp } from 'lucide-react';
+import CompanyLogo from '@/components/CompanyLogo';
 import SubPageLayout from '@/components/SubPageLayout';
 import { experience } from '@/lib/content';
 
@@ -48,9 +49,12 @@ const Experience = () => {
           {timeline.map((entry) => (
             <article key={entry.year} className="portfolio-card bg-background">
               <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-2 mb-4">
-                <div>
-                  <h3 className="text-lg sm:text-xl font-semibold mb-1">{entry.role}</h3>
-                  <p className="text-sm text-muted-foreground font-medium">{entry.company}</p>
+                <div className="flex items-start gap-3 sm:gap-4">
+                  <CompanyLogo src={entry.logo} company={entry.company} />
+                  <div className="min-w-0">
+                    <h3 className="text-lg sm:text-xl font-semibold mb-1">{entry.role}</h3>
+                    <p className="text-sm text-muted-foreground font-medium">{entry.company}</p>
+                  </div>
                 </div>
                 <div className="flex flex-col lg:items-end gap-1">
                   <span className="text-primary font-semibold whitespace-nowrap">

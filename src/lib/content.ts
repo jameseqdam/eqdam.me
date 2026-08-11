@@ -44,6 +44,8 @@ export interface ExperienceEntry {
   period?: string;
   role: string;
   company: string;
+  /** Company logo under /images/companies. */
+  logo: string;
   /** Coupa performance-review rating; absent on roles that predate it. */
   rating?: string;
   summary: string;
