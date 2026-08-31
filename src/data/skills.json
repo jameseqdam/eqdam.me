@@ -1,0 +1,119 @@
+[
+  {
+    "name": "Research Methods",
+    "emphasis": ["User Interviews", "Usability Testing"],
+    "skills": [
+      "User Interviews",
+      "Usability Testing",
+      "Ethnographic Research",
+      "Survey Design",
+      "A/B Testing",
+      "Card Sorting",
+      "Tree Testing",
+      "Eye-tracking Studies",
+      "Diary Studies",
+      "Contextual Inquiry",
+      "Heuristic Evaluation",
+      "Expert Reviews",
+      "Competitive Analysis",
+      "Journey Mapping",
+      "Persona Development",
+      "Task Analysis"
+    ]
+  },
+  {
+    "name": "Design & Prototyping",
+    "emphasis": ["Design Systems", "Service Design"],
+    "skills": [
+      "Wireframing",
+      "Interactive Prototyping",
+      "Visual Design",
+      "Information Architecture",
+      "Interaction Design",
+      "Service Design",
+      "Design Systems",
+      "Accessibility Design",
+      "Mobile Design",
+      "Responsive Design",
+      "Design Thinking",
+      "Human-Centered Design",
+      "Agile UX",
+      "Lean UX",
+      "Design Strategy",
+      "Brand Guidelines"
+    ]
+  },
+  {
+    "name": "Tools & Software",
+    "emphasis": ["Figma", "Dovetail"],
+    "skills": [
+      "Figma",
+      "Sketch",
+      "Adobe Creative Suite",
+      "InVision",
+      "Principle",
+      "Framer",
+      "Miro",
+      "Mural",
+      "UserTesting",
+      "Hotjar",
+      "Google Analytics",
+      "Mixpanel",
+      "Pendo",
+      "Dovetail",
+      "SurveyMonkey",
+      "Qualtrics",
+      "Metabase",
+      "Tableau",
+      "R",
+      "SPSS",
+      "NVivo",
+      "Optimal Workshop"
+    ]
+  },
+  {
+    "name": "Leadership & Strategy",
+    "emphasis": ["Team Leadership", "Strategic Planning"],
+    "skills": [
+      "Team Leadership",
+      "Strategic Planning",
+      "Stakeholder Management",
+      "Change Management",
+      "Process Development",
+      "Cross-functional Collaboration",
+      "Design Operations",
+      "UX Evangelism",
+      "Budget Management",
+      "Talent Acquisition",
+      "Mentoring",
+      "Workshop Facilitation",
+      "Presentation Skills",
+      "Executive Communication"
+    ]
+  },
+  {
+    "name": "Technical & Analytics",
+    "emphasis": ["Statistical Analysis", "Python"],
+    "skills": [
+      "HTML/CSS",
+      "JavaScript",
+      "SQL",
+      "Python",
+      "R Programming",
+      "Statistical Analysis",
+      "Data Visualization",
+      "API Integration",
+      "Version Control",
+      "Agile Methodologies",
+      "Design Tokens",
+      "Component Libraries",
+      "CMS Platforms",
+      "E-commerce Platforms"
+    ]
+  },
+  {
+    "name": "Languages",
+    "emphasis": [],
+    "skills": ["English (Fluent)", "Swedish (Professional)"]
+  }
+]

@@ -1,0 +1,38 @@
+{
+  "degrees": [
+    {
+      "year": 2016,
+      "degree": "Ph.D., User Experience in Health Informatics",
+      "institution": "Karolinska Institutet",
+      "location": "Stockholm, Sweden",
+      "note": "Four-study doctoral programme on how persons with mild acquired cognitive impairment use and experience information and communication technology."
+    },
+    {
+      "year": 2010,
+      "degree": "M.Sc., Human-Computer Interaction",
+      "institution": "Uppsala University",
+      "location": "Uppsala, Sweden",
+      "note": "Master's thesis conducted jointly with the Health Informatics Centre at Karolinska Institutet."
+    },
+    {
+      "year": 2004,
+      "degree": "B.Eng., Software Engineering",
+      "institution": "Shiraz University",
+      "location": "Shiraz",
+      "note": "The engineering grounding that still carries early discovery work with data scientists and engineers."
+    }
+  ],
+  "certifications": [
+    "Product Discovery",
+    "Radical Product Thinking: Vision Setting",
+    "Digital Adoption",
+    "Pendo Product-led"
+  ],
+  "venueHighlights": [
+    "JMIR",
+    "PLOS ONE",
+    "IEEE Access",
+    "Applied Clinical Informatics",
+    "MEDINFO"
+  ]
+}

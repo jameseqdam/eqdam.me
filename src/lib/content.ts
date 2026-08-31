@@ -1,6 +1,8 @@
 import researchData from '@/data/research.json';
 import experienceData from '@/data/experience.json';
 import reportsData from '@/data/reports.json';
+import skillsData from '@/data/skills.json';
+import educationData from '@/data/education.json';
 
 export interface WorkItem {
   title: string;
@@ -25,6 +27,37 @@ export interface Article {
   tags: string[];
   bodyMarkdown: string;
   originalUrl: string;
+}
+
+export interface Degree {
+  /** Year awarded. Doubles as the sort key. */
+  year: number;
+  degree: string;
+  institution: string;
+  location: string;
+  /** One line. The publication record carries the detail. */
+  note: string;
+}
+
+export interface EducationContent {
+  degrees: Degree[];
+  certifications: string[];
+  /**
+   * Venue names to print on the homepage. A curated subset of the venues in
+   * research.json, whose own strings carry volume and page numbers.
+   */
+  venueHighlights: string[];
+}
+
+export interface SkillCategory {
+  name: string;
+  /**
+   * Skills from this category's own list that carry the discipline. They are
+   * drawn larger in the mosaic, so the eye has somewhere to land in a cloud of
+   * a hundred chips.
+   */
+  emphasis: string[];
+  skills: string[];
 }
 
 /**
@@ -125,6 +158,10 @@ export const researchItems: ResearchItem[] = (researchData as ResearchItem[])
 export const experience = experienceData as ExperienceContent;
 
 export const externalReports = reportsData as ExternalReport[];
+
+export const skillCategories = skillsData as SkillCategory[];
+
+export const education = educationData as EducationContent;
 
 export const getWorkItem = (slug?: string): WorkItem | undefined =>
   workItems.find((item) => item.slug === slug);

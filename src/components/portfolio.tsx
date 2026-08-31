@@ -6,7 +6,7 @@ import ProjectsSection from './ProjectsSection';
 import SkillsSection from './SkillsSection.tsx';
 import EducationSection from './EducationSection.tsx';
 import ContactSection from './ContactSection.tsx';
-import ThoughtLeadershipCta from './ThoughtLeadershipCta.tsx';
+import ThoughtLeadershipSection from './ThoughtLeadershipSection.tsx';
 import SiteFooter from './SiteFooter.tsx';
 
 const Portfolio = () => {
@@ -20,7 +20,7 @@ const Portfolio = () => {
         <ProjectsSection />
         <SkillsSection />
         <EducationSection />
-        <ThoughtLeadershipCta />
+        <ThoughtLeadershipSection />
         <ContactSection />
       </main>
       
