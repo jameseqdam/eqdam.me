@@ -18,6 +18,44 @@ export interface WorkItem {
   roiMetrics: { value: string; label: string }[];
 }
 
+/** One body line of a slide. `lead` is the bold label the decks put in front. */
+export interface DeckLine {
+  lead?: string;
+  /** Supports the same inline `**bold**` / `*italic*` as the article bodies. */
+  text: string;
+}
+
+export interface DeckSlide {
+  /**
+   * Layout. `title` opens, `point` carries a numbered argument, `statement` a
+   * turn in the argument, `close` the hand-off at the end.
+   */
+  kind: 'title' | 'point' | 'statement' | 'close';
+  /** Zero-padded, on the numbered slides only. */
+  ordinal?: string;
+  eyebrow?: string;
+  headline: string;
+  /** Sits under the headline, quieter than a body line. */
+  standfirst?: string;
+  body?: DeckLine[];
+  /** Boxed aside. The source decks use it for "Call to Action" and "Focus". */
+  callout?: DeckLine & { lead: string };
+  /** Where a closing slide sends the reader. Internal route. */
+  link?: { label: string; to: string };
+}
+
+/**
+ * A LinkedIn carousel, rebuilt as slides rather than flattened into prose.
+ *
+ * These pieces were authored as decks, so the article body is the deck: the
+ * slide sequence is the argument, and each slide is one beat of it.
+ */
+export interface Deck {
+  /** Format label shown above the stage, e.g. "Carousel". */
+  kicker: string;
+  slides: DeckSlide[];
+}
+
 export interface Article {
   title: string;
   slug: string;
@@ -25,7 +63,9 @@ export interface Article {
   readTime: string;
   excerpt: string;
   tags: string[];
-  bodyMarkdown: string;
+  /** Long-form pieces only; the deck-native pieces carry `deck` instead. */
+  bodyMarkdown?: string;
+  deck?: Deck;
   originalUrl: string;
 }
 

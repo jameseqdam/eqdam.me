@@ -1,7 +1,8 @@
 import { Link, useParams } from 'react-router-dom';
-import { ArrowLeft, ArrowRight, Clock, ExternalLink } from 'lucide-react';
+import { ArrowLeft, ArrowRight, Clock, ExternalLink, Presentation } from 'lucide-react';
 import SubPageLayout from '@/components/SubPageLayout';
 import Markdown from '@/components/Markdown';
+import SlideDeck from '@/components/SlideDeck';
 import { articles, getArticle } from '@/lib/content';
 
 const ArticleDetail = () => {
@@ -43,6 +44,15 @@ const ArticleDetail = () => {
         <Clock className="h-4 w-4" />
         {article.readTime}
       </span>
+      {article.deck && (
+        <>
+          <span aria-hidden="true">•</span>
+          <span className="inline-flex items-center gap-1">
+            <Presentation className="h-4 w-4" />
+            {article.deck.slides.length}-slide {article.deck.kicker.toLowerCase()}
+          </span>
+        </>
+      )}
     </div>
   );
 
@@ -60,7 +70,11 @@ const ArticleDetail = () => {
       meta={meta}
     >
       <article>
-        <Markdown content={article.bodyMarkdown} />
+        {article.deck ? (
+          <SlideDeck deck={article.deck} />
+        ) : (
+          article.bodyMarkdown && <Markdown content={article.bodyMarkdown} />
+        )}
 
         <div className="mt-10 flex flex-wrap gap-2">
           {article.tags.map((tag) => (

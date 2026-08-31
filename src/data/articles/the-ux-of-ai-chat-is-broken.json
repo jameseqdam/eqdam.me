@@ -4,7 +4,93 @@
   "publishDate": "December 2025",
   "readTime": "2 min read",
   "excerpt": "A visual breakdown of the fundamental design flaws in current conversational user interfaces: the thread trap, tool lock-in, context amnesia and the trust gap. The proposed direction is not a smarter chatbot but a continuous UI built around persistent workspaces.",
-  "tags": ["Conversational AI", "AI UX", "Interaction Design", "Trust in AI", "Design Critique"],
-  "bodyMarkdown": "**5 Fundamental Design Flaws in Current CUIs**\n\n## 1. The Thread Trap\n\nCurrent AI chats force a new thread for every single topic change.\n\nIt's rigid, disrupts your flow, and isolates your ideas.\n\n## 2. Tool Lock-In\n\nStart with an image? You're stuck there.\n\nSwitching to code or writing often requires a fresh start, killing your momentum instantly.\n\n## 3. Context Amnesia\n\nYour history becomes a graveyard of scattered chats.\n\nThere is no persistent workspace, only fragmented memories you can't easily search.\n\n## 4. The Trust Gap\n\nOne \"hallucination\" breaks the spell.\n\nUsers are forced to double-check everything, completely negating the efficiency gains of AI.\n\n## The Solution: Continuous UI\n\nWe need persistent workspaces, not just smarter chatbots.\n\n---\n\nRead the full analysis. Insights by Abb Eqdam on the future of AI UX.",
-  "originalUrl": ""
+  "tags": [
+    "Conversational AI",
+    "AI UX",
+    "Interaction Design",
+    "Trust in AI",
+    "Design Critique"
+  ],
+  "originalUrl": "",
+  "deck": {
+    "kicker": "Carousel",
+    "slides": [
+      {
+        "kind": "title",
+        "headline": "The UX of AI Chat is Broken",
+        "standfirst": "5 fundamental design flaws in current conversational user interfaces."
+      },
+      {
+        "kind": "point",
+        "ordinal": "01",
+        "headline": "The Thread Trap",
+        "body": [
+          {
+            "text": "Current AI chats force a **new thread** for every single topic change."
+          },
+          {
+            "text": "It's rigid, disrupts your flow, and isolates your ideas."
+          }
+        ]
+      },
+      {
+        "kind": "point",
+        "ordinal": "02",
+        "headline": "Tool Lock-In",
+        "body": [
+          {
+            "text": "Start with an image? **You're stuck there.**"
+          },
+          {
+            "text": "Switching to code or writing often requires a fresh start, killing your momentum instantly."
+          }
+        ]
+      },
+      {
+        "kind": "point",
+        "ordinal": "03",
+        "headline": "Context Amnesia",
+        "body": [
+          {
+            "text": "Your history becomes a **graveyard** of scattered chats."
+          },
+          {
+            "text": "There is no persistent workspace, only fragmented memories you can't easily search."
+          }
+        ]
+      },
+      {
+        "kind": "point",
+        "ordinal": "04",
+        "headline": "The Trust Gap",
+        "body": [
+          {
+            "text": "One \"hallucination\" breaks the spell."
+          },
+          {
+            "text": "Users are forced to **double-check everything**, completely negating the efficiency gains of AI."
+          }
+        ]
+      },
+      {
+        "kind": "statement",
+        "eyebrow": "The Solution",
+        "headline": "Continuous UI",
+        "body": [
+          {
+            "text": "We need persistent workspaces, not just smarter chatbots."
+          }
+        ]
+      },
+      {
+        "kind": "close",
+        "headline": "Read the full analysis",
+        "standfirst": "Insights on the future of AI UX.",
+        "link": {
+          "label": "Analysis of Conversational AI",
+          "to": "/articles/analysis-of-conversational-ai-design-flaws"
+        }
+      }
+    ]
+  }
 }

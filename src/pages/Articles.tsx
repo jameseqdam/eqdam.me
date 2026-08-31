@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { ArrowRight, Clock } from 'lucide-react';
+import { ArrowRight, Clock, Presentation } from 'lucide-react';
 import SubPageLayout from '@/components/SubPageLayout';
 import { articles } from '@/lib/content';
 
@@ -26,6 +26,12 @@ const Articles = () => {
                 <Clock className="h-3.5 w-3.5" />
                 {article.readTime}
               </span>
+              {article.deck && (
+                <span className="inline-flex items-center gap-1 rounded-full border border-primary/30 bg-primary/5 px-2 py-0.5 text-xs font-medium text-primary">
+                  <Presentation className="h-3 w-3" />
+                  {article.deck.slides.length}-slide {article.deck.kicker.toLowerCase()}
+                </span>
+              )}
             </div>
 
             <h2 className="text-xl sm:text-2xl font-semibold leading-snug mb-3 transition-colors group-hover:text-primary">
@@ -47,7 +53,7 @@ const Articles = () => {
             </div>
 
             <span className="inline-flex items-center gap-2 text-sm font-medium text-primary">
-              Read article
+              {article.deck ? 'View the deck' : 'Read article'}
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
             </span>
           </Link>

@@ -1,4 +1,4 @@
-import { Fragment, ReactNode } from 'react';
+import { renderInline } from '@/lib/inline';
 
 /**
  * Minimal renderer for the subset of Markdown used by the article bodies in
@@ -65,30 +65,6 @@ const parseBlocks = (markdown: string): Block[] => {
 
   flushParagraph();
   return blocks;
-};
-
-const renderInline = (text: string): ReactNode[] => {
-  const tokens = text.split(/(\*\*[^*]+\*\*|\*[^*]+\*)/g).filter(Boolean);
-
-  return tokens.map((token, index) => {
-    if (token.startsWith('**') && token.endsWith('**')) {
-      return (
-        <strong key={index} className="font-semibold text-foreground">
-          {token.slice(2, -2)}
-        </strong>
-      );
-    }
-
-    if (token.startsWith('*') && token.endsWith('*')) {
-      return (
-        <em key={index} className="italic">
-          {token.slice(1, -1)}
-        </em>
-      );
-    }
-
-    return <Fragment key={index}>{token}</Fragment>;
-  });
 };
 
 const headingClasses: Record<number, string> = {

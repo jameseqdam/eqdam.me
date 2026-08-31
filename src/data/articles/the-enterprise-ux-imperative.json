@@ -4,7 +4,89 @@
   "publishDate": "2025",
   "readTime": "2 min read",
   "excerpt": "AI separates tasks from purpose, and the job of enterprise UX is to design the boundary between them. This piece frames the two domains, the hand-off challenge between them, and a shift in how success should be measured: strategic time gained, not tasks completed.",
-  "tags": ["Enterprise UX", "AI Strategy", "Future of Work", "Automation", "Design Leadership", "UX Metrics"],
-  "bodyMarkdown": "**AI separates Tasks from Purpose. Our job is to design the boundary between them.**\n\n## Task Domain: Pure Efficiency\n\nAI automates repetitive, rule-based work (e.g., invoice matching).\n\n**UX Mandate:** Ensure reliability, transparency, and minimal human interaction.\n\n## Purpose Domain: Strategic Judgment\n\nHigh-value work requiring empathy, ethics, and unique experience.\n\n**UX Mandate:** Augment purpose. Deliver complex insights, not raw data.\n\n## The UX Hand-Off Challenge\n\nTransitioning seamlessly from AI automation to human decision-making.\n\n**Key Principle:** Present the why and what-if, not the how (raw data).\n\n## Elevating the Enterprise User\n\nWe design systems that transform clerks into Oversight Experts and analysts into Risk Strategists.\n\n**Call to Action:** Measure success by strategic time gained, not tasks completed.\n\n---\n\nReady for the future of UX? Dive deeper into how AI is reshaping enterprise UX, augmenting purpose, and automating tasks in the full article, *The Future of Work in Enterprise UX: AI Augments Purpose, Automates Tasks*.",
-  "originalUrl": ""
+  "tags": [
+    "Enterprise UX",
+    "AI Strategy",
+    "Future of Work",
+    "Automation",
+    "Design Leadership",
+    "UX Metrics"
+  ],
+  "originalUrl": "",
+  "deck": {
+    "kicker": "Carousel",
+    "slides": [
+      {
+        "kind": "title",
+        "eyebrow": "The Enterprise UX Imperative",
+        "headline": "AI separates *Tasks* from *Purpose*.",
+        "standfirst": "Our job is to design the boundary between them."
+      },
+      {
+        "kind": "point",
+        "ordinal": "01",
+        "eyebrow": "Task Domain",
+        "headline": "Pure Efficiency",
+        "body": [
+          {
+            "text": "AI automates repetitive, rule-based work (e.g., invoice matching)."
+          },
+          {
+            "lead": "UX Mandate",
+            "text": "Ensure reliability, transparency, and minimal human interaction."
+          }
+        ]
+      },
+      {
+        "kind": "point",
+        "ordinal": "02",
+        "eyebrow": "Purpose Domain",
+        "headline": "Strategic Judgment",
+        "body": [
+          {
+            "text": "High-value work requiring empathy, ethics, and unique experience."
+          },
+          {
+            "lead": "UX Mandate",
+            "text": "Augment purpose. Deliver complex **insights**, not raw data."
+          }
+        ]
+      },
+      {
+        "kind": "statement",
+        "headline": "The UX Hand-Off Challenge",
+        "body": [
+          {
+            "text": "Transitioning seamlessly from AI automation to human decision-making."
+          },
+          {
+            "lead": "Key Principle",
+            "text": "Present the *why* and *what-if*, not the *how* (raw data)."
+          }
+        ]
+      },
+      {
+        "kind": "statement",
+        "headline": "Elevating the Enterprise User",
+        "body": [
+          {
+            "text": "We design systems that transform clerks into **Oversight Experts** and analysts into **Risk Strategists**."
+          }
+        ],
+        "callout": {
+          "lead": "Call to Action",
+          "text": "Measure success by strategic time gained, not tasks completed."
+        }
+      },
+      {
+        "kind": "close",
+        "headline": "Ready for the future of UX?",
+        "standfirst": "Dive deeper into how AI is reshaping enterprise UX, augmenting purpose, and automating tasks.",
+        "link": {
+          "label": "The Future of Work in Enterprise UX",
+          "to": "/articles/the-future-of-work-in-enterprise-ux"
+        }
+      }
+    ]
+  }
 }

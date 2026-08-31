@@ -16,7 +16,8 @@ const entries = articles.map((article, index) => ({
   slug: article.slug,
   title: article.title,
   publishDate: article.publishDate,
-  readTime: article.readTime,
+  /** Slide count on the deck-native pieces, reading time on the prose ones. */
+  format: article.deck ? `${article.deck.slides.length} slides` : article.readTime,
   /** Two tags is enough to place a piece; the article page carries the rest. */
   tags: article.tags.slice(0, 2),
   teaser: teaser(article.excerpt),
@@ -146,7 +147,7 @@ const ThoughtLeadershipSection = () => {
                     </h3>
 
                     <span className="hidden shrink-0 text-xs text-muted-foreground tabular-nums sm:block">
-                      {entry.readTime}
+                      {entry.format}
                     </span>
                   </div>
 

@@ -4,7 +4,88 @@
   "publishDate": "2025",
   "readTime": "2 min read",
   "excerpt": "Purchase intent peaks between 4.2 and 4.5 stars, not at 5.0, because users are intuitive Bayesian reasoners who read volume as validity and perfection as manipulation. The UX takeaway is to design for predictability: users are not looking for perfect, they are looking for proven.",
-  "tags": ["Social Proof", "Behavioural Science", "Trust and Credibility", "UX Research", "Bayesian Inference", "Conversion Design"],
-  "bodyMarkdown": "**The Science of Social Proof in UX. Focus: Volume over Perfection.**\n\n## The Law of Large Numbers\n\n**Volume equals validity.**\n\n1,000 reviews at 4.2 stars provide \"statistical confidence.\"\n\n**Concept:** A large sample size filters out outliers and \"statistical noise.\"\n\n## The Bayesian Brain\n\n**We are natural statisticians.**\n\n**Bayesian Inference:** We update our trust based on the strength of evidence.\n\n**Insight:** 1,000 data points create a stronger \"prior\" than 5 perfect ones.\n\n## The \"Too Good to Be True\" Effect\n\n**Perfection triggers skepticism.**\n\nResearch shows purchase intent peaks between 4.2 and 4.5 stars.\n\n**Fact:** Above 4.5, users suspect manipulation or data censorship.\n\n## The UX Takeaway\n\n**Design for predictability.**\n\nUsers aren't looking for \"perfect\", they are looking for \"proven.\"\n\n**Call to Action:** Is your product's rating authentic or just lucky?",
-  "originalUrl": ""
+  "tags": [
+    "Social Proof",
+    "Behavioural Science",
+    "Trust and Credibility",
+    "UX Research",
+    "Bayesian Inference",
+    "Conversion Design"
+  ],
+  "originalUrl": "",
+  "deck": {
+    "kicker": "Carousel",
+    "slides": [
+      {
+        "kind": "title",
+        "eyebrow": "The Trust Paradox",
+        "headline": "Why 4.2★ beats 5.0★",
+        "standfirst": "The science of social proof in UX.",
+        "callout": {
+          "lead": "Focus",
+          "text": "Volume over perfection."
+        }
+      },
+      {
+        "kind": "point",
+        "ordinal": "01",
+        "eyebrow": "The Law of Large Numbers",
+        "headline": "Volume equals validity.",
+        "body": [
+          {
+            "text": "1,000 reviews at 4.2 stars provide **statistical confidence**."
+          },
+          {
+            "lead": "Concept",
+            "text": "A large sample size filters out outliers and statistical noise."
+          }
+        ]
+      },
+      {
+        "kind": "point",
+        "ordinal": "02",
+        "eyebrow": "The Bayesian Brain",
+        "headline": "We are natural statisticians.",
+        "body": [
+          {
+            "lead": "Bayesian Inference",
+            "text": "We update our trust based on the strength of evidence."
+          },
+          {
+            "lead": "Insight",
+            "text": "1,000 data points create a stronger **prior** than 5 perfect ones."
+          }
+        ]
+      },
+      {
+        "kind": "point",
+        "ordinal": "03",
+        "eyebrow": "The \"Too Good to Be True\" Effect",
+        "headline": "Perfection triggers skepticism.",
+        "body": [
+          {
+            "text": "Research shows purchase intent peaks between **4.2 and 4.5 stars**."
+          },
+          {
+            "lead": "Fact",
+            "text": "Above 4.5, users suspect manipulation or data censorship."
+          }
+        ]
+      },
+      {
+        "kind": "close",
+        "eyebrow": "The UX Takeaway",
+        "headline": "Design for predictability.",
+        "body": [
+          {
+            "text": "Users aren't looking for **perfect**, they are looking for **proven**."
+          }
+        ],
+        "callout": {
+          "lead": "Call to Action",
+          "text": "Is your product's rating authentic, or just lucky?"
+        }
+      }
+    ]
+  }
 }
