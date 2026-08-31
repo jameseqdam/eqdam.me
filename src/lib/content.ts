@@ -1,5 +1,6 @@
 import researchData from '@/data/research.json';
 import experienceData from '@/data/experience.json';
+import reportsData from '@/data/reports.json';
 
 export interface WorkItem {
   title: string;
@@ -24,6 +25,16 @@ export interface Article {
   tags: string[];
   bodyMarkdown: string;
   originalUrl: string;
+}
+
+/**
+ * Older project write-up hosted outside the site. These predate the case-study
+ * format, so they are listed rather than given pages of their own.
+ */
+export interface ExternalReport {
+  title: string;
+  description: string;
+  url: string;
 }
 
 export interface ResearchItem {
@@ -53,6 +64,28 @@ export interface ExperienceEntry {
   productImpact?: string[];
 }
 
+/**
+ * One company-length chapter of the career, condensed for the homepage rail.
+ *
+ * Deliberately not derived from `timeline`: the rail needs a single short line
+ * per organisation, whereas the timeline carries a year-by-year record whose
+ * roles and summaries are far too long to skim.
+ */
+export interface ExperienceChapter {
+  /** Start year. Sort key and rail label. */
+  startYear: number;
+  /** Full span, e.g. "2010 – 2018". */
+  period: string;
+  company: string;
+  /** Company logo under /images/companies. */
+  logo: string;
+  /** Most senior title held during the chapter. */
+  role: string;
+  /** One or two sentences. Anything longer belongs on /experience. */
+  glimpse: string;
+  tags: string[];
+}
+
 export interface ExperienceMilestone {
   milestone: string;
   detail: string;
@@ -61,6 +94,7 @@ export interface ExperienceMilestone {
 
 export interface ExperienceContent {
   summary: string;
+  chapters: ExperienceChapter[];
   keyMilestones: ExperienceMilestone[];
   timeline: ExperienceEntry[];
 }
@@ -89,6 +123,8 @@ export const researchItems: ResearchItem[] = (researchData as ResearchItem[])
   .sort((a, b) => b.year - a.year || a.title.localeCompare(b.title));
 
 export const experience = experienceData as ExperienceContent;
+
+export const externalReports = reportsData as ExternalReport[];
 
 export const getWorkItem = (slug?: string): WorkItem | undefined =>
   workItems.find((item) => item.slug === slug);

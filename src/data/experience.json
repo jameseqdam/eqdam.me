@@ -1,5 +1,79 @@
 {
   "summary": "Leadership built on a simple premise: research and design are only valuable when they change what gets built. Across seven years at Coupa Software, the UX organisation grew from six industrial designers with no shared process or tooling into a discipline of 40+ designers and researchers serving 20+ concurrent product lines inside a 5,000-person business. That growth was engineered rather than inherited. It came from founding the UX Research function single-handedly and then scaling it, from establishing the infrastructure that makes qualitative insight reusable (a governed Dovetail repository, standardized taxonomy, research intake, UEQ and UX KPI benchmarks), and from a long-term vision that deliberately staged research maturity from Micro (quick and dirty for important projects) through Meso (a process anyone can use to request research) and Macro (feature research shaping product roadmaps) to Mega (strategic UX research across all Coupa products, with demonstrated ROI). The underlying philosophy is drawn from a decade of academic research practice at Karolinska Institutet: outcome over output, flexibility over structure, moving teams from doubt to certainty with evidence, and making technology invisible. A software engineering background allows the same person to sit credibly with data scientists, engineers and product managers during early discovery, before anyone knows what to build.",
+  "chapters": [
+    {
+      "startYear": 2002,
+      "period": "2002 – 2004",
+      "company": "Lad Macaron",
+      "logo": "/images/companies/lad-macaron.svg",
+      "role": "Developer",
+      "glimpse": "First professional engineering role, building the kind of systems a later career would spend its time studying people using.",
+      "tags": ["Software engineering"]
+    },
+    {
+      "startYear": 2004,
+      "period": "2004 – 2006",
+      "company": "Cavendish College",
+      "logo": "/images/companies/cavendish-college.png",
+      "role": "Instructor",
+      "glimpse": "Taught in a college setting before moving into human-computer interaction research and design.",
+      "tags": ["Teaching"]
+    },
+    {
+      "startYear": 2006,
+      "period": "2006 – 2008",
+      "company": "Ramz Machin",
+      "logo": "/images/companies/ramz-machin.svg",
+      "role": "Lead Developer",
+      "glimpse": "Led development in the years before graduate study. The engineering grounding still carries early discovery work with data scientists and engineers.",
+      "tags": ["Engineering leadership"]
+    },
+    {
+      "startYear": 2009,
+      "period": "2009 – 2010",
+      "company": "Uppsala University",
+      "logo": "/images/companies/uppsala-university.svg",
+      "role": "Freelance HCI Expert",
+      "glimpse": "Advised university research projects on method while completing the M.Sc. in Human-Computer Interaction.",
+      "tags": ["Study design", "M.Sc. HCI"]
+    },
+    {
+      "startYear": 2010,
+      "period": "2010 – 2018",
+      "company": "Karolinska Institutet",
+      "logo": "/images/companies/karolinska-institutet.svg",
+      "role": "UX Designer, then UX Researcher",
+      "glimpse": "A four-phase doctoral programme on ICT use after mild acquired cognitive impairment: 5,969 articles screened, 282 survey participants, thesis defended in 2016.",
+      "tags": ["PhD, 2016", "Mixed methods", "Eye-tracking"]
+    },
+    {
+      "startYear": 2017,
+      "period": "2017 – 2018",
+      "company": "Cambio Healthcare Systems",
+      "logo": "/images/companies/cambio.svg",
+      "role": "User Experience Lead",
+      "glimpse": "Clinical decision support designed with clinicians rather than for them: 13 co-design engagements, 11 interviews and two field studies.",
+      "tags": ["Healthcare", "Co-design", "Service blueprints"]
+    },
+    {
+      "startYear": 2018,
+      "period": "2018",
+      "company": "Episerver (now Optimizely)",
+      "logo": "/images/companies/optimizely.svg",
+      "role": "User Experience Specialist",
+      "glimpse": "Design system components and cross-product navigation that made a suite of separately built products feel like one platform.",
+      "tags": ["Design systems", "Navigation"]
+    },
+    {
+      "startYear": 2019,
+      "period": "2019 – Present",
+      "company": "Coupa Software",
+      "logo": "/images/companies/coupa.svg",
+      "role": "Director, UX Research & Design",
+      "glimpse": "Grew UX from six industrial designers into a 40+ person research and design discipline across 20+ product lines, and founded the research function on the way.",
+      "tags": ["6 → 40+ team", "Founded UX research", "AI research"]
+    }
+  ],
   "keyMilestones": [
     {
       "milestone": "Scaled UX from 6 to 40+ designers and researchers",

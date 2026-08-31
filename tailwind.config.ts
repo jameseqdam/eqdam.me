@@ -119,6 +119,27 @@ export default {
 						opacity: '1'
 					}
 				},
+				/*
+				 * Case-study belt. Each track holds the same cards twice, and every
+				 * card carries its own trailing margin, so exactly half the track
+				 * width is one full set — which makes -50% a seamless loop point.
+				 */
+				'marquee-left': {
+					from: {
+						transform: 'translateX(0)'
+					},
+					to: {
+						transform: 'translateX(-50%)'
+					}
+				},
+				'marquee-right': {
+					from: {
+						transform: 'translateX(-50%)'
+					},
+					to: {
+						transform: 'translateX(0)'
+					}
+				},
 				'preloader-out': {
 					'0%': {
 						opacity: '1',
@@ -136,6 +157,9 @@ export default {
 				'reveal-pulse': 'reveal-pulse 0.6s ease-out',
 				'wheel-spin': 'wheel-spin 6s linear infinite',
 				'segment-sweep': 'segment-sweep 0.45s ease-out backwards',
+				/* Different speeds per row so the two belts never lock into step. */
+				'marquee-left': 'marquee-left 44s linear infinite',
+				'marquee-right': 'marquee-right 52s linear infinite',
 				'preloader-out': 'preloader-out 0.45s ease-in forwards'
 			}
 		}

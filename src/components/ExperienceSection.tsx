@@ -1,140 +1,197 @@
-import { Calendar, MapPin, Building } from 'lucide-react';
+import { useEffect, useRef, useState } from 'react';
+import CompanyLogo from './CompanyLogo';
 import SectionCta from './SectionCta';
+import { experience } from '@/lib/content';
 
+/** Long enough to read a glimpse line, short enough to see all eight in a sitting. */
+const AUTOPLAY_MS = 3800;
+
+const chapters = [...experience.chapters].sort((a, b) => a.startYear - b.startYear);
+
+/**
+ * Career at a glance: a chronological rail of company chapters with one short
+ * glimpse beneath it.
+ *
+ * The homepage deliberately carries no achievement lists — this section used to
+ * repeat six full role write-ups that the /experience page already tells better.
+ * Instead the rail plays itself through all eight chapters on scroll-in, so a
+ * visitor sees the whole shape of the career without scrolling, and anyone who
+ * wants substance is one click from the full timeline.
+ */
 const ExperienceSection = () => {
-  const experiences = [
-    {
-      title: "Director of UX Research & Design",
-      company: "Coupa Software",
-      location: "San Francisco, CA",
-      period: "Jan 2019 – Present",
-      description: "Leading strategic UX initiatives across the global spend management platform, building and managing high-performing research and design teams.",
-      highlights: [
-        "Built and scaled UX research and design teams from ground up",
-        "Established comprehensive UX processes and methodologies",
-        "Evangelized user-centered design across 1000+ person organization",
-        "Delivered measurable impact through data-driven design decisions",
-        "Led cross-functional collaboration with product, engineering, and business stakeholders"
-      ]
-    },
-    {
-      title: "User Experience Specialist",
-      company: "Episerver (now Optimizely)",
-      location: "Stockholm, Sweden",
-      period: "Aug 2018 – Dec 2018",
-      description: "Focused on design systems and user experience optimization for the digital experience platform.",
-      highlights: [
-        "Developed comprehensive design system components",
-        "Conducted user research for enterprise customers",
-        "Improved design consistency across product suite",
-        "Collaborated with global design and engineering teams"
-      ]
-    },
-    {
-      title: "User Experience Lead",
-      company: "Cambio Healthcare Systems",
-      location: "Stockholm, Sweden",
-      period: "Jan 2017 – Jul 2018",
-      description: "Led UX initiatives for healthcare technology solutions, focusing on improving clinical workflows and patient outcomes.",
-      highlights: [
-        "Designed user experiences for NHS and healthcare providers",
-        "Conducted extensive healthcare user research",
-        "Led strategic design projects for clinical applications",
-        "Improved healthcare worker efficiency through design"
-      ]
-    },
-    {
-      title: "User Experience Researcher",
-      company: "Karolinska Institutet",
-      location: "Stockholm, Sweden",
-      period: "Jul 2011 – Jul 2018",
-      description: "Conducted extensive research on how persons with cognitive impairments use and experience ICT, leading to groundbreaking insights.",
-      highlights: [
-        "Led pioneering research on cognitive accessibility",
-        "Published multiple peer-reviewed research papers",
-        "Developed innovative research methodologies",
-        "Collaborated with international research teams",
-        "Earned PhD in User Experience"
-      ]
-    },
-    {
-      title: "User Experience Designer",
-      company: "Karolinska Institutet",
-      location: "Stockholm, Sweden",
-      period: "Apr 2010 – Jun 2011",
-      description: "Designed user interfaces and experiences for healthcare and research applications.",
-      highlights: [
-        "Designed accessible healthcare applications",
-        "Conducted usability evaluations using eye-tracking",
-        "Created wireframes and interactive prototypes",
-        "Applied HCI principles to healthcare contexts"
-      ]
-    },
-    {
-      title: "Freelance HCI Expert",
-      company: "Uppsala University",
-      location: "Uppsala, Sweden",
-      period: "Nov 2009 – Mar 2010",
-      description: "Provided human-computer interaction expertise for university research projects and academic initiatives.",
-      highlights: [
-        "Consulted on HCI research methodologies",
-        "Designed user studies and evaluations",
-        "Contributed to academic research publications",
-        "Mentored students in UX research methods"
-      ]
+  const railRef = useRef<HTMLDivElement>(null);
+  const [visible, setVisible] = useState(false);
+  // Opens on the current role, then plays backwards through history via the wrap.
+  const [active, setActive] = useState(chapters.length - 1);
+  // Autoplay is a hint that the rail is interactive, not a carousel: the first
+  // hover, tap or focus hands control over for good.
+  const [interacted, setInteracted] = useState(false);
+
+  useEffect(() => {
+    const node = railRef.current;
+    if (!node || typeof IntersectionObserver === 'undefined') {
+      setVisible(true);
+      return;
     }
-  ];
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries.some((entry) => entry.isIntersecting)) {
+          setVisible(true);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.25 },
+    );
+
+    observer.observe(node);
+    return () => observer.disconnect();
+  }, []);
+
+  useEffect(() => {
+    if (!visible || interacted) return;
+    if (window.matchMedia?.('(prefers-reduced-motion: reduce)').matches) return;
+
+    const timer = window.setInterval(
+      () => setActive((current) => (current + 1) % chapters.length),
+      AUTOPLAY_MS,
+    );
+    return () => window.clearInterval(timer);
+  }, [visible, interacted]);
+
+  if (!chapters.length) return null;
+
+  const select = (index: number) => {
+    setInteracted(true);
+    setActive(index);
+  };
+
+  const chapter = chapters[active];
+  const years = new Date().getFullYear() - chapters[0].startYear;
+  // Fraction of the rail the active chapter sits at, used to fill the line.
+  const progress = chapters.length > 1 ? active / (chapters.length - 1) : 1;
 
   return (
     <section id="experience" className="py-12 sm:py-16 lg:py-20 bg-background px-4 sm:px-6">
       <div className="portfolio-container">
-        <div className="text-center mb-12 lg:mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-4">Professional Experience</h2>
-          <p className="text-base sm:text-lg lg:text-xl text-muted-foreground max-w-3xl mx-auto">
-            A comprehensive journey through leadership roles in UX research and design across various industries
+        <div className="text-center mb-10 lg:mb-12">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-3">Professional Experience</h2>
+          <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto">
+            {years} years across {chapters.length} organisations, from software engineering into UX
+            research leadership.
           </p>
         </div>
 
-        <div className="space-y-6 lg:space-y-8">
-          {experiences.map((exp, index) => (
-            <div key={index} className="portfolio-card bg-background p-4 sm:p-6 lg:p-8 rounded-lg border border-border">
-              <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between mb-4 lg:mb-6">
-                <div className="flex-1">
-                  <h3 className="text-xl sm:text-2xl font-semibold text-primary mb-2">{exp.title}</h3>
-                  <div className="flex flex-col gap-2 text-sm sm:text-base text-muted-foreground mb-4">
-                    <div className="flex items-center gap-2">
-                      <Building className="h-4 w-4 flex-shrink-0" />
-                      <span className="font-medium">{exp.company}</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <MapPin className="h-4 w-4 flex-shrink-0" />
-                      <span>{exp.location}</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <Calendar className="h-4 w-4 flex-shrink-0" />
-                      <span>{exp.period}</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
+        <div ref={railRef} className="relative">
+          {/*
+            The connecting line is desktop-only: the mobile grid wraps to two
+            rows, where a single horizontal rule would cut across the nodes.
+            The offsets land it on the plate centres: 44px in from each edge
+            clears the button's own padding plus half of a w-20 plate, and 26px
+            down is half of an h-11 plate below that same padding.
+          */}
+          <div
+            aria-hidden="true"
+            className="pointer-events-none absolute inset-x-11 top-[1.625rem] hidden h-px bg-border md:block"
+          />
+          <div
+            aria-hidden="true"
+            style={{ transform: `scaleX(${visible ? progress : 0})` }}
+            className="pointer-events-none absolute inset-x-11 top-[1.625rem] hidden h-px origin-left
+              bg-gradient-to-r from-primary/40 via-primary/70 to-primary
+              transition-transform duration-700 ease-out motion-reduce:transition-none md:block"
+          />
 
-              <p className="text-sm sm:text-base text-muted-foreground mb-4 lg:mb-6 leading-relaxed">
-                {exp.description}
-              </p>
+          <ol className="relative grid grid-cols-4 gap-x-2 gap-y-6 md:flex md:justify-between md:gap-4">
+            {chapters.map((entry, index) => {
+              const isActive = index === active;
 
-              <div>
-                <h4 className="font-semibold mb-3 text-sm sm:text-base">Key Achievements:</h4>
-                <ul className="grid sm:grid-cols-2 gap-2">
-                  {exp.highlights.map((highlight, idx) => (
-                    <li key={idx} className="flex items-start gap-2 text-xs sm:text-sm text-muted-foreground">
-                      <span className="text-primary mt-1 flex-shrink-0">•</span>
-                      <span>{highlight}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
+              return (
+                <li
+                  key={`${entry.company}-${entry.startYear}`}
+                  // Outer wrapper owns the staggered entrance so it never
+                  // competes with the active-state transform on the plate.
+                  className={`flex justify-center transition-all duration-700 ease-out
+                    motion-reduce:transition-none motion-reduce:opacity-100 motion-reduce:translate-y-0
+                    ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}
+                  style={{ transitionDelay: `${index * 70}ms` }}
+                >
+                  <button
+                    type="button"
+                    aria-label={`${entry.company}, ${entry.period}`}
+                    aria-pressed={isActive}
+                    onMouseEnter={() => select(index)}
+                    onFocus={() => select(index)}
+                    onClick={() => select(index)}
+                    className="group flex flex-col items-center gap-2 rounded-lg p-1
+                      focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+                  >
+                    <CompanyLogo
+                      src={entry.logo}
+                      company={entry.company}
+                      size="sm"
+                      className={`w-16 md:w-20 transition-all duration-500 ease-out
+                        motion-reduce:transform-none motion-reduce:transition-none
+                        ${
+                          isActive
+                            ? 'scale-105 ring-2 ring-primary/70 shadow-[var(--shadow-hover)]'
+                            : 'opacity-60 grayscale group-hover:opacity-100 group-hover:grayscale-0'
+                        }`}
+                    />
+                    <span
+                      className={`text-[11px] sm:text-xs tabular-nums transition-colors duration-300 ${
+                        isActive ? 'text-primary font-semibold' : 'text-muted-foreground'
+                      }`}
+                    >
+                      {entry.startYear}
+                    </span>
+                  </button>
+                </li>
+              );
+            })}
+          </ol>
+        </div>
+
+        <p
+          aria-hidden="true"
+          className={`mt-6 text-center text-xs text-muted-foreground transition-opacity duration-500 ${
+            interacted ? 'opacity-0' : 'opacity-100'
+          }`}
+        >
+          Hover or tap a chapter for the short version
+        </p>
+
+        {/* Announced only once the visitor is driving; autoplay changes would
+            otherwise interrupt a screen reader mid-sentence. */}
+        <div className="mt-3" aria-live={interacted ? 'polite' : 'off'}>
+          <div
+            key={active}
+            className="rounded-lg border border-border bg-card p-5 sm:p-6 shadow-[var(--shadow-card)]
+              min-h-[12rem] sm:min-h-[10.5rem]
+              animate-in fade-in slide-in-from-bottom-2 duration-500 motion-reduce:animate-none"
+          >
+            <div className="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between sm:gap-4">
+              <h3 className="text-lg sm:text-xl font-semibold text-primary">{chapter.role}</h3>
+              <span className="text-sm font-medium text-muted-foreground sm:whitespace-nowrap">
+                {chapter.company} · {chapter.period}
+              </span>
             </div>
-          ))}
+
+            <p className="mt-3 text-sm sm:text-base text-muted-foreground leading-relaxed">
+              {chapter.glimpse}
+            </p>
+
+            <div className="mt-4 flex flex-wrap gap-2">
+              {chapter.tags.map((tag) => (
+                <span
+                  key={tag}
+                  className="px-2 lg:px-3 py-1 bg-secondary text-secondary-foreground rounded-full text-xs"
+                >
+                  {tag}
+                </span>
+              ))}
+            </div>
+          </div>
         </div>
 
         <SectionCta to="/experience">View Full Leadership Timeline</SectionCta>
