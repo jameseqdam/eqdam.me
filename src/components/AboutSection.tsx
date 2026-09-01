@@ -1,93 +1,110 @@
+import { useState } from 'react';
 import SectionCta from './SectionCta';
+import { about } from '@/lib/content';
+import { renderInline } from '@/lib/inline';
 
+/** Blank-line separated, as the bodies are authored in about.json. */
+const panels = about.sections.map((section) => ({
+  heading: section.heading,
+  short: section.short,
+  paragraphs: section.body.split(/\n{2,}/).map((line) => line.trim()).filter(Boolean),
+}));
+
+/**
+ * The philosophy, one strand at a time.
+ *
+ * This was the last section still in the page's original shape: two tall cards
+ * of prose side by side, then a separately headed row of three 64px emoji
+ * plates. Stacked on a phone that came to six full-width blocks in a column, for
+ * 220 words and three short phrases.
+ *
+ * Nothing has been cut. The two strands now share one panel behind a toggle
+ * built from the same pills as the skills filter, and the values have lost their
+ * heading and their plates but kept every word. Both panels stay in the grid
+ * cell so its height is the taller of the two, which means switching can never
+ * shift the page — and no magic number has to be maintained to promise that.
+ */
 const AboutSection = () => {
+  const [active, setActive] = useState(0);
+
   return (
     <section id="about" className="py-12 sm:py-16 lg:py-20 bg-muted/30 px-4 sm:px-6">
       <div className="portfolio-container">
-        <div className="text-center mb-12 lg:mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-4">About Me</h2>
-          <p className="text-base sm:text-lg lg:text-xl text-muted-foreground max-w-3xl mx-auto">
-            Discover my philosophy on leadership and approach to user experience design
+        <div className="text-center mb-6 lg:mb-8">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-3">About Me</h2>
+          <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto">
+            {about.intro}
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-6 lg:gap-12">
-          {/* Leadership Philosophy */}
-          <div className="portfolio-card bg-background p-4 sm:p-6 lg:p-8 rounded-lg border border-border">
-            <h3 className="text-xl sm:text-2xl font-semibold mb-4 lg:mb-6 text-primary">Leadership Philosophy</h3>
-            <div className="space-y-3 lg:space-y-4 text-sm sm:text-base text-muted-foreground leading-relaxed">
-              <p>
-                As a leader, I strive to be a supporter, ensuring everyone feels important and that their contributions matter. 
-                I foster a team-player mentality by aligning individual and team goals, motivating others to pursue what is 
-                good for them, which naturally benefits the team.
-              </p>
-              <p>
-                A core aspect of my leadership is helping others become leaders themselves and empowering them to take pride 
-                in their work. I actively solicit feedback to continuously improve. Empathy is central to my approach, allowing 
-                me to understand individual needs and apply tough love, positive reinforcement, or direct guidance as appropriate 
-                to get the best out of each team member.
-              </p>
-              <p>
-                I believe in celebrating successes and creating belief in a motivating vision that goes beyond money and prestige, 
-                focusing on meaningful impact. It is also crucial to acknowledge and not deny reality.
-              </p>
-            </div>
-          </div>
+        {/* Toggle. Click only: switching under the pointer would move the
+            paragraph out from under anyone reading it. */}
+        <div className="flex flex-wrap items-center justify-center gap-2">
+          {panels.map((panel, index) => {
+            const isActive = index === active;
 
-          {/* UX Approach */}
-          <div className="portfolio-card bg-background p-4 sm:p-6 lg:p-8 rounded-lg border border-border">
-            <h3 className="text-xl sm:text-2xl font-semibold mb-4 lg:mb-6 text-primary">UX Approach & Principles</h3>
-            <div className="space-y-3 lg:space-y-4 text-sm sm:text-base text-muted-foreground leading-relaxed">
-              <p>
-                My approach to UX involves making technology invisible and understanding diverse user behaviors and cognitive skills. 
-                I aim to move from doubt to certainty, prioritize outcome over output, balance flexibility with structure, and 
-                foster shared understanding across teams.
-              </p>
-              <p>
-                My work is guided by key design principles including <strong>Visibility</strong>, <strong>Feedback</strong>, 
-                <strong>Affordance</strong>, <strong>Mapping</strong>, <strong>Constraint</strong>, and <strong>Consistency</strong>, 
-                as highlighted by Jakob Nielsen's principles.
-              </p>
-              <p>
-                I emphasize a design process that moves through <strong>Empathize</strong>, <strong>Define</strong>, 
-                <strong>Ideate</strong>, <strong>Prototype</strong>, <strong>Test</strong>, and <strong>Implement</strong> phases, 
-                aligned with Inspiration (Understand), Ideation (Explore), and Implementation (Materialize).
-              </p>
-            </div>
-          </div>
+            return (
+              <button
+                key={panel.heading}
+                type="button"
+                aria-pressed={isActive}
+                onClick={() => setActive(index)}
+                className={`rounded-full border px-3 py-1.5 text-xs font-medium transition-colors
+                  focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring ${
+                    isActive
+                      ? 'border-primary/50 bg-primary/10 text-primary'
+                      : 'border-border text-muted-foreground hover:text-foreground'
+                  }`}
+              >
+                {panel.short}
+              </button>
+            );
+          })}
         </div>
 
-        <p className="mt-6 lg:mt-8 text-center text-sm sm:text-base text-muted-foreground leading-relaxed">
+        {/* One grid cell, both panels in it: the cell is as tall as the longer
+            strand, so the toggle never jumps. `invisible` keeps the inactive
+            one out of the tab order and out of the accessibility tree. */}
+        <div className="mt-4 grid max-w-3xl mx-auto">
+          {panels.map((panel, index) => (
+            <div
+              key={panel.heading}
+              className={`col-start-1 row-start-1 rounded-lg border border-border bg-background
+                p-4 sm:p-6 shadow-[var(--shadow-card)] transition-opacity duration-300
+                motion-reduce:transition-none ${
+                  index === active ? 'opacity-100' : 'invisible opacity-0'
+                }`}
+            >
+              <h3 className="text-xl sm:text-2xl font-semibold mb-4 text-primary">
+                {panel.heading}
+              </h3>
+              <div className="space-y-3 lg:space-y-4 text-sm sm:text-base text-muted-foreground leading-relaxed">
+                {panel.paragraphs.map((paragraph, paragraphIndex) => (
+                  <p key={paragraphIndex}>{renderInline(paragraph)}</p>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Core values: the same three, minus the heading and the plates. */}
+        <ul className="mt-6 grid gap-3 sm:grid-cols-3 sm:gap-6 max-w-3xl mx-auto">
+          {about.values.map((value) => (
+            <li key={value.title} className="text-center">
+              <p className="text-sm font-semibold">
+                <span aria-hidden="true" className="mr-1.5">
+                  {value.emoji}
+                </span>
+                {value.title}
+              </p>
+              <p className="text-xs text-muted-foreground leading-relaxed">{value.description}</p>
+            </li>
+          ))}
+        </ul>
+
+        <p className="mt-6 text-center text-sm text-muted-foreground">
           English (fluent) · Swedish (professional)
         </p>
-
-        {/* Key Values */}
-        <div className="mt-12 lg:mt-16">
-          <h3 className="text-xl sm:text-2xl font-semibold text-center mb-6 lg:mb-8">Core Values</h3>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-            <div className="text-center">
-              <div className="w-12 h-12 sm:w-16 sm:h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-3 lg:mb-4">
-                <span className="text-xl sm:text-2xl">🎯</span>
-              </div>
-              <h4 className="font-semibold mb-2 text-sm sm:text-base">Outcome-Driven</h4>
-              <p className="text-xs sm:text-sm text-muted-foreground">Prioritizing meaningful results over busy work</p>
-            </div>
-            <div className="text-center">
-              <div className="w-12 h-12 sm:w-16 sm:h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-3 lg:mb-4">
-                <span className="text-xl sm:text-2xl">🤝</span>
-              </div>
-              <h4 className="font-semibold mb-2 text-sm sm:text-base">Empathy-First</h4>
-              <p className="text-xs sm:text-sm text-muted-foreground">Understanding users and team members deeply</p>
-            </div>
-            <div className="text-center sm:col-span-2 lg:col-span-1">
-              <div className="w-12 h-12 sm:w-16 sm:h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-3 lg:mb-4">
-                <span className="text-xl sm:text-2xl">🚀</span>
-              </div>
-              <h4 className="font-semibold mb-2 text-sm sm:text-base">Innovation</h4>
-              <p className="text-xs sm:text-sm text-muted-foreground">Pushing boundaries with data-driven insights</p>
-            </div>
-          </div>
-        </div>
 
         <SectionCta to="/about">Read Full Philosophy</SectionCta>
       </div>

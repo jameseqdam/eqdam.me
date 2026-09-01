@@ -1,3 +1,4 @@
+import aboutData from '@/data/about.json';
 import researchData from '@/data/research.json';
 import experienceData from '@/data/experience.json';
 import reportsData from '@/data/reports.json';
@@ -87,6 +88,30 @@ export interface EducationContent {
    * research.json, whose own strings carry volume and page numbers.
    */
   venueHighlights: string[];
+}
+
+/**
+ * One strand of the philosophy. `/about` prints every strand in full; the
+ * homepage shows one at a time behind a toggle, which is what `short` labels.
+ */
+export interface PhilosophySection {
+  heading: string;
+  /** Pill label on the homepage toggle, where the full heading is too long. */
+  short: string;
+  /** Paragraphs separated by a blank line, with inline `**bold**`. */
+  body: string;
+}
+
+export interface AboutValue {
+  emoji: string;
+  title: string;
+  description: string;
+}
+
+export interface AboutContent {
+  intro: string;
+  sections: PhilosophySection[];
+  values: AboutValue[];
 }
 
 export interface SkillCategory {
@@ -194,6 +219,8 @@ export const articles: Article[] = Object.values(articleModules)
 export const researchItems: ResearchItem[] = (researchData as ResearchItem[])
   .slice()
   .sort((a, b) => b.year - a.year || a.title.localeCompare(b.title));
+
+export const about = aboutData as AboutContent;
 
 export const experience = experienceData as ExperienceContent;
 

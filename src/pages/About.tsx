@@ -1,6 +1,6 @@
 import SubPageLayout from '@/components/SubPageLayout';
 import Markdown from '@/components/Markdown';
-import aboutContent from '@/data/about.json';
+import { about as aboutContent } from '@/lib/content';
 
 const About = () => {
   return (
