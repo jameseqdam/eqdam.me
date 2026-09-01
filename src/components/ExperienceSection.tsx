@@ -3,10 +3,22 @@ import CompanyLogo from './CompanyLogo';
 import SectionCta from './SectionCta';
 import { experience } from '@/lib/content';
 
-/** Long enough to read a glimpse line, short enough to see all eight in a sitting. */
+/** Long enough to read a glimpse line, short enough to see the whole rail in a sitting. */
 const AUTOPLAY_MS = 3800;
 
-const chapters = [...experience.chapters].sort((a, b) => a.startYear - b.startYear);
+/**
+ * The rail opens on the move into UX, not on the first job. The three earlier
+ * engineering and teaching roles are still on /experience in full — this is a
+ * display cut, so the data stays comprehensive.
+ */
+const RAIL_START_YEAR = 2009;
+
+/** Every chapter, oldest first: the standfirst counts the whole career. */
+const careerChapters = [...experience.chapters].sort((a, b) => a.startYear - b.startYear);
+const careerOrganisations = new Set(careerChapters.map((chapter) => chapter.company)).size;
+
+/** The five latest, which is all the rail itself shows. */
+const chapters = careerChapters.filter((chapter) => chapter.startYear >= RAIL_START_YEAR);
 
 /**
  * Career at a glance: a chronological rail of company chapters with one short
@@ -14,9 +26,9 @@ const chapters = [...experience.chapters].sort((a, b) => a.startYear - b.startYe
  *
  * The homepage deliberately carries no achievement lists — this section used to
  * repeat six full role write-ups that the /experience page already tells better.
- * Instead the rail plays itself through all eight chapters on scroll-in, so a
- * visitor sees the whole shape of the career without scrolling, and anyone who
- * wants substance is one click from the full timeline.
+ * Instead the rail plays itself through every chapter on scroll-in, so a
+ * visitor sees the shape of the UX career without scrolling, and anyone who
+ * wants the full history, early roles included, is one click from the timeline.
  */
 const ExperienceSection = () => {
   const railRef = useRef<HTMLDivElement>(null);
@@ -67,7 +79,7 @@ const ExperienceSection = () => {
   };
 
   const chapter = chapters[active];
-  const years = new Date().getFullYear() - chapters[0].startYear;
+  const years = new Date().getFullYear() - careerChapters[0].startYear;
   // Fraction of the rail the active chapter sits at, used to fill the line.
   const progress = chapters.length > 1 ? active / (chapters.length - 1) : 1;
 
@@ -77,8 +89,8 @@ const ExperienceSection = () => {
         <div className="text-center mb-10 lg:mb-12">
           <h2 className="text-3xl sm:text-4xl font-bold mb-3">Professional Experience</h2>
           <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto">
-            {years} years across {chapters.length} organisations, from software engineering into UX
-            research leadership.
+            {years} years across {careerOrganisations} organisations, from software engineering into
+            UX leadership.
           </p>
         </div>
 
@@ -102,7 +114,16 @@ const ExperienceSection = () => {
               transition-transform duration-700 ease-out motion-reduce:transition-none md:block"
           />
 
-          <ol className="relative grid grid-cols-4 gap-x-2 gap-y-6 md:flex md:justify-between md:gap-4">
+          {/*
+            Five chapters no longer divide into a tidy mobile grid — a fixed
+            four-column one leaves the last plate stranded at the far left — so
+            the plates wrap and centre instead, which keeps the short row
+            looking deliberate.
+          */}
+          <ol
+            className="relative flex flex-wrap justify-center gap-x-2 gap-y-6
+              md:flex-nowrap md:justify-between md:gap-4"
+          >
             {chapters.map((entry, index) => {
               const isActive = index === active;
 

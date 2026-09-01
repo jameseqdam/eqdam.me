@@ -286,7 +286,9 @@
         "Coordinated the multi-day Design to Order design thinking workshop integrating four products (SCDP, CSO, SCC, CCS) and initiated Network Control Tower discovery research",
         "Ran 10 live Customer Advisory Board sessions with approximately 20 participants, and built a scalable recruitment operation using Salesforce, Metabase, Pendo and UserTesting filters",
         "Established research-driven UI/UX principles, including UEQ-informed constraints such as no more than five choices on multiple-choice screens",
-        "Formalized research share-out sessions with Engineering, Customer Value Managers and Sales, plus a standardized UXR share-out template and project tracker"
+        "Formalized research share-out sessions with Engineering, Customer Value Managers and Sales, plus a standardized UXR share-out template and project tracker",
+        "Built an MCP-based integration layer unifying the Coupa platform, Dovetail, Figma, customer community, and Pendo into a single research intelligence surface, then applied it to lead research and design for Coupa's generative AI products",
+        "Set organisational standards for human-AI interaction, trust calibration, and AI feature quality measurement, while owning AI tooling procurement and team enablement"
       ],
       "productImpact": [
         "Navi AI Agent",
