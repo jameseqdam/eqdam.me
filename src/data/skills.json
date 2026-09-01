@@ -18,7 +18,10 @@
       "Competitive Analysis",
       "Journey Mapping",
       "Persona Development",
-      "Task Analysis"
+      "Task Analysis",
+      "AI-Augmented Analysis",
+      "Research Repository Architecture",
+      "Mixed-Methods Triangulation"
     ]
   },
   {
@@ -41,6 +44,28 @@
       "Lean UX",
       "Design Strategy",
       "Brand Guidelines"
+    ]
+  },
+  {
+    "name": "AI & Human-AI Design",
+    "emphasis": ["Human-AI Interaction", "Model Context Protocol"],
+    "skills": [
+      "Human-AI Interaction",
+      "Conversational UX",
+      "Agentic Workflows",
+      "AI Product Research",
+      "Trust Calibration",
+      "Prompt Architecture",
+      "Model Context Protocol",
+      "LLM-Assisted Synthesis",
+      "Generative Prototyping",
+      "AI Evaluation Frameworks",
+      "RAG Systems",
+      "Synthetic Users",
+      "Responsible AI",
+      "EU AI Act",
+      "AI Governance",
+      "AI Team Enablement"
     ]
   },
   {
@@ -68,7 +93,11 @@
       "R",
       "SPSS",
       "NVivo",
-      "Optimal Workshop"
+      "Optimal Workshop",
+      "Claude",
+      "Lovable.dev",
+      "Cursor",
+      "Figma Make"
     ]
   },
   {
@@ -88,7 +117,10 @@
       "Mentoring",
       "Workshop Facilitation",
       "Presentation Skills",
-      "Executive Communication"
+      "Executive Communication",
+      "AI Strategy",
+      "AI Tooling Procurement",
+      "Change Management for AI"
     ]
   },
   {
@@ -108,12 +140,10 @@
       "Design Tokens",
       "Component Libraries",
       "CMS Platforms",
-      "E-commerce Platforms"
+      "E-commerce Platforms",
+      "Vector Search",
+      "Embeddings",
+      "API Orchestration"
     ]
-  },
-  {
-    "name": "Languages",
-    "emphasis": [],
-    "skills": ["English (Fluent)", "Swedish (Professional)"]
   }
 ]

@@ -57,6 +57,10 @@ const AboutSection = () => {
           </div>
         </div>
 
+        <p className="mt-6 lg:mt-8 text-center text-sm sm:text-base text-muted-foreground leading-relaxed">
+          English (fluent) · Swedish (professional)
+        </p>
+
         {/* Key Values */}
         <div className="mt-12 lg:mt-16">
           <h3 className="text-xl sm:text-2xl font-semibold text-center mb-6 lg:mb-8">Core Values</h3>
