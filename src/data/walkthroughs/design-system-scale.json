@@ -1,0 +1,413 @@
+{
+  "slug": "design-system-scale",
+  "title": "Design Systems at Scale",
+  "subtitle": "First steps towards a unified platform",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "Enterprise UX · 2018 – 2024",
+      "title": "Design Systems at Scale",
+      "standfirst": "Building the case for design systems across two enterprise product portfolios — then building the foundations. The inventory came first, the system second, and the buy-in came from arithmetic rather than from taste.",
+      "bullets": [
+        { "lead": "Role", "text": "Principal UX Designer and Design Systems Lead" },
+        { "lead": "Evidence", "text": "62 shades of grey, 16 button types, 5 icon libraries" },
+        { "lead": "Result", "text": "A multi-day process reduced to under an hour" }
+      ],
+      "notes": "Lead with the inventory numbers. They do the persuading, and they are the only part of this story a CFO can act on."
+    },
+    {
+      "kind": "statement",
+      "eyebrow": "The problem",
+      "title": "Products sold as a single platform were not built as one",
+      "bullets": [
+        { "text": "Each had its own colours, type styles, icon families and component patterns." },
+        { "text": "There was no modular frontend architecture to categorise them against." },
+        { "lead": "Worse than aesthetic", "text": "Two similar icons assigned to different actions. Two different icons assigned to the same action." },
+        { "lead": "And structurally", "text": "Products outside the core codebase received no updates at all when shared elements changed." }
+      ],
+      "callout": {
+        "lead": "The cost, in two currencies",
+        "text": "For the organisation: slower delivery and duplicated engineering hours. For users: a platform that behaved like several unrelated applications."
+      },
+      "notes": "The two-icons-one-action problem is the one that lands with engineers. It is a correctness bug, not a style preference."
+    },
+    {
+      "kind": "split",
+      "eyebrow": "Context",
+      "title": "A platform of many products",
+      "standfirst": "The scale is the reason inconsistency compounds. Every new product added its own vocabulary, and nothing existed to make that expensive.",
+      "bullets": [
+        { "text": "Adding a single new icon required a multi-day manual round trip, from artistic design through to codebase." },
+        { "text": "Which means the friction fell on exactly the act you most want to be cheap." },
+        { "text": "So teams routed around it — with their own icons, in their own files." }
+      ],
+      "figure": {
+        "kind": "shots",
+        "layout": "row",
+        "frame": "browser",
+        "items": [
+          {
+            "src": "/images/walkthrough/design-system-scale/platform-products.webp",
+            "alt": "The breadth of products in the platform",
+            "label": "The portfolio"
+          },
+          {
+            "src": "/images/walkthrough/design-system-scale/platform-mark.webp",
+            "alt": "The platform brand mark",
+            "label": "One platform"
+          }
+        ]
+      },
+      "notes": "Explain the causal loop: high cost to contribute produces local workarounds, which produce the inconsistency that makes contribution expensive."
+    },
+    {
+      "kind": "section",
+      "eyebrow": "Step one",
+      "title": "The inventory, before the system",
+      "standfirst": "You cannot argue for a design system with an opinion. You can argue for one with a count.",
+      "notes": "This is the methodological claim of the whole case study. Say it plainly and it frames everything after."
+    },
+    {
+      "kind": "split",
+      "eyebrow": "Method",
+      "title": "Walking the interface, and traversing the code",
+      "standfirst": "Six inventories built by hand: UI, patterns, colour, typography, icons and spacing — assembled by using the products and then reading the CSS and code files behind them.",
+      "bullets": [
+        { "lead": "Desk research", "text": "What the platform claimed to be." },
+        { "lead": "Ethnographic observation", "text": "The diversity of users and their needs." },
+        { "lead": "Surveys and focus groups", "text": "Breadth alongside depth." },
+        { "lead": "8 interviews", "text": "Across product managers, team leads and developers." }
+      ],
+      "figure": {
+        "kind": "shots",
+        "layout": "row",
+        "frame": "paper",
+        "items": [
+          {
+            "src": "/images/walkthrough/design-system-scale/research-desk.webp",
+            "alt": "Desk research for the design system case",
+            "label": "Desk research"
+          },
+          {
+            "src": "/images/walkthrough/design-system-scale/research-field.webp",
+            "alt": "Field observation of users and their needs",
+            "label": "In the field"
+          }
+        ]
+      },
+      "notes": "Interviewing developers and team leads, not just designers, is why the eventual proposal was not dismissed as a design department want."
+    },
+    {
+      "kind": "full",
+      "eyebrow": "The evidence",
+      "title": "What the inventory actually found",
+      "figure": {
+        "kind": "swatches",
+        "groups": [
+          { "label": "Shades of grey", "count": 62, "tone": "grey" },
+          { "label": "Distinct button types", "count": 16, "tone": "blue" },
+          { "label": "Separate icon libraries", "count": 5, "tone": "mixed" }
+        ],
+        "caption": "Counted, not estimated"
+      },
+      "notes": "Let the greys draw in. Sixty-two of them on screen at once is a better argument than any sentence about visual debt."
+    },
+    {
+      "kind": "full",
+      "eyebrow": "The evidence",
+      "title": "The inventory itself",
+      "figure": {
+        "kind": "shots",
+        "layout": "filmstrip",
+        "frame": "browser",
+        "items": [
+          {
+            "src": "/images/walkthrough/design-system-scale/inventory-a.webp",
+            "alt": "Interface inventory, first sheet",
+            "label": "Inventory · a"
+          },
+          {
+            "src": "/images/walkthrough/design-system-scale/inventory-b.webp",
+            "alt": "Interface inventory, second sheet",
+            "label": "Inventory · b"
+          },
+          {
+            "src": "/images/walkthrough/design-system-scale/inventory-c.webp",
+            "alt": "Interface inventory, third sheet",
+            "label": "Inventory · c"
+          },
+          {
+            "src": "/images/walkthrough/design-system-scale/inventory-d.webp",
+            "alt": "Interface inventory, fourth sheet",
+            "label": "Inventory · d"
+          },
+          {
+            "src": "/images/walkthrough/design-system-scale/inventory-e.webp",
+            "alt": "Interface inventory, fifth sheet",
+            "label": "Inventory · e"
+          },
+          {
+            "src": "/images/walkthrough/design-system-scale/inventory-f.webp",
+            "alt": "Interface inventory, sixth sheet",
+            "label": "Inventory · f"
+          },
+          {
+            "src": "/images/walkthrough/design-system-scale/inventory-g.webp",
+            "alt": "Interface inventory, seventh sheet",
+            "label": "Inventory · g"
+          }
+        ],
+        "caption": "UI, patterns, colour, typography, icons, spacing"
+      },
+      "notes": "Scroll once. The volume is the message — this is what \"we should probably tidy up\" looks like when someone actually counts it."
+    },
+    {
+      "kind": "statement",
+      "eyebrow": "The challenge",
+      "title": "Design systems fail at the buy-in stage, not the craft stage",
+      "standfirst": "Inconsistency is a designer-legible problem. It had to become a finance-legible one.",
+      "bullets": [
+        { "lead": "The translation", "text": "Inventory findings quantified as development hours, then hours multiplied by average salary." },
+        { "lead": "The artefact", "text": "An impact map consolidating the findings into one argument." },
+        { "lead": "The outcome", "text": "A clear yes, from both the team and stakeholders." }
+      ],
+      "callout": {
+        "lead": "And then the harder half",
+        "text": "Sustaining the system after approval — governance that survives contribution from every designer and developer, and distribution that actually reaches teams outside the core codebase."
+      },
+      "notes": "Hours multiplied by average salary is the whole trick. It converts an aesthetic complaint into a line item."
+    },
+    {
+      "kind": "full",
+      "eyebrow": "The argument",
+      "title": "The impact map",
+      "figure": {
+        "kind": "shot",
+        "src": "/images/walkthrough/design-system-scale/impact-map.webp",
+        "alt": "The impact map consolidating inventory findings into an organisational argument",
+        "frame": "browser",
+        "pan": true,
+        "caption": "Findings, consolidated into one argument for stakeholders"
+      },
+      "notes": "This artefact is what got the yes. Point at the path from a counted inconsistency to an hours figure."
+    },
+    {
+      "kind": "section",
+      "eyebrow": "Step two",
+      "title": "Then the system — rules first, elements second",
+      "notes": "Order matters again. Teams that start with a colour palette and no governance produce a style guide that decays in a year."
+    },
+    {
+      "kind": "split",
+      "eyebrow": "Governance",
+      "title": "Decide the rules before drawing anything",
+      "bullets": [
+        { "lead": "Foundation", "text": "Build from scratch, or adopt an existing product as the foundation?" },
+        { "lead": "Distribution", "text": "How the system reaches teams — decided up front, not after." },
+        { "lead": "KPIs", "text": "System KPIs defined, so \"is it working\" had an answer." },
+        { "lead": "Team", "text": "A multidisciplinary design systems team with defined roles." },
+        { "lead": "Process", "text": "A decision-making process and a sprint cadence, with retrospectives." },
+        { "lead": "Version control", "text": "Kactus, so design files behaved like source." }
+      ],
+      "figure": {
+        "kind": "layers",
+        "items": [
+          { "label": "Colour palette", "detail": "Validated against WCAG contrast guidelines" },
+          { "label": "Typographic scale", "detail": "Built on the validated palette" },
+          { "label": "Icon library", "detail": "One library, replacing five" },
+          { "label": "First patterns", "detail": "With full documentation and usage guidelines" },
+          { "label": "Delivered into the tools designers used", "detail": "Sketch, and later Figma" }
+        ],
+        "caption": "Built in sequence, each layer depending on the one below"
+      },
+      "notes": "WCAG validation at the palette layer is the cheapest accessibility win available. Do it there and every component inherits it."
+    },
+    {
+      "kind": "full",
+      "eyebrow": "The unlock",
+      "title": "Days, to under an hour",
+      "standfirst": "The icon pipeline was taken over end to end and automated, so any team member could add an icon to the platform themselves.",
+      "figure": {
+        "kind": "reduction",
+        "from": {
+          "count": 5,
+          "label": "Separate icon libraries",
+          "note": "Each with its own conventions and no shared updates"
+        },
+        "to": {
+          "count": 1,
+          "label": "One shared library",
+          "note": "Any team member can add an icon in under an hour"
+        },
+        "caption": "Five to one, and multi-day to sub-hour"
+      },
+      "notes": "This is the metric that made the system credible internally. It made contributing cheaper than routing around, which is the only durable defence a system has."
+    },
+    {
+      "kind": "full",
+      "eyebrow": "The outcomes",
+      "title": "What changed, measurably",
+      "figure": {
+        "kind": "stats",
+        "items": [
+          { "value": "50-70%", "label": "Faster mockup creation through shared component libraries" },
+          { "value": "Days to <1 hour", "label": "End-to-end icon addition, artistic design to codebase" },
+          { "value": "5", "label": "Icon libraries unified into one" },
+          { "value": "16", "label": "Button types consolidated into a single system" },
+          { "value": "62", "label": "Shades of grey found, evidencing the cost of inconsistency" },
+          { "value": "8", "label": "Cross-functional interviews used to build buy-in" }
+        ]
+      },
+      "notes": "Read the first two. The rest are the evidence base for why they were possible."
+    },
+    {
+      "kind": "split",
+      "eyebrow": "Distribution",
+      "title": "A system only counts once other teams get updates without asking",
+      "standfirst": "Products outside the core codebase had been receiving nothing. Their legacy CSS and SVG files were migrated into the core codebase, so shared changes reached them instantly.",
+      "bullets": [
+        { "lead": "Migration", "text": "Legacy CSS and SVG pulled onto the shared library." },
+        { "lead": "Consequence", "text": "Updates arrive automatically rather than being reimplemented per product." },
+        { "lead": "Component library", "text": "The complete CSO component library built in Figma." },
+        { "lead": "Succession", "text": "Additional designers onboarded to own the icon pipeline." }
+      ],
+      "figure": {
+        "kind": "flow",
+        "nodes": [
+          { "id": "system", "label": "Shared\nlibrary", "col": 0, "row": 1, "tone": "primary" },
+          { "id": "core", "label": "Core\ncodebase", "col": 1, "row": 1, "tone": "accent" },
+          { "id": "p1", "label": "Product\nin core", "col": 2, "row": 0, "tone": "accent" },
+          { "id": "p2", "label": "Migrated\nproduct", "col": 2, "row": 1, "tone": "accent" },
+          { "id": "p3", "label": "Migrated\nproduct", "col": 2, "row": 2, "tone": "accent" }
+        ],
+        "edges": [
+          { "from": "system", "to": "core", "label": "One change" },
+          { "from": "core", "to": "p1" },
+          { "from": "core", "to": "p2" },
+          { "from": "core", "to": "p3" }
+        ],
+        "caption": "After migration: one change, every product"
+      },
+      "notes": "Onboarding others to own the pipeline is the part most design system leads skip. A system that depends on one person is a bottleneck with documentation."
+    },
+    {
+      "kind": "section",
+      "eyebrow": "In parallel",
+      "title": "Navigation architecture for a multi-product platform",
+      "notes": "Related but separable. If time is short, this is the section to cut — but it is the one that most affects what users actually experienced."
+    },
+    {
+      "kind": "full",
+      "eyebrow": "Navigation",
+      "title": "Four architectures evaluated",
+      "figure": {
+        "kind": "matrix",
+        "cols": ["What it is", "Where it fits"],
+        "rows": [
+          {
+            "label": "Product switcher",
+            "cells": ["An explicit control for moving between products", "Global — crossing product boundaries"],
+            "highlight": [1]
+          },
+          {
+            "label": "Tabbed menus",
+            "cells": ["Persistent tabs across the top", "Global — the primary areas within reach"],
+            "highlight": [1]
+          },
+          {
+            "label": "Rail navigation",
+            "cells": ["A vertical rail down the side", "Dense, deep hierarchies"]
+          },
+          {
+            "label": "Hover and slide-out tabs",
+            "cells": ["Menus revealed on hover or slide", "Space-constrained layouts"]
+          }
+        ],
+        "caption": "The two highlighted rows were combined for global navigation"
+      },
+      "notes": "The landing point was a combination of product switcher and tabbed menus — not one winner. Say that; single-answer navigation stories are usually fiction."
+    },
+    {
+      "kind": "full",
+      "eyebrow": "Navigation",
+      "title": "The proposals, and what was landed on",
+      "figure": {
+        "kind": "shots",
+        "layout": "grid",
+        "frame": "browser",
+        "items": [
+          {
+            "src": "/images/walkthrough/design-system-scale/nav-proposals.webp",
+            "alt": "Navigation architecture proposals",
+            "label": "Proposals"
+          },
+          {
+            "src": "/images/walkthrough/design-system-scale/nav-combination.webp",
+            "alt": "The combination of product switcher and tabbed menus",
+            "label": "The combination"
+          },
+          {
+            "src": "/images/walkthrough/design-system-scale/nav-within-a.webp",
+            "alt": "Navigation within a product, first option",
+            "label": "Within · a"
+          },
+          {
+            "src": "/images/walkthrough/design-system-scale/nav-within-b.webp",
+            "alt": "Navigation within a product, second option",
+            "label": "Within · b"
+          },
+          {
+            "src": "/images/walkthrough/design-system-scale/nav-within-c.webp",
+            "alt": "Navigation within a product, third option",
+            "label": "Within · c"
+          }
+        ],
+        "caption": "Global navigation, and navigation within a product, treated separately"
+      },
+      "notes": "Separating global from within-product navigation is the structural insight. They answer different questions and should not share a pattern."
+    },
+    {
+      "kind": "cards",
+      "eyebrow": "What made it stick",
+      "title": "Three things beyond the craft",
+      "cards": [
+        {
+          "title": "Count before you argue",
+          "text": "62 greys and 16 button types are unarguable. Translated into hours and salary, they became a business case rather than a design opinion."
+        },
+        {
+          "title": "Make contributing cheaper than avoiding",
+          "text": "A multi-day icon process guarantees local workarounds. Sub-hour contribution removes the incentive to fork."
+        },
+        {
+          "title": "Solve distribution or don't bother",
+          "text": "A system that only serves the core codebase is a style guide. Migrating legacy CSS and SVG in is what made it a system."
+        }
+      ],
+      "notes": "These three are the transferable content. Anyone starting a design system should leave with them."
+    },
+    {
+      "kind": "statement",
+      "eyebrow": "The lesson",
+      "title": "The hard part of a design system is organisational, and it never stops being organisational",
+      "standfirst": "The palette, the scale and the components are the tractable half. Getting the yes, then keeping governance alive through contribution from every designer and developer, is the work that determines whether any of it survives.",
+      "callout": {
+        "lead": "The test",
+        "text": "When a shared element changes, does every product get it without anyone filing a ticket? If not, you have a library that some teams happen to use."
+      },
+      "notes": "End on the test. It is the same shape as the repository test in the research ops story — accumulation only counts if it is automatic."
+    },
+    {
+      "kind": "close",
+      "eyebrow": "In summary",
+      "title": "Evidence, then buy-in, then a system that distributes itself",
+      "bullets": [
+        { "lead": "Counted", "text": "62 greys, 16 buttons, 5 icon libraries" },
+        { "lead": "Converted", "text": "Into hours, and into a yes" },
+        { "lead": "Automated", "text": "Multi-day icon process to under an hour" },
+        { "lead": "Distributed", "text": "Legacy products migrated onto the shared library" }
+      ],
+      "notes": "Likely questions: how system KPIs were defined, and how the Sketch-to-Figma transition was handled without stalling the system."
+    }
+  ]
+}

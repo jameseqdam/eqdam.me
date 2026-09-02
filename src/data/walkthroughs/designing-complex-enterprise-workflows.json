@@ -1,0 +1,339 @@
+{
+  "slug": "designing-complex-enterprise-workflows",
+  "title": "Designing Complex Enterprise Workflows",
+  "subtitle": "The procurement intake platform: 6 stages, 98+ screens, 12 iterations",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "Enterprise UX · 2023 – 2025",
+      "title": "Designing Complex Enterprise Workflows",
+      "standfirst": "End-to-end design of a procurement intake platform for specialists managing millions in annual spend — and one architectural bet, defended with evidence, against the easier answer.",
+      "bullets": [
+        { "lead": "Role", "text": "Lead Product Designer, end-to-end" },
+        { "lead": "Scope", "text": "6 workflow stages · 98+ screens · 3 engineering teams" },
+        { "lead": "Bet", "text": "Section-based architecture, not a wizard" }
+      ],
+      "notes": "Frame the whole talk around the wizard decision. Everything else is craft; that was the judgement call, and it was the one that could have gone wrong."
+    },
+    {
+      "kind": "split",
+      "eyebrow": "The problem",
+      "title": "Sold as a platform, worked as a pile of tools",
+      "standfirst": "Procurement teams manage millions in annual spend across disconnected tools with no single source of truth.",
+      "bullets": [
+        { "lead": "Lost context", "text": "Users dropped what they knew every time they moved between stages." },
+        { "lead": "Inefficient comparison", "text": "Scenario comparison was slow and error-prone." },
+        { "lead": "Bottleneck", "text": "Supplier qualification held up everything downstream." }
+      ],
+      "callout": {
+        "lead": "The measurable symptom",
+        "text": "High abandonment at scenario comparison — where a user weighs 3 to 8 suppliers against 10+ evaluation criteria with no unified view of bids, suppliers and criteria."
+      },
+      "figure": {
+        "kind": "shot",
+        "src": "/images/walkthrough/designing-complex-enterprise-workflows/fragmented-tools.webp",
+        "alt": "The fragmented set of tools procurement specialists were working across",
+        "frame": "browser",
+        "caption": "Before: the toolset users were actually holding together themselves"
+      },
+      "notes": "Abandonment at a specific stage is the gift here. It turns a vague complaint into a place to point a research budget."
+    },
+    {
+      "kind": "full",
+      "eyebrow": "Research",
+      "title": "Six stages, twenty-plus decision points, mapped end to end",
+      "standfirst": "Interviews with procurement specialists, then a journey map used to choose where to spend design effort rather than to spread it evenly.",
+      "figure": {
+        "kind": "shot",
+        "src": "/images/walkthrough/designing-complex-enterprise-workflows/journey-map.webp",
+        "alt": "End-to-end journey map across six procurement stages",
+        "frame": "paper",
+        "pan": true,
+        "caption": "The journey map — click to read it full size"
+      },
+      "notes": "The point of the map was prioritisation, not documentation. Six stages do not deserve equal design attention, and the map is what proved which two did."
+    },
+    {
+      "kind": "full",
+      "eyebrow": "The workflow",
+      "title": "One system, six stages, no forced order",
+      "figure": {
+        "kind": "phases",
+        "items": [
+          { "label": "Intake", "detail": "Request captured with enough structure to route it" },
+          { "label": "Scoping", "detail": "Requirements, timeline, evaluation criteria" },
+          { "label": "Sourcing", "detail": "Suppliers invited, bids received" },
+          { "label": "Qualification", "detail": "The bottleneck: supplier vetting and risk" },
+          { "label": "Scenario comparison", "detail": "Where users abandoned — and where the work went" },
+          { "label": "Award", "detail": "Contracts and items, into the platform of record" }
+        ],
+        "caption": "Six stages designed as one system rather than six features"
+      },
+      "notes": "Stage four is where the throughput problem is; stage five is where the experience problem is. Two different kinds of fix."
+    },
+    {
+      "kind": "full",
+      "eyebrow": "The workflow",
+      "title": "The same six stages, as they were mapped at the time",
+      "figure": {
+        "kind": "shot",
+        "src": "/images/walkthrough/designing-complex-enterprise-workflows/process-ribbon.webp",
+        "alt": "The sourcing process ribbon as originally mapped",
+        "frame": "browser",
+        "pan": true,
+        "caption": "The original process ribbon"
+      },
+      "notes": "Provenance for the previous slide. Skip it unless someone asks where the six stages came from."
+    },
+    {
+      "kind": "statement",
+      "eyebrow": "The decision",
+      "title": "A wizard would have been easier to design, build, test — and wrong",
+      "standfirst": "Linear flows encode an assumption: that the work is sequential. The research showed procurement is not. Specialists jump constantly between bids, scenarios and supplier data.",
+      "bullets": [
+        { "lead": "Chosen", "text": "Section-based structure with persistent stepper navigation." },
+        { "lead": "Rejected", "text": "Wizard-style linear flow." },
+        { "lead": "Accepted cost", "text": "A higher initial learning curve." },
+        { "lead": "Bought", "text": "Significantly reduced back-and-forth in daily use." }
+      ],
+      "callout": {
+        "lead": "How it was validated",
+        "text": "Card sorting and task-flow testing, before commitment — then defended with that evidence to three engineering teams and a stakeholder group across product, engineering and procurement."
+      },
+      "notes": "Be honest that the trade-off is real. A worse first run in exchange for a better thousandth run is defensible only if you can say which one you optimised for and why."
+    },
+    {
+      "kind": "full",
+      "eyebrow": "Architecture",
+      "title": "Sections you can enter from anywhere, with a stepper that never leaves",
+      "figure": {
+        "kind": "shots",
+        "layout": "row",
+        "frame": "browser",
+        "items": [
+          {
+            "src": "/images/walkthrough/designing-complex-enterprise-workflows/ia-sections.webp",
+            "alt": "Section-based information architecture",
+            "label": "Section-based IA"
+          },
+          {
+            "src": "/images/walkthrough/designing-complex-enterprise-workflows/ia-stepper.webp",
+            "alt": "Persistent stepper navigation",
+            "label": "Persistent stepper"
+          }
+        ],
+        "caption": "Flexible access, with orientation always on screen"
+      },
+      "notes": "The stepper is what makes non-linear tolerable. Freedom without a position indicator is just being lost."
+    },
+    {
+      "kind": "full",
+      "eyebrow": "Information density",
+      "title": "Progressive disclosure: scan the category, open the supplier",
+      "standfirst": "Category summary cards for fast scanning; expandable rows revealing full supplier detail, rank and outlier flags. Drag the handle.",
+      "figure": {
+        "kind": "compare",
+        "frame": "browser",
+        "before": {
+          "src": "/images/walkthrough/designing-complex-enterprise-workflows/bid-table-collapsed.webp",
+          "alt": "Bid table in its collapsed summary state",
+          "label": "Collapsed"
+        },
+        "after": {
+          "src": "/images/walkthrough/designing-complex-enterprise-workflows/bid-table-expanded.webp",
+          "alt": "Bid table expanded to show full supplier detail",
+          "label": "Expanded"
+        },
+        "caption": "The same table, at two depths — the default is the scannable one"
+      },
+      "notes": "Do the wipe slowly. The argument is that neither state is the real interface — the transition between them is."
+    },
+    {
+      "kind": "split",
+      "eyebrow": "The abandonment stage",
+      "title": "Scenario comparison, rebuilt around the comparison itself",
+      "bullets": [
+        { "lead": "Templates", "text": "Scenario setup reduced to a starting point rather than a blank form." },
+        { "lead": "Unified view", "text": "Bids, suppliers and criteria in one place for the first time." },
+        { "lead": "Outliers flagged", "text": "The system points at what deserves attention." }
+      ],
+      "figure": {
+        "kind": "shots",
+        "layout": "row",
+        "frame": "browser",
+        "items": [
+          {
+            "src": "/images/walkthrough/designing-complex-enterprise-workflows/scenario-compare.webp",
+            "alt": "Scenario comparison view",
+            "label": "Comparison"
+          },
+          {
+            "src": "/images/walkthrough/designing-complex-enterprise-workflows/scenario-detail.webp",
+            "alt": "Scenario detail view",
+            "label": "Detail"
+          }
+        ]
+      },
+      "notes": "Three to eight suppliers, ten-plus criteria. That is a matrix a person cannot hold in their head, which is why they were leaving."
+    },
+    {
+      "kind": "split",
+      "eyebrow": "AI",
+      "title": "Navi gives the recommendation and the evidence, side by side",
+      "standfirst": "Cost-savings insights surfaced next to the underlying supplier data — so a user can accept the recommendation or audit it, in the same view.",
+      "bullets": [
+        { "text": "The insight never appears without the data it was drawn from." },
+        { "text": "Placed inside the comparison workflow, not in a separate assistant panel." },
+        { "text": "Designed to be overruled: the recommendation is an input, not a decision." }
+      ],
+      "figure": {
+        "kind": "shots",
+        "layout": "row",
+        "frame": "browser",
+        "items": [
+          {
+            "src": "/images/walkthrough/designing-complex-enterprise-workflows/scenario-navi.webp",
+            "alt": "Navi AI assistant inside the scenario comparison workflow",
+            "label": "Navi in context"
+          },
+          {
+            "src": "/images/walkthrough/designing-complex-enterprise-workflows/ai-scenario-analysis.webp",
+            "alt": "AI scenario analysis view",
+            "label": "AI scenario analysis"
+          }
+        ]
+      },
+      "notes": "Recommendation-plus-evidence is the pattern that survived testing. Recommendation alone tested badly in procurement, where being wrong is expensive and auditable."
+    },
+    {
+      "kind": "full",
+      "eyebrow": "Foundation",
+      "title": "Material UI, extended where procurement needed something that did not exist",
+      "standfirst": "Timeline configurator, section markers, table actions, qualification panels — plus design tokens aligned with engineering so handoff was a lookup, not a negotiation.",
+      "figure": {
+        "kind": "shots",
+        "layout": "row",
+        "frame": "browser",
+        "items": [
+          {
+            "src": "/images/walkthrough/designing-complex-enterprise-workflows/component-library.webp",
+            "alt": "Procurement-specific component library",
+            "label": "Component library"
+          },
+          {
+            "src": "/images/walkthrough/designing-complex-enterprise-workflows/component-tokens.webp",
+            "alt": "Design tokens aligned with engineering",
+            "label": "Design tokens"
+          }
+        ],
+        "caption": "98+ screens are only maintainable as a system"
+      },
+      "notes": "Custom components were the exception and each one had to justify itself. Extending a foundation is cheaper than owning one."
+    },
+    {
+      "kind": "full",
+      "eyebrow": "Iteration",
+      "title": "Twelve versions, three phases, bi-weekly stakeholder loops",
+      "figure": {
+        "kind": "track",
+        "segments": [
+          {
+            "range": "v1 – v4",
+            "label": "Information architecture",
+            "detail": "The navigation model, and the decision not to build a wizard."
+          },
+          {
+            "range": "v5 – v8",
+            "label": "Interaction patterns",
+            "detail": "Modals versus inline editing, resolved by testing rather than preference."
+          },
+          {
+            "range": "v9 – v12",
+            "label": "Density, edge cases, AI",
+            "detail": "Where the system met real data volumes and the awkward states."
+          }
+        ],
+        "pivot": {
+          "label": "The late pivot",
+          "detail": "Usability testing showed users consistently missed modal-based contracts. The interaction model was already partly built; it moved to inline drill-down anyway."
+        },
+        "caption": "Three phases of iteration, and the one that forced a rebuild"
+      },
+      "notes": "Own the pivot. Finding it in v9 rather than v2 is a cost, and the honest version of this story includes the rework."
+    },
+    {
+      "kind": "full",
+      "eyebrow": "Iteration, visibly",
+      "title": "What twelve versions actually looks like",
+      "figure": {
+        "kind": "shots",
+        "layout": "grid",
+        "frame": "browser",
+        "items": [
+          {
+            "src": "/images/walkthrough/designing-complex-enterprise-workflows/iterations-structure.webp",
+            "alt": "Structural iterations, versions one to four",
+            "label": "v1 – v4 · structure"
+          },
+          {
+            "src": "/images/walkthrough/designing-complex-enterprise-workflows/iterations-interaction.webp",
+            "alt": "Interaction iterations, versions five to eight",
+            "label": "v5 – v8 · interaction"
+          },
+          {
+            "src": "/images/walkthrough/designing-complex-enterprise-workflows/iterations-refinement.webp",
+            "alt": "Refinement iterations, versions nine to twelve",
+            "label": "v9 – v12 · refinement"
+          },
+          {
+            "src": "/images/walkthrough/designing-complex-enterprise-workflows/iterations-grid.webp",
+            "alt": "All iterations laid out together",
+            "label": "All twelve"
+          }
+        ]
+      },
+      "notes": "Useful slide to leave up during questions. People ask about specific versions and this lets you answer by pointing."
+    },
+    {
+      "kind": "full",
+      "eyebrow": "Outcome",
+      "title": "What it added up to",
+      "figure": {
+        "kind": "stats",
+        "items": [
+          { "value": "98+", "label": "Screens on a reusable enterprise component system" },
+          { "value": "6", "label": "Workflow stages designed as one system" },
+          { "value": "12", "label": "Iterations validated in testing and stakeholder review" },
+          { "value": "#1", "label": "User-reported pain point eliminated: scenario navigation" },
+          { "value": "20+", "label": "Decision points mapped across the journey" },
+          { "value": "3", "label": "Engineering teams aligned, with less rework at handoff" }
+        ]
+      },
+      "notes": "The number one pain point is the headline. It was the top user complaint before, and it is the thing twelve iterations were spent on."
+    },
+    {
+      "kind": "statement",
+      "eyebrow": "The lesson",
+      "title": "The easy architecture is a claim about how people work",
+      "standfirst": "A wizard is not a neutral container. Choosing it asserts that the task is sequential, and asserting that about procurement would have shipped the abandonment problem into a new interface.",
+      "figure": {
+        "kind": "shot",
+        "src": "/images/walkthrough/designing-complex-enterprise-workflows/outcome-board.webp",
+        "alt": "Outcome board summarising the project",
+        "frame": "browser"
+      },
+      "notes": "This is the transferable point for a general audience. The specific product matters less than the habit of treating layout choices as empirical claims."
+    },
+    {
+      "kind": "close",
+      "eyebrow": "In summary",
+      "title": "Defend the harder architecture with evidence, and pivot when the evidence turns",
+      "bullets": [
+        { "lead": "Bet", "text": "Non-linear, section-based" },
+        { "lead": "Validated", "text": "Card sorting and task-flow testing" },
+        { "lead": "Corrected", "text": "Modals to inline, late and at cost" }
+      ],
+      "notes": "Expect the wizard question. Have the card-sort result ready, and be willing to say what would have changed your mind."
+    }
+  ]
+}

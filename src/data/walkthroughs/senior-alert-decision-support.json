@@ -1,0 +1,363 @@
+{
+  "slug": "senior-alert-decision-support",
+  "title": "Senior Alert",
+  "subtitle": "Risk assessment and care planning at the point of care",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "Health Tech · 2017 – 2018",
+      "title": "Senior Alert",
+      "standfirst": "A decision support application for adult risk assessment and preventive care planning, designed to live inside several different electronic medical record systems rather than alongside them.",
+      "bullets": [
+        { "lead": "Role", "text": "UX Lead" },
+        { "lead": "Register", "text": "One of Sweden's ~100 national quality registers" },
+        { "lead": "Method", "text": "Sustained co-design with clinicians, weekly" }
+      ],
+      "notes": "Open with the register, not the app. Senior Alert is national infrastructure; the software is the part that either feeds it or does not."
+    },
+    {
+      "kind": "full",
+      "eyebrow": "What Senior Alert is",
+      "title": "Five preventive risk areas for elderly patients",
+      "standfirst": "Identify who is at risk before the harm happens, and the preventive working method raises the chance of best-possible care regardless of who provides it.",
+      "figure": {
+        "kind": "stats",
+        "items": [
+          { "value": "Falls", "label": "Risk of falling" },
+          { "value": "Pressure", "label": "Developing pressure sores" },
+          { "value": "Weight", "label": "Unintended weight loss" },
+          { "value": "Oral", "label": "Oral health deterioration" },
+          { "value": "Bladder", "label": "Bladder dysfunction" }
+        ],
+        "caption": "Five areas, one assessment, performed at the point of care"
+      },
+      "callout": {
+        "lead": "Senior Alert",
+        "text": "One of Sweden's roughly 100 national quality registers, and the preventive working method behind it raises the possibility of best-possible care regardless of who provides it."
+      },
+      "notes": "Name all five out loud. It makes concrete what \"preventive risk assessment\" means to anyone who has not worked in Swedish elderly care."
+    },
+    {
+      "kind": "statement",
+      "eyebrow": "The problem",
+      "title": "A register only works if the assessment actually gets completed during care",
+      "standfirst": "And the assessment sat outside the systems clinicians worked in.",
+      "bullets": [
+        { "text": "Leaving the EMR to open a separate tool puts documentation in direct competition with patient contact." },
+        { "text": "That is a reliable way to lose data — not because clinicians are careless, but because the patient is in front of them." },
+        { "text": "Missing assessments are not a compliance problem. They are missing preventive care." }
+      ],
+      "callout": {
+        "lead": "So the brief widened",
+        "text": "Not only design a usable assessment interface, but deliver one that could be embedded inside different EMR systems."
+      },
+      "notes": "The competition framing is the whole argument. Documentation loses to patient contact every time, so the tool has to stop asking clinicians to choose."
+    },
+    {
+      "kind": "section",
+      "eyebrow": "Process",
+      "title": "Four stages, clinicians embedded throughout",
+      "standfirst": "Not consulted at review points — present in the work, every week.",
+      "notes": "Emphasise \"embedded\". This project's quality comes almost entirely from cadence rather than from any single method."
+    },
+    {
+      "kind": "full",
+      "eyebrow": "Process",
+      "title": "Planning, defining, concepts, development",
+      "figure": {
+        "kind": "phases",
+        "items": [
+          {
+            "label": "Planning",
+            "detail": "Desk research, understanding the concept and the current clinical workflow"
+          },
+          {
+            "label": "Defining",
+            "detail": "Assessment of platform capabilities, and a defined point of view"
+          },
+          {
+            "label": "Create concepts",
+            "detail": "Wireframe iterations with continuous feedback on sketches"
+          },
+          {
+            "label": "Development",
+            "detail": "Web application mockup built in direct collaboration with the EHR company, alongside the graphic design"
+          }
+        ]
+      },
+      "notes": "Platform capability assessment sits in Defining on purpose. Knowing what the host systems could actually expose changed what was worth designing."
+    },
+    {
+      "kind": "split",
+      "eyebrow": "Collaboration",
+      "title": "Role-differentiated, because the same assessment means something different to each role",
+      "bullets": [
+        { "lead": "1 focus group", "text": "At a healthcare centre." },
+        { "lead": "3 workshops", "text": "On-site, with a group of clinicians." },
+        { "lead": "4 interviews", "text": "Primary care nurses." },
+        { "lead": "2 interviews", "text": "Specialist physicians." },
+        { "lead": "2 interviews", "text": "The process manager at the hospital." },
+        { "lead": "1 interview", "text": "Two patients." },
+        { "lead": "Weekly", "text": "Iterative online feedback, so designs never drifted far from clinical reality." }
+      ],
+      "figure": {
+        "kind": "shot",
+        "src": "/images/walkthrough/senior-alert-decision-support/clinician-workshop.webp",
+        "alt": "On-site co-design workshop with clinicians",
+        "frame": "paper",
+        "caption": "One of three on-site workshops"
+      },
+      "notes": "Thirteen engagements total. The patient interview matters disproportionately — patients experience the preventive process downstream, and nobody else in the room could speak for that."
+    },
+    {
+      "kind": "full",
+      "eyebrow": "The reconciliation mechanism",
+      "title": "The focus group output became a service blueprint",
+      "standfirst": "Mapping actions, frontstage, backstage and support exposed where the assessment actually sat in the care process — and what had to happen invisibly behind it.",
+      "figure": {
+        "kind": "blueprint",
+        "stages": [
+          "Preparing the assessment",
+          "Meeting the patient",
+          "Entering the assessment",
+          "Care plan and discharge"
+        ],
+        "lanes": [
+          {
+            "name": "Physical evidence",
+            "steps": [
+              "Paper forms",
+              "The patient's room",
+              "Computer, running Cosmic",
+              "Tablet running Nova, and the QR"
+            ]
+          },
+          {
+            "name": "Actions",
+            "role": "Assistant nurse (undersköterska) and nurse",
+            "steps": [
+              "Determining who is going to perform the assessment",
+              "Meeting the patient, asking the questions, performing the assessment",
+              "Going to the computer and running the SA app",
+              "Discharging the patient"
+            ]
+          },
+          {
+            "name": "Front of stage",
+            "steps": [
+              null,
+              "Writing the answers on the paper forms",
+              "Selecting the risk assessment area, filling in the values for each element",
+              "The app automatically adds the individual care plan (lägg till individuell vårdplan)"
+            ]
+          },
+          {
+            "name": "Back of stage",
+            "steps": [
+              null,
+              null,
+              "The table sums the values and returns a summary against max and min",
+              "The app adds the care plans to the patient's journal and prepares the discharge report"
+            ]
+          },
+          {
+            "name": "Support processes",
+            "steps": [
+              "Senior Alert register definitions for the five risk areas",
+              null,
+              "Cosmic, on the computer",
+              "Nova, on tablets — care plan elements carried across, QR updated"
+            ]
+          }
+        ],
+        "dividers": [
+          { "after": "Actions", "label": "Line of interaction" },
+          { "after": "Front of stage", "label": "Line of visibility" },
+          { "after": "Back of stage", "label": "Line of internal interaction" }
+        ],
+        "caption": "Re-drawn from the workshop artefact"
+      },
+      "notes": "Walk the vertical, not the horizontal: at each stage, ask what the clinician sees versus what the systems are doing. The paper-forms step in stage two is the one to dwell on."
+    },
+    {
+      "kind": "split",
+      "eyebrow": "What the blueprint found",
+      "title": "Paper was the bridge, and the bridge was the failure point",
+      "standfirst": "Answers were captured on paper at the bedside, then re-entered at a computer afterwards. Two acts of documentation for one assessment.",
+      "bullets": [
+        { "text": "Every step between the bedside and the keyboard is a chance for the assessment to never arrive." },
+        { "text": "The backstage lane was where the value was: summation, care plan generation, journal writing, discharge report, QR update — all invisible to the clinician." },
+        { "text": "So the design target was to make the invisible half do more, and the clinician-facing half ask less." }
+      ],
+      "figure": {
+        "kind": "shots",
+        "layout": "row",
+        "frame": "paper",
+        "items": [
+          {
+            "src": "/images/walkthrough/senior-alert-decision-support/blueprint-photo.webp",
+            "alt": "The service blueprint being built on the wall during the workshop",
+            "label": "Built with clinicians"
+          },
+          {
+            "src": "/images/walkthrough/senior-alert-decision-support/assessment-forms.webp",
+            "alt": "The paper risk assessment forms in use",
+            "label": "The paper forms"
+          }
+        ]
+      },
+      "notes": "This is the insight the blueprint bought. It is not visible from an interview transcript, because nobody describes double documentation as a problem — it is just how the day goes."
+    },
+    {
+      "kind": "statement",
+      "eyebrow": "The challenge",
+      "title": "Designing something that has to live inside someone else's system",
+      "standfirst": "The application could not assume control of its own container.",
+      "bullets": [
+        { "lead": "Navigation", "text": "Partly determined by the host record system." },
+        { "lead": "Context", "text": "Which patient, which encounter — supplied, not chosen." },
+        { "lead": "Available data", "text": "Whatever that particular EMR was willing to expose." }
+      ],
+      "callout": {
+        "lead": "And simultaneously",
+        "text": "Reconcile primary care nurses, specialist physicians, hospital process managers and patients, each with a different relationship to the same assessment."
+      },
+      "notes": "Two constraints at right angles: technical containment and audience spread. The blueprint was the only artefact that held both at once."
+    },
+    {
+      "kind": "full",
+      "eyebrow": "Concepts",
+      "title": "Wireframe iterations, with feedback on every round",
+      "figure": {
+        "kind": "shots",
+        "layout": "filmstrip",
+        "frame": "browser",
+        "items": [
+          {
+            "src": "/images/walkthrough/senior-alert-decision-support/wireframe-assessment.webp",
+            "alt": "Wireframe of the risk assessment screen",
+            "label": "Assessment"
+          },
+          {
+            "src": "/images/walkthrough/senior-alert-decision-support/wireframe-summary.webp",
+            "alt": "Wireframe of the assessment summary against max and min values",
+            "label": "Summary against max and min"
+          },
+          {
+            "src": "/images/walkthrough/senior-alert-decision-support/wireframe-care-plan.webp",
+            "alt": "Wireframe of the individual care plan",
+            "label": "Individual care plan"
+          },
+          {
+            "src": "/images/walkthrough/senior-alert-decision-support/blueprint-artefact.webp",
+            "alt": "The digitised service blueprint artefact",
+            "label": "Blueprint, digitised"
+          }
+        ],
+        "caption": "Sketches went out weekly; the next round answered the last one"
+      },
+      "notes": "Scroll the strip. The point is not any single wireframe, it is that none of them survived a week unchanged."
+    },
+    {
+      "kind": "split",
+      "eyebrow": "Development",
+      "title": "Built with the EHR company, not handed to them",
+      "standfirst": "The mockup of the web application was produced in direct collaboration with the vendor, alongside the graphic design work — so integration constraints arrived as design input rather than as rejections.",
+      "bullets": [
+        { "lead": "Inside the record", "text": "The assessment renders in the clinician's existing context." },
+        { "lead": "One entry", "text": "Values entered once, summed and summarised by the app." },
+        { "lead": "Care plan generated", "text": "The individual care plan is added automatically, then written to the journal." },
+        { "lead": "Tablet at the bedside", "text": "So the paper bridge stops being necessary." }
+      ],
+      "figure": {
+        "kind": "shot",
+        "src": "/images/walkthrough/senior-alert-decision-support/build-in-emr.webp",
+        "alt": "The Senior Alert application running inside the electronic medical record system",
+        "frame": "browser",
+        "caption": "Running inside the host EMR"
+      },
+      "notes": "Vendor collaboration is the unshowy reason this shipped. A beautiful spec thrown at an EHR integration team comes back as a list of things that are impossible."
+    },
+    {
+      "kind": "full",
+      "eyebrow": "Development",
+      "title": "The shipped application",
+      "figure": {
+        "kind": "shots",
+        "layout": "row",
+        "frame": "plain",
+        "items": [
+          {
+            "src": "/images/walkthrough/senior-alert-decision-support/build-detail.webp",
+            "alt": "Detail of the built assessment interface",
+            "label": "Assessment detail"
+          },
+          {
+            "src": "/images/walkthrough/senior-alert-decision-support/build-tablet.webp",
+            "alt": "The application on a tablet at the point of care",
+            "label": "At the point of care"
+          }
+        ]
+      },
+      "notes": "Tablet form factor closes the loop opened by the blueprint: the assessment now happens where the patient is."
+    },
+    {
+      "kind": "cards",
+      "eyebrow": "What made it work",
+      "title": "Three decisions that carried the project",
+      "cards": [
+        {
+          "title": "Blueprint before interface",
+          "text": "Mapping frontstage, backstage and support first meant the interface was designed against the real process rather than against the assessment form."
+        },
+        {
+          "title": "Weekly, not milestone",
+          "text": "A weekly online feedback cycle with clinicians made drift impossible. Nothing got a month of momentum before someone who does the work saw it."
+        },
+        {
+          "title": "Integration as a design constraint",
+          "text": "Treating the EMR as the container from day one — rather than as a deployment detail — is why it could be embedded across different record systems."
+        }
+      ],
+      "notes": "If the audience takes one thing, make it the first card. Blueprint before interface is transferable to any embedded clinical tool."
+    },
+    {
+      "kind": "full",
+      "eyebrow": "Outcome",
+      "title": "By the numbers",
+      "figure": {
+        "kind": "stats",
+        "items": [
+          { "value": "5", "label": "Preventive risk areas covered", "sub": "Falls, pressure sores, weight loss, oral health, bladder" },
+          { "value": "~100", "label": "Swedish national quality registers, of which Senior Alert is one" },
+          { "value": "13", "label": "Co-design engagements", "sub": "1 focus group, 3 workshops, 9 interviews" },
+          { "value": "Weekly", "label": "Iterative online feedback cycle throughout design" },
+          { "value": "Multi-EMR", "label": "Designed for integration across different record systems" }
+        ]
+      },
+      "notes": "Thirteen engagements across four professional roles plus patients, on a project of this size, is the number worth pausing on."
+    },
+    {
+      "kind": "statement",
+      "eyebrow": "The lesson",
+      "title": "If documentation competes with patient contact, documentation loses",
+      "standfirst": "The design job in clinical software is rarely to make the form nicer. It is to remove the moment where a clinician has to choose between the patient and the record.",
+      "callout": {
+        "lead": "Which means",
+        "text": "The most valuable work happened below the line of visibility — summation, care plan generation, journal writing, discharge reporting. Nobody sees it, and it is the reason the assessment gets done."
+      },
+      "notes": "End here. It reframes the whole deck: the visible interface was the smaller half of the design."
+    },
+    {
+      "kind": "close",
+      "eyebrow": "In summary",
+      "title": "A national register, fed from inside the clinician's own system",
+      "bullets": [
+        { "lead": "Co-designed", "text": "13 engagements, weekly iteration" },
+        { "lead": "Blueprinted", "text": "Frontstage, backstage, support" },
+        { "lead": "Embedded", "text": "Across different EMR systems" }
+      ],
+      "notes": "Likely questions: how the five risk areas map to distinct assessment flows, and how much the design had to vary per host EMR."
+    }
+  ]
+}

@@ -1,0 +1,396 @@
+{
+  "slug": "coupa-homepage-navigation",
+  "title": "Improving Coupa Homepage and Platform Navigation",
+  "subtitle": "The first formal UX research at Coupa, and what it changed",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "Enterprise UX · 2020 – 2022",
+      "title": "Improving Coupa Homepage and Platform Navigation",
+      "standfirst": "A two-part mixed-methods programme on the platform homepage and cross-application navigation — the first formal UX research ever run at Coupa.",
+      "bullets": [
+        { "lead": "Role", "text": "Principal UX Designer and Research Lead" },
+        { "lead": "Scale", "text": "263 + 76 survey participants, 14 usability sessions" },
+        { "lead": "Outcome", "text": "A ranked homepage hierarchy, and a killed navigation pattern" }
+      ],
+      "notes": "Open by naming the stake: this was the first study, so the method had to earn the right to exist alongside the findings. Two studies, one after the other — homepage first, navigation second."
+    },
+    {
+      "kind": "section",
+      "eyebrow": "Where we started",
+      "title": "The homepage every user lands on, designed without evidence",
+      "standfirst": "No research function, no tooling, no recruitment channel, no precedent for how findings would land.",
+      "notes": "Set the organisational context before the study. There was nothing to plug into — the channel, the instrument and the analysis all had to be built alongside the question."
+    },
+    {
+      "kind": "split",
+      "eyebrow": "The problem",
+      "title": "The start point for every user, and no data about what they needed from it",
+      "standfirst": "The homepage was being iterated on assumption. Five questions had no answer anywhere in the organisation.",
+      "bullets": [
+        { "lead": "Minimum viable", "text": "What sections does the homepage actually need?" },
+        { "lead": "Segments", "text": "Do non-procurement users want something different from everyone else?" },
+        { "lead": "Pattern transfer", "text": "Does the mobile to-do pattern translate to desktop at all?" },
+        { "lead": "Configuration", "text": "Per user, or per customer?" },
+        { "lead": "Navigation", "text": "How do users understand where they are in a multi-application suite?" }
+      ],
+      "figure": {
+        "kind": "shot",
+        "src": "/images/walkthrough/coupa-homepage-navigation/homepage-current.webp",
+        "alt": "The Coupa platform homepage as it stood at the start of the study",
+        "frame": "browser",
+        "caption": "The incumbent homepage — the surface under question"
+      },
+      "notes": "Read the five questions as a set. Point out that the last one is a different problem wearing the same clothes, which is why it became a second study."
+    },
+    {
+      "kind": "section",
+      "eyebrow": "Study one",
+      "title": "The homepage survey",
+      "standfirst": "Mixed methods, built from nothing: recruitment through the Coupa community, instrument in Google Forms, analysis in CSO and Excel.",
+      "notes": "This is the part that had never been done. Spend a beat on how the community became a recruitment channel."
+    },
+    {
+      "kind": "split",
+      "eyebrow": "Method",
+      "title": "An instrument designed to survive its own sequence effects",
+      "bullets": [
+        { "lead": "Sections", "text": "Demographics, general platform usage, homepage-specific questions." },
+        { "lead": "Between-subject", "text": "Non-procurement versus others; admin versus others." },
+        { "lead": "Within-subject", "text": "Randomised order, to counterbalance sequence effects." },
+        { "lead": "Qualitative", "text": "Open-ended responses coded into themes after the fact." }
+      ],
+      "callout": {
+        "lead": "Why it mattered",
+        "text": "A first study sets the standard for every study after it. Counterbalancing was not sophistication for its own sake — it was the difference between a finding and an artefact of question order."
+      },
+      "figure": {
+        "kind": "shot",
+        "src": "/images/walkthrough/coupa-homepage-navigation/survey-instrument.webp",
+        "alt": "Construction of the homepage survey instrument",
+        "frame": "browser",
+        "caption": "Survey construction, section by section"
+      },
+      "notes": "If someone asks why Google Forms: it was what could be deployed without procurement. Around twenty participants could not use it, which is itself a finding about the audience."
+    },
+    {
+      "kind": "full",
+      "eyebrow": "Recruitment",
+      "title": "1,004 invited. 263 answered. 184 volunteered for whatever came next.",
+      "standfirst": "The last number is the one that compounded: the study seeded the participant panel every later study drew on.",
+      "figure": {
+        "kind": "funnel",
+        "steps": [
+          { "label": "Community members invited", "value": "1,004", "note": "opt-in for UX testing" },
+          { "label": "Reachable", "value": "~904", "note": "roughly 100 invalid email addresses" },
+          { "label": "Participants", "value": "263", "note": "69% admin, 31% other roles" },
+          { "label": "Opted into future research", "value": "184", "note": "the beginning of a panel" }
+        ],
+        "caption": "Recruitment friction was real, and worth reporting"
+      },
+      "notes": "Do not skip the invalid addresses and the twenty people who could not use the form. Reporting recruitment friction is how a first study earns trust for the second."
+    },
+    {
+      "kind": "split",
+      "eyebrow": "Who answered",
+      "title": "A sample weighted toward administrators — which turned out to be the point",
+      "standfirst": "Admins were over-represented, so the between-subject split was built in from the start rather than discovered afterwards.",
+      "figure": {
+        "kind": "donut",
+        "segments": [
+          { "label": "Administrators", "value": 69 },
+          { "label": "All other roles", "value": 31 }
+        ],
+        "centreValue": "263",
+        "centreLabel": "participants",
+        "caption": "Role split across the homepage sample"
+      },
+      "notes": "The admin skew is why the analysis compares admin against non-admin rather than reporting one average user."
+    },
+    {
+      "kind": "full",
+      "eyebrow": "Finding one",
+      "title": "Navigation ranked first — for administrators and for everybody else",
+      "standfirst": "Approvals and progress visibility followed. The ranking was the same on both sides of the split, which made it actionable rather than arguable.",
+      "figure": {
+        "kind": "shots",
+        "layout": "row",
+        "frame": "browser",
+        "items": [
+          {
+            "src": "/images/walkthrough/coupa-homepage-navigation/homepage-elements.webp",
+            "alt": "Ranked importance of homepage elements",
+            "label": "Homepage elements, ranked"
+          },
+          {
+            "src": "/images/walkthrough/coupa-homepage-navigation/homepage-usage.webp",
+            "alt": "Reported homepage usage",
+            "label": "How the homepage is actually used"
+          }
+        ],
+        "caption": "Click either chart to read it full size"
+      },
+      "notes": "The agreement across segments is the finding. Where two segments disagree you get a configuration debate; where they agree you get a priority."
+    },
+    {
+      "kind": "full",
+      "eyebrow": "Context",
+      "title": "What people are doing when they land here",
+      "figure": {
+        "kind": "shots",
+        "layout": "grid",
+        "frame": "browser",
+        "items": [
+          {
+            "src": "/images/walkthrough/coupa-homepage-navigation/most-used-products.webp",
+            "alt": "Most used products across the suite",
+            "label": "Most used products"
+          },
+          {
+            "src": "/images/walkthrough/coupa-homepage-navigation/apps-used-all.webp",
+            "alt": "Number of applications used, all respondents",
+            "label": "Applications used — all"
+          },
+          {
+            "src": "/images/walkthrough/coupa-homepage-navigation/hours-per-day-all.webp",
+            "alt": "Hours per day in the platform, all respondents",
+            "label": "Hours per day — all"
+          },
+          {
+            "src": "/images/walkthrough/coupa-homepage-navigation/information-volume.webp",
+            "alt": "Volume of information users work with",
+            "label": "Information volume"
+          },
+          {
+            "src": "/images/walkthrough/coupa-homepage-navigation/tab-count-all.webp",
+            "alt": "Number of browser tabs kept open, all respondents",
+            "label": "Tabs open — all"
+          },
+          {
+            "src": "/images/walkthrough/coupa-homepage-navigation/hours-per-day-switchers.webp",
+            "alt": "Hours per day in the platform, product switchers only",
+            "label": "Hours per day — switchers"
+          }
+        ],
+        "caption": "Platform usage, from the general section of the survey"
+      },
+      "notes": "Use this as the evidence slide for the wide-screen recommendation later. People sit in this product for hours, in several applications, with a lot on screen."
+    },
+    {
+      "kind": "cards",
+      "eyebrow": "Finding two",
+      "title": "Five themes came out of the open-ended answers",
+      "standfirst": "Coded after the fact rather than pre-categorised, so the categories are the participants' and not mine.",
+      "cards": [
+        {
+          "title": "Give me my own screen back",
+          "text": "Customizable content and better use of screen real estate, named repeatedly and unprompted."
+        },
+        {
+          "title": "Walk me through the work",
+          "text": "Guide users through common workflows instead of presenting a wall of entry points."
+        },
+        {
+          "title": "Stop sending me home",
+          "text": "Redirecting users to the homepage to approve something interrupts the task it belongs to."
+        },
+        {
+          "title": "The Announcements banner is not welcome",
+          "text": "Rejected outright — the clearest negative signal in the dataset."
+        },
+        {
+          "title": "Specific defects",
+          "text": "The approval button, To Do detail and activity status, reported precisely enough to fix."
+        }
+      ],
+      "notes": "Theme four is the one to dwell on: a banner shipped without research, rejected with research. That single result did more for the function's credibility than the ranking did."
+    },
+    {
+      "kind": "statement",
+      "eyebrow": "The finding behind the findings",
+      "title": "Customers are not end users",
+      "standfirst": "The people who buy the platform and the people who work in it every day want different things from the same screen. That had to be demonstrated with data before it could change how features were prioritised.",
+      "callout": {
+        "lead": "Consequence",
+        "text": "Prioritisation stopped being an argument between opinions and started being an argument about which population a request came from."
+      },
+      "notes": "This is the through-line to the research-operations work. Say it plainly and move on — it lands harder without elaboration."
+    },
+    {
+      "kind": "section",
+      "eyebrow": "Study two",
+      "title": "Navigating a suite that hides its own application names",
+      "standfirst": "A four-stage programme: planning, a one-minute survey, prototyped options, then guerrilla testing.",
+      "notes": "The homepage study said navigation mattered most. This study is what you do next when the top-ranked finding is not yet a design."
+    },
+    {
+      "kind": "split",
+      "eyebrow": "Method",
+      "title": "One minute of a stranger's time, then fourteen sessions of it",
+      "bullets": [
+        { "lead": "Stage 1", "text": "Planning and method selection." },
+        { "lead": "Stage 2", "text": "A one-minute survey capturing real switching frequency — 76 participants." },
+        { "lead": "Stage 3", "text": "Options defined through desk research with two designers, then sketched with PM and engineering." },
+        { "lead": "Stage 4", "text": "Guerrilla usability testing, 14 non-admin users, under recording consent and NDA." }
+      ],
+      "figure": {
+        "kind": "stats",
+        "items": [
+          { "value": "76", "label": "Survey participants", "sub": "one-minute instrument" },
+          { "value": "14", "label": "Usability sessions", "sub": "non-admin users only" },
+          { "value": "4", "label": "Navigation options", "sub": "prototyped and tested" }
+        ]
+      },
+      "notes": "The one-minute survey is a deliberate design: length was the variable that governed response rate, so the instrument was cut to a single behavioural question."
+    },
+    {
+      "kind": "full",
+      "eyebrow": "Finding",
+      "title": "70% switch between applications at least three times a day",
+      "standfirst": "Switching was not an edge case for power users. It was the normal working pattern, and the interface did not name the thing being switched.",
+      "figure": {
+        "kind": "shots",
+        "layout": "grid",
+        "frame": "browser",
+        "items": [
+          {
+            "src": "/images/walkthrough/coupa-homepage-navigation/switch-freq-all.webp",
+            "alt": "Application switching frequency, all respondents",
+            "label": "Switching frequency — all"
+          },
+          {
+            "src": "/images/walkthrough/coupa-homepage-navigation/switch-freq-switchers.webp",
+            "alt": "Application switching frequency among multi-application users",
+            "label": "Switching frequency — switchers"
+          },
+          {
+            "src": "/images/walkthrough/coupa-homepage-navigation/apps-used-switchers.webp",
+            "alt": "Applications used by multi-application users",
+            "label": "Applications used — switchers"
+          },
+          {
+            "src": "/images/walkthrough/coupa-homepage-navigation/tab-count-switchers.webp",
+            "alt": "Browser tab counts among multi-application users",
+            "label": "Tabs open — switchers"
+          }
+        ],
+        "caption": "The between-subject split: multi-application users against everyone else"
+      },
+      "notes": "Tab counts are the tell. People were solving the switching problem themselves, in the browser, because the product would not."
+    },
+    {
+      "kind": "full",
+      "eyebrow": "Options",
+      "title": "Four candidate patterns, built to be rejected",
+      "standfirst": "Desk research with two other designers, then sketch-based iteration with product management and development.",
+      "figure": {
+        "kind": "shots",
+        "layout": "grid",
+        "frame": "browser",
+        "items": [
+          {
+            "src": "/images/walkthrough/coupa-homepage-navigation/nav-classic.webp",
+            "alt": "Classic navigation option",
+            "label": "A · Classic"
+          },
+          {
+            "src": "/images/walkthrough/coupa-homepage-navigation/nav-variable-switcher.webp",
+            "alt": "Variable switcher navigation option",
+            "label": "B · Variable switcher"
+          },
+          {
+            "src": "/images/walkthrough/coupa-homepage-navigation/nav-switcher.webp",
+            "alt": "App switcher navigation option",
+            "label": "C · App switcher"
+          },
+          {
+            "src": "/images/walkthrough/coupa-homepage-navigation/nav-auto-switcher.webp",
+            "alt": "Auto switcher navigation option",
+            "label": "D · Auto switcher"
+          }
+        ],
+        "caption": "Four options, one of which was the pattern already proposed internally"
+      },
+      "notes": "Option C was the internally favoured App Switcher. Testing it against three alternatives is what made rejecting it possible."
+    },
+    {
+      "kind": "split",
+      "eyebrow": "Result",
+      "title": "The Auto Switcher won, and the App Switcher lost",
+      "standfirst": "Fourteen non-admin users, between-subject on multi-app usage and within-subject on the options themselves.",
+      "bullets": [
+        { "text": "Users did not look for an application name they had never needed to know." },
+        { "text": "Switching automatically on context matched what people were already doing with tabs." },
+        { "text": "An explicit switcher added a decision to a transition users did not experience as a decision." }
+      ],
+      "figure": {
+        "kind": "shot",
+        "src": "/images/walkthrough/coupa-homepage-navigation/nav-winner.webp",
+        "alt": "The Auto Switcher navigation pattern that tested best",
+        "frame": "browser",
+        "caption": "Auto Switcher — the validated direction"
+      },
+      "notes": "This is the slide where the study paid for itself. A pattern was stopped before it was built."
+    },
+    {
+      "kind": "cards",
+      "eyebrow": "Recommendations",
+      "title": "Five, unambiguous",
+      "standfirst": "Written so that each one could be accepted or rejected on its own, with the evidence attached.",
+      "cards": [
+        { "title": "Adopt the Auto Switcher", "text": "Validated in testing as the pattern that matched observed behaviour." },
+        { "title": "Reject the App Switcher", "text": "Added a decision where users experienced a continuation." },
+        { "title": "Design for wide screens", "text": "Users work in the platform for hours with high information volume." },
+        { "title": "Allow tab pinning", "text": "Formalise the workaround people had already built in the browser." },
+        { "title": "Keep the Home icon", "text": "Removing it broke the only orientation cue users trusted." }
+      ],
+      "figure": {
+        "kind": "shots",
+        "layout": "row",
+        "frame": "browser",
+        "items": [
+          {
+            "src": "/images/walkthrough/coupa-homepage-navigation/widescreen-all.webp",
+            "alt": "Screen width usage across all respondents",
+            "label": "Screen width — all"
+          },
+          {
+            "src": "/images/walkthrough/coupa-homepage-navigation/widescreen-switchers.webp",
+            "alt": "Screen width usage among multi-application users",
+            "label": "Screen width — switchers"
+          }
+        ],
+        "caption": "The evidence behind the wide-screen recommendation"
+      },
+      "notes": "Every recommendation on this slide traces to a specific chart. If challenged on one, go to the chart rather than to the argument."
+    },
+    {
+      "kind": "statement",
+      "eyebrow": "What it left behind",
+      "title": "The study built the function, not just the finding",
+      "standfirst": "A recruitment channel, a participant panel, a survey pattern other researchers reused, and the first evidence that customers and end users are different populations.",
+      "figure": {
+        "kind": "stats",
+        "items": [
+          { "value": "1st", "label": "Formal UX study at Coupa", "sub": "method and finding delivered together" },
+          { "value": "184", "label": "Panel members recruited", "sub": "reused by every later study" },
+          { "value": "339", "label": "Total survey participants", "sub": "263 homepage + 76 navigation" },
+          { "value": "1", "label": "Pattern stopped before build", "sub": "the App Switcher" }
+        ]
+      },
+      "notes": "Close the loop to the research-operations case study if the audience is interested in the organisational arc rather than the study."
+    },
+    {
+      "kind": "close",
+      "eyebrow": "In summary",
+      "title": "Ask before you build, once, and the organisation will let you ask again",
+      "standfirst": "The findings changed the homepage roadmap. The study changed how the roadmap was set.",
+      "bullets": [
+        { "lead": "Ranked", "text": "Navigation first, for every segment" },
+        { "lead": "Killed", "text": "The App Switcher" },
+        { "lead": "Seeded", "text": "A 184-person research panel" }
+      ],
+      "notes": "Hand off to questions here. The two obvious ones are how the community recruitment worked and how the App Switcher rejection was received."
+    }
+  ]
+}

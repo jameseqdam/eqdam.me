@@ -1,0 +1,527 @@
+{
+  "slug": "swedbank-mobile-app",
+  "title": "Swedbank Mobile App Start Page",
+  "subtitle": "A service design concept, not a screen redesign",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "Product Design · 2023 – 2024 · Conceptual",
+      "title": "Swedbank Mobile App Start Page",
+      "standfirst": "A conceptual design deliberately scoped beyond a native screen redesign — anchored on financial overview, structured by the Swedish monthly income cycle, and treating advice as a service moment rather than an advertising slot.",
+      "bullets": [
+        { "lead": "Role", "text": "UX Director, conceptual design" },
+        { "lead": "Anchor", "text": "Financial overview and budget management" },
+        { "lead": "Aligned to", "text": "Swedbank's values: Open, Sharing, Caring" }
+      ],
+      "notes": "The scoping decision is the first thing worth defending: this was framed as service design before any screen was drawn, and that choice shapes everything including the validation plan."
+    },
+    {
+      "kind": "statement",
+      "eyebrow": "The problem",
+      "title": "A bank start page serves two agendas that usually undermine each other",
+      "bullets": [
+        { "lead": "The customer's agenda", "text": "A small set of recurring questions: what is my position, will I have money left, what should I do next." },
+        { "lead": "The bank's agenda", "text": "The same surface has to introduce products at the right moment." }
+      ],
+      "callout": {
+        "lead": "Handled badly",
+        "text": "The second agenda degrades the first, and the start page becomes a promotional space users learn to scroll past."
+      },
+      "notes": "\"Learn to scroll past\" is the failure mode to name. It is not that users dislike offers; it is that they train themselves to ignore a region of the screen."
+    },
+    {
+      "kind": "split",
+      "eyebrow": "The incumbent",
+      "title": "Where the journey starts today",
+      "standfirst": "The concept begins from the existing app — the login, and the surface a customer lands on when they open it to answer one small question.",
+      "bullets": [
+        { "text": "Customers arrive with a question, not with an appetite for browsing." },
+        { "text": "So the start page is judged on how fast it answers, not on how much it contains." },
+        { "text": "Anything occupying that surface has to earn its place against the question." }
+      ],
+      "figure": {
+        "kind": "shot",
+        "src": "/images/walkthrough/swedbank-mobile-app/incumbent-login.webp",
+        "alt": "The existing Swedbank mobile app login",
+        "frame": "phone",
+        "caption": "The starting point"
+      },
+      "notes": "Be respectful about the incumbent. This is a concept produced from the outside, and framing it as a critique of a specific team is neither fair nor useful."
+    },
+    {
+      "kind": "full",
+      "eyebrow": "Evidence",
+      "title": "The premise the concept rests on",
+      "figure": {
+        "kind": "gauge",
+        "value": 82,
+        "label": "Of users reported constantly searching for a solution",
+        "sub": "Supporting the overview-first premise",
+        "caption": "If people are always looking, the start page's job is to answer"
+      },
+      "notes": "One number, and the whole overview-first argument sits on it. Say what it supports rather than overstating what it proves."
+    },
+    {
+      "kind": "split",
+      "eyebrow": "The customer",
+      "title": "The persona is not a click, it is a relationship",
+      "standfirst": "Someone who wants to make thoughtful decisions, always have money left, is open to advice — and is a loyal customer holding few banking relationships.",
+      "bullets": [
+        { "lead": "Thoughtful", "text": "Decisions are considered, not impulsive." },
+        { "lead": "Cautious", "text": "The goal is to always have money left." },
+        { "lead": "Open to advice", "text": "Which is an opportunity and a liability at once." },
+        { "lead": "Loyal, with few relationships", "text": "So a misjudged offer costs more than it earns." }
+      ],
+      "figure": {
+        "kind": "quote",
+        "text": "The start page is not competing for a click. It is maintaining a long relationship.",
+        "attribution": "The framing that set the brief"
+      },
+      "notes": "The loyalty point is the commercial argument for restraint. A customer with few banking relationships is expensive to annoy."
+    },
+    {
+      "kind": "full",
+      "eyebrow": "Service design",
+      "title": "An eight-stage customer lifecycle, from information search to renegotiation",
+      "figure": {
+        "kind": "journey",
+        "phases": [
+          "Information search",
+          "Evaluation",
+          "Ordering services",
+          "Getting started",
+          "Ongoing use",
+          "Support",
+          "Administration",
+          "Renegotiation"
+        ],
+        "rows": [
+          {
+            "label": "Where the start page appears",
+            "cells": [
+              "Rarely — before the relationship",
+              "Rarely",
+              "As a route in",
+              "First impressions",
+              "Every day",
+              "The way in to help",
+              "The way in to tasks",
+              "The moment advice matters most"
+            ]
+          },
+          {
+            "label": "What it owes the customer",
+            "cells": [
+              "Nothing yet",
+              "Clarity about what is offered",
+              "A frictionless path",
+              "Orientation",
+              "An answer to \"will I have money left\"",
+              "A visible route to a human",
+              "Fast completion",
+              "A well-timed, honest offer"
+            ]
+          }
+        ],
+        "caption": "The start page is a lifecycle surface, not a landing page"
+      },
+      "notes": "Scroll horizontally if needed. The point is that the start page shows up in six of eight stages, which is why it cannot be optimised for one of them."
+    },
+    {
+      "kind": "section",
+      "eyebrow": "The concept",
+      "title": "Five pillars",
+      "standfirst": "Content, behaviour, commerce, structure and rhythm — decided before any layout.",
+      "notes": "Naming the commercial requirement as a pillar rather than hiding it is what makes the rest of the concept honest."
+    },
+    {
+      "kind": "full",
+      "eyebrow": "The concept",
+      "title": "What the design was built against",
+      "figure": {
+        "kind": "layers",
+        "items": [
+          {
+            "label": "Financial overview and budget management",
+            "detail": "The primary content — everything else is subordinate"
+          },
+          {
+            "label": "Engaging private customers",
+            "detail": "The behavioural goal: daily interaction worth returning to"
+          },
+          {
+            "label": "Generating relevant sales pitches",
+            "detail": "The commercial requirement, handled honestly rather than hidden"
+          },
+          {
+            "label": "A timeline",
+            "detail": "The structural device organising the whole page"
+          },
+          {
+            "label": "Monthly-based income in Sweden",
+            "detail": "The real-world rhythm the interface should follow"
+          }
+        ],
+        "caption": "Five pillars, in dependency order"
+      },
+      "notes": "Pillars three and five interact: the offer is timed to the income cycle, which is what converts a pitch into a service moment."
+    },
+    {
+      "kind": "statement",
+      "eyebrow": "The structural insight",
+      "title": "Swedish salaries arrive monthly, so the month is the unit of comprehension",
+      "standfirst": "Not the day, and not the week. A budget question is only answerable against the period the money arrived for.",
+      "bullets": [
+        { "text": "\"Will I have money left\" is a question about a month, asked on an arbitrary day within it." },
+        { "text": "A timeline structured on the income cycle answers it without the customer doing arithmetic." },
+        { "text": "And it gives offers a natural, non-intrusive moment: the point in the cycle where the answer changes." }
+      ],
+      "callout": {
+        "lead": "Which is why the timeline is a pillar rather than a component",
+        "text": "It is the temporal structure of the page, not a widget on it."
+      },
+      "notes": "This is the best idea in the concept. Spend time here — it is culturally specific, defensible, and it produces both the layout and the commercial timing."
+    },
+    {
+      "kind": "full",
+      "eyebrow": "Sketching",
+      "title": "Four rounds of sketches before any interface",
+      "figure": {
+        "kind": "shots",
+        "layout": "grid",
+        "frame": "paper",
+        "items": [
+          {
+            "src": "/images/walkthrough/swedbank-mobile-app/sketch-round-1.webp",
+            "alt": "Sketch round one",
+            "label": "Round 1"
+          },
+          {
+            "src": "/images/walkthrough/swedbank-mobile-app/sketch-round-2.webp",
+            "alt": "Sketch round two",
+            "label": "Round 2"
+          },
+          {
+            "src": "/images/walkthrough/swedbank-mobile-app/sketch-round-3.webp",
+            "alt": "Sketch round three",
+            "label": "Round 3"
+          },
+          {
+            "src": "/images/walkthrough/swedbank-mobile-app/sketch-round-4.webp",
+            "alt": "Sketch round four",
+            "label": "Round 4"
+          },
+          {
+            "src": "/images/walkthrough/swedbank-mobile-app/sketch-wheel.webp",
+            "alt": "The circular period sketch",
+            "label": "The period wheel"
+          },
+          {
+            "src": "/images/walkthrough/swedbank-mobile-app/sketch-detail.webp",
+            "alt": "Sketch of a detail view",
+            "label": "Detail"
+          }
+        ],
+        "caption": "Working out the timeline before committing to a layout"
+      },
+      "notes": "The period wheel sketch is the one to point at — it is where the monthly cycle first becomes a visual device."
+    },
+    {
+      "kind": "full",
+      "eyebrow": "The concept",
+      "title": "The start page",
+      "figure": {
+        "kind": "shots",
+        "layout": "row",
+        "frame": "phone",
+        "items": [
+          {
+            "src": "/images/walkthrough/swedbank-mobile-app/app-start.webp",
+            "alt": "The concept start page",
+            "label": "Start"
+          },
+          {
+            "src": "/images/walkthrough/swedbank-mobile-app/app-period.webp",
+            "alt": "The period view following the monthly income cycle",
+            "label": "The period"
+          },
+          {
+            "src": "/images/walkthrough/swedbank-mobile-app/app-spend.webp",
+            "alt": "Spending against the period",
+            "label": "Spend"
+          }
+        ],
+        "caption": "Overview first, organised by the income period"
+      },
+      "notes": "Walk left to right: position, period, spend. That sequence is the customer's question order."
+    },
+    {
+      "kind": "full",
+      "eyebrow": "The concept",
+      "title": "Categorisation, transactions, detail",
+      "figure": {
+        "kind": "shots",
+        "layout": "filmstrip",
+        "frame": "phone",
+        "items": [
+          {
+            "src": "/images/walkthrough/swedbank-mobile-app/app-categories.webp",
+            "alt": "Everyday charge categorisation",
+            "label": "Categories"
+          },
+          {
+            "src": "/images/walkthrough/swedbank-mobile-app/app-transactions.webp",
+            "alt": "Transactions view",
+            "label": "Transactions"
+          },
+          {
+            "src": "/images/walkthrough/swedbank-mobile-app/app-detail-a.webp",
+            "alt": "Detail view, first",
+            "label": "Detail · a"
+          },
+          {
+            "src": "/images/walkthrough/swedbank-mobile-app/app-detail-b.webp",
+            "alt": "Detail view, second",
+            "label": "Detail · b"
+          },
+          {
+            "src": "/images/walkthrough/swedbank-mobile-app/app-detail-c.webp",
+            "alt": "Detail view, third",
+            "label": "Detail · c"
+          },
+          {
+            "src": "/images/walkthrough/swedbank-mobile-app/app-detail-d.webp",
+            "alt": "Detail view, fourth",
+            "label": "Detail · d"
+          }
+        ],
+        "caption": "Scroll the strip"
+      },
+      "notes": "Categorisation is the condition flagged for further work — getting everyday charge categories right needs desk research and consultation, not designer intuition."
+    },
+    {
+      "kind": "split",
+      "eyebrow": "The commercial moment",
+      "title": "Advice as a service moment, not an advertising slot",
+      "standfirst": "The pitch is earned by delivering genuine financial overview first, and timed to the monthly income cycle so the recommendation arrives when it is contextually useful.",
+      "bullets": [
+        { "lead": "Earn it", "text": "Answer the customer's question before making an offer." },
+        { "lead": "Time it", "text": "To the point in the income cycle where the offer is actually relevant." },
+        { "lead": "Voice it", "text": "So the offer reads as the bank helping the customer, not selling to them." },
+        { "lead": "Develop it with sales", "text": "In consultation with the sales department, not around them." }
+      ],
+      "figure": {
+        "kind": "shots",
+        "layout": "row",
+        "frame": "phone",
+        "items": [
+          {
+            "src": "/images/walkthrough/swedbank-mobile-app/app-advice-a.webp",
+            "alt": "Advice presented as a service moment, first",
+            "label": "Advice"
+          },
+          {
+            "src": "/images/walkthrough/swedbank-mobile-app/app-advice-b.webp",
+            "alt": "Advice presented as a service moment, second",
+            "label": "In context"
+          },
+          {
+            "src": "/images/walkthrough/swedbank-mobile-app/app-advice-c.webp",
+            "alt": "Advice presented as a service moment, third",
+            "label": "The offer"
+          }
+        ]
+      },
+      "notes": "Consulting the sales department is the pragmatic move that makes this survivable inside a bank. A concept that treats sales as the enemy never ships."
+    },
+    {
+      "kind": "full",
+      "eyebrow": "The concept",
+      "title": "Everyday interaction, made playful",
+      "figure": {
+        "kind": "shots",
+        "layout": "row",
+        "frame": "phone",
+        "items": [
+          {
+            "src": "/images/walkthrough/swedbank-mobile-app/app-food-a.webp",
+            "alt": "Everyday spend interaction, first",
+            "label": "Everyday · a"
+          },
+          {
+            "src": "/images/walkthrough/swedbank-mobile-app/app-food-b.webp",
+            "alt": "Everyday spend interaction, second",
+            "label": "Everyday · b"
+          },
+          {
+            "src": "/images/walkthrough/swedbank-mobile-app/app-food-c.webp",
+            "alt": "Everyday spend interaction, third",
+            "label": "Everyday · c"
+          }
+        ],
+        "caption": "Engaging and playful daily interaction — one of three stated conditions"
+      },
+      "notes": "Playful has a cost: it depends entirely on charge categorisation being right. Say the dependency out loud rather than showing this as free delight."
+    },
+    {
+      "kind": "cards",
+      "eyebrow": "Conditions",
+      "title": "Three things stated as prerequisites before further development",
+      "cards": [
+        {
+          "title": "Engaging and playful daily interaction",
+          "text": "Requires desk research and consultation to get everyday charge categorization right. Without accurate categories, the playfulness is noise."
+        },
+        {
+          "title": "Relevant sales pitches",
+          "text": "Developed in consultation with the sales department, so the offer reads as the bank helping the customer rather than selling to them."
+        },
+        {
+          "title": "Consistency",
+          "text": "Achieved by working within Swedbank's existing front-end style guide rather than around it — a concept that ignores the style guide is a concept that cannot ship."
+        }
+      ],
+      "notes": "These are conditions, not caveats. Each one is a dependency on someone outside the design team, and naming them is what makes the concept actionable."
+    },
+    {
+      "kind": "full",
+      "eyebrow": "Prototype",
+      "title": "The concept, assembled",
+      "figure": {
+        "kind": "shot",
+        "src": "/images/walkthrough/swedbank-mobile-app/concept-frames.webp",
+        "alt": "The full set of concept frames",
+        "frame": "browser",
+        "pan": true,
+        "caption": "Interactive prototype built in InVision"
+      },
+      "notes": "Pans because it is wide. Use it as an establishing shot for the whole concept rather than reading individual frames."
+    },
+    {
+      "kind": "full",
+      "eyebrow": "What comes next",
+      "title": "Six staged validation steps, defined before build",
+      "figure": {
+        "kind": "phases",
+        "items": [
+          { "label": "Brainstorming", "detail": "Widen before narrowing" },
+          { "label": "User flow", "detail": "Structure agreed" },
+          { "label": "Focus groups and survey", "detail": "Qualitative and quantitative" },
+          { "label": "High-fidelity prototype", "detail": "Built to be tested" },
+          { "label": "Inspection and guerrilla testing", "detail": "Usability inspection, then real people" },
+          { "label": "Beta and A/B tests", "detail": "Measured in production" }
+        ],
+        "caption": "The proposal ships with a research plan, not a claim of validation"
+      },
+      "notes": "This slide is the honesty of the deck. The concept is unvalidated and says so, with a specific path rather than a promise to test later."
+    },
+    {
+      "kind": "full",
+      "eyebrow": "What comes next",
+      "title": "The plan, as documented",
+      "figure": {
+        "kind": "shots",
+        "layout": "grid",
+        "frame": "browser",
+        "items": [
+          {
+            "src": "/images/walkthrough/swedbank-mobile-app/next-brainstorm.webp",
+            "alt": "Brainstorming step",
+            "label": "Brainstorm"
+          },
+          {
+            "src": "/images/walkthrough/swedbank-mobile-app/next-userflow.webp",
+            "alt": "User flow step",
+            "label": "User flow"
+          },
+          {
+            "src": "/images/walkthrough/swedbank-mobile-app/next-research.webp",
+            "alt": "Focus group research step",
+            "label": "Focus groups"
+          },
+          {
+            "src": "/images/walkthrough/swedbank-mobile-app/next-survey.webp",
+            "alt": "Quantitative survey step",
+            "label": "Survey"
+          },
+          {
+            "src": "/images/walkthrough/swedbank-mobile-app/next-hifi.webp",
+            "alt": "High fidelity prototyping step",
+            "label": "High fidelity"
+          },
+          {
+            "src": "/images/walkthrough/swedbank-mobile-app/next-testing.webp",
+            "alt": "Usability inspection and guerrilla testing step",
+            "label": "Testing"
+          },
+          {
+            "src": "/images/walkthrough/swedbank-mobile-app/next-beta.webp",
+            "alt": "Beta and A/B testing step",
+            "label": "Beta and A/B"
+          },
+          {
+            "src": "/images/walkthrough/swedbank-mobile-app/next-launch.webp",
+            "alt": "Launch",
+            "label": "Launch"
+          }
+        ]
+      },
+      "notes": "Reference material. Point at it as evidence the plan is real and move on."
+    },
+    {
+      "kind": "statement",
+      "eyebrow": "The challenge",
+      "title": "Making commercial content welcome",
+      "standfirst": "A start page carrying sales pitches is normally experienced as a tax on the customer's own task.",
+      "bullets": [
+        { "text": "The persona is open to advice — and also loyal and financially cautious." },
+        { "text": "Which means a misjudged offer costs more than it earns." },
+        { "lead": "The response", "text": "Earn the pitch by delivering genuine overview first, and time it to the income cycle so it arrives when it is useful." }
+      ],
+      "callout": {
+        "lead": "The self-imposed constraint",
+        "text": "Treating the brief as a service design problem meant the concept could not be validated by screen testing alone. That is why it ships with a staged research plan rather than a claim of validation."
+      },
+      "notes": "The second half is the more interesting half. Widening the scope bought a better concept and cost the ability to validate it cheaply — an honest trade, stated as one."
+    },
+    {
+      "kind": "full",
+      "eyebrow": "Outcome",
+      "title": "By the numbers",
+      "figure": {
+        "kind": "stats",
+        "items": [
+          { "value": "8", "label": "Customer lifecycle stages mapped", "sub": "Information search to renegotiation" },
+          { "value": "5", "label": "Service design pillars defining the concept" },
+          { "value": "Monthly", "label": "Income cycle adopted as the structural unit for budget comprehension" },
+          { "value": "6", "label": "Staged validation steps defined before build" },
+          { "value": "82%", "label": "Of users reported constantly searching for a solution" }
+        ]
+      },
+      "notes": "Monthly is the one that is not really a number, and it is the most important item on the slide."
+    },
+    {
+      "kind": "statement",
+      "eyebrow": "The lesson",
+      "title": "Commercial content is welcome when it arrives inside a rhythm the customer already lives in",
+      "standfirst": "The usual fix for an ignored promotional slot is to make it louder. The better fix is to make it timely — which requires knowing the customer's cycle, not their segment.",
+      "callout": {
+        "lead": "Which is why this could not stay a screen redesign",
+        "text": "Timing an offer to the income cycle is a service decision. No amount of layout work gets you there."
+      },
+      "notes": "End on this. It justifies the scoping decision made on slide one, which closes the deck's own loop."
+    },
+    {
+      "kind": "close",
+      "eyebrow": "In summary",
+      "title": "Overview first, monthly rhythm, advice as service",
+      "bullets": [
+        { "lead": "Reframed", "text": "A screen brief as a service design brief" },
+        { "lead": "Structured", "text": "On the Swedish monthly income cycle" },
+        { "lead": "Earned", "text": "The commercial moment, rather than taking it" },
+        { "lead": "Planned", "text": "Six validation steps before build" }
+      ],
+      "notes": "Likely questions: whether the 82% figure is Swedbank-specific, and how offers would be prevented from expanding once the surface proves effective."
+    }
+  ]
+}

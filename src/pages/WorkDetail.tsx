@@ -1,8 +1,9 @@
 import { Link, useParams } from 'react-router-dom';
-import { ArrowLeft, ArrowRight } from 'lucide-react';
+import { ArrowLeft, ArrowRight, Lock, Presentation } from 'lucide-react';
 import SubPageLayout from '@/components/SubPageLayout';
 import BentoMetrics from '@/components/BentoMetrics';
 import { getWorkItem, workItems } from '@/lib/content';
+import { hasWalkthrough } from '@/lib/walkthrough';
 
 const WorkDetail = () => {
   const { slug } = useParams();
@@ -32,13 +33,27 @@ const WorkDetail = () => {
   const nextItem = workItems[(currentIndex + 1) % workItems.length];
 
   const meta = (
-    <div className="flex flex-wrap items-center gap-3 text-sm">
-      <span className="px-3 py-1 bg-primary/10 text-primary rounded-full">{item.category}</span>
-      <span className="text-muted-foreground">{item.timeline}</span>
-      <span aria-hidden="true" className="text-border">
-        /
-      </span>
-      <span className="text-muted-foreground">{item.role}</span>
+    <div className="space-y-4">
+      <div className="flex flex-wrap items-center gap-3 text-sm">
+        <span className="px-3 py-1 bg-primary/10 text-primary rounded-full">{item.category}</span>
+        <span className="text-muted-foreground">{item.timeline}</span>
+        <span aria-hidden="true" className="text-border">
+          /
+        </span>
+        <span className="text-muted-foreground">{item.role}</span>
+      </div>
+
+      {/* The presenting version of this case study, behind a passphrase. */}
+      {hasWalkthrough(item.slug) && (
+        <Link
+          to={`/work/${item.slug}/walkthrough`}
+          className="portfolio-button portfolio-button-outline group gap-2 text-sm"
+        >
+          <Presentation className="h-4 w-4" />
+          Walkthrough
+          <Lock aria-hidden="true" className="h-3 w-3 text-muted-foreground" />
+        </Link>
+      )}
     </div>
   );
 

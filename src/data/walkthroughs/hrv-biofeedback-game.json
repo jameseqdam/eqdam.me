@@ -1,0 +1,483 @@
+{
+  "slug": "hrv-biofeedback-game",
+  "title": "Gamifying Clinical Breathing Training",
+  "subtitle": "A heart rate variability biofeedback game, and what gamification costs",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "Health Tech · 2014 – 2016 · IEEE Access",
+      "title": "Gamifying Clinical Breathing Training",
+      "standfirst": "An Android flight game that turns resonant frequency breathing into something playable — and a controlled study measuring what that fun actually costs in clinical performance terms.",
+      "bullets": [
+        { "lead": "Role", "text": "UX Researcher and Co-Designer" },
+        { "lead": "Study", "text": "11 participants aged 40 to 67, three game modes" },
+        { "lead": "Finding", "text": "The mode that motivated players most was not the mode they breathed best in" }
+      ],
+      "notes": "Lead with the counter-intuitive finding on the cover. It is the reason this study is worth a paper rather than a demo."
+    },
+    {
+      "kind": "section",
+      "eyebrow": "The clinical basis",
+      "title": "Why breathing at your resonant frequency raises HRV",
+      "standfirst": "Reduced heart rate variability indicates a malfunctioning autonomic nervous system — and can be either the cause or the consequence of disease.",
+      "notes": "Two minutes of physiology here earns the rest of the deck. Without it, the game looks like a toy."
+    },
+    {
+      "kind": "split",
+      "eyebrow": "Mechanism",
+      "title": "Respiratory sinus arrhythmia",
+      "standfirst": "Heart rate rises on the in-breath and falls on the out-breath. Breathe at roughly six breaths a minute and that oscillation goes into resonance, producing large, coherent swings in heart rate.",
+      "bullets": [
+        { "text": "Resonant frequency breathing is a viable non-invasive intervention for rebalancing the autonomic nervous system." },
+        { "text": "It raises HRV without medication, equipment implants, or a clinician in the room." },
+        { "lead": "The catch", "text": "The exercises are widely regarded as boring and monotonous, which undermines adherence." }
+      ],
+      "figure": {
+        "kind": "shots",
+        "layout": "row",
+        "frame": "plain",
+        "items": [
+          {
+            "src": "/images/walkthrough/hrv-biofeedback-game/breathing-anatomy.webp",
+            "alt": "The anatomy of breathing",
+            "label": "The mechanics"
+          },
+          {
+            "src": "/images/walkthrough/hrv-biofeedback-game/rsa-diagram.webp",
+            "alt": "Animated diagram of respiratory sinus arrhythmia — heart rate rising with inhalation and falling with exhalation",
+            "label": "Respiratory sinus arrhythmia, animated"
+          }
+        ]
+      },
+      "notes": "This figure animates on its own. Let it run through one full cycle before you talk over it."
+    },
+    {
+      "kind": "full",
+      "eyebrow": "Mechanism",
+      "title": "Six breaths a minute, live",
+      "standfirst": "Ten seconds a cycle. Follow the pacer and watch heart rate track it — that phase lock is the whole intervention.",
+      "figure": {
+        "kind": "pacer",
+        "caption": "Resonant-frequency pacer with the coupled heart-rate wave"
+      },
+      "notes": "Invite the audience to breathe with it. Thirty seconds of the room doing this together makes the boredom problem self-evident — which is exactly the setup for the game."
+    },
+    {
+      "kind": "split",
+      "eyebrow": "Instrumentation",
+      "title": "Real signal, not a simulated one",
+      "standfirst": "Heart rate came off an ECG device, so the biofeedback loop closed on actual interbeat intervals rather than on a proxy.",
+      "bullets": [
+        { "text": "Interbeat intervals streamed to the Android device in real time." },
+        { "text": "The game's biofeedback framework converted the HRV signal into game state." },
+        { "text": "Which means training performance was measurable, per participant, per mode." }
+      ],
+      "figure": {
+        "kind": "shots",
+        "layout": "row",
+        "frame": "plain",
+        "items": [
+          {
+            "src": "/images/walkthrough/hrv-biofeedback-game/ecg-device.webp",
+            "alt": "The ECG device used to capture heart rate for the biofeedback loop",
+            "label": "ECG capture"
+          },
+          {
+            "src": "/images/walkthrough/hrv-biofeedback-game/hrv-traces.webp",
+            "alt": "Heart rate variability traces recorded during training",
+            "label": "Recorded traces"
+          }
+        ]
+      },
+      "notes": "Worth stressing: measurable performance is what allows the motivation-versus-performance split later. A game with fake feedback cannot produce that finding."
+    },
+    {
+      "kind": "statement",
+      "eyebrow": "The research gap",
+      "title": "Gamification raises motivation. Nobody had measured what it does to the training.",
+      "bullets": [
+        { "lead": "Known", "text": "Gamification is a recognised route to higher motivation and engagement." },
+        { "lead": "Unknown", "text": "How to design a game for breathing exercises specifically." },
+        { "lead": "Unknown", "text": "How additional interactive elements affect the main course of training." }
+      ],
+      "callout": {
+        "lead": "The risk, stated plainly",
+        "text": "Adding fun could improve adherence while degrading the clinical activity it exists to support. You would ship more sessions of worse training and call it a win."
+      },
+      "notes": "This is the thesis. Everything after it is method built to test this one sentence."
+    },
+    {
+      "kind": "section",
+      "eyebrow": "Process",
+      "title": "A full user-centred process, not a jump to implementation",
+      "notes": "Say this because the temptation in a games project is always to start building. The concept-selection stage is what kept the study honest."
+    },
+    {
+      "kind": "full",
+      "eyebrow": "Divergence",
+      "title": "Five candidate concepts, generated after analysing what already existed",
+      "standfirst": "Context analysis of breathing applications on the Google Play Store first, then five distinct game principles — each demanding a different kind of attention.",
+      "figure": {
+        "kind": "shots",
+        "layout": "grid",
+        "frame": "phone",
+        "items": [
+          {
+            "src": "/images/walkthrough/hrv-biofeedback-game/concept-flight.webp",
+            "alt": "Flight game concept",
+            "label": "Flight"
+          },
+          {
+            "src": "/images/walkthrough/hrv-biofeedback-game/concept-balloon.webp",
+            "alt": "Balloon concept",
+            "label": "Balloon"
+          },
+          {
+            "src": "/images/walkthrough/hrv-biofeedback-game/concept-balance.webp",
+            "alt": "Balance concept",
+            "label": "Balance"
+          },
+          {
+            "src": "/images/walkthrough/hrv-biofeedback-game/concept-driving.webp",
+            "alt": "Driving concept",
+            "label": "Driving"
+          },
+          {
+            "src": "/images/walkthrough/hrv-biofeedback-game/concept-shooter.webp",
+            "alt": "Shooter concept",
+            "label": "Shooter"
+          }
+        ],
+        "caption": "Five game principles, narrowed by survey rather than by taste"
+      },
+      "notes": "Point out that these vary deliberately in attentional load — that variation is the independent variable the whole study rests on."
+    },
+    {
+      "kind": "split",
+      "eyebrow": "Selection",
+      "title": "Chosen by 20 participants, not by the design team",
+      "bullets": [
+        { "lead": "A/B testing", "text": "Concepts tested head to head." },
+        { "lead": "Concept survey", "text": "20 participants, equal gender distribution." },
+        { "lead": "Outcome", "text": "The flight concept, elaborated into mockups." }
+      ],
+      "figure": {
+        "kind": "shot",
+        "src": "/images/walkthrough/hrv-biofeedback-game/concept-survey.webp",
+        "alt": "The concept selection survey instrument",
+        "frame": "browser",
+        "caption": "The concept selection survey"
+      },
+      "notes": "Equal gender distribution in a 40-to-67 target population is not incidental. Game preference splits hard on demographics and the sample had to not bake that in."
+    },
+    {
+      "kind": "split",
+      "eyebrow": "Formative evaluation",
+      "title": "GameFlow, then icons tested for both directions of association",
+      "standfirst": "Before any code, the mockups were evaluated against the GameFlow model with 10 different participants — and every icon had to earn its place.",
+      "bullets": [
+        { "lead": "GameFlow", "text": "Formative evaluation of the concept against the model's criteria." },
+        { "lead": "Interviews", "text": "Unstructured, with 10 participants not involved in concept selection." },
+        { "lead": "Forward association", "text": "Given the icon, name the function." },
+        { "lead": "Backward association", "text": "Given the function, pick the icon." },
+        { "lead": "Threshold", "text": "Above 66% recognition, or redraw it." }
+      ],
+      "figure": {
+        "kind": "shots",
+        "layout": "row",
+        "frame": "phone",
+        "items": [
+          {
+            "src": "/images/walkthrough/hrv-biofeedback-game/mockup-menu.webp",
+            "alt": "Mockup of the game menu",
+            "label": "Menu"
+          },
+          {
+            "src": "/images/walkthrough/hrv-biofeedback-game/mockup-calibration.webp",
+            "alt": "Mockup of the resonant frequency calibration screen",
+            "label": "Calibration"
+          },
+          {
+            "src": "/images/walkthrough/hrv-biofeedback-game/mockup-challenge.webp",
+            "alt": "Mockup of the challenge screen",
+            "label": "Challenge"
+          },
+          {
+            "src": "/images/walkthrough/hrv-biofeedback-game/mockup-scoreboard.webp",
+            "alt": "Mockup of the scoreboard",
+            "label": "Scoreboard"
+          }
+        ]
+      },
+      "notes": "Testing association in both directions catches the icon that is recognisable once you know it but undiscoverable cold. That distinction matters for a 40-to-67 audience."
+    },
+    {
+      "kind": "full",
+      "eyebrow": "Mockup to build",
+      "title": "What survived the translation",
+      "figure": {
+        "kind": "compare",
+        "before": {
+          "src": "/images/walkthrough/hrv-biofeedback-game/mockup-vs-build-a.webp",
+          "alt": "Mockup of a game screen",
+          "label": "Mockup"
+        },
+        "after": {
+          "src": "/images/walkthrough/hrv-biofeedback-game/mockup-vs-build-b.webp",
+          "alt": "The same screen as built",
+          "label": "Built"
+        },
+        "frame": "phone",
+        "caption": "Drag to wipe"
+      },
+      "notes": "Drag this live. It is a small moment but audiences remember interaction they watched you perform."
+    },
+    {
+      "kind": "full",
+      "eyebrow": "Mockup to build",
+      "title": "And the rest of the set",
+      "figure": {
+        "kind": "shots",
+        "layout": "row",
+        "frame": "phone",
+        "items": [
+          {
+            "src": "/images/walkthrough/hrv-biofeedback-game/mockup-vs-build-c.webp",
+            "alt": "Mockup and build comparison, second pair",
+            "label": "Designed"
+          },
+          {
+            "src": "/images/walkthrough/hrv-biofeedback-game/mockup-vs-build-d.webp",
+            "alt": "Mockup and build comparison, second pair as built",
+            "label": "Shipped"
+          }
+        ]
+      },
+      "notes": "Skip this slide if you are short on time. It supports the previous one rather than adding an argument."
+    },
+    {
+      "kind": "full",
+      "eyebrow": "The build",
+      "title": "Game mechanics, GUI and a biofeedback framework",
+      "figure": {
+        "kind": "shots",
+        "layout": "filmstrip",
+        "frame": "phone",
+        "items": [
+          {
+            "src": "/images/walkthrough/hrv-biofeedback-game/screen-menu.webp",
+            "alt": "The shipped game menu",
+            "label": "Menu"
+          },
+          {
+            "src": "/images/walkthrough/hrv-biofeedback-game/flight-scene.webp",
+            "alt": "The flight scene in play",
+            "label": "In flight"
+          },
+          {
+            "src": "/images/walkthrough/hrv-biofeedback-game/screen-flight-coins.webp",
+            "alt": "Collecting coins during the flight",
+            "label": "Collecting"
+          },
+          {
+            "src": "/images/walkthrough/hrv-biofeedback-game/screen-scoreboard.webp",
+            "alt": "The scoreboard after a session",
+            "label": "Scoreboard"
+          },
+          {
+            "src": "/images/walkthrough/hrv-biofeedback-game/screen-statistics.webp",
+            "alt": "Session statistics",
+            "label": "Statistics"
+          },
+          {
+            "src": "/images/walkthrough/hrv-biofeedback-game/screen-statistics-alt.webp",
+            "alt": "Alternative statistics view",
+            "label": "Statistics, detail"
+          }
+        ],
+        "caption": "Scroll the strip"
+      },
+      "notes": "The scoreboard and statistics screens are the adherence machinery. The flight scene is where the clinical activity actually happens."
+    },
+    {
+      "kind": "split",
+      "eyebrow": "The experiment",
+      "title": "Three modes, varying only in how much multitasking they demand",
+      "standfirst": "This is the design of the study, not a feature list. Holding everything else constant is what allows motivation gains and clinical losses to be attributed rather than confounded.",
+      "bullets": [
+        { "lead": "Countdown", "text": "The lowest interactive load." },
+        { "lead": "Medium", "text": "Additional demands layered on." },
+        { "lead": "Advanced", "text": "The most challenging, the most to attend to." }
+      ],
+      "figure": {
+        "kind": "shots",
+        "layout": "row",
+        "frame": "phone",
+        "items": [
+          {
+            "src": "/images/walkthrough/hrv-biofeedback-game/mode-countdown.webp",
+            "alt": "Countdown mode",
+            "label": "Countdown"
+          },
+          {
+            "src": "/images/walkthrough/hrv-biofeedback-game/mode-medium.webp",
+            "alt": "Medium mode",
+            "label": "Medium"
+          },
+          {
+            "src": "/images/walkthrough/hrv-biofeedback-game/mode-advanced.webp",
+            "alt": "Advanced mode",
+            "label": "Advanced"
+          }
+        ]
+      },
+      "notes": "If the audience is research-literate, this is the slide they will judge the work on. Be explicit that multitasking demand is the only manipulated variable."
+    },
+    {
+      "kind": "split",
+      "eyebrow": "Summative evaluation",
+      "title": "A structured protocol, run after a pilot",
+      "bullets": [
+        { "lead": "1", "text": "Pre-test interview" },
+        { "lead": "2", "text": "Background questionnaire" },
+        { "lead": "3", "text": "Introduction to the system" },
+        { "lead": "4", "text": "In-game task performance" },
+        { "lead": "5", "text": "SUS and GEQ questionnaires" },
+        { "lead": "6", "text": "Post-test interview" }
+      ],
+      "figure": {
+        "kind": "shot",
+        "src": "/images/walkthrough/hrv-biofeedback-game/test-environment.webp",
+        "alt": "The controlled test environment with the ECG device and Android handset",
+        "frame": "paper",
+        "caption": "The controlled setting, 11 participants aged 40 to 67"
+      },
+      "notes": "SUS gives usability, GEQ gives experience, the ECG gives performance. Three instruments because the finding needs all three axes to exist."
+    },
+    {
+      "kind": "statement",
+      "eyebrow": "The finding",
+      "title": "The curves diverge",
+      "standfirst": "Video games do motivate HRV biofeedback training — and the motivating mode was not the effective one.",
+      "bullets": [
+        { "lead": "Best performance", "text": "The highest training performance on first attempt came from pure visualisation, not from any multitasking mode." },
+        { "lead": "Most motivating", "text": "Players were more motivated by the more challenging game." },
+        { "lead": "Most sustainable", "text": "And more interested in long-term engagement with it." }
+      ],
+      "callout": {
+        "lead": "So the honest conclusion is not \"gamify\" or \"don't\"",
+        "text": "Multitasking has considerable influence on HRV biofeedback and should be deployed with an adaptive challenge level — meeting the clinical requirement early and the motivational one over time."
+      },
+      "notes": "Do not soften this. A study that had found gamification straightforwardly good would have been less useful and less believable."
+    },
+    {
+      "kind": "full",
+      "eyebrow": "The finding",
+      "title": "Motivation and performance, separated",
+      "figure": {
+        "kind": "matrix",
+        "cols": ["Multitasking demand", "Training performance, first attempt", "Motivation and long-term interest"],
+        "rows": [
+          {
+            "label": "Pure visualisation",
+            "cells": ["None", "Highest of all conditions", "Not where players wanted to stay"],
+            "highlight": [1]
+          },
+          {
+            "label": "The game modes",
+            "cells": ["Low to high, by mode", "Below pure visualisation", "Rose with challenge"]
+          },
+          {
+            "label": "The most challenging mode",
+            "cells": ["Highest", "Not the performance winner", "Most motivating, most long-term interest"],
+            "highlight": [2]
+          }
+        ],
+        "caption": "The two highlighted cells are the finding: they sit in different rows"
+      },
+      "notes": "The caption is the line to say out loud. Two highlighted cells, different rows, and a single fixed challenge level cannot occupy both."
+    },
+    {
+      "kind": "full",
+      "eyebrow": "Evidence",
+      "title": "Results from the controlled evaluation",
+      "figure": {
+        "kind": "shots",
+        "layout": "row",
+        "frame": "browser",
+        "items": [
+          {
+            "src": "/images/walkthrough/hrv-biofeedback-game/test-results-a.webp",
+            "alt": "Evaluation results, first set",
+            "label": "Results"
+          },
+          {
+            "src": "/images/walkthrough/hrv-biofeedback-game/test-results-b.webp",
+            "alt": "Evaluation results, second set",
+            "label": "Results, continued"
+          }
+        ],
+        "caption": "As reported in the paper"
+      },
+      "notes": "Don't read the charts. Point at them as provenance for the previous slide and move on."
+    },
+    {
+      "kind": "split",
+      "eyebrow": "Output",
+      "title": "A reusable framework, published",
+      "standfirst": "The contribution is not the game. It is a documented method for designing and evaluating gamified HRV biofeedback, in a space that had almost none.",
+      "bullets": [
+        { "lead": "Published", "text": "IEEE Access." },
+        { "lead": "Reusable", "text": "Concept selection, GameFlow formative evaluation, mode-controlled summative testing." },
+        { "lead": "Recommendation", "text": "Adaptive challenge level, derived from evidence rather than asserted." }
+      ],
+      "figure": {
+        "kind": "shot",
+        "src": "/images/walkthrough/hrv-biofeedback-game/publication.webp",
+        "alt": "The published IEEE Access paper",
+        "frame": "paper",
+        "caption": "IEEE Access"
+      },
+      "notes": "Peer review is the reason the negative result survived. In a product setting the multitasking cost would very likely have been quietly dropped."
+    },
+    {
+      "kind": "full",
+      "eyebrow": "Outcome",
+      "title": "By the numbers",
+      "figure": {
+        "kind": "stats",
+        "items": [
+          { "value": "11", "label": "Participants aged 40 to 67 in the controlled summative evaluation" },
+          { "value": "3", "label": "Game modes tested, isolating the effect of multitasking" },
+          { "value": "20", "label": "Participants in concept selection", "sub": "Equal gender distribution" },
+          { "value": ">66%", "label": "Icon recognition target, validated by association testing" },
+          { "value": "5", "label": "Candidate game concepts generated and narrowed" },
+          { "value": "1", "label": "Reusable published framework", "sub": "IEEE Access" }
+        ]
+      },
+      "notes": "Three modes is the number that matters. It is the difference between a game and an experiment."
+    },
+    {
+      "kind": "statement",
+      "eyebrow": "The lesson",
+      "title": "Engagement and efficacy are separate variables, and they can move in opposite directions",
+      "standfirst": "In any therapeutic product, every element added to hold attention competes for the attention the therapy requires. If you only measure engagement, you will never see the trade.",
+      "callout": {
+        "lead": "Which is why the recommendation is adaptive",
+        "text": "Start where the clinical performance is, and add challenge as competence grows. One fixed difficulty has to sacrifice either the first session or the fiftieth."
+      },
+      "notes": "This generalises well beyond breathing training — meditation, physio, adherence apps. Make that link if the audience is a product one."
+    },
+    {
+      "kind": "close",
+      "eyebrow": "In summary",
+      "title": "Measured what gamification costs, then designed around it",
+      "bullets": [
+        { "lead": "Built", "text": "An Android HRV biofeedback flight game" },
+        { "lead": "Isolated", "text": "Multitasking as a variable across three modes" },
+        { "lead": "Published", "text": "A reusable framework in IEEE Access" }
+      ],
+      "notes": "Likely questions: how resonant frequency was calibrated per participant, and whether the adaptive recommendation was ever implemented and retested."
+    }
+  ]
+}

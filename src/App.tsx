@@ -10,6 +10,7 @@ import Preloader from "./components/Preloader";
 import Index from "./pages/Index";
 import Work from "./pages/Work";
 import WorkDetail from "./pages/WorkDetail";
+import Walkthrough from "./pages/Walkthrough";
 import Experience from "./pages/Experience";
 import Research from "./pages/Research";
 import Articles from "./pages/Articles";
@@ -65,6 +66,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/work" element={<Work />} />
           <Route path="/work/:slug" element={<WorkDetail />} />
+          <Route path="/work/:slug/walkthrough" element={<Walkthrough />} />
           <Route path="/experience" element={<Experience />} />
           <Route path="/research" element={<Research />} />
           <Route path="/articles" element={<Articles />} />

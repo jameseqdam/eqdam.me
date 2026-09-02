@@ -1,0 +1,448 @@
+{
+  "slug": "sava-health-app",
+  "title": "SAVA Health App",
+  "subtitle": "One CGM platform for two opposing users",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "Health Tech · 2024 – 2025 · Conceptual case study",
+      "title": "SAVA Health App",
+      "standfirst": "Reimagining continuous glucose monitoring for two audiences whose needs invert each other: Type 1 diabetes patients who need critical real-time data under stress, and wellness consumers who need motivation and interpretation.",
+      "bullets": [
+        { "lead": "Role", "text": "Lead UX Designer, conceptual case study" },
+        { "lead": "Output", "text": "Two personas, two journeys, two interfaces, one data foundation" },
+        { "lead": "Honest caveat", "text": "Conceptual prototypes, not validated designs" }
+      ],
+      "notes": "Put the caveat on the cover. It costs nothing and it buys credibility for everything that follows."
+    },
+    {
+      "kind": "full",
+      "eyebrow": "The concept",
+      "title": "One platform, two audiences",
+      "figure": {
+        "kind": "shot",
+        "src": "/images/walkthrough/sava-health-app/hero.webp",
+        "alt": "The SAVA concept",
+        "frame": "plain",
+        "caption": "SAVA"
+      },
+      "notes": "Establishing shot. Ten seconds, then move to the data stream."
+    },
+    {
+      "kind": "full",
+      "eyebrow": "The shared signal",
+      "title": "One data stream, arriving every few minutes, all day",
+      "standfirst": "Continuous glucose monitoring produces a live trace. Both audiences receive exactly the same numbers — and need almost opposite things done to them.",
+      "figure": {
+        "kind": "glucose",
+        "caption": "Live trace with target band and forward prediction"
+      },
+      "notes": "Let this run. The dashed forward segment is the prediction — point at it, because it becomes the T1D design decision later."
+    },
+    {
+      "kind": "split",
+      "eyebrow": "The incumbent",
+      "title": "Medical accuracy, at the cost of clarity",
+      "standfirst": "Applications such as Dexcom G6 optimise for correctness and fall short on visual clarity and intuitive insight. The critique identified four specific failures.",
+      "bullets": [
+        { "lead": "Visual clutter", "text": "Competing information on the home screen." },
+        { "lead": "Weak hierarchy", "text": "The most critical element — the trend graph — was small and hard to read." },
+        { "lead": "Limited insight", "text": "Raw data presented without actionable guidance." },
+        { "lead": "Cumbersome logging", "text": "The history screen was a flat list, making pattern-finding difficult." }
+      ],
+      "figure": {
+        "kind": "shots",
+        "layout": "row",
+        "frame": "phone",
+        "items": [
+          {
+            "src": "/images/walkthrough/sava-health-app/incumbent-home.webp",
+            "alt": "The incumbent CGM application home screen",
+            "label": "Home"
+          },
+          {
+            "src": "/images/walkthrough/sava-health-app/incumbent-history.webp",
+            "alt": "The incumbent CGM application history screen",
+            "label": "History"
+          }
+        ]
+      },
+      "notes": "Be fair to the incumbent. It is medically excellent; the critique is about hierarchy and interpretation, not accuracy."
+    },
+    {
+      "kind": "statement",
+      "eyebrow": "The problem",
+      "title": "Journey mapping showed the two audiences failing differently",
+      "bullets": [
+        { "lead": "The T1D patient", "text": "Anxiety over a single number. Uncertainty about what a trend means. Forgotten logging events. Data scattered across screens." },
+        { "lead": "The wellness consumer", "text": "No single motivating metric. Disconnected data points. No real-time feedback on actions. No clear guidance on what to do next." }
+      ],
+      "callout": {
+        "lead": "Which is why one interface cannot serve both",
+        "text": "The failures are not different severities of the same problem. They point in opposite directions — one wants less interpretation, the other wants almost nothing but."
+      },
+      "notes": "Read both lists. The audience needs to feel that these are genuinely opposing before the two-interface decision looks like anything other than scope creep."
+    },
+    {
+      "kind": "full",
+      "eyebrow": "The two users",
+      "title": "Two personas, built from opposing stakes",
+      "figure": {
+        "kind": "personas",
+        "items": [
+          {
+            "name": "Type 1 diabetes patient",
+            "src": "/images/walkthrough/sava-health-app/persona-t1d.webp",
+            "goal": "Know the number, know where it is heading, act correctly, now",
+            "mindset": "The stakes are medical. Ambiguity is dangerous, and this is often happening under stress.",
+            "needs": [
+              "Raw, immediate, unambiguous values",
+              "Trend direction legible at a glance",
+              "Alerts that are simple and actionable",
+              "Everything in one place, not scattered"
+            ]
+          },
+          {
+            "name": "Wellness consumer",
+            "src": "/images/walkthrough/sava-health-app/persona-wellness.webp",
+            "goal": "Understand whether today was good, and what to do differently",
+            "mindset": "The stakes are motivational. Raw data demotivates; a single interpretable score sustains the habit.",
+            "needs": [
+              "One motivating metric",
+              "Cause and effect between food, exercise and glucose",
+              "Real-time feedback on actions taken",
+              "Clear guidance on the next step"
+            ]
+          }
+        ],
+        "caption": "Same data stream, inverted priorities"
+      },
+      "notes": "The mindset rows are the ones that matter. \"Raw data demotivates\" is the sentence that justifies the entire wellness interface."
+    },
+    {
+      "kind": "full",
+      "eyebrow": "The two users",
+      "title": "Two journeys: check-in, throughout the day, weekly review",
+      "figure": {
+        "kind": "journey",
+        "phases": ["Morning check-in", "Throughout the day", "Weekly review"],
+        "rows": [
+          {
+            "label": "T1D · actions",
+            "cells": [
+              "Open the app, read the current value and trend",
+              "Check repeatedly, respond to alerts, log insulin and food",
+              "Look back for patterns before a clinical appointment"
+            ]
+          },
+          {
+            "label": "T1D · pain points",
+            "cells": [
+              "Anxiety over a single number with no context",
+              "Uncertainty about what a trend means; logging events forgotten",
+              "Data scattered across screens, patterns hard to find"
+            ]
+          },
+          {
+            "label": "Wellness · actions",
+            "cells": [
+              "Check yesterday's outcome, look for a verdict",
+              "Log meals and exercise, hope for feedback",
+              "Review the week for progress"
+            ]
+          },
+          {
+            "label": "Wellness · pain points",
+            "cells": [
+              "No single motivating metric to check",
+              "Disconnected data points, no real-time feedback on actions",
+              "No clear guidance on what to do next"
+            ]
+          }
+        ],
+        "caption": "Three phases per persona, mapped across actions, goals, feelings, pain points and opportunities"
+      },
+      "notes": "This is dense. Read one column vertically rather than each row — it shows the two users diverging at the same moment in the day."
+    },
+    {
+      "kind": "section",
+      "eyebrow": "Solution, part one",
+      "title": "For the T1D patient: clarity first",
+      "standfirst": "Prioritise critical data. Design for high-stress situations. Make trends legible at a glance.",
+      "notes": "Three principles, and they are ranked. Clarity first means literally first — anything competing with the current value loses."
+    },
+    {
+      "kind": "split",
+      "eyebrow": "T1D · principles",
+      "title": "Three principles, applied strictly",
+      "bullets": [
+        { "lead": "Clarity First", "text": "Prioritise critical data with a bold, minimal design." },
+        { "lead": "Action-Oriented", "text": "Design for high-stress situations by making alerts simple and actionable." },
+        { "lead": "Enhanced Visualization", "text": "A colour-coded timeline making trends legible at a glance." }
+      ],
+      "figure": {
+        "kind": "shot",
+        "src": "/images/walkthrough/sava-health-app/redesign-home.webp",
+        "alt": "The redesigned T1D home screen with the current reading and trend arrow as focal point",
+        "frame": "phone",
+        "caption": "Current reading and trend arrow as the focal point"
+      },
+      "notes": "Principles that do not force a trade-off are decoration. These three cost the home screen everything that was not the current value."
+    },
+    {
+      "kind": "full",
+      "eyebrow": "T1D · the screen",
+      "title": "Home and History, consolidated",
+      "standfirst": "One screen: the current reading and trend arrow as focal point, a full-width colour-coded 24-hour graph including a future glucose prediction, and a scrollable historical timeline beneath.",
+      "figure": {
+        "kind": "compare",
+        "before": {
+          "src": "/images/walkthrough/sava-health-app/incumbent-home.webp",
+          "alt": "The incumbent home screen",
+          "label": "Incumbent"
+        },
+        "after": {
+          "src": "/images/walkthrough/sava-health-app/redesign-home.webp",
+          "alt": "The redesigned consolidated home and history screen",
+          "label": "Redesigned"
+        },
+        "frame": "phone",
+        "caption": "Drag to wipe"
+      },
+      "notes": "Consolidating home and history directly answers \"data scattered across screens\" from the journey map. Make that link explicitly."
+    },
+    {
+      "kind": "split",
+      "eyebrow": "T1D · the prediction",
+      "title": "A forward prediction, so the user can plan rather than react",
+      "standfirst": "The 24-hour graph does not stop at now. Extending it forward turns a monitoring device into a planning one — which is the difference between managing glucose and chasing it.",
+      "bullets": [
+        { "text": "Colour coding carries range at a glance, without reading values." },
+        { "text": "Full width, because the trend graph was the element the incumbent shrank." },
+        { "text": "Prediction is the answer to \"uncertainty about what a trend means\"." }
+      ],
+      "figure": {
+        "kind": "glucose",
+        "caption": "Solid history, dashed prediction, target band behind both"
+      },
+      "notes": "Same figure as slide two, used differently: earlier it was context, here it is the design decision. Say so, or it looks like a repeat."
+    },
+    {
+      "kind": "split",
+      "eyebrow": "T1D · alerts",
+      "title": "Alerts restructured for someone who is already stressed",
+      "bullets": [
+        { "lead": "Hierarchy", "text": "Glucose alerts separated clearly from System alerts." },
+        { "lead": "Tappable rows", "text": "Each alert is a direct route to its setting." },
+        { "lead": "Simple toggles", "text": "Fast customisation, because the moment you need to change an alert is rarely a calm one." }
+      ],
+      "figure": {
+        "kind": "shot",
+        "src": "/images/walkthrough/sava-health-app/redesign-alerts.webp",
+        "alt": "The restructured alerts screen separating glucose from system alerts",
+        "frame": "phone",
+        "caption": "Glucose above System, tappable rows, simple toggles"
+      },
+      "notes": "Alert configuration is where clinical apps usually hide their worst interaction design. Under-stress usability is the whole spec for this screen."
+    },
+    {
+      "kind": "section",
+      "eyebrow": "Solution, part two",
+      "title": "For the wellness consumer: interpretation, not data",
+      "standfirst": "Gamified experience. Holistic view. Proactive coaching.",
+      "notes": "The pivot. Everything valued in part one — rawness, immediacy, precision — is the wrong answer here."
+    },
+    {
+      "kind": "full",
+      "eyebrow": "Wellness · the metric",
+      "title": "One Metabolic Score, replacing disconnected data points",
+      "standfirst": "A prominent circular gauge presenting a single motivating metric. Not because the underlying data is less rich, but because a number you can compare with yesterday is a number you will come back for.",
+      "figure": {
+        "kind": "gauge",
+        "value": 78,
+        "label": "Metabolic Score",
+        "sub": "One motivating metric, derived from the same stream",
+        "caption": "The gamified centrepiece of the wellness experience"
+      },
+      "notes": "The value shown is illustrative. The point is the form: circular, prominent, single, comparable."
+    },
+    {
+      "kind": "split",
+      "eyebrow": "Wellness · principles",
+      "title": "Gamified, holistic, proactive",
+      "bullets": [
+        { "lead": "Gamified Experience", "text": "A prominent circular gauge presenting the Metabolic Score as the motivating metric." },
+        { "lead": "Holistic View", "text": "A correlation graph linking glucose trends to logged diet and exercise events, so cause and effect is visible directly." },
+        { "lead": "Proactive Coaching", "text": "AI-powered Insight of the Day and Smart Food Suggestions." }
+      ],
+      "figure": {
+        "kind": "shot",
+        "src": "/images/walkthrough/sava-health-app/wellness-dashboard.webp",
+        "alt": "The wellness dashboard with the Metabolic Score",
+        "frame": "phone",
+        "caption": "The wellness dashboard"
+      },
+      "notes": "Note the ordering: score first, then explanation, then advice. It matches the order a motivated non-clinical user actually asks questions in."
+    },
+    {
+      "kind": "full",
+      "eyebrow": "Wellness · cause and effect",
+      "title": "Correlation, so an action has a visible consequence",
+      "standfirst": "Glucose trends plotted against logged diet and exercise events. This is the answer to \"disconnected data points\" and \"no real-time feedback on actions\" at the same time.",
+      "figure": {
+        "kind": "shots",
+        "layout": "row",
+        "frame": "phone",
+        "items": [
+          {
+            "src": "/images/walkthrough/sava-health-app/wellness-correlation.webp",
+            "alt": "The correlation graph linking glucose to logged events",
+            "label": "Correlation"
+          },
+          {
+            "src": "/images/walkthrough/sava-health-app/wellness-score.webp",
+            "alt": "The Metabolic Score in context",
+            "label": "Score in context"
+          }
+        ]
+      },
+      "notes": "Correlation is the behaviour-change mechanism. Without it, a score is just a number that moves for reasons the user cannot influence."
+    },
+    {
+      "kind": "full",
+      "eyebrow": "Wellness · the set",
+      "title": "The wellness experience, screen by screen",
+      "figure": {
+        "kind": "shots",
+        "layout": "filmstrip",
+        "frame": "phone",
+        "items": [
+          {
+            "src": "/images/walkthrough/sava-health-app/wellness-detail-a.webp",
+            "alt": "Wellness detail screen, first",
+            "label": "Detail"
+          },
+          {
+            "src": "/images/walkthrough/sava-health-app/wellness-detail-b.webp",
+            "alt": "Wellness detail screen, second",
+            "label": "Insight of the Day"
+          },
+          {
+            "src": "/images/walkthrough/sava-health-app/wellness-detail-c.webp",
+            "alt": "Wellness detail screen, third",
+            "label": "Smart Food Suggestions"
+          },
+          {
+            "src": "/images/walkthrough/sava-health-app/device-mockup.webp",
+            "alt": "The application on a device",
+            "label": "In hand"
+          }
+        ],
+        "caption": "Scroll the strip"
+      },
+      "notes": "AI coaching is the easiest thing in this deck to oversell. Frame it as interpretation of the user's own data, not as prediction."
+    },
+    {
+      "kind": "full",
+      "eyebrow": "Shared foundation",
+      "title": "Two flows, one data layer — and one shared control",
+      "standfirst": "Both experiences share a simplified floating quick-add logging control, because forgotten logging was the one pain point both personas had in common.",
+      "figure": {
+        "kind": "shots",
+        "layout": "row",
+        "frame": "browser",
+        "items": [
+          {
+            "src": "/images/walkthrough/sava-health-app/flow-t1d.webp",
+            "alt": "User flow for the Type 1 diabetes experience",
+            "label": "T1D flow"
+          },
+          {
+            "src": "/images/walkthrough/sava-health-app/flow-wellness.webp",
+            "alt": "User flow for the wellness experience",
+            "label": "Wellness flow"
+          }
+        ],
+        "caption": "Divergent interfaces on a common foundation"
+      },
+      "notes": "The shared quick-add is the strongest evidence that this is one product rather than two. Land it here."
+    },
+    {
+      "kind": "statement",
+      "eyebrow": "The challenge",
+      "title": "Two user groups sharing one data stream and inverting each other's priorities",
+      "bullets": [
+        { "lead": "The T1D patient", "text": "Needs raw, immediate, unambiguous numbers, because the stakes are medical." },
+        { "lead": "The wellness consumer", "text": "Needs those same numbers abstracted into a single interpretable score, because raw data demotivates them." }
+      ],
+      "callout": {
+        "lead": "The decision",
+        "text": "Designing one product for both without diluting either required accepting divergent interfaces on a common foundation, rather than a unified compromise. An averaged interface would have failed both."
+      },
+      "figure": {
+        "kind": "shot",
+        "src": "/images/walkthrough/sava-health-app/challenge.webp",
+        "alt": "The challenge of two opposing users on one data stream",
+        "frame": "browser"
+      },
+      "notes": "This is the thesis slide. If you have five minutes and one slide, use this one plus the personas."
+    },
+    {
+      "kind": "statement",
+      "eyebrow": "Limits, stated plainly",
+      "title": "These are conceptual prototypes, not validated designs",
+      "standfirst": "Grounded in UX best practice and analysis of the provided materials — but produced without access to real users or usage data.",
+      "bullets": [
+        { "text": "They serve as a starting point for discussion, not as an answer." },
+        { "text": "A real process would be driven by user interviews, usability testing and behavioural data analysis." },
+        { "text": "The Metabolic Score in particular is a design proposition that would need validating against outcomes, not just engagement." }
+      ],
+      "notes": "Say this before anyone asks. Volunteering the limit is what makes the reasoning credible; being caught out on it undoes the whole deck."
+    },
+    {
+      "kind": "full",
+      "eyebrow": "Outcome",
+      "title": "By the numbers",
+      "figure": {
+        "kind": "stats",
+        "items": [
+          { "value": "2", "label": "Distinct user segments designed for on a shared data foundation" },
+          { "value": "4", "label": "Core interface failures identified in the incumbent CGM experience" },
+          { "value": "3", "label": "Journey phases mapped per persona", "sub": "Check-in, throughout the day, weekly review" },
+          { "value": "24h", "label": "Colour-coded trend graph with forward glucose prediction" },
+          { "value": "1", "label": "Unified Metabolic Score replacing disconnected wellness data points" }
+        ]
+      },
+      "notes": "Two and one are the interesting numbers: two interfaces, one foundation. That is the architecture in two digits."
+    },
+    {
+      "kind": "statement",
+      "eyebrow": "The lesson",
+      "title": "When two segments invert each other, the average serves neither",
+      "standfirst": "The instinct in platform design is to unify. But if one user needs raw precision and the other needs raw precision hidden, a single interface has to pick — and pretending otherwise just picks badly.",
+      "callout": {
+        "lead": "The transferable move",
+        "text": "Share the data layer, the logging model and the design system. Diverge at the surface, deliberately and visibly, and be able to say why for every point of divergence."
+      },
+      "figure": {
+        "kind": "shot",
+        "src": "/images/walkthrough/sava-health-app/closing.webp",
+        "alt": "Closing frame of the SAVA concept",
+        "frame": "browser"
+      },
+      "notes": "This generalises to any prosumer product with a clinical or professional tier. Make that link if the audience is a platform one."
+    },
+    {
+      "kind": "close",
+      "eyebrow": "In summary",
+      "title": "One platform, two interfaces, no compromise",
+      "bullets": [
+        { "lead": "Critiqued", "text": "Four failures in the incumbent" },
+        { "lead": "Mapped", "text": "Two personas, three journey phases each" },
+        { "lead": "Diverged", "text": "Clarity for one, interpretation for the other" },
+        { "lead": "Shared", "text": "Data foundation and quick-add logging" }
+      ],
+      "notes": "Likely questions: how the Metabolic Score would be computed, and whether a single user could switch modes. Both are honest \"this is where validation starts\" answers."
+    }
+  ]
+}

@@ -1,0 +1,303 @@
+{
+  "slug": "suite-synergy-integration",
+  "title": "One-Time Setup for Suite Synergy Integration and CSO API",
+  "subtitle": "Making invisible operational cost legible with a service blueprint",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "Enterprise UX · 2019 – 2021",
+      "title": "One-Time Setup for Suite Synergy Integration and CSO API",
+      "standfirst": "Forty-plus manual configuration tasks, absorbed by Professional Services and developers, collapsed into a single action — by first making the cost visible to the people who could authorise removing it.",
+      "bullets": [
+        { "lead": "Role", "text": "Principal UX Designer, Sourcing and CSO" },
+        { "lead": "Method", "text": "Service blueprinting, introduced to the product organisation" },
+        { "lead": "Outcome", "text": "One-time setup, zero developer steps per customer" }
+      ],
+      "notes": "This is a design case about a screen almost nobody sees. Lead with that: the interesting part is how a cost that never reaches a feedback channel got onto a roadmap."
+    },
+    {
+      "kind": "statement",
+      "eyebrow": "The problem",
+      "title": "Integration setup is invisible work",
+      "standfirst": "The cost was absorbed by Professional Services and by developers, not experienced by end users — so it never surfaced as a complaint, and never competed for roadmap space against things that did.",
+      "bullets": [
+        { "lead": "Services and Support", "text": "Time consumed manually enabling each customer's integration." },
+        { "lead": "Development", "text": "A developer had to perform several manual steps for every single customer who wanted CSO API access." },
+        { "lead": "Adoption", "text": "A suppressed number of joint Core + CSO customers actually ran integrated instances, because the setup burden deterred them." }
+      ],
+      "callout": {
+        "lead": "The real problem",
+        "text": "Not that the process was long. That nobody with authority over the roadmap could see it."
+      },
+      "notes": "Three costs in three different budgets, which is exactly why no single owner was complaining. The third one is the commercial argument."
+    },
+    {
+      "kind": "full",
+      "eyebrow": "The shape of it",
+      "title": "Forty-plus tasks, one per customer, forever",
+      "figure": {
+        "kind": "reduction",
+        "from": {
+          "count": 40,
+          "label": "Before",
+          "note": "Manual configuration tasks per integrated instance, spread across PS, Support and development"
+        },
+        "to": {
+          "count": 1,
+          "label": "After",
+          "note": "One-time setup. No developer step per customer."
+        },
+        "caption": "Every tile is a task someone performed by hand"
+      },
+      "notes": "Let the tiles finish arriving before you speak. The block on the left is the argument; the sentence about it is only the caption."
+    },
+    {
+      "kind": "section",
+      "eyebrow": "Approach",
+      "title": "Start with everyone in the system, not the user in front of you",
+      "standfirst": "Customers, users, Professional Services, developers, Operations — five stakeholder groups, only one of whom logs into the thing.",
+      "notes": "The reframe: the end user is not the person paying the cost, so a user-centred method aimed only at them would have found nothing."
+    },
+    {
+      "kind": "split",
+      "eyebrow": "Discovery",
+      "title": "Desk research on the mechanics, then watching the process happen",
+      "bullets": [
+        { "lead": "Mechanics", "text": "CSO settings, endpoint authentication, endpoints, labels, commands and the process documentation." },
+        { "lead": "Interviews", "text": "Professional Services, walked through the live process alongside them rather than asked about it." },
+        { "lead": "Competitors", "text": "How comparable suites handled cross-product setup." },
+        { "lead": "Stakeholders", "text": "Mapped before anything was drawn, so the blueprint had lanes to fill." }
+      ],
+      "figure": {
+        "kind": "shot",
+        "src": "/images/walkthrough/suite-synergy-integration/process-diagram.webp",
+        "alt": "Process diagram of the integration setup as it existed",
+        "frame": "paper",
+        "caption": "The process diagram — the input to the blueprint, not the output"
+      },
+      "notes": "Walking through it live is the detail that matters. Asked to describe the process, people describe the documented one; watched, they show you the real one."
+    },
+    {
+      "kind": "statement",
+      "eyebrow": "The instrument",
+      "title": "A service blueprint was the only artefact that could show backstage cost",
+      "standfirst": "A user flow shows what the customer does. A blueprint shows what has to happen behind them for that to work — which is precisely where all the effort was hiding.",
+      "callout": {
+        "lead": "Why introduce a new artefact",
+        "text": "The organisation had no format in which \"a developer does this by hand for every customer\" could appear next to \"the customer clicks Save\". Without one, the two costs were never compared."
+      },
+      "notes": "This slide is the thesis of the case study. Service blueprinting became the standard functional design artefact for integration work afterwards, which is the real outcome."
+    },
+    {
+      "kind": "full",
+      "eyebrow": "The blueprint",
+      "title": "Six parallel lanes, from end user to Core backend",
+      "standfirst": "Redrawn here from the original. Each column is a stage of the setup; each row is a layer of the system that has to act for that stage to complete.",
+      "figure": {
+        "kind": "blueprint",
+        "stages": ["Request", "Identity and linking", "Configuration", "Integrated instance"],
+        "lanes": [
+          {
+            "name": "End user",
+            "role": "Customer administrator",
+            "steps": [
+              "Asks for a Core + CSO integrated instance",
+              "Logs in once, through SSO",
+              null,
+              "Works across both products as one suite"
+            ]
+          },
+          {
+            "name": "PS / Ops / Support",
+            "role": "Actions",
+            "steps": [
+              "Receives the request and schedules the work",
+              "Sets up the OpenID Connect provider and links accounts",
+              "Configures company logo, Coupa Setup and colours, navigation menu",
+              "Hands the instance over"
+            ]
+          },
+          {
+            "name": "Core frontend",
+            "steps": [
+              null,
+              "Sync Navbar",
+              "Company Logo · Coupa Setup / Colors",
+              "Navigation Menu"
+            ]
+          },
+          {
+            "name": "Core backend",
+            "steps": [
+              null,
+              "CoreEventTable · CoreRoles",
+              "CoreLogo · CoreSetup · CoreNav",
+              "Event synchronization"
+            ]
+          },
+          {
+            "name": "CSO frontend",
+            "steps": [
+              null,
+              "Accepts the linked identity",
+              "Supplier Insights (RiskAware) surfaces",
+              "Contracts and Items creation available"
+            ]
+          },
+          {
+            "name": "CSO team / backend",
+            "steps": [
+              "A developer manually enables API access",
+              "Creates the API user and key",
+              "Links supplier records, fetches Commodities",
+              "Endpoints live"
+            ]
+          }
+        ],
+        "dividers": [
+          { "after": "End user", "label": "Line of interaction" },
+          { "after": "PS / Ops / Support", "label": "Line of visibility" },
+          { "after": "Core backend", "label": "Line of internal interaction" }
+        ],
+        "caption": "The bottom-left cell — \"a developer manually enables API access\" — is the whole business case"
+      },
+      "notes": "Walk it left to right along the PS lane, then drop into the bottom lane and stop. Point at the first cell of the CSO backend lane: that is a person, per customer, forever."
+    },
+    {
+      "kind": "full",
+      "eyebrow": "The original",
+      "title": "The source artefact, as it was used in the room",
+      "figure": {
+        "kind": "shots",
+        "layout": "row",
+        "frame": "paper",
+        "items": [
+          {
+            "src": "/images/walkthrough/suite-synergy-integration/blueprint-original.webp",
+            "alt": "The original CSO one-time setup service blueprint",
+            "label": "Full blueprint"
+          },
+          {
+            "src": "/images/walkthrough/suite-synergy-integration/blueprint-condensed.webp",
+            "alt": "Condensed version of the CSO one-time setup service blueprint",
+            "label": "Condensed for review"
+          }
+        ],
+        "caption": "Click to read at full size — the original runs several thousand pixels wide"
+      },
+      "notes": "Worth showing the real thing after the clean version. The condensed one is what got walked through with product management; the full one is what the design was built against."
+    },
+    {
+      "kind": "cards",
+      "eyebrow": "Before",
+      "title": "What the CSO side of a fresh instance actually had",
+      "standfirst": "Verbatim from the blueprint's before-state column.",
+      "cards": [
+        { "title": "No endpoint auth", "text": "Authentication had to be established by hand before anything could connect." },
+        { "title": "No endpoints", "text": "Each one hand-created, per instance." },
+        { "title": "No commands", "text": "Nothing to invoke, even once endpoints existed." },
+        { "title": "Only system labels", "text": "No customer-specific labels, and no OpenID Connect." }
+      ],
+      "notes": "Read these as a list of things a human typed. Every one became a line in the one-time setup."
+    },
+    {
+      "kind": "full",
+      "eyebrow": "After",
+      "title": "Eleven endpoints, created by one action",
+      "standfirst": "Grouped by what they are for. Before the redesign each family was configured separately, in a specific order, by someone who knew the order.",
+      "figure": {
+        "kind": "layers",
+        "items": [
+          { "label": "Identity", "detail": "OpenID Connect for SSO · Users" },
+          { "label": "Branding", "detail": "Company Logo · Coupa Setup and colours" },
+          { "label": "Navigation", "detail": "Navigation Menu · CoreNav" },
+          { "label": "Master data", "detail": "Suppliers · Commodities" },
+          { "label": "Commercial objects", "detail": "Contracts · Items" },
+          { "label": "Events", "detail": "Event synchronization · CoreEventTable" }
+        ],
+        "caption": "The endpoint set the one-time setup provisions in a single pass"
+      },
+      "notes": "The ordering dependency is the hidden cost people forget. It is not eleven tasks, it is eleven tasks that fail if done in the wrong sequence."
+    },
+    {
+      "kind": "full",
+      "eyebrow": "Design",
+      "title": "Sketches to wireframes, with the blueprint as the scorecard",
+      "standfirst": "Each option could be checked directly against the blueprint: does this remove a backstage step, or just relocate it?",
+      "figure": {
+        "kind": "shots",
+        "layout": "row",
+        "frame": "browser",
+        "items": [
+          {
+            "src": "/images/walkthrough/suite-synergy-integration/wireframe-option-c.webp",
+            "alt": "Wireframe option C for the one-time setup",
+            "label": "Option C"
+          },
+          {
+            "src": "/images/walkthrough/suite-synergy-integration/wireframe-option-d.webp",
+            "alt": "Wireframe option D for the one-time setup",
+            "label": "Option D"
+          },
+          {
+            "src": "/images/walkthrough/suite-synergy-integration/wireframe-sand-warning.webp",
+            "alt": "Wireframe of the sandbox warning state",
+            "label": "Sandbox warning state"
+          }
+        ],
+        "caption": "Wireframe iterations, with continuous cross-functional feedback"
+      },
+      "notes": "The sandbox warning is the kind of state that only appears once you have mapped support: it exists because Support kept getting tickets from people running setup against the wrong instance."
+    },
+    {
+      "kind": "split",
+      "eyebrow": "Shipped",
+      "title": "One screen, one action, no developer",
+      "standfirst": "The end user's experience of forty tasks disappearing is a single confirmation. That asymmetry is what makes this work hard to fund and easy to justify afterwards.",
+      "bullets": [
+        { "text": "Endpoint authentication, endpoints, labels and commands provisioned together." },
+        { "text": "API enablement no longer requires a member of the development team." },
+        { "text": "Professional Services time redirected from configuration to implementation." }
+      ],
+      "figure": {
+        "kind": "shot",
+        "src": "/images/walkthrough/suite-synergy-integration/setup-shipped.webp",
+        "alt": "The shipped one-time setup interface",
+        "frame": "browser",
+        "caption": "The shipped one-time setup"
+      },
+      "notes": "If asked what the design work actually was: deciding what belongs in one action, what needs confirmation, and what has to fail safely — all of it derived from the blueprint."
+    },
+    {
+      "kind": "full",
+      "eyebrow": "Outcome",
+      "title": "The numbers, and the artefact that outlived them",
+      "figure": {
+        "kind": "stats",
+        "items": [
+          { "value": "40+", "label": "Configuration tasks collapsed into a single action" },
+          { "value": "6", "label": "System layers mapped, end user through to Core backend" },
+          { "value": "0", "label": "Developer steps per customer for API enablement" },
+          { "value": "1", "label": "One-time setup replacing per-customer endpoint creation" }
+        ]
+      },
+      "callout": {
+        "lead": "The durable outcome",
+        "text": "Service blueprinting became the standard functional design artefact for integration work across CSO and the core platform, and was applied again to suite synergy between supply chain and CSO."
+      },
+      "notes": "End on the method spreading rather than the metric. One shipped screen is a project; a new artefact in the organisation's vocabulary is a change."
+    },
+    {
+      "kind": "close",
+      "eyebrow": "In summary",
+      "title": "You cannot remove a cost the organisation cannot see",
+      "standfirst": "The design work was collapsing forty tasks into one. The research work was finding a way to show product management that the forty existed.",
+      "bullets": [
+        { "lead": "Made visible", "text": "Backstage and support cost, in one artefact" },
+        { "lead": "Removed", "text": "Every per-customer developer step" },
+        { "lead": "Left behind", "text": "Blueprinting as standard practice" }
+      ],
+      "notes": "Likely question: how did you get PS to give you the time? Answer: they were the ones absorbing it, so the interview was the first time anyone had asked."
+    }
+  ]
+}

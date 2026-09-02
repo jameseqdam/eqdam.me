@@ -1,0 +1,445 @@
+{
+  "slug": "prostate-cancer-scp-integration",
+  "title": "Standardized Prostate Cancer Care",
+  "subtitle": "Decision support inside the electronic health record",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "Health Tech · 2017 – 2018",
+      "title": "Standardized Prostate Cancer Care",
+      "standfirst": "A decision support system integrated with the electronic health record, helping primary care physicians refer patients into Sweden's standardized care process for prostate cancer.",
+      "bullets": [
+        { "lead": "Role", "text": "UX Lead" },
+        { "lead": "Objective", "text": "Ensure SCP referrals contain adequate information" },
+        { "lead": "So that", "text": "More people receive prostate cancer care on time" }
+      ],
+      "notes": "State the objective in its clinical form immediately. This project's success criterion is not satisfaction or task time — it is referrals that do not come back."
+    },
+    {
+      "kind": "statement",
+      "eyebrow": "The stakes",
+      "title": "An incomplete referral is returned, queried or delayed",
+      "standfirst": "And the delay lands on the patient at exactly the point where time matters most.",
+      "bullets": [
+        { "text": "Timely prostate cancer care depends on primary care physicians referring correctly and completely." },
+        { "text": "The referral decision happens inside a general consultation, under time pressure." },
+        { "text": "In a system built for general practice, not for one cancer pathway." }
+      ],
+      "callout": {
+        "lead": "So the design problem",
+        "text": "Support a specialist decision inside a generalist workflow, without adding steps to a consultation that has none to spare — and do it within an existing EHR rather than as a separate tool."
+      },
+      "notes": "Three constraints in one sentence: specialist content, generalist context, zero spare time. Say them separately, then together."
+    },
+    {
+      "kind": "split",
+      "eyebrow": "Context",
+      "title": "What a standardized care process is",
+      "standfirst": "SCP defines the pathway a suspected cancer case should follow, with expected timings. Entry to it is the referral — which makes the referral the single highest-leverage document in the pathway.",
+      "bullets": [
+        { "text": "The pathway is standardized. The entry point is not." },
+        { "text": "Every returned referral resets the clock for that patient." },
+        { "text": "Physicians are not resisting the process; they are working inside a record system that does not know about it." }
+      ],
+      "figure": {
+        "kind": "shot",
+        "src": "/images/walkthrough/prostate-cancer-scp-integration/scp-context.webp",
+        "alt": "The standardized care process context for prostate cancer",
+        "frame": "browser",
+        "caption": "The standardized care process, and where the referral sits"
+      },
+      "notes": "Be careful not to blame primary care here. The framing that survived clinician review is that the record system is the thing that lacks the knowledge."
+    },
+    {
+      "kind": "section",
+      "eyebrow": "Process",
+      "title": "A five-part workshop series, carrying the design forward in visible increments",
+      "standfirst": "Planning, Defining, Create concepts, Development — with clinicians in the room at every increment.",
+      "notes": "Visible increments is the phrase to use. Each workshop opened by showing what the last one produced, which is what kept participation high across a year."
+    },
+    {
+      "kind": "full",
+      "eyebrow": "Process",
+      "title": "Four stages, five workshops",
+      "figure": {
+        "kind": "phases",
+        "items": [
+          {
+            "label": "Planning",
+            "detail": "Understanding the referral process, the pathway, and the record system it has to live in"
+          },
+          {
+            "label": "Defining",
+            "detail": "Workshop 1 — service blueprint, referral flowchart, and design guidelines"
+          },
+          {
+            "label": "Create concepts",
+            "detail": "Workshops 2 to 5 — paper sketches, first wireframes, then iteration with continuous feedback"
+          },
+          {
+            "label": "Development",
+            "detail": "Mockup of the web application, built alongside the EHR company with the graphic design"
+          }
+        ]
+      },
+      "notes": "Design guidelines in workshop one is the deliberate choice. They constrained everything after, which is why four workshops of divergence did not sprawl."
+    },
+    {
+      "kind": "full",
+      "eyebrow": "The workshop series",
+      "title": "Each workshop produced the input to the next",
+      "figure": {
+        "kind": "track",
+        "segments": [
+          {
+            "range": "W1",
+            "label": "Foundations",
+            "detail": "Service blueprint, flowchart of the referral process, and design guidelines to constrain subsequent work"
+          },
+          {
+            "range": "W2",
+            "label": "Paper",
+            "detail": "Working in paper sketches, fast and disposable"
+          },
+          {
+            "range": "W3",
+            "label": "First wireframes",
+            "detail": "The first structured interface proposals"
+          },
+          {
+            "range": "W4 – W5",
+            "label": "Iteration",
+            "detail": "Wireframe iterations with continuous feedback on sketches"
+          }
+        ],
+        "caption": "Blueprint through to functional prototype, in five sittings"
+      },
+      "notes": "Point out that no workshop was a review. Every one had an output that the next one consumed."
+    },
+    {
+      "kind": "split",
+      "eyebrow": "Workshop one",
+      "title": "The foundational artefacts",
+      "standfirst": "A service blueprint, a flowchart of the referral process, and a set of design guidelines — produced with clinicians in a single sitting, before a single screen was drawn.",
+      "bullets": [
+        { "lead": "Blueprint", "text": "Where the referral sits in the care process, and what happens behind it." },
+        { "lead": "Flowchart", "text": "The referral process as it actually runs, including the return path." },
+        { "lead": "Guidelines", "text": "Explicit constraints, agreed in advance, so later disagreements had a reference." }
+      ],
+      "figure": {
+        "kind": "shots",
+        "layout": "row",
+        "frame": "paper",
+        "items": [
+          {
+            "src": "/images/walkthrough/prostate-cancer-scp-integration/blueprint-wall.webp",
+            "alt": "The service blueprint built on the wall during the first workshop",
+            "label": "Blueprint on the wall"
+          },
+          {
+            "src": "/images/walkthrough/prostate-cancer-scp-integration/workshop-room.webp",
+            "alt": "The clinician workshop in progress",
+            "label": "The workshop"
+          }
+        ]
+      },
+      "notes": "Agreeing guidelines early is the cheapest conflict-resolution mechanism available. It converts later arguments from taste into consistency checks."
+    },
+    {
+      "kind": "full",
+      "eyebrow": "Workshop one",
+      "title": "The referral process, flowcharted",
+      "figure": {
+        "kind": "shot",
+        "src": "/images/walkthrough/prostate-cancer-scp-integration/flowchart.webp",
+        "alt": "Flowchart of the prostate cancer referral process",
+        "frame": "browser",
+        "pan": true,
+        "caption": "Produced in workshop one, from the clinicians' own account of the process"
+      },
+      "notes": "This is wide, so it pans. Trace the return path with a finger — that loop is the thing the design exists to prevent."
+    },
+    {
+      "kind": "full",
+      "eyebrow": "The referral decision",
+      "title": "Where the decision sits, and what has to be true at each point",
+      "figure": {
+        "kind": "flow",
+        "nodes": [
+          { "id": "consult", "label": "General\nconsultation", "col": 0, "row": 1, "tone": "neutral" },
+          { "id": "suspect", "label": "Suspicion\nraised", "col": 1, "row": 1, "tone": "primary" },
+          { "id": "criteria", "label": "SCP criteria\nchecked", "col": 2, "row": 0, "tone": "primary" },
+          { "id": "form", "label": "Referral\ncompleted", "col": 2, "row": 2, "tone": "primary" },
+          { "id": "sent", "label": "Referral\nsent", "col": 3, "row": 1, "tone": "accent" },
+          { "id": "returned", "label": "Returned as\ninadequate", "col": 4, "row": 0, "tone": "warn" },
+          { "id": "accepted", "label": "Patient enters\nthe pathway", "col": 4, "row": 2, "tone": "accent" }
+        ],
+        "edges": [
+          { "from": "consult", "to": "suspect" },
+          { "from": "suspect", "to": "criteria" },
+          { "from": "suspect", "to": "form" },
+          { "from": "criteria", "to": "sent" },
+          { "from": "form", "to": "sent" },
+          { "from": "sent", "to": "returned", "label": "Information missing" },
+          { "from": "sent", "to": "accepted", "label": "Adequate" }
+        ],
+        "caption": "Decision support has to act between suspicion and sending — the only window there is"
+      },
+      "notes": "The window between suspicion raised and referral sent is measured in minutes inside a consultation. That is the entire design surface."
+    },
+    {
+      "kind": "split",
+      "eyebrow": "Collaboration",
+      "title": "Eleven interviews, two field studies, one focus group",
+      "standfirst": "The referral touches four professional roles and one patient population, and each has a different relationship to the same document.",
+      "bullets": [
+        { "lead": "5 workshops", "text": "With the clinician group." },
+        { "lead": "5 interviews", "text": "Primary care physicians." },
+        { "lead": "3 interviews", "text": "Specialist physicians." },
+        { "lead": "2 interviews", "text": "The hospital process manager." },
+        { "lead": "1 interview", "text": "With four patients." },
+        { "lead": "2 field studies", "text": "In a health centre and in an emergency room." },
+        { "lead": "1 focus group", "text": "At a health centre." }
+      ],
+      "figure": {
+        "kind": "stats",
+        "items": [
+          { "value": "5", "label": "Progressive co-design workshops" },
+          { "value": "11", "label": "Interviews across physicians, specialists, process managers and patients" },
+          { "value": "2", "label": "Field studies conducted in situ" }
+        ]
+      },
+      "notes": "The field studies are the expensive part and the reason the design holds. A referral written in an ER is not the same act as one written in a booked appointment."
+    },
+    {
+      "kind": "full",
+      "eyebrow": "Field study",
+      "title": "Two settings, observed rather than inferred",
+      "figure": {
+        "kind": "journey",
+        "phases": ["Before the consultation", "During", "At the decision", "After"],
+        "rows": [
+          {
+            "label": "Health centre",
+            "cells": [
+              "Booked appointment, some history reviewed in advance",
+              "Structured conversation, other agenda items present",
+              "Time to check criteria if the system makes it findable",
+              "Referral completed at the desk"
+            ]
+          },
+          {
+            "label": "Emergency room",
+            "cells": [
+              "No preparation, patient unknown",
+              "Acute presenting complaint takes priority",
+              "Suspicion arises incidentally, with no slack in the encounter",
+              "High risk the referral is deferred or partial"
+            ]
+          },
+          {
+            "label": "What the design must do",
+            "cells": [
+              "Assume nothing was read beforehand",
+              "Stay out of the way until relevant",
+              "Surface criteria at the moment of suspicion",
+              "Guarantee adequacy without a second visit"
+            ]
+          }
+        ],
+        "caption": "The same referral, two incompatible contexts"
+      },
+      "notes": "The third row is the design brief, derived from the first two. Read it as the answer rather than as a summary."
+    },
+    {
+      "kind": "full",
+      "eyebrow": "Concepts",
+      "title": "Paper first, deliberately",
+      "figure": {
+        "kind": "shots",
+        "layout": "row",
+        "frame": "paper",
+        "items": [
+          {
+            "src": "/images/walkthrough/prostate-cancer-scp-integration/paper-sketch-a.webp",
+            "alt": "Paper sketch from the second workshop",
+            "label": "Sketch"
+          },
+          {
+            "src": "/images/walkthrough/prostate-cancer-scp-integration/paper-sketch-b.webp",
+            "alt": "Second paper sketch from the second workshop",
+            "label": "Sketch"
+          }
+        ],
+        "caption": "Workshop two — cheap enough that clinicians would argue with it"
+      },
+      "notes": "Paper is not nostalgia. A polished wireframe invites approval; a sketch invites correction, which is what workshop two needed."
+    },
+    {
+      "kind": "full",
+      "eyebrow": "Concepts",
+      "title": "First wireframes, then three rounds of iteration",
+      "figure": {
+        "kind": "shots",
+        "layout": "filmstrip",
+        "frame": "browser",
+        "items": [
+          {
+            "src": "/images/walkthrough/prostate-cancer-scp-integration/wireframe-first.webp",
+            "alt": "The first wireframe from workshop three",
+            "label": "Workshop 3 · first wireframe"
+          },
+          {
+            "src": "/images/walkthrough/prostate-cancer-scp-integration/wireframe-iteration-a.webp",
+            "alt": "Wireframe iteration, first round",
+            "label": "Iteration · a"
+          },
+          {
+            "src": "/images/walkthrough/prostate-cancer-scp-integration/wireframe-iteration-b.webp",
+            "alt": "Wireframe iteration, second round",
+            "label": "Iteration · b"
+          },
+          {
+            "src": "/images/walkthrough/prostate-cancer-scp-integration/wireframe-iteration-c.webp",
+            "alt": "Wireframe iteration, third round",
+            "label": "Iteration · c"
+          }
+        ],
+        "caption": "Continuous feedback on sketches between workshops"
+      },
+      "notes": "Scroll left to right and name what changed each time. Iteration visible as a sequence is more persuasive than any single final screen."
+    },
+    {
+      "kind": "full",
+      "eyebrow": "The journey, step by step",
+      "title": "The referral as the physician experiences it",
+      "figure": {
+        "kind": "shots",
+        "layout": "grid",
+        "frame": "browser",
+        "items": [
+          {
+            "src": "/images/walkthrough/prostate-cancer-scp-integration/journey-step-1.webp",
+            "alt": "Referral journey, step one",
+            "label": "Step 1"
+          },
+          {
+            "src": "/images/walkthrough/prostate-cancer-scp-integration/journey-step-2.webp",
+            "alt": "Referral journey, step two",
+            "label": "Step 2"
+          },
+          {
+            "src": "/images/walkthrough/prostate-cancer-scp-integration/journey-step-3.webp",
+            "alt": "Referral journey, step three",
+            "label": "Step 3"
+          },
+          {
+            "src": "/images/walkthrough/prostate-cancer-scp-integration/journey-step-4.webp",
+            "alt": "Referral journey, step four",
+            "label": "Step 4"
+          }
+        ]
+      },
+      "notes": "Four steps is the whole interaction. If the audience is a clinical one, walk each; if not, summarise and move to the trade-off."
+    },
+    {
+      "kind": "statement",
+      "eyebrow": "The core tension",
+      "title": "Structure against flexibility",
+      "standfirst": "Guaranteeing that referrals contain adequate information pushes toward a rigid, mandatory-field form. Fitting into a live primary care consultation pushes toward the opposite.",
+      "bullets": [
+        { "lead": "Too rigid", "text": "The form is abandoned mid-consultation, or filled with placeholder values to get past it." },
+        { "lead": "Too loose", "text": "The referral is incomplete, and comes back — which is the original problem." },
+        { "lead": "The resolution", "text": "Rigid where the pathway genuinely requires a value; open everywhere else." }
+      ],
+      "callout": {
+        "lead": "Where it was negotiated",
+        "text": "Not only with clinicians, but with the EHR company, whose platform constraints shaped what was buildable at all."
+      },
+      "notes": "This is the slide that generalises. Every clinical form in existence is somewhere on this dial, usually set by accident."
+    },
+    {
+      "kind": "split",
+      "eyebrow": "Development",
+      "title": "Mutual understanding with the vendor became an explicit output",
+      "standfirst": "Working through the structure-versus-flexibility trade-off with the EHR company required each side learning the other's constraints — and the project treated that as a deliverable rather than a byproduct.",
+      "bullets": [
+        { "lead": "From the design side", "text": "What the referral had to guarantee, and why a mandatory field is not free." },
+        { "lead": "From the vendor side", "text": "What the platform could expose, and where integration limits were hard." },
+        { "lead": "Result", "text": "A functional prototype integrated with the electronic health record." }
+      ],
+      "figure": {
+        "kind": "layers",
+        "items": [
+          { "label": "Design guidelines", "detail": "Agreed in workshop one, referenced throughout" },
+          { "label": "Wireframe iterations", "detail": "Continuous feedback between workshops three to five" },
+          { "label": "Web application mockup", "detail": "Developed alongside the EHR company" },
+          { "label": "Graphic design", "detail": "Produced in parallel with the mockup, not after it" },
+          { "label": "Structure–flexibility compromise", "detail": "Negotiated against platform constraints" },
+          { "label": "Mutual understanding", "detail": "An explicit project output, not a byproduct" }
+        ],
+        "caption": "What development actually produced"
+      },
+      "notes": "Vendor relationship work is invisible in a portfolio and decisive in delivery. Name it as a skill, not as a hardship."
+    },
+    {
+      "kind": "cards",
+      "eyebrow": "What transferred",
+      "title": "Three things this project taught that outlived it",
+      "cards": [
+        {
+          "title": "Guidelines before concepts",
+          "text": "Agreeing explicit design guidelines in workshop one meant every later disagreement could be settled against a shared reference instead of by seniority."
+        },
+        {
+          "title": "Observe both extremes",
+          "text": "A design validated only in the calm setting fails in the acute one. The emergency room field study changed what the interface could assume."
+        },
+        {
+          "title": "The vendor is a stakeholder",
+          "text": "In embedded clinical software, platform constraints are design constraints. Discovering them late means redesigning; discovering them together means shipping."
+        }
+      ],
+      "notes": "The middle card is the one clinical audiences respond to. The third is the one product audiences respond to. Pick your emphasis."
+    },
+    {
+      "kind": "full",
+      "eyebrow": "Outcome",
+      "title": "By the numbers",
+      "figure": {
+        "kind": "stats",
+        "items": [
+          { "value": "5", "label": "Progressive co-design workshops", "sub": "Blueprint through to functional prototype" },
+          { "value": "11", "label": "Interviews across physicians, specialists, process managers and patients" },
+          { "value": "2", "label": "Field studies conducted in situ", "sub": "Health centre and emergency room" },
+          { "value": "1", "label": "Functional prototype delivered, integrated with the EHR" },
+          { "value": "SCP", "label": "Referrals designed to carry adequate information into the standardized care process" }
+        ]
+      },
+      "notes": "Five workshops over the life of one project is a lot of clinician time. That access is itself a result — it was earned by showing progress every session."
+    },
+    {
+      "kind": "statement",
+      "eyebrow": "The lesson",
+      "title": "Specialist decisions have to be supported inside generalist workflows",
+      "standfirst": "The instinct is to build the cancer pathway a tool of its own. But primary care physicians do not live in one pathway; they live in a consultation, and every pathway that asks them to leave it loses.",
+      "callout": {
+        "lead": "The measure of success",
+        "text": "Not that the tool was used. That the referral did not come back — and that the patient's clock never restarted."
+      },
+      "notes": "End on the clock. It reconnects a form-design problem to the reason anyone funded it."
+    },
+    {
+      "kind": "close",
+      "eyebrow": "In summary",
+      "title": "A referral that arrives complete, from inside the record",
+      "bullets": [
+        { "lead": "Co-designed", "text": "Five progressive workshops" },
+        { "lead": "Observed", "text": "Health centre and emergency room" },
+        { "lead": "Negotiated", "text": "Structure against flexibility, with the vendor" },
+        { "lead": "Delivered", "text": "A functional prototype, EHR-integrated" }
+      ],
+      "notes": "Likely question: how mandatory fields were finally decided. Answer: only where the pathway cannot proceed without the value, agreed against the workshop-one guidelines."
+    }
+  ]
+}

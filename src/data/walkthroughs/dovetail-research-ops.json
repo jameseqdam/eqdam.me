@@ -1,0 +1,334 @@
+{
+  "slug": "dovetail-research-ops",
+  "title": "Building a Research Operations Function",
+  "subtitle": "From zero to a governed qualitative data repository",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "Research Ops · 2020 – 2026",
+      "title": "Building a Research Operations Function",
+      "standfirst": "Founding the UX Research practice at Coupa, scaling it to 20+ product lines, and then solving the bottleneck that scale created: insight produced faster than the organisation could reuse it.",
+      "bullets": [
+        { "lead": "Role", "text": "Director of User Experience Research and Design" },
+        { "lead": "Arc", "text": "One practitioner → a standing discipline → a governed repository" },
+        { "lead": "Constraint", "text": "Headcount could not grow at the rate demand did" }
+      ],
+      "notes": "Two problems in sequence, and the second one only exists because the first was solved. Signal that structure early or the deck reads as two unrelated stories."
+    },
+    {
+      "kind": "section",
+      "eyebrow": "Problem one",
+      "title": "An organisation deciding on assumption",
+      "standfirst": "Product managers and designers, no research function, and UX validation happening after build rather than before it.",
+      "notes": "Set the starting state honestly: not a bad organisation, an organisation with no mechanism."
+    },
+    {
+      "kind": "split",
+      "eyebrow": "The founding mistake",
+      "title": "Customers were treated as interchangeable with end users",
+      "standfirst": "The people who sign the contract and the people who work in the product every day were the same population as far as prioritisation was concerned.",
+      "bullets": [
+        { "text": "Feature requests arrived through commercial channels and were read as user needs." },
+        { "text": "Nobody was wrong on purpose — there was simply no counter-evidence available." },
+        { "text": "Demonstrating the difference required data, which required a function that did not yet exist." }
+      ],
+      "figure": {
+        "kind": "shots",
+        "layout": "row",
+        "frame": "browser",
+        "items": [
+          {
+            "src": "/images/walkthrough/dovetail-research-ops/sold-to.webp",
+            "alt": "Who the platform is sold to",
+            "label": "Sold to"
+          },
+          {
+            "src": "/images/walkthrough/dovetail-research-ops/used-by.webp",
+            "alt": "Who the platform is used by",
+            "label": "Used by"
+          },
+          {
+            "src": "/images/walkthrough/dovetail-research-ops/customers-vs-users.webp",
+            "alt": "Customers compared against users",
+            "label": "Customers vs users"
+          }
+        ],
+        "caption": "Two different populations, one prioritisation queue"
+      },
+      "notes": "This is the argument the first homepage survey was built to settle. Cross-reference it if the audience has seen that case study."
+    },
+    {
+      "kind": "full",
+      "eyebrow": "The gap",
+      "title": "Validation arrived after the decision it was meant to inform",
+      "figure": {
+        "kind": "shots",
+        "layout": "row",
+        "frame": "browser",
+        "items": [
+          {
+            "src": "/images/walkthrough/dovetail-research-ops/validation-gap.webp",
+            "alt": "Where validation sat relative to build",
+            "label": "The validation gap"
+          },
+          {
+            "src": "/images/walkthrough/dovetail-research-ops/user-centric.webp",
+            "alt": "What user-centric practice requires",
+            "label": "What it takes to be user-centric"
+          }
+        ]
+      },
+      "notes": "Research after build is not research, it is a report card. The move was upstream, and it required a mandate."
+    },
+    {
+      "kind": "full",
+      "eyebrow": "The build",
+      "title": "Three stages, each one making the next one possible",
+      "figure": {
+        "kind": "phases",
+        "items": [
+          {
+            "label": "Establish the practice",
+            "detail": "Executive conversation, the first UX survey, a Clarity research site, a Research Intake Form for PM, UserTesting licences"
+          },
+          {
+            "label": "Scale the team",
+            "detail": "Recruitment, onboarding, mentorship — and ownership moved off PMs onto trained researchers and designers"
+          },
+          {
+            "label": "Fix the data architecture",
+            "detail": "Dovetail budget secured, workspace and taxonomy designed, legacy projects migrated off Google Drive"
+          }
+        ],
+        "caption": "Stage three is only a problem worth having because stages one and two worked"
+      },
+      "notes": "Each stage has a different kind of difficulty: political, managerial, architectural. Say which is which."
+    },
+    {
+      "kind": "split",
+      "eyebrow": "Stage one",
+      "title": "The intake form was the real unlock",
+      "standfirst": "A research function with no intake process is a queue of favours. A formal Research Intake Form for the PM department turned requests into a triageable pipeline.",
+      "bullets": [
+        { "lead": "Executive conversation", "text": "Initiated the case for a systematic research approach, not a headcount ask." },
+        { "lead": "First study", "text": "The homepage redesign survey — the proof of concept." },
+        { "lead": "Research site", "text": "A dedicated Clarity site, so research had an address." },
+        { "lead": "Tooling", "text": "UserTesting licences as the standard evaluative platform." }
+      ],
+      "figure": {
+        "kind": "shot",
+        "src": "/images/walkthrough/dovetail-research-ops/behaviour-model.webp",
+        "alt": "Behaviour model used to frame the research practice",
+        "frame": "browser",
+        "caption": "Framing the practice, not just the studies"
+      },
+      "notes": "Intake is unglamorous and it is the single highest-leverage artefact in the whole story. It converts demand into something you can say no to."
+    },
+    {
+      "kind": "full",
+      "eyebrow": "Stage two",
+      "title": "Six to forty-plus",
+      "standfirst": "The UX organisation grew, and research ownership shifted off product managers and onto people trained to hold it.",
+      "figure": {
+        "kind": "stats",
+        "items": [
+          { "value": "6 to 40+", "label": "Designers and researchers as the organisation scaled" },
+          { "value": "20+", "label": "Concurrent product lines supported" },
+          { "value": "53", "label": "Research initiatives delivered in a single year", "sub": "AI, supplier, cross-product, platform" }
+        ]
+      },
+      "notes": "Growth is the setup for the twist. More people producing more studies is precisely what broke the way findings were stored."
+    },
+    {
+      "kind": "statement",
+      "eyebrow": "Problem two",
+      "title": "The function worked. The knowledge did not accumulate.",
+      "standfirst": "Studies were run, but findings lived in Google Drive as unstructured documents owned by whoever ran the study.",
+      "bullets": [
+        { "lead": "No taxonomy", "text": "Two researchers coding the same behaviour differently, permanently." },
+        { "lead": "No query", "text": "No way to ask a question across projects." },
+        { "lead": "No transfer", "text": "A project could not be handed from one researcher to another." },
+        { "lead": "No baseline", "text": "No quantitative reference against which to claim any product had improved." }
+      ],
+      "callout": {
+        "lead": "The diagnosis",
+        "text": "Insight was being produced faster than the organisation could reuse it. That is an information architecture problem wearing a headcount problem's clothes."
+      },
+      "notes": "This slide is the pivot of the deck. Say the diagnosis sentence slowly — it is the line the rest of the work follows from."
+    },
+    {
+      "kind": "full",
+      "eyebrow": "The constraint",
+      "title": "The team could not grow at the rate demand did, so throughput had to come from infrastructure",
+      "figure": {
+        "kind": "shots",
+        "layout": "row",
+        "frame": "browser",
+        "items": [
+          {
+            "src": "/images/walkthrough/dovetail-research-ops/team-shape.webp",
+            "alt": "The shape of the research team against demand",
+            "label": "Team shape against demand"
+          },
+          {
+            "src": "/images/walkthrough/dovetail-research-ops/invisible-technology.webp",
+            "alt": "Infrastructure as invisible technology",
+            "label": "Infrastructure is invisible until it fails"
+          },
+          {
+            "src": "/images/walkthrough/dovetail-research-ops/design-samples.webp",
+            "alt": "Samples of design work produced across the portfolio",
+            "label": "The output being supported"
+          }
+        ]
+      },
+      "notes": "Every research leader hits this wall. The answer is almost never more researchers; it is fewer repeated motions per study."
+    },
+    {
+      "kind": "split",
+      "eyebrow": "Stage three",
+      "title": "Securing budget for a category of tool the organisation had never funded",
+      "standfirst": "A research CMS has no obvious line item. The ROI case had to be made in operational efficiency, not in insight quality.",
+      "bullets": [
+        { "lead": "The ask", "text": "Dovetail, as the centralised research repository." },
+        { "lead": "The argument", "text": "Reuse and cross-project analysis, quantified as researcher time." },
+        { "lead": "The target", "text": "25% improvement in research operational efficiency." }
+      ],
+      "callout": {
+        "lead": "The condition",
+        "text": "The repository only produces value if the taxonomy is designed up front. Without a standardised structure, a shared repository is just a shared folder."
+      },
+      "notes": "The callout is the sentence to remember. Most repository projects fail here, by buying the tool and deferring the schema."
+    },
+    {
+      "kind": "full",
+      "eyebrow": "Architecture",
+      "title": "What was actually designed, before anything was migrated",
+      "figure": {
+        "kind": "layers",
+        "items": [
+          { "label": "Workspace structure", "detail": "How projects, products and programmes nest — decided once" },
+          { "label": "Tags and Fields taxonomy", "detail": "A governance document, so every researcher codes data the same way" },
+          { "label": "Migration", "detail": "Existing projects moved off Google Drive rather than left behind" },
+          { "label": "Training and demos", "detail": "Planned and run internally, because a schema nobody follows is not a schema" },
+          { "label": "Share-out templates", "detail": "Standardised, so findings arrive in a shape stakeholders recognise" },
+          { "label": "Project tracker", "detail": "Visibility across a portfolio of concurrent studies" }
+        ],
+        "caption": "The taxonomy document is the load-bearing item"
+      },
+      "notes": "Emphasise that training is part of the architecture, not a rollout afterthought. Consistency is a human behaviour, not a database constraint."
+    },
+    {
+      "kind": "split",
+      "eyebrow": "Measurement",
+      "title": "UEQ and UX KPIs, so \"improved\" became a claim you could check",
+      "bullets": [
+        { "lead": "UEQ programme", "text": "Annual or bi-annual benchmarks for feature performance." },
+        { "lead": "UX KPIs", "text": "Defined and tracked, rather than described." },
+        { "lead": "Mixed methods", "text": "Qualitative interviews paired with pulled quantitative data." }
+      ],
+      "figure": {
+        "kind": "shots",
+        "layout": "row",
+        "frame": "browser",
+        "items": [
+          {
+            "src": "/images/walkthrough/dovetail-research-ops/certainty-a.webp",
+            "alt": "Certainty and evidence framing, part one",
+            "label": "Degrees of certainty"
+          },
+          {
+            "src": "/images/walkthrough/dovetail-research-ops/certainty-b.webp",
+            "alt": "Certainty and evidence framing, part two",
+            "label": "What each method can support"
+          }
+        ]
+      },
+      "notes": "Benchmarks are what let a research function survive a change of leadership. They make the value legible without you in the room."
+    },
+    {
+      "kind": "split",
+      "eyebrow": "Operations",
+      "title": "Recruitment, industrialised",
+      "standfirst": "Finding the right participant was the slowest step in every study, so it stopped being a per-study activity.",
+      "bullets": [
+        { "lead": "Targeting", "text": "Salesforce, Metabase and Pendo filters to reach specific user profiles." },
+        { "lead": "Volume", "text": "Large-scale email campaigns where a profile was broad." },
+        { "lead": "Screening", "text": "UserTesting demographic screening for evaluative studies." },
+        { "lead": "Direct access", "text": "Customer Advisory Board research sessions." }
+      ],
+      "figure": {
+        "kind": "stats",
+        "items": [
+          { "value": "61", "label": "Studies completed on UserTesting.com in one review period" },
+          { "value": "275", "label": "Research participants engaged across those studies" },
+          { "value": "25%", "label": "Target improvement in operational efficiency" }
+        ]
+      },
+      "notes": "Recruitment is where research operations either exists or does not. The tooling list is boring and it is the whole answer."
+    },
+    {
+      "kind": "full",
+      "eyebrow": "The trade-off, always",
+      "title": "Flexibility against structure",
+      "standfirst": "Governance that nobody follows is theatre; governance that constrains every study is friction. The taxonomy had to be strict where comparison mattered and open everywhere else.",
+      "figure": {
+        "kind": "shots",
+        "layout": "row",
+        "frame": "browser",
+        "items": [
+          {
+            "src": "/images/walkthrough/dovetail-research-ops/flexibility-structure.webp",
+            "alt": "The flexibility versus structure trade-off",
+            "label": "The trade-off"
+          },
+          {
+            "src": "/images/walkthrough/dovetail-research-ops/flex-structure-dial.webp",
+            "alt": "Setting the flexibility and structure dial",
+            "label": "Where the dial was set"
+          }
+        ]
+      },
+      "notes": "Same tension as the prostate cancer referral form, in a completely different domain. Worth naming if both case studies are in the session."
+    },
+    {
+      "kind": "full",
+      "eyebrow": "Outcome",
+      "title": "What the function looked like at the end",
+      "figure": {
+        "kind": "stats",
+        "items": [
+          { "value": "6 to 40+", "label": "Designers and researchers as the organisation scaled" },
+          { "value": "53", "label": "Research initiatives delivered in a single year" },
+          { "value": "61", "label": "Studies completed on UserTesting in one review period" },
+          { "value": "275", "label": "Research participants engaged" },
+          { "value": "25%", "label": "Target improvement in research operational efficiency" },
+          { "value": "20+", "label": "Concurrent product lines supported" }
+        ]
+      },
+      "notes": "Read three of these, not six. Let the rest sit on screen as evidence rather than as narration."
+    },
+    {
+      "kind": "statement",
+      "eyebrow": "The lesson",
+      "title": "Scaling qualitative research is an information architecture problem",
+      "standfirst": "It arrives disguised as a headcount problem, and hiring against it makes the disguise more convincing — more researchers producing more unstructured documents faster.",
+      "callout": {
+        "lead": "The test",
+        "text": "Can a researcher who has never met you pick up your project, find your data, and code the next interview the way you coded the last one? If not, you have a folder."
+      },
+      "notes": "End on the test question. It is the most useful thing in the deck for anyone doing this work themselves."
+    },
+    {
+      "kind": "close",
+      "eyebrow": "In summary",
+      "title": "Build the practice, then build the thing that lets it accumulate",
+      "bullets": [
+        { "lead": "Founded", "text": "A research function from zero" },
+        { "lead": "Scaled", "text": "To 20+ product lines" },
+        { "lead": "Governed", "text": "A taxonomy before a migration" }
+      ],
+      "notes": "Likely question: how the Dovetail ROI case was actually structured. Answer in researcher-hours saved per study, multiplied by study volume."
+    }
+  ]
+}

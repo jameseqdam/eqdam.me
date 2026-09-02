@@ -1,0 +1,261 @@
+{
+  "slug": "navi-ai-agent",
+  "title": "Navi AI Agent: Research Strategy for Generative AI",
+  "subtitle": "Two bounded workstreams, three validated pain points, one repeatable benchmark",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "AI Strategy · 2024 – 2026",
+      "title": "Navi: Research Strategy for Generative AI in Business Spend Management",
+      "standfirst": "Directing research for an AI agent embedded across an enterprise platform — while stopping an open-ended AI mandate from consuming the entire research team.",
+      "bullets": [
+        { "lead": "Role", "text": "Director of User Experience Research and Design" },
+        { "lead": "Structure", "text": "Two time-boxed workstreams: Opportunities and Components" },
+        { "lead": "First", "text": "Quantitative UEQ benchmark for an AI feature at Coupa" }
+      ],
+      "notes": "This is a research-leadership case as much as a research case. The interesting decision is structural: how to bound something that has no natural end."
+    },
+    {
+      "kind": "statement",
+      "eyebrow": "The problem",
+      "title": "Heavy investment in generative AI, without evidence of where AI actually helped",
+      "standfirst": "The question was not whether the models worked. It was whether they resolved anything a procurement or finance professional was actually stuck on.",
+      "callout": {
+        "lead": "The compounding risk",
+        "text": "An open-ended ML discovery effort of this size threatened to absorb the whole team's capacity and expand indefinitely, with no defined end state."
+      },
+      "notes": "Two problems stacked: an evidence gap in the product, and a scoping failure waiting to happen in the function. The second one is what would have killed the first."
+    },
+    {
+      "kind": "cards",
+      "eyebrow": "Discovery",
+      "title": "Three recurring failure modes came out of the interviews",
+      "standfirst": "Named from customer interviews and thematic analysis, and taken straight to the roadmap.",
+      "cards": [
+        {
+          "title": "Credit confusion",
+          "text": "Users could not predict or understand what an AI interaction would cost them — so they hesitated before asking."
+        },
+        {
+          "title": "Query issues",
+          "text": "Users did not know how to phrase a request the agent could actually act on, and had no way to learn."
+        },
+        {
+          "title": "Product disconnect",
+          "text": "The agent felt bolted on rather than continuous with the workflow the user was already inside."
+        }
+      ],
+      "callout": {
+        "lead": "Note what none of these are",
+        "text": "None is a model quality problem. All three are experience problems, which is why they were invisible to the teams measuring model performance."
+      },
+      "notes": "Credit confusion is the one that surprised people most: anxiety about burning credits changes behaviour before the model is ever invoked."
+    },
+    {
+      "kind": "full",
+      "eyebrow": "The structural move",
+      "title": "One mandate, split into two things that could each finish",
+      "standfirst": "Strategic discovery and design validation ran in parallel, time-boxed, so neither absorbed the other.",
+      "figure": {
+        "kind": "flow",
+        "nodes": [
+          { "id": "mandate", "label": "Open-ended AI research mandate", "col": 0, "row": 1, "tone": "warn" },
+          { "id": "opps", "label": "Opportunities\nProblem space", "col": 1, "row": 0, "tone": "primary" },
+          { "id": "comps", "label": "Components\nDesign validation", "col": 1, "row": 2, "tone": "primary" },
+          { "id": "roadmap", "label": "Navi roadmap", "col": 2, "row": 0, "tone": "accent" },
+          { "id": "surfaces", "label": "AI surfaces and patterns", "col": 2, "row": 2, "tone": "accent" },
+          { "id": "ueq", "label": "UEQ benchmark", "col": 3, "row": 1, "tone": "neutral" }
+        ],
+        "edges": [
+          { "from": "mandate", "to": "opps" },
+          { "from": "mandate", "to": "comps" },
+          { "from": "opps", "to": "roadmap" },
+          { "from": "comps", "to": "surfaces" },
+          { "from": "roadmap", "to": "ueq" },
+          { "from": "surfaces", "to": "ueq" }
+        ],
+        "caption": "Two bounded workstreams, each independently deliverable"
+      },
+      "notes": "The reason this works: each stream has its own deliverable and its own end date, so neither can quietly borrow the other's capacity."
+    },
+    {
+      "kind": "split",
+      "eyebrow": "Workstream one",
+      "title": "Opportunities — define the problem space, then go and watch",
+      "bullets": [
+        { "lead": "In-depth interviews", "text": "With customers, analysed thematically rather than tallied." },
+        { "lead": "Observational studies", "text": "Planned with customers across diverse businesses, to see real-world AI usage rather than reported usage." },
+        { "lead": "Specifically observed", "text": "User anxiety around burning credits — a behaviour people do not report but do exhibit." }
+      ],
+      "callout": {
+        "lead": "Why observation, not more interviews",
+        "text": "Self-report on AI use is unreliable in both directions: people overstate how much they use it and understate how much they hesitate."
+      },
+      "figure": {
+        "kind": "stats",
+        "items": [
+          { "value": "3", "label": "Core pain points fed to the roadmap" },
+          { "value": "20+", "label": "Concurrent research initiatives managed alongside" }
+        ]
+      },
+      "notes": "The credit-anxiety finding is the strongest argument for the observational component. It came from watching, not asking."
+    },
+    {
+      "kind": "split",
+      "eyebrow": "Workstream two",
+      "title": "Components — test the AI surfaces as interface, not as intelligence",
+      "bullets": [
+        { "lead": "Visual treatment", "text": "How an AI-generated element announces itself as generated." },
+        { "lead": "Interaction patterns", "text": "How a user asks, corrects, and overrules." },
+        { "lead": "In-workflow", "text": "The assistant inside procurement scenario comparison, where the stakes are a real award decision." }
+      ],
+      "figure": {
+        "kind": "shot",
+        "src": "/images/walkthrough/navi-ai-agent/navi-in-context.webp",
+        "alt": "Navi surfaced inside the procurement workflow",
+        "frame": "browser",
+        "caption": "Navi in the workflow it is meant to be continuous with"
+      },
+      "notes": "Component testing is what fixes product disconnect. You cannot solve \"it feels bolted on\" at the model layer."
+    },
+    {
+      "kind": "full",
+      "eyebrow": "The pattern that held",
+      "title": "Recommendation and evidence, in the same view",
+      "standfirst": "Navi presents cost-savings insights alongside the raw supplier data, so the user sees what was suggested and what it was suggested from.",
+      "figure": {
+        "kind": "shots",
+        "layout": "grid",
+        "frame": "browser",
+        "items": [
+          {
+            "src": "/images/walkthrough/navi-ai-agent/scenario-analysis.webp",
+            "alt": "AI scenario analysis surface",
+            "label": "AI scenario analysis"
+          },
+          {
+            "src": "/images/walkthrough/navi-ai-agent/scenario-compare.webp",
+            "alt": "Scenario comparison with AI insight",
+            "label": "Comparison with insight"
+          },
+          {
+            "src": "/images/walkthrough/navi-ai-agent/scenario-detail.webp",
+            "alt": "Scenario detail with supporting data",
+            "label": "The underlying data"
+          }
+        ],
+        "caption": "In enterprise procurement, an unauditable recommendation is not usable"
+      },
+      "notes": "In a domain where decisions are audited, hiding the evidence does not build trust in the AI — it disqualifies it."
+    },
+    {
+      "kind": "statement",
+      "eyebrow": "Measurement",
+      "title": "\"Better\" is not a research finding until it has a baseline",
+      "standfirst": "A Navi UEQ instrument was layered over both workstreams, producing the first repeatable quantitative benchmark for AI feature quality at Coupa.",
+      "callout": {
+        "lead": "What a benchmark buys",
+        "text": "The next release can be compared to this one. Without that, every AI improvement claim is an assertion, and every regression is invisible."
+      },
+      "notes": "This is the piece that connects to the wider research-operations work: UEQ was already being stood up as a programme, so the AI feature inherited a method rather than inventing one."
+    },
+    {
+      "kind": "full",
+      "eyebrow": "The instrument",
+      "title": "Six scales, applied the same way every time",
+      "standfirst": "The User Experience Questionnaire measures across six dimensions — which is what makes an AI feature comparable to a non-AI one, and to itself six months later.",
+      "figure": {
+        "kind": "layers",
+        "items": [
+          { "label": "Attractiveness", "detail": "Overall impression: do users like it at all" },
+          { "label": "Perspicuity", "detail": "Is it easy to become familiar with and to understand" },
+          { "label": "Efficiency", "detail": "Can users solve their task without unnecessary effort" },
+          { "label": "Dependability", "detail": "Do users feel in control of the interaction" },
+          { "label": "Stimulation", "detail": "Is it motivating and interesting to use" },
+          { "label": "Novelty", "detail": "Is it innovative and creative — the scale AI features over-index on" }
+        ],
+        "caption": "Dependability is the scale that matters most for an agent that acts on your behalf"
+      },
+      "notes": "If asked why UEQ rather than a bespoke survey: comparability across products and across time, and it was already the standard instrument in the function."
+    },
+    {
+      "kind": "split",
+      "eyebrow": "Adjacent",
+      "title": "Pay AI: eleven interviews to a live Early Adopter Program",
+      "standfirst": "The same model applied to autonomous invoice selection — bounded scope, specific decision, clear handoff.",
+      "bullets": [
+        { "lead": "Question", "text": "Which invoice batches are low-risk enough to select autonomously?" },
+        { "lead": "Method", "text": "Eleven customer interviews, analysed for selection criteria rather than sentiment." },
+        { "lead": "Output", "text": "Defined low-risk batch selection criteria, and an Early Adopter Program built on them." }
+      ],
+      "figure": {
+        "kind": "funnel",
+        "steps": [
+          { "label": "Customer interviews", "value": "11", "note": "autonomous invoice selection" },
+          { "label": "Selection criteria defined", "value": "Low-risk", "note": "batch-level, evidence-backed" },
+          { "label": "Early Adopter Program", "value": "Live", "note": "shipped to willing customers" }
+        ],
+        "caption": "Bounded question, bounded study, shipped outcome"
+      },
+      "notes": "Eleven interviews is a small study that produced a product decision. Worth saying explicitly — scope discipline is the theme of the whole deck."
+    },
+    {
+      "kind": "cards",
+      "eyebrow": "What it changed",
+      "title": "Findings that moved beyond Navi",
+      "cards": [
+        {
+          "title": "The Navi roadmap",
+          "text": "Redirected from assumed AI value toward the three validated pain points."
+        },
+        {
+          "title": "The Early Adopter Program",
+          "text": "Shaped by research on what customers would actually let an agent do unsupervised."
+        },
+        {
+          "title": "Pay AI",
+          "text": "Same two-stream model, own bounded question, own deliverable."
+        },
+        {
+          "title": "The AI Center of Excellence",
+          "text": "Inherited the benchmark and the workstream pattern as standard practice."
+        }
+      ],
+      "notes": "The last card is the one that matters for a leadership audience: the method outlived the project it was invented for."
+    },
+    {
+      "kind": "full",
+      "eyebrow": "Outcome",
+      "title": "The numbers",
+      "figure": {
+        "kind": "stats",
+        "items": [
+          { "value": "2", "label": "Time-boxed workstreams protecting product scope" },
+          { "value": "3", "label": "Core AI pain points identified and fed to roadmap" },
+          { "value": "11", "label": "Pay AI customer interviews defining low-risk criteria" },
+          { "value": "1st", "label": "Quantitative UEQ benchmark for an AI feature at Coupa" },
+          { "value": "20+", "label": "Concurrent research initiatives managed alongside" }
+        ]
+      },
+      "notes": "The first number is the one to emphasise. Two is a management decision, and it is why the other four exist."
+    },
+    {
+      "kind": "statement",
+      "eyebrow": "The lesson",
+      "title": "Generative AI discovery has no natural stopping point, so you have to build one",
+      "standfirst": "The primary challenge was structural, not methodological: protecting scope and capacity by splitting an open mandate into two bounded, independently deliverable streams — while still producing evidence rigorous enough to redirect an executive roadmap.",
+      "notes": "For a research-leadership audience this is the whole talk. Rigour that bankrupts the team is not rigour."
+    },
+    {
+      "kind": "close",
+      "eyebrow": "In summary",
+      "title": "Bound the mandate, validate the surface, benchmark the result",
+      "bullets": [
+        { "lead": "Bounded", "text": "Opportunities and Components" },
+        { "lead": "Validated", "text": "Credit confusion, query issues, product disconnect" },
+        { "lead": "Benchmarked", "text": "UEQ, repeatable release over release" }
+      ],
+      "notes": "Likely questions: what the UEQ scores were (say what can be said), and how the observational studies were negotiated with customers."
+    }
+  ]
+}

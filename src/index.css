@@ -217,3 +217,30 @@ All colors MUST be HSL.
 html.preloader-active .site-logo {
   opacity: 0;
 }
+
+/*
+ * Ken Burns drift for the wide walkthrough artefacts.
+ *
+ * Some source diagrams — service blueprints especially — are several thousand
+ * pixels wide and two hundred tall. Scaled to fit a slide they are a texture, so
+ * they are drawn oversized and drifted across instead, with the lightbox carrying
+ * the actual reading.
+ */
+@keyframes walkthrough-pan {
+  from {
+    transform: scale(1.35) translateX(-14%);
+  }
+  to {
+    transform: scale(1.35) translateX(14%);
+  }
+}
+
+.walkthrough-pan {
+  animation: walkthrough-pan 18s ease-in-out infinite alternate;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .walkthrough-pan {
+    animation: none;
+  }
+}

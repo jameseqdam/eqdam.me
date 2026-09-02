@@ -1,0 +1,510 @@
+{
+  "slug": "mbi-ict-research",
+  "title": "Mild Brain Injury and ICT",
+  "subtitle": "A four-study doctoral programme in consumer health informatics",
+  "slides": [
+    {
+      "kind": "cover",
+      "eyebrow": "Karolinska Institutet · 2011 – 2018",
+      "title": "Mild Brain Injury and ICT",
+      "standfirst": "Four phases exploring how people with mild acquired cognitive impairment use and experience everyday technology — and, simultaneously, whether user experience research methods work with this population at all.",
+      "bullets": [
+        { "lead": "Role", "text": "Principal Researcher, Doctoral Candidate" },
+        { "lead": "Output", "text": "JMIR, PLOS ONE ×2, and the thesis" },
+        { "lead": "Standing", "text": "To the authors' knowledge, the first studies of ICT and user experience for health information consumers with MACI" }
+      ],
+      "notes": "Seven years of work. Present it as four questions in sequence, never as four papers — the sequence is the contribution."
+    },
+    {
+      "kind": "section",
+      "eyebrow": "The population",
+      "title": "Mild acquired cognitive impairment",
+      "standfirst": "A minor, non-progressive decrease in cognitive function acquired through physical trauma or medical conditions — benign tumour, stroke, treatment side effects.",
+      "notes": "Define MACI properly before anything else. Most audiences will substitute dementia, which is almost the opposite: progressive, older, and well studied."
+    },
+    {
+      "kind": "split",
+      "eyebrow": "The population",
+      "title": "Young, stabilising, and absent from the literature",
+      "bullets": [
+        { "text": "Generally young — this is not an ageing cohort." },
+        { "text": "Expected to reach a stable cognitive level over time, not to decline." },
+        { "text": "Largely absent from health informatics research." },
+        { "lead": "Consequence", "text": "Tools designed for progressive impairment fit badly, and tools designed for the general population assume capacities that fluctuate here." }
+      ],
+      "figure": {
+        "kind": "shots",
+        "layout": "row",
+        "frame": "plain",
+        "items": [
+          {
+            "src": "/images/walkthrough/mbi-ict-research/ict-collage.webp",
+            "alt": "Everyday information and communication technology in use",
+            "label": "Everyday ICT, the object of study"
+          },
+          {
+            "src": "/images/walkthrough/mbi-ict-research/programme-wheel.webp",
+            "alt": "The four-phase research programme, as a wheel",
+            "label": "The programme"
+          }
+        ]
+      },
+      "notes": "Stable and young matters commercially as well as clinically: these are people with decades of technology use ahead of them."
+    },
+    {
+      "kind": "statement",
+      "eyebrow": "The problem",
+      "title": "Two gaps, compounding each other",
+      "bullets": [
+        { "lead": "First", "text": "Almost no evidence about what ICT tools had been built or evaluated for self-management in this group, and no clear direction on how to proceed." },
+        { "lead": "Second", "text": "Capturing the user experience of people with cognitive impairment is itself methodologically unsolved." }
+      ],
+      "callout": {
+        "lead": "The bind",
+        "text": "The standard UX field study toolkit assumes recall, sustained attention and self-report accuracy that cannot be taken for granted here. So studying the population and studying how to study the population had to happen simultaneously."
+      },
+      "notes": "This is the intellectual spine of the whole programme. If the audience only remembers one slide, make it this one."
+    },
+    {
+      "kind": "full",
+      "eyebrow": "Structure",
+      "title": "Four phases, each answering the question the previous one raised",
+      "figure": {
+        "kind": "phases",
+        "items": [
+          {
+            "label": "I · Systematic review",
+            "detail": "What exists? 8 databases, 55 search phrases, ICF-derived analytical framework"
+          },
+          {
+            "label": "II · National survey",
+            "detail": "What do people actually use? 282 participants, purpose-built instrument, CFQ"
+          },
+          {
+            "label": "III · Network analysis",
+            "detail": "How do they communicate? A full year of a 1,310-member Facebook community"
+          },
+          {
+            "label": "IV · Diary field study",
+            "detail": "Can we study them at all? Day Reconstruction Method with 11 participants"
+          }
+        ],
+        "caption": "Not four papers — one argument in four moves"
+      },
+      "callout": {
+        "lead": "The chain",
+        "text": "The review found interpersonal interaction unmet, which is why phase III studies communication. And because capturing the experience of this population is itself unsolved, phase IV interrogates the method rather than the population."
+      },
+      "notes": "Point out the causal chain out loud: the review found interpersonal interaction unmet, which is why phase III is about communication."
+    },
+    {
+      "kind": "section",
+      "eyebrow": "Phase I",
+      "title": "How empty was the evidence base?",
+      "notes": "Set this up as a genuine question. The answer is more extreme than anyone expects."
+    },
+    {
+      "kind": "full",
+      "eyebrow": "Phase I · Systematic review",
+      "title": "Five thousand nine hundred and sixty-nine articles. Seven qualified.",
+      "figure": {
+        "kind": "funnel",
+        "steps": [
+          { "label": "Articles returned", "value": "5,969", "note": "8 databases, 55 search phrases" },
+          { "label": "Screened against inclusion criteria", "value": "5,969" },
+          { "label": "Met the criteria", "value": "7", "note": "0.12% of the returned set" }
+        ],
+        "caption": "A near-empty evidence base, established rather than asserted"
+      },
+      "notes": "Let the number land before speaking. Seven out of 5,969 is the justification for the entire doctoral programme existing."
+    },
+    {
+      "kind": "split",
+      "eyebrow": "Phase I · Method",
+      "title": "The framework was built, not borrowed",
+      "standfirst": "Tool functionality was analysed against an analytical framework derived from a subset of the International Classification of Functioning, Disability and Health, cross-validated with Swedish MACI experts.",
+      "bullets": [
+        { "lead": "ICF subset", "text": "So functionality mapped to recognised domains of functioning rather than to feature names." },
+        { "lead": "Expert cross-validation", "text": "Swedish MACI clinicians checked the subset before it was used." },
+        { "lead": "Result", "text": "Specific unmet needs identified — notably support for interpersonal interactions and relationships." }
+      ],
+      "figure": {
+        "kind": "shots",
+        "layout": "row",
+        "frame": "paper",
+        "items": [
+          {
+            "src": "/images/walkthrough/mbi-ict-research/review-paper.webp",
+            "alt": "The systematic review paper",
+            "label": "The review"
+          },
+          {
+            "src": "/images/walkthrough/mbi-ict-research/review-publication.webp",
+            "alt": "The published systematic review",
+            "label": "Published"
+          }
+        ]
+      },
+      "notes": "Interpersonal interaction is the finding that steers the rest of the programme. Flag it explicitly here so phase III does not look like a change of subject."
+    },
+    {
+      "kind": "section",
+      "eyebrow": "Phase II",
+      "title": "So what do people with MACI actually use?",
+      "notes": "Transition: the review said the literature is empty. Phase II goes and asks the population directly."
+    },
+    {
+      "kind": "split",
+      "eyebrow": "Phase II · Instrument",
+      "title": "A purpose-designed survey, paired with a validated cognitive measure",
+      "standfirst": "No existing instrument fit, so one was built — and deliberately coupled to the Cognitive Failure Questionnaire so results could be interpreted against impairment level rather than in the abstract.",
+      "bullets": [
+        { "lead": "ICF-based e-services questionnaire", "text": "Purpose-designed rather than adapted." },
+        { "lead": "CFQ", "text": "A validated measure of everyday cognitive failure, administered alongside." },
+        { "lead": "Validation", "text": "Expert advisory committee, then pilot testing." },
+        { "lead": "Sample size", "text": "Calculated for a finite population of 1,300 persons." },
+        { "lead": "Analysis", "text": "Confirmatory and exploratory factor analysis, descriptive and percentile statistics." }
+      ],
+      "figure": {
+        "kind": "shot",
+        "src": "/images/walkthrough/mbi-ict-research/survey-paper.webp",
+        "alt": "The survey study paper",
+        "frame": "paper",
+        "caption": "282 persons with acquired brain injury participated"
+      },
+      "notes": "Pairing the questionnaire with the CFQ is the methodological move worth explaining. It turns \"people with brain injury\" into a graded variable."
+    },
+    {
+      "kind": "full",
+      "eyebrow": "Phase II · The cohort",
+      "title": "Mean cognitive failure rate of 45",
+      "figure": {
+        "kind": "gauge",
+        "value": 45,
+        "label": "Mean Cognitive Failure Questionnaire score",
+        "sub": "± 18 across 282 participants",
+        "caption": "A graded measure, not a binary diagnosis"
+      },
+      "notes": "The standard deviation of 18 is as informative as the mean. This is a wide-spread population, which is precisely why a single design cannot serve it."
+    },
+    {
+      "kind": "full",
+      "eyebrow": "Phase II · Finding",
+      "title": "E-service use is comparable to the healthy population. Facebook use is not.",
+      "figure": {
+        "kind": "bars",
+        "data": [
+          { "label": "Using e-services", "value": 89, "highlight": true },
+          { "label": "Using Facebook", "value": 26, "highlight": true },
+          { "label": "Facebook use, Swedish population", "value": 71 }
+        ],
+        "unit": "%",
+        "caption": "89% on e-services, 26% on Facebook against 71% nationally"
+      },
+      "notes": "This is the single most useful finding in the programme. Capability is not the barrier — 89% manage e-services. Something specific about social platforms is."
+    },
+    {
+      "kind": "split",
+      "eyebrow": "Phase II · Qualitative",
+      "title": "\"An external brain\"",
+      "standfirst": "Content analysis of open-ended responses produced categories that describe technology as prosthesis rather than as convenience.",
+      "bullets": [
+        { "text": "Communication" },
+        { "text": "Social media" },
+        { "text": "Entertainment" },
+        { "text": "Memory aid" },
+        { "text": "Information source" },
+        { "text": "Shopping" },
+        { "text": "Education and training" }
+      ],
+      "figure": {
+        "kind": "quote",
+        "text": "Participants described their devices as an external brain.",
+        "attribution": "Content analysis of open-ended survey responses"
+      },
+      "notes": "The phrase is the participants', not the researchers'. Attribute it that way — it is a finding, not a metaphor someone in the team liked."
+    },
+    {
+      "kind": "full",
+      "eyebrow": "Phase II · Access",
+      "title": "What people owned, and how they reached services",
+      "figure": {
+        "kind": "shots",
+        "layout": "row",
+        "frame": "browser",
+        "items": [
+          {
+            "src": "/images/walkthrough/mbi-ict-research/device-ownership.webp",
+            "alt": "Device ownership among survey participants",
+            "label": "Device ownership"
+          },
+          {
+            "src": "/images/walkthrough/mbi-ict-research/eservice-comparison.webp",
+            "alt": "E-service use compared against the reference population",
+            "label": "E-service comparison"
+          }
+        ],
+        "caption": "From the survey study"
+      },
+      "notes": "Reference charts. Use them as evidence behind the previous slide rather than reading values off them."
+    },
+    {
+      "kind": "section",
+      "eyebrow": "Phase III",
+      "title": "If interpersonal interaction is the unmet need, what does it look like unobserved?",
+      "notes": "Emphasise unobserved. The whole design of phase III follows from not wanting to ask people to report on their own communication."
+    },
+    {
+      "kind": "split",
+      "eyebrow": "Phase III · Design",
+      "title": "Non-obtrusive, because asking would have changed the answer",
+      "standfirst": "A full year of a public Facebook group for Swedish speakers with brain fatigue, analysed without intervening — graph theory for the structure, directed qualitative content analysis for the meaning.",
+      "bullets": [
+        { "lead": "Population", "text": "A 1,310-member public community." },
+        { "lead": "Active members", "text": "1,092 unique active members — 83% of the group." },
+        { "lead": "Window", "text": "A full calendar year." },
+        { "lead": "Method", "text": "Graph-theoretic quantitative analysis plus directed qualitative content analysis." }
+      ],
+      "figure": {
+        "kind": "network",
+        "nodes": 1310,
+        "highlight": 1092,
+        "legend": ["Active members", "Members"],
+        "seed": 7,
+        "caption": "1,092 of 1,310 members were active — 83%"
+      },
+      "notes": "83% active participation in an online health community is remarkably high. Most such groups run on a small fraction of their membership."
+    },
+    {
+      "kind": "full",
+      "eyebrow": "Phase III · Structure",
+      "title": "Contribution has a shape",
+      "figure": {
+        "kind": "bars",
+        "data": [
+          { "label": "Likes", "value": 93, "highlight": true },
+          { "label": "Comments", "value": 49 },
+          { "label": "Posts", "value": 16 }
+        ],
+        "unit": "%",
+        "caption": "Contribution patterns across active members"
+      },
+      "notes": "The ladder from liking to commenting to posting is a cost ladder. In a fatigue population, that cost is cognitive, not social."
+    },
+    {
+      "kind": "full",
+      "eyebrow": "Phase III · The finding",
+      "title": "The community gives more support than it asks for",
+      "standfirst": "Posts predominantly provided support rather than sought it — and informational support was the dominant content type.",
+      "figure": {
+        "kind": "bars",
+        "data": [
+          { "label": "Posts providing support", "value": 40, "highlight": true },
+          { "label": "Posts seeking support", "value": 17 }
+        ],
+        "unit": "%",
+        "caption": "Providing outweighed seeking by more than two to one"
+      },
+      "notes": "This inverts the usual assumption about patient communities as help-seeking spaces. It also implies the network is dense even without highly active nodes."
+    },
+    {
+      "kind": "full",
+      "eyebrow": "Phase III · Evidence",
+      "title": "The network, four ways",
+      "figure": {
+        "kind": "shots",
+        "layout": "grid",
+        "frame": "browser",
+        "items": [
+          {
+            "src": "/images/walkthrough/mbi-ict-research/network-whole.webp",
+            "alt": "The whole network graph",
+            "label": "Whole network"
+          },
+          {
+            "src": "/images/walkthrough/mbi-ict-research/network-dense.webp",
+            "alt": "Density of the network",
+            "label": "Density"
+          },
+          {
+            "src": "/images/walkthrough/mbi-ict-research/network-likes.webp",
+            "alt": "Network of likes",
+            "label": "Likes"
+          },
+          {
+            "src": "/images/walkthrough/mbi-ict-research/network-comments.webp",
+            "alt": "Network of comments",
+            "label": "Comments"
+          },
+          {
+            "src": "/images/walkthrough/mbi-ict-research/network-posts.webp",
+            "alt": "Network of posts",
+            "label": "Posts"
+          }
+        ],
+        "caption": "Graph-theoretic analysis of a full year"
+      },
+      "notes": "The dense graph without dominant hubs is the visual finding. Point at it rather than describing centrality measures."
+    },
+    {
+      "kind": "section",
+      "eyebrow": "Phase IV",
+      "title": "Does the UX field study toolkit work here at all?",
+      "notes": "The methodological question, finally asked head on. This phase exists to answer the second of the two original gaps."
+    },
+    {
+      "kind": "split",
+      "eyebrow": "Phase IV · Why DRM",
+      "title": "The Day Reconstruction Method was chosen for what it does not do",
+      "standfirst": "It does not interrupt daily activity, and it takes less time than other experience sampling methods — both of which matter enormously in a fatigue population.",
+      "bullets": [
+        { "lead": "Recruitment", "text": "11 participants from 88 invited." },
+        { "lead": "Captured", "text": "Daily activities across 17 activity categories." },
+        { "lead": "Affect", "text": "Rated on a 0 to 6 Likert scale." },
+        { "lead": "Also captured", "text": "Time spent, and computer and Internet use." }
+      ],
+      "figure": {
+        "kind": "shots",
+        "layout": "row",
+        "frame": "browser",
+        "items": [
+          {
+            "src": "/images/walkthrough/mbi-ict-research/drm-time-a.webp",
+            "alt": "Time spent across activity categories, first view",
+            "label": "Time spent"
+          },
+          {
+            "src": "/images/walkthrough/mbi-ict-research/drm-affect-a.webp",
+            "alt": "Affect ratings across activities, first view",
+            "label": "Affect"
+          }
+        ]
+      },
+      "notes": "11 from 88 is a recruitment reality worth naming. It is not a weakness of the study; it is a fact about the population that anyone designing for it needs to know."
+    },
+    {
+      "kind": "full",
+      "eyebrow": "Phase IV · Output",
+      "title": "Time and affect, across seventeen activity categories",
+      "figure": {
+        "kind": "shots",
+        "layout": "filmstrip",
+        "frame": "browser",
+        "items": [
+          {
+            "src": "/images/walkthrough/mbi-ict-research/drm-time-b.webp",
+            "alt": "Time spent, second view",
+            "label": "Time · II"
+          },
+          {
+            "src": "/images/walkthrough/mbi-ict-research/drm-time-c.webp",
+            "alt": "Time spent, third view",
+            "label": "Time · III"
+          },
+          {
+            "src": "/images/walkthrough/mbi-ict-research/drm-affect-b.webp",
+            "alt": "Affect ratings, second view",
+            "label": "Affect · II"
+          },
+          {
+            "src": "/images/walkthrough/mbi-ict-research/drm-affect-c.webp",
+            "alt": "Affect ratings, third view",
+            "label": "Affect · III"
+          },
+          {
+            "src": "/images/walkthrough/mbi-ict-research/drm-affect-d.webp",
+            "alt": "Affect ratings, fourth view",
+            "label": "Affect · IV"
+          },
+          {
+            "src": "/images/walkthrough/mbi-ict-research/drm-affect-e.webp",
+            "alt": "Affect ratings, fifth view",
+            "label": "Affect · V"
+          },
+          {
+            "src": "/images/walkthrough/mbi-ict-research/drm-affect-f.webp",
+            "alt": "Affect ratings, sixth view",
+            "label": "Affect · VI"
+          }
+        ],
+        "caption": "Scroll the strip"
+      },
+      "notes": "Do not narrate seven charts. Scroll once, say what the axes are, and move on to the methodological conclusion."
+    },
+    {
+      "kind": "statement",
+      "eyebrow": "The honest constraint",
+      "title": "With no data on non-participants, these are indications, not distributions",
+      "standfirst": "Every finding in the programme was framed as a rough population-level indication rather than as a distribution claim.",
+      "callout": {
+        "lead": "Why say this out loud",
+        "text": "A study of a hard-to-reach population that claims representativeness is claiming something it cannot have. Stating the limit is what makes the rest usable."
+      },
+      "notes": "Include this slide even under time pressure. It is the difference between research and a report."
+    },
+    {
+      "kind": "cards",
+      "eyebrow": "Method choices, and their reasons",
+      "title": "Every instrument was selected for feasibility before findings",
+      "cards": [
+        {
+          "title": "Build the instrument",
+          "text": "A new ICF-based questionnaire rather than an adapted one, because nothing existing was designed for this population's capacities."
+        },
+        {
+          "title": "Pair it with a cognitive measure",
+          "text": "The CFQ alongside, so results could be interpreted against impairment level instead of treating the cohort as homogeneous."
+        },
+        {
+          "title": "Observe, don't ask",
+          "text": "Non-obtrusive social network analysis, so communication behaviour could be studied without relying on self-report."
+        },
+        {
+          "title": "Choose the lightest diary",
+          "text": "DRM specifically because it does not interrupt activity and costs less participant time than other experience sampling."
+        }
+      ],
+      "notes": "This slide is the transferable content. Anyone researching a cognitively impaired, fatigued or otherwise burdened population can use all four."
+    },
+    {
+      "kind": "full",
+      "eyebrow": "Outcome",
+      "title": "By the numbers",
+      "figure": {
+        "kind": "stats",
+        "items": [
+          { "value": "282", "label": "Participants in the Swedish national survey" },
+          { "value": "5,969", "label": "Articles screened, of which only 7 met inclusion criteria" },
+          { "value": "1,092", "label": "Unique active Facebook members analysed", "sub": "83% of a 1,310-member community" },
+          { "value": "89%", "label": "Using e-services, comparable to the healthy population" },
+          { "value": "4", "label": "Peer-reviewed studies", "sub": "JMIR, PLOS ONE ×2, thesis" },
+          { "value": "1st", "label": "Research to explore ICT and user experience for health information consumers with MACI" }
+        ]
+      },
+      "notes": "Read 5,969 → 7 and 89% versus 26%. Those two pairs carry the whole programme."
+    },
+    {
+      "kind": "statement",
+      "eyebrow": "The lesson",
+      "title": "When you cannot trust your instruments, the method becomes the research",
+      "standfirst": "The temptation with an under-studied population is to run the standard playbook and publish whatever comes out. This programme treated instrument feasibility as a first-class research question — and that is why the findings stand.",
+      "callout": {
+        "lead": "The reusable insight",
+        "text": "89% e-service use against 26% Facebook use says capability is not the barrier. Something about the design of social platforms is. That is a design brief, produced by research that took the trouble to be trustworthy first."
+      },
+      "notes": "End on the design brief. It connects seven years of academic work to something a product team could act on tomorrow."
+    },
+    {
+      "kind": "close",
+      "eyebrow": "In summary",
+      "title": "Studied a population, and how to study it, at the same time",
+      "bullets": [
+        { "lead": "Established", "text": "A near-empty evidence base, 7 of 5,969" },
+        { "lead": "Measured", "text": "282 people, graded by cognitive failure" },
+        { "lead": "Observed", "text": "1,092 active members, unobtrusively" },
+        { "lead": "Tested", "text": "Whether the UX toolkit works here at all" }
+      ],
+      "notes": "Likely questions: why Facebook use is so much lower, and whether the DRM proved feasible enough to recommend. Both are honest \"indications, not conclusions\" answers."
+    }
+  ]
+}
